@@ -11,8 +11,7 @@
         </div>
         <div class="form-group ml10">
             <label>Goto: </label>
-            <select class="form-control">
-                <option>Select</option>
+            <select class="form-control" ng-options="item.id as item.value for item in goto" ng-model="selectedGoto" data-ng-change="gotoPage()">
             </select>
         </div>
     </form>
@@ -30,7 +29,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 dsui-no-padding dsui-circle dsui-pending">
-                        <span data-ng-bind-html="fnFormatCount(home.statusCount.reportsInProgress)"></span>
+                        <span data-ng-bind-html="fnFormatCount(statusCount.validation)"></span>
                     </div>
                 </div>
             </div>
@@ -45,7 +44,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 dsui-no-padding dsui-circle dsui-due-days">
-                        <span data-ng-bind-html="fnFormatCount(home.statusCount.reportsDue)"></span>
+                        <span data-ng-bind-html="fnFormatCount(statusCount.assessment)"></span>
                     </div>
                 </div>
             </div>
@@ -60,7 +59,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 dsui-no-padding dsui-circle dsui-completed-reports">
-                        <span data-ng-bind-html="fnFormatCount(home.statusCount.reportsCompleted)"></span>
+                        <span data-ng-bind-html="fnFormatCount(statusCount.action)"></span>
                     </div>
                 </div>
             </div>
@@ -75,7 +74,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 dsui-no-padding dsui-circle dsui-assigned-action">
-                        <span data-ng-bind-html="fnFormatCount(home.statusCount.reportsCompleted)"></span>
+                        <span data-ng-bind-html="fnFormatCount(statusCount.assigned)"></span>
                     </div>
                 </div>
             </div>
