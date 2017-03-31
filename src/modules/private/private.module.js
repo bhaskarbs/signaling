@@ -73,6 +73,35 @@ angular
             }
           }
         })
+      .state('signaling', {
+        parent: 'main',
+        url: '/signaling',
+        views: {
+          'main@': {
+            templateUrl: 'views/private/signaling/index.html'
+          }
+        }
+      })
+      .state('signaling.validation', {
+        parent: 'signaling',
+        url: '/validation',
+        views: {
+          'signalingView': {
+            templateUrl: 'views/private/signaling/validation/index.html'
+
+          }
+        }
+      })
+      .state('signaling.dashboard', {
+        parent: 'signaling',
+        url: '/dashboard',
+        views: {
+          'signalingView': {
+            templateUrl: 'views/private/signaling/dashboard/index.html',
+            controller: 'DashboardSignalingController'
+          }
+        }
+      })
       .state(STATES.ANALYSIS,
       {
         parent: STATES.MAIN,
