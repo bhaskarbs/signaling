@@ -1,22 +1,11 @@
 .wssv-mian-content {
     padding: 0 330px;
     .wssv-valid-list {
-        float: right;
-        ul {
-            list-style: none;
-            li {
-                float: left;
-                margin: 0 9px;
-                border-bottom: 3px solid blue;
-            }
-        }
-    }
-    .wssv-valid-list-lat {
         text-align: right;
         width: 90%;
         float: right;
         padding: 0;
-        line-height: 40px;
+        line-height: 50px;
         margin-bottom: 20px;
         div {
             border-bottom: 4px solid #ccc;
@@ -28,7 +17,36 @@
             border-bottom: 4px solid #016698;
         }
     }
+    .wssv-hr-line {
+        border-top: 1px solid #e7e7e7;
+    }
     .wssv-bar {
-        .wssv-bar-first {}
+        padding: 20px 0;
+        div {
+            float: left;
+        }
+        .wssv-bar-first {
+            padding: 10px;
+            background-color: #f4d03e;
+            width: 10%;
+            border-radius: 10px 0px 0px 10px;
+            margin-right: 1px;
+        }
+        .wssv-bar-sec {
+            padding: 10px;
+            background-color: #f2a940;
+            width: 30%;
+        }
+        .wssv-bar-third {
+            padding: 10px;
+            background-color: #f15a29;
+            width: 44%;
+        }
+        .wssv-bar-fourth {
+            padding: 10px;
+            background-color: #d1d3d4;
+            width: 15%;
+            border-radius: 0px 10px 10px 0px;
+        }
     }
 }

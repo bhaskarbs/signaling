@@ -12588,37 +12588,62 @@ html {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\000033}}
 .wssv-mian-content .wssv-valid-list {
-  float: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\000035}}
-.wssv-mian-content .wssv-valid-list ul {
-  list-style: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\000037}}
-.wssv-mian-content .wssv-valid-list ul li {
-  float: left;
-  margin: 0 9px;
-  border-bottom: 3px solid blue;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000314}}
-.wssv-mian-content .wssv-valid-list-lat {
   text-align: right;
   width: 90%;
   float: right;
   padding: 0;
-  line-height: 40px;
+  line-height: 50px;
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000321}}
-.wssv-mian-content .wssv-valid-list-lat div {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000310}}
+.wssv-mian-content .wssv-valid-list div {
   border-bottom: 4px solid #ccc;
   margin: 0px 7px 0 0;
   text-align: left;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000327}}
-.wssv-mian-content .wssv-valid-list-lat div:first-child {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000316}}
+.wssv-mian-content .wssv-valid-list div:first-child {
   border-bottom: 4px solid #016698;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000320}}
+.wssv-mian-content .wssv-hr-line {
+  border-top: 1px solid #e7e7e7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000323}}
+.wssv-mian-content .wssv-bar {
+  padding: 20px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000325}}
+.wssv-mian-content .wssv-bar div {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000328}}
+.wssv-mian-content .wssv-bar .wssv-bar-first {
+  padding: 10px;
+  background-color: #f4d03e;
+  width: 10%;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: 1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000335}}
+.wssv-mian-content .wssv-bar .wssv-bar-sec {
+  padding: 10px;
+  background-color: #f2a940;
+  width: 30%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000340}}
+.wssv-mian-content .wssv-bar .wssv-bar-third {
+  padding: 10px;
+  background-color: #f15a29;
+  width: 44%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Del-Personal\/signaling\/app\/styles\/private\/signaling\/_signaling\.scss}line{font-family:\0000345}}
+.wssv-mian-content .wssv-bar .wssv-bar-fourth {
+  padding: 10px;
+  background-color: #d1d3d4;
+  width: 15%;
+  border-radius: 0px 10px 10px 0px;
 }
 
 /* Case List Display Details*/
