@@ -2,593 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3717016-a4e4-4195-945f-ef73b79620f9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/0478562a84a36e184ea9c5e3f496f173893e3909/_footer.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/054736edcef8738a36d87949d2f018ade15096d3/_tile-panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/0ad30fd414f417c1fd13bbe0614d287e90e40ae7/_filter-sort-panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/0f0d691188631a198ecb3412a15f30a58d2d2db4/_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/250459349b79c84e3147989e11ab2a8130be0858/_milestone-modal-popup.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/25c8b6685b63513b89a95cb3c14cbfb623ad5cc4/_filter-breadcrumbs.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/2c549a9a7416d676ba0c80e9db13f6381c1ace29/_gantt-chart.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/2f789a7cdbd8f763803a05b5b6173065f982a750/_header.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/33f5b4fc4ba6593833c2499e2f5b2212d3c8f0db/_exclude-include.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/33f5b4fc4ba6593833c2499e2f5b2212d3c8f0db/_track.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3448b08743501c996fb2bc43db0364e9c4031e80/_list-tags.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3448b08743501c996fb2bc43db0364e9c4031e80/_navigation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/366916e08c6f201496098b60191fcbd5c2c6350f/_footer.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3753aa00ba58c7227f157a74532c2aa4abd64481/_bar-chart.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3ef977f6346163f6e9e9dc560714f6d6a17e118d/_user-group-select.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/413e9b4caf4bc0c1fdba12f25474fa2e9b141606/_share-query.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/48b513dcb14115b3cc0392e16bb83af70360f1f1/_date-submitted-popover.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/4c04688fc18e778e7ab28b18f840ab28ec7d1a28/_tabs-view.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/4e90805d24da7165d9d6285b81f989277779a819/_query-builder.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/4f05bf199b5257206db1a200d74400ef0b3593bd/_share-case-list.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/4ff34e578c7b0c4110f5d51d83cb8e8bd0247149/_case-list-library-navigation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/501def6cdf23dcf2f705953136eb57b934f44c0b/_query-set-view.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5a9c5a9242924279f9a255475468d70b1ea82684/_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5b6ffce624b0214305235afd67ef3eeb3d6323a0/_tile-panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/60aaade7858bf76398f475e01f8dbb6ce7bb81fe/_case-list-library.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/60aaade7858bf76398f475e01f8dbb6ce7bb81fe/_case-lists.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/6185cd6b73ea3469adf7b4403048b5a8206f0beb/_secondary-navigation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/66e5dbf710b663e5aad9b4c47888f419ff0893b6/_visual-panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/6820afc4a9c180a8a0a6abf628fe2184599cbba7/_header.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/6bbb8a8494a88a21d471ad38f6b534ada2a40880/_default-view-modal.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/6bd325b7ca53dcd29c3d29d54361b67beba8e4e0/_case-list-sort.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/6cc21e1283d43c9e1126a7dd3bfde70541844d9c/_filter-sort-panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/745e3f448c1cb5119651f3928d54aefdbd437ca1/_data-view-cancel-modal.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/7b3bbe24f868b982870b306283e354ec69060b4b/_bipolar-chart.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/7d4b7664d78bbc0f1cb3dd9303ca16e1e5d519a8/_actiontray.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8f3646bae1efd19b52db0a442909cc5bfc0402d5/_work_space_library.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/90463f0635271190f90534d5b07e9627f0b7f3a9/_query-library.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/909911a4a5acee837333ef4ce160e8c4187552d7/_home.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/928012c5494c81fc3daab674d358b7b3fbb0ecbf/_filter-directive.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9411ef30ae2d95671b993c8b6653052df35476ae/_error-save-query.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9411ef30ae2d95671b993c8b6653052df35476ae/_save-query.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/97465346dcf1483f4f4f3d5f06051d3d7afa77a1/_common.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/97465346dcf1483f4f4f3d5f06051d3d7afa77a1/_icomps.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/97465346dcf1483f4f4f3d5f06051d3d7afa77a1/_mixins.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/97465346dcf1483f4f4f3d5f06051d3d7afa77a1/private.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/97465346dcf1483f4f4f3d5f06051d3d7afa77a1/public.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/97465346dcf1483f4f4f3d5f06051d3d7afa77a1/saint-datepicker.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/97465346dcf1483f4f4f3d5f06051d3d7afa77a1/template.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9da25430fecca1aaa85041732e788acef8a47ee2/_save-query.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9dcbc812dc7a583a15a9bf4359c8a76b82bad4b0/_query-header.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a1c9274d992cea742f1cb8ddbb6d0b42f9904b20/_case-list-filter.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a40afb6fef986c47458a5019350f5214f850b906/_query-lib-sort.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a95e2d27609e0f2557a6a92d86b7bf46e19239dd/_cases-view.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a9641a83b6db50d5f6a6abfc873bc81d75b46ca8/_home.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/ae64e3c0290f9e0f927c6c5b9d7f4b196f26cbb1/_login.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/ae64e3c0290f9e0f927c6c5b9d7f4b196f26cbb1/_toggle-switch.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/aecebbe8810b0cdec37e382d924db2174206f7a8/_sort.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/af79b3e6797b1d521ba3a0cfa007686aa1e48e0a/_notification.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/af89098d3ca0719d8f5cc06b6a0d97d32b0f0ef3/_reports-library.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b099e74a316f669d596ce2ecd5cc8b13d25f319b/_advance-query.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b29ef3a0647b7951bcdadc6468ccf237e27550c7/_vertical-bar-chart.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b9e6938e80e5650925723b5d1b24846912c8d673/_dashboard-library.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/baa4c3ddde096b5ca426e6d1d0347bbfe046de4f/_filter-sort-panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/bb0035b64c91f775cdaebd2c311e7cfce953def0/_delete-query.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/bf7e4d56a544e2ab16ad826259f38bc4f7c67a7e/_build-report-package.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/c13b0ee36bbcb62943593366c91309198d6c2e0c/_case-list-table.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/cec1b465e913195763458a6b3287955ffea2ccc7/_filter-breadcrumbs.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/d61e8f81013ecead84a89bd3ad6275cd80b4d641/_tile-panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/d6e54bb2ef071d64d0db8a85d2983cf74543bf96/_milestone-popover.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e13e9530dcaa1dbeb6f1cdaec3773eb3764e8d2a/_query-builder-navigation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e1a7e9873489c30d2cd562ef4d5ee26897366d1b/_milestone-popover-summary.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e1a7e9873489c30d2cd562ef4d5ee26897366d1b/_report-panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e6dda29ab7500f3eb40905e5f41af6dcec05977f/_reports-library-navigation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/ed8bdb97313133550c875a36588dba741c600950/_create-report.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/ed8bdb97313133550c875a36588dba741c600950/_report-confirmation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/ee7f8f5b4dd50f31e26c9ed1e316ba1bf8fc5949/_query-library-modal.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/ef15880bda416fd20ba97bc44e67f7b8ada02c2b/_query-library-navigation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/private/signaling/_signaling.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/private/workspace/_work_space_library.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/private/workspace/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/private/workspace/work-space-library.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/404.html" afterPath="$PROJECT_DIR$/app/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dashboard.html" afterPath="$PROJECT_DIR$/app/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/caseList.json" afterPath="$PROJECT_DIR$/app/fixtures/caseList.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/caseListTracking.json" afterPath="$PROJECT_DIR$/app/fixtures/caseListTracking.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/countrycodes.json" afterPath="$PROJECT_DIR$/app/fixtures/countrycodes.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/old-filters.json" afterPath="$PROJECT_DIR$/app/fixtures/old-filters.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/queryLibrary-filter.json" afterPath="$PROJECT_DIR$/app/fixtures/queryLibrary-filter.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/queryLibrary-sort.json" afterPath="$PROJECT_DIR$/app/fixtures/queryLibrary-sort.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/queryLibrary-tiles.json" afterPath="$PROJECT_DIR$/app/fixtures/queryLibrary-tiles.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/reports-summary.json" afterPath="$PROJECT_DIR$/app/fixtures/reports-summary.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/reportsGantt.json" afterPath="$PROJECT_DIR$/app/fixtures/reportsGantt.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fixtures/selectedUserGroupInfo.json" afterPath="$PROJECT_DIR$/app/fixtures/selectedUserGroupInfo.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/common.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/common.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/footer.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/footer.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/private-analysis.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/private-analysis.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/private-case-list-library.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/private-case-list-library.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/private-header.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/private-header.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/private-home.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/private-home.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/private-notification.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/private-notification.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/private-query-builder.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/private-query-builder.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/private-query-library.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/private-query-library.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/private-report-output.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/private-report-output.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/private-reports-library.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/private-reports-library.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/public-header.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/public-header.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/public-home.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/public-home.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en-US/public-login.lang.json" afterPath="$PROJECT_DIR$/app/languages/en-US/public-login.lang.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/bipolar-char-controller.test.js" afterPath="$PROJECT_DIR$/app/modules/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/bipolar-char-controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/private/query-library/filter-sort-panel/filter/query-library-filter-controller.test.js" afterPath="$PROJECT_DIR$/app/modules/private/query-library/filter-sort-panel/filter/query-library-filter-controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/robots.txt" afterPath="$PROJECT_DIR$/app/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/actionTray/action-tray.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/actionTray/action-tray.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/analysis/adhoc/adhoc-analysis.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/analysis/adhoc/adhoc-analysis.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/analysis/library/dashboard-library.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/analysis/library/dashboard-library.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/analysis/open/open-analysis.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/analysis/open/open-analysis.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-breadcrumb.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-breadcrumb.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-library.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-library.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/cases.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/cases.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/data-view/data-view.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/data-view/data-view.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/display-query/display-query.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/display-query/display-query.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/header/case-list-header.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/header/case-list-header.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/header/save-case-list.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/header/save-case-list.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/query-builder/query-builder.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/query-builder/query-builder.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/query-builder/save-query/save-query.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/query-builder/save-query/save-query.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/query-builder/setOperation/query-set-operation.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/query-builder/setOperation/query-set-operation.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/share-case-list/share-case-list.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/share-case-list/share-case-list.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/table-view/cases/include-exclude.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/table-view/cases/include-exclude.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/table-view/cases/track.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/table-view/cases/track.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/table-view/table-view.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/table-view/table-view.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/bipolar-chart.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/bipolar-chart.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/donut-chart/donut-chart.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/donut-chart/donut-chart.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/bar-chart.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/bar-chart.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/vertical-bar-chart/vertical-bar-chart.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/vertical-bar-chart/vertical-bar-chart.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/world-map-chart/world-map-chart.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/world-map-chart/world-map-chart.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/visual-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/visual-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/visuals-layout.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/visuals-layout.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/filter-sort-panel/filter-sort-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/filter-sort-panel/filter-sort-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/filter-sort-panel/filter/date-filter.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/filter-sort-panel/filter/date-filter.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/filter-sort-panel/filter/filter.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/filter-sort-panel/filter/filter.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/filter-sort-panel/sort/case-list-sort-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/filter-sort-panel/sort/case-list-sort-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/tilePanel/tile-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/tilePanel/tile-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case/details/case-details.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case/details/case-details.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/case/details/list-tags.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/case/details/list-tags.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/gantt/gantt-chart.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/gantt/gantt-chart.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/header/header.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/header/header.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/home/home.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/home/home.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/main.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/main.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/notification/notification-modal.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/notification/notification-modal.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/notification/notification.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/notification/notification.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-builder/query-library/query-library-modal.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-builder/query-library/query-library-modal.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/filter-breadcrumbs/filter-breadcrumbs.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/filter-breadcrumbs/filter-breadcrumbs.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/filter-sort-panel/filter-sort-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/filter-sort-panel/filter-sort-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/filter-sort-panel/filter/filter-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/filter-sort-panel/filter/filter-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/filter-sort-panel/sort/sort-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/filter-sort-panel/sort/sort-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/advanced-query/advanced-query.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/advanced-query/advanced-query.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/header/query-header.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/header/query-header.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/query-builder.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/query-builder.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/save-query/error-save-query.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/save-query/error-save-query.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/save-query/save-query.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/save-query/save-query.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/share-query/share-query.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-builder/share-query/share-query.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-library.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/query-library.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/tile-panel/delete-query/delete-query.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/tile-panel/delete-query/delete-query.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/tile-panel/tile-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/query-library/tile-panel/tile-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/build-report-package.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/build-report-package.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/case-list-filter.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/case-list-filter.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/date-case-list-modal-filter.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/date-case-list-modal-filter.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/default-view.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/default-view.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/filter-breadcrumb-modal.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/filter-breadcrumb-modal.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/modal-parent.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/report-output/report-output-case-list/modal-parent.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/create-report/create-report.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/create-report/create-report.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-breadcrumbs/filter-breadcrumbs.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-breadcrumbs/filter-breadcrumbs.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/filter-sort-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/filter-sort-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/filter/date-filter.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/filter/date-filter.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/filter/filter.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/filter/filter.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/filter/status-filter.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/filter/status-filter.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/sort/sort.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/filter-sort-panel/sort/sort.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/report-panel/generate-report/generate-report.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/report-panel/generate-report/generate-report.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/reports-library.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/reports-library.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/tile-panel/tile-panel.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/private/reports-library/tile-panel/tile-panel.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/public/header/landing-header.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/public/header/landing-header.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/public/home/landing.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/public/home/landing.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/public/login/login-error.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/public/login/login-error.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/public/login/login.controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/public/login/login.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/autofill-sync.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/autofill-sync.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/autoscroll.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/autoscroll.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/build-report-package.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/build-report-package.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/csv-auto-reader.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/csv-auto-reader.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/custom-when-scrolled-gantt.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/custom-when-scrolled-gantt.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/filter-breadcrumb.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/filter-breadcrumb.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/filter.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/filter.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/inactive-logout.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/inactive-logout.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/input-data-limit.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/input-data-limit.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/lumira-minified-image.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/lumira-minified-image.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/milestone-modal.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/milestone-modal.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/multi-selectable-dropdown.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/multi-selectable-dropdown.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/analysis/lumira-expanded-view.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/analysis/lumira-expanded-view.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/bipolar-chart.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/bipolar-chart.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/donut-chart/donut-chart.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/donut-chart/donut-chart.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/bar-chart.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/bar-chart.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/vertical-bar-chart/vertical-bar-chart.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/vertical-bar-chart/vertical-bar-chart.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/world-map-chart/world-map-chart.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/chart-directives/world-map-chart/world-map-chart.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/visual-panel.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/case-list-library/case-list-view/visual-view/visual-panel.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/case/details/breadcrumbs.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/case/details/breadcrumbs.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/case/details/ipopover.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/case/details/ipopover.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/query-builder/query-builder.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/query-builder/query-builder.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/query-builder/query-string.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/query-builder/query-string.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/private/user/user-group-select.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/private/user/user-group-select.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/repeat-finished.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/repeat-finished.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/scroll-element.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/scroll-element.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/selectable-dropdown.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/selectable-dropdown.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/sticky-header.directive.js" afterPath="$PROJECT_DIR$/app/scripts/directives/sticky-header.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/ingredient.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/ingredient.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/manage-metrics.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/manage-metrics.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/preferences.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/preferences.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/private/actionTray/action-tray.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/private/actionTray/action-tray.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/private/case-list-library/case-list-view/data-view/data-view.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/private/case-list-library/case-list-view/data-view/data-view.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/private/case-list-library/case-list.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/private/case-list-library/case-list.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/private/case-list-library/case.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/private/case-list-library/case.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/private/home/dasboard-charts-cache.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/private/home/dasboard-charts-cache.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/private/notification/notification.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/private/notification/notification.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/private/query-library/query-library.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/private/query-library/query-library.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/private/report-output/report-output-case-list/report-output.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/private/report-output/report-output-case-list/report-output.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/private/reports-library/create-report/update-custom-report.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/private/reports-library/create-report/update-custom-report.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/report-run.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/report-run.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/report-status.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/report-status.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/factories/report.factory.js" afterPath="$PROJECT_DIR$/app/scripts/factories/report.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/filters/empty.filter.js" afterPath="$PROJECT_DIR$/app/scripts/filters/empty.filter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/filters/truncate.filter.js" afterPath="$PROJECT_DIR$/app/scripts/filters/truncate.filter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/filters/unique.filter.js" afterPath="$PROJECT_DIR$/app/scripts/filters/unique.filter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/filters/userGroupFormatter.filter.js" afterPath="$PROJECT_DIR$/app/scripts/filters/userGroupFormatter.filter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/authorize.module.js" afterPath="$PROJECT_DIR$/app/scripts/modules/authorize.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/icomps.module.js" afterPath="$PROJECT_DIR$/app/scripts/modules/icomps.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/private/private.module.js" afterPath="$PROJECT_DIR$/app/scripts/modules/private/private.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/public/public.module.js" afterPath="$PROJECT_DIR$/app/scripts/modules/public/public.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/constant.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/constant.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/cookie.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/cookie.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/date.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/date.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/language.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/language.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/polyfill.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/polyfill.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/bar-chart.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/bar-chart.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/private/case-list-library/case-list-view/visual-view/chart-directives/world-map-chart/map.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/private/case-list-library/case-list-view/visual-view/chart-directives/world-map-chart/map.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/private/user/user.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/private/user/user.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/saint.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/saint.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/string-operations.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/string-operations.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/url.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/url.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/providers/xhr-intercept.provider.js" afterPath="$PROJECT_DIR$/app/scripts/providers/xhr-intercept.provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/additional-reports-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/additional-reports-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/case-list-dimension-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/case-list-dimension-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/ingredient-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/ingredient-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/license-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/license-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/notifications-polling.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/notifications-polling.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/preferences-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/preferences-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-list-view/case-list-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-list-view/case-list-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-list-view/query-builder/case-list-query.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-list-view/query-builder/case-list-query.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-list-view/query-builder/query-builder-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-list-view/query-builder/query-builder-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-list-view/query-builder/setOperation/query-set.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/case-list-library/case-list-view/query-builder/setOperation/query-set.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/case/details/tag-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/case/details/tag-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/notification/notification-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/notification/notification-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/query-builder/query-generator.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/query-builder/query-generator.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/query-library/query-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/query-library/query-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/report-output/save-report-package-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/report-output/save-report-package-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/report-output/sub-reports-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/report-output/sub-reports-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/reports/report-category-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/reports/report-category-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/private/user/user-group-select-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/private/user/user-group-select-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/product-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/product-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/report-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/report-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/report-milestone-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/report-milestone-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/report-status.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/report-status.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/report-type-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/report-type-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/signal-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/signal-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/user-entity.service.js" afterPath="$PROJECT_DIR$/app/scripts/services/user-entity.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_common.scss" afterPath="$PROJECT_DIR$/app/styles/_common.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_icomps.scss" afterPath="$PROJECT_DIR$/app/styles/_icomps.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_mixins.scss" afterPath="$PROJECT_DIR$/app/styles/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private.scss" afterPath="$PROJECT_DIR$/app/styles/private.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/_layout.scss" afterPath="$PROJECT_DIR$/app/styles/private/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/actionTray/_actiontray.scss" afterPath="$PROJECT_DIR$/app/styles/private/actionTray/_actiontray.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/analysis/adhoc/adhoc-analysis.css" afterPath="$PROJECT_DIR$/app/styles/private/analysis/adhoc/adhoc-analysis.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/analysis/library/_dashboard-library.scss" afterPath="$PROJECT_DIR$/app/styles/private/analysis/library/_dashboard-library.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/analysis/open/open-compose-analysis.css" afterPath="$PROJECT_DIR$/app/styles/private/analysis/open/open-compose-analysis.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/analysis/open/open-visualization-analysis.css" afterPath="$PROJECT_DIR$/app/styles/private/analysis/open/open-visualization-analysis.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/_case-list-library.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/_case-list-library.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/_case-lists.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/_case-lists.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/_cases-view.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/_cases-view.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/data-view/cancel-milestone-modal/_data-view-cancel-modal.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/data-view/cancel-milestone-modal/_data-view-cancel-modal.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/query-builder/_tabs-view.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/query-builder/_tabs-view.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/query-builder/save-query/_save-query.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/query-builder/save-query/_save-query.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/query-builder/setOperation/_query-set-view.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/query-builder/setOperation/_query-set-view.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/share-case-list/_share-case-list.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/share-case-list/_share-case-list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/table-view/_case-list-table.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/table-view/_case-list-table.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/table-view/cases/_exclude-include.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/table-view/cases/_exclude-include.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/table-view/cases/_track.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/table-view/cases/_track.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/visual-view/_visual-panel.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/visual-view/_visual-panel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/_bipolar-chart.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/_bipolar-chart.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/_bar-chart.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/_bar-chart.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/visual-view/chart-directives/vertical-bar-chart/_vertical-bar-chart.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/case-list-view/visual-view/chart-directives/vertical-bar-chart/_vertical-bar-chart.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/filter-sort-panel/_filter-sort-panel.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/filter-sort-panel/_filter-sort-panel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/filter-sort-panel/filter/_case-list-filter.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/filter-sort-panel/filter/_case-list-filter.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/filter-sort-panel/sort/_case-list-sort.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/filter-sort-panel/sort/_case-list-sort.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/navigation/_case-list-library-navigation.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/navigation/_case-list-library-navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case-list-library/tilePanel/_tile-panel.scss" afterPath="$PROJECT_DIR$/app/styles/private/case-list-library/tilePanel/_tile-panel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case/details/_list-tags.scss" afterPath="$PROJECT_DIR$/app/styles/private/case/details/_list-tags.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/case/details/_navigation.scss" afterPath="$PROJECT_DIR$/app/styles/private/case/details/_navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/footer/_footer.scss" afterPath="$PROJECT_DIR$/app/styles/private/footer/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/gantt/_gantt-chart.scss" afterPath="$PROJECT_DIR$/app/styles/private/gantt/_gantt-chart.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/gantt/milestone-popover/_milestone-popover.scss" afterPath="$PROJECT_DIR$/app/styles/private/gantt/milestone-popover/_milestone-popover.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/header/_header.scss" afterPath="$PROJECT_DIR$/app/styles/private/header/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/home/_home.scss" afterPath="$PROJECT_DIR$/app/styles/private/home/_home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/milestone-modal/_milestone-modal-popup.scss" afterPath="$PROJECT_DIR$/app/styles/private/milestone-modal/_milestone-modal-popup.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/notification/_notification.scss" afterPath="$PROJECT_DIR$/app/styles/private/notification/_notification.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/notification/navigation/_secondary-navigation.scss" afterPath="$PROJECT_DIR$/app/styles/private/notification/navigation/_secondary-navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-builder/_query-builder.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-builder/_query-builder.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-builder/query-library/_query-library-modal.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-builder/query-library/_query-library-modal.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/_query-library.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/_query-library.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/filter-breadcrumbs/_filter-breadcrumbs.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/filter-breadcrumbs/_filter-breadcrumbs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/filter-sort-panel/_filter-sort-panel.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/filter-sort-panel/_filter-sort-panel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/filter-sort-panel/sort/_query-lib-sort.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/filter-sort-panel/sort/_query-lib-sort.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/navigation/_query-library-navigation.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/navigation/_query-library-navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/advanced-query/_advance-query.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/advanced-query/_advance-query.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/header/_query-header.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/header/_query-header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/navigation/_query-builder-navigation.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/navigation/_query-builder-navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/save-query/_error-save-query.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/save-query/_error-save-query.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/save-query/_save-query.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/save-query/_save-query.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/share-query/_share-query.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/query-builder/share-query/_share-query.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/tile-panel/_tile-panel.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/tile-panel/_tile-panel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/query-library/tile-panel/delete-query/_delete-query.scss" afterPath="$PROJECT_DIR$/app/styles/private/query-library/tile-panel/delete-query/_delete-query.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/report-output/_build-report-package.scss" afterPath="$PROJECT_DIR$/app/styles/private/report-output/_build-report-package.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/report-output/report-output-case-list/_default-view-modal.scss" afterPath="$PROJECT_DIR$/app/styles/private/report-output/report-output-case-list/_default-view-modal.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/_reports-library.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/_reports-library.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/create-report/_create-report.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/create-report/_create-report.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/create-report/_report-confirmation.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/create-report/_report-confirmation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/filter-breadcrumbs/_filter-breadcrumbs.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/filter-breadcrumbs/_filter-breadcrumbs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/filter-sort-panel/_filter-sort-panel.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/filter-sort-panel/_filter-sort-panel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/filter-sort-panel/directive/_filter-directive.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/filter-sort-panel/directive/_filter-directive.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/filter-sort-panel/sort/_sort.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/filter-sort-panel/sort/_sort.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/navigation/_reports-library-navigation.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/navigation/_reports-library-navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/report-panel/_milestone-popover-summary.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/report-panel/_milestone-popover-summary.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/report-panel/_report-panel.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/report-panel/_report-panel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/report-panel/date-submitted-popover/_date-submitted-popover.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/report-panel/date-submitted-popover/_date-submitted-popover.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/reports-library/tile-panel/_tile-panel.scss" afterPath="$PROJECT_DIR$/app/styles/private/reports-library/tile-panel/_tile-panel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/user/_user-group-select.scss" afterPath="$PROJECT_DIR$/app/styles/private/user/_user-group-select.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/public.scss" afterPath="$PROJECT_DIR$/app/styles/public.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/public/_layout.scss" afterPath="$PROJECT_DIR$/app/styles/public/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/public/footer/_footer.scss" afterPath="$PROJECT_DIR$/app/styles/public/footer/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/public/header/_header.scss" afterPath="$PROJECT_DIR$/app/styles/public/header/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/public/home/_home.scss" afterPath="$PROJECT_DIR$/app/styles/public/home/_home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/public/login/_login.scss" afterPath="$PROJECT_DIR$/app/styles/public/login/_login.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/public/login/_toggle-switch.scss" afterPath="$PROJECT_DIR$/app/styles/public/login/_toggle-switch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/saint-datepicker.scss" afterPath="$PROJECT_DIR$/app/styles/saint-datepicker.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/template.scss" afterPath="$PROJECT_DIR$/app/styles/template.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/actionTray/tray.html" afterPath="$PROJECT_DIR$/app/views/private/actionTray/tray.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/analysis/adhoc/index.html" afterPath="$PROJECT_DIR$/app/views/private/analysis/adhoc/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/analysis/index.html" afterPath="$PROJECT_DIR$/app/views/private/analysis/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/analysis/library/index.html" afterPath="$PROJECT_DIR$/app/views/private/analysis/library/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/analysis/open/index.html" afterPath="$PROJECT_DIR$/app/views/private/analysis/open/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-library.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-library.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/data-view/cancel-milestone-modal/data-view-cancel-modal.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/data-view/cancel-milestone-modal/data-view-cancel-modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/data-view/index.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/data-view/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/display-query/display-query.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/display-query/display-query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/header/cases-header.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/header/cases-header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/header/count-details.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/header/count-details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/header/save-case-list-modal.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/header/save-case-list-modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/index.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/navigation.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/query-builder/query-builder.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/query-builder/query-builder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/query-builder/save-query/save-query.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/query-builder/save-query/save-query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/query-builder/setOperation/delete-query-modal.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/query-builder/setOperation/delete-query-modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/share-case-list/share-case-list.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/share-case-list/share-case-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/table-view/cases/exclude.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/table-view/cases/exclude.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/table-view/cases/include.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/table-view/cases/include.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/table-view/cases/track.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/table-view/cases/track.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/table-view/tableview.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/table-view/tableview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/visual-view/visual-panel.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/visual-view/visual-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/visual-view/visual.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/visual-view/visual.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/filter-sort-panel/filter-sort-panel.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/filter-sort-panel/filter-sort-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/filter-sort-panel/filter/date-filter.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/filter-sort-panel/filter/date-filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/filter-sort-panel/filter/filter-panel.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/filter-sort-panel/filter/filter-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/filter-sort-panel/sort/sort-panel.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/filter-sort-panel/sort/sort-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/index.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/navigation/case-list-library-navigation.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/navigation/case-list-library-navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/tilePanel/tile-panel.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/tilePanel/tile-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case-list-library/tilePanel/tile-template.html" afterPath="$PROJECT_DIR$/app/views/private/case-list-library/tilePanel/tile-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/annotation.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/annotation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/case-list-details-index.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/case-list-details-index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/details.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/events.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/list-tags.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/list-tags.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/narrative.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/narrative.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/navigation.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/submission-history.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/submission-history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/summary.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/case/details/suspect-products.html" afterPath="$PROJECT_DIR$/app/views/private/case/details/suspect-products.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/footer/footer.html" afterPath="$PROJECT_DIR$/app/views/private/footer/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/gantt/expanded-report.html" afterPath="$PROJECT_DIR$/app/views/private/gantt/expanded-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/gantt/gantt-chart-month-template.html" afterPath="$PROJECT_DIR$/app/views/private/gantt/gantt-chart-month-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/gantt/gantt-chart-week-template.html" afterPath="$PROJECT_DIR$/app/views/private/gantt/gantt-chart-week-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/gantt/gantt-chart.html" afterPath="$PROJECT_DIR$/app/views/private/gantt/gantt-chart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/gantt/milestone-popover/milestone-popover.html" afterPath="$PROJECT_DIR$/app/views/private/gantt/milestone-popover/milestone-popover.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/header/header.html" afterPath="$PROJECT_DIR$/app/views/private/header/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/home/index.html" afterPath="$PROJECT_DIR$/app/views/private/home/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/home/metrics-kpi.html" afterPath="$PROJECT_DIR$/app/views/private/home/metrics-kpi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/home/workspace.html" afterPath="$PROJECT_DIR$/app/views/private/home/workspace.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/milestone-modal/milestone-modal-popup.html" afterPath="$PROJECT_DIR$/app/views/private/milestone-modal/milestone-modal-popup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/notification/index.html" afterPath="$PROJECT_DIR$/app/views/private/notification/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/notification/navigation/secondary-navigation.html" afterPath="$PROJECT_DIR$/app/views/private/notification/navigation/secondary-navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/notification/notification-filter-panel/index.html" afterPath="$PROJECT_DIR$/app/views/private/notification/notification-filter-panel/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/notification/notification-modal.html" afterPath="$PROJECT_DIR$/app/views/private/notification/notification-modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/notification/notification-right-panel/index.html" afterPath="$PROJECT_DIR$/app/views/private/notification/notification-right-panel/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-builder/query-builder.html" afterPath="$PROJECT_DIR$/app/views/private/query-builder/query-builder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-builder/query-library/query-library-modal.html" afterPath="$PROJECT_DIR$/app/views/private/query-builder/query-library/query-library-modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-builder/query-value-form-field.html" afterPath="$PROJECT_DIR$/app/views/private/query-builder/query-value-form-field.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/filter-breadcrumbs/filter-breadcrumbs.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/filter-breadcrumbs/filter-breadcrumbs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/filter-sort-panel/filter-sort-panel.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/filter-sort-panel/filter-sort-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/filter-sort-panel/filter/filter-panel.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/filter-sort-panel/filter/filter-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/filter-sort-panel/sort/sort-panel.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/filter-sort-panel/sort/sort-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/index.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/navigation/query-library-navigation.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/navigation/query-library-navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/query-builder/advanced-query/advanced-query.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/query-builder/advanced-query/advanced-query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/query-builder/header/query-header.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/query-builder/header/query-header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/query-builder/navigation/query-builder-navigation.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/query-builder/navigation/query-builder-navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/query-builder/query-builder.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/query-builder/query-builder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/query-builder/save-query/error-save-query.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/query-builder/save-query/error-save-query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/query-builder/save-query/save-query.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/query-builder/save-query/save-query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/query-builder/share-query/share-query.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/query-builder/share-query/share-query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/query-library.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/query-library.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/tile-panel/delete-query/delete-query.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/tile-panel/delete-query/delete-query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/tile-panel/tile-panel.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/tile-panel/tile-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/query-library/tile-panel/tile-template.html" afterPath="$PROJECT_DIR$/app/views/private/query-library/tile-panel/tile-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/report-output/build-report-package.html" afterPath="$PROJECT_DIR$/app/views/private/report-output/build-report-package.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/report-output/report-output-case-list/default-view-modal.html" afterPath="$PROJECT_DIR$/app/views/private/report-output/report-output-case-list/default-view-modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/report-output/report-output-case-list/tile-panel.html" afterPath="$PROJECT_DIR$/app/views/private/report-output/report-output-case-list/tile-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/report-output/save-report-output-modal.html" afterPath="$PROJECT_DIR$/app/views/private/report-output/save-report-output-modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/create-report/create-report.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/create-report/create-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/create-report/index.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/create-report/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/create-report/milestones.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/create-report/milestones.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/create-report/report-basic-details.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/create-report/report-basic-details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/create-report/report-confirmation.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/create-report/report-confirmation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/create-report/report-details.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/create-report/report-details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/create-report/signaling.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/create-report/signaling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/filter-breadcrumbs/filter-breadcrumbs.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/filter-breadcrumbs/filter-breadcrumbs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/directive/filter-directive.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/directive/filter-directive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/filter/date-filter.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/filter/date-filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/filter/index.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/filter/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/filter/status-filter.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/filter/status-filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/index.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/sort/index.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/filter-sort-panel/sort/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/gantt-chart/gantt-index.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/gantt-chart/gantt-index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/gantt-chart/gantt-view.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/gantt-chart/gantt-view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/gantt-chart/report-view.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/gantt-chart/report-view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/index.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/navigation/reports-library-navigation.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/navigation/reports-library-navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/report-list.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/report-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/report-panel/date-submitted-popover/date-submitted-popover.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/report-panel/date-submitted-popover/date-submitted-popover.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/report-panel/generate-report/generate-report.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/report-panel/generate-report/generate-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/report-panel/milestone-popover-summary.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/report-panel/milestone-popover-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/report-panel/report-panel.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/report-panel/report-panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/tile-panel/index.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/tile-panel/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/tile-panel/report-delete.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/tile-panel/report-delete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/reports-library/tile-panel/tile-template.html" afterPath="$PROJECT_DIR$/app/views/private/reports-library/tile-panel/tile-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/private/user/user-group-select.html" afterPath="$PROJECT_DIR$/app/views/private/user/user-group-select.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public/footer/footer.html" afterPath="$PROJECT_DIR$/app/views/public/footer/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public/header/header.html" afterPath="$PROJECT_DIR$/app/views/public/header/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public/home/home.html" afterPath="$PROJECT_DIR$/app/views/public/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public/login/login.html" afterPath="$PROJECT_DIR$/app/views/public/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/worker/generate-report-web-worker.js" afterPath="$PROJECT_DIR$/app/worker/generate-report-web-worker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/worker/notifications-web-worker.js" afterPath="$PROJECT_DIR$/app/worker/notifications-web-worker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dashboard.html" afterPath="$PROJECT_DIR$/src/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/private/home/launchpad.html" afterPath="$PROJECT_DIR$/src/modules/private/home/launchpad.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/private/private.module.js" afterPath="$PROJECT_DIR$/src/modules/private/private.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-library.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-library.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/cases.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/cases.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/data-view/data-view.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/data-view/data-view.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/display-query/display-query.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/display-query/display-query.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/header/case-list-header.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/header/case-list-header.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/header/case-list-header1.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/header/case-list-header1.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/query-builder/query-builder.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/query-builder/query-builder.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/query-builder/save-query/save-query.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/query-builder/save-query/save-query.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/share-case-list/share-case-list.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/share-case-list/share-case-list.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/table-view/cases/case-list-table-view-track.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/table-view/cases/case-list-table-view-track.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/table-view/cases/include-exclude.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/table-view/cases/include-exclude.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/table-view/table-view.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/table-view/table-view.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/vertical-bar-chart/vertical-bar-chart.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/visual-view/chart-directives/vertical-bar-chart/vertical-bar-chart.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/visual-view/visuals-layout.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/case-list-view/visual-view/visuals-layout.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/tilePanel/case-list-library-tile-panel.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case-list-library/tilePanel/case-list-library-tile-panel.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case/details/case-details.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case/details/case-details.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/case/details/case-list-table-view-details.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/case/details/case-list-table-view-details.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/gantt/gantt-chart.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/gantt/gantt-chart.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/header/header.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/header/header.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/home/home.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/home/home.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/main.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/main.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/notification/notification-modal.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/notification/notification-modal.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/notification/notification.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/notification/notification.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/query-library/filter-sort-panel/sort/query-library-sort.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/query-library/filter-sort-panel/sort/query-library-sort.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/header/query-header.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/header/query-header.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/query-builder.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/query-builder.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/save-query/error-save-query.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/save-query/error-save-query.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/save-query/save-query.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/save-query/save-query.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/share-query/share-query.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/query-library/query-builder/share-query/share-query.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/report-output/build-report-package.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/report-output/build-report-package.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/create-report/report-library-create-report.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/create-report/report-library-create-report.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/filter-sort-panel/filter/filter.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/filter-sort-panel/filter/filter.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/filter-sort-panel/filter/status-filter.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/filter-sort-panel/filter/status-filter.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/reports-library.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/reports-library.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/tile-panel/tile-panel.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/private/reports-library/tile-panel/tile-panel.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/public/header/landing-header.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/public/header/landing-header.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/public/home/landing.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/public/home/landing.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/public/login/login-error.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/public/login/login-error.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/public/login/login.controller.test.js" afterPath="$PROJECT_DIR$/test/spec/controllers/public/login/login.controller.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/directives/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/bipolar-chart.directive.test.js" afterPath="$PROJECT_DIR$/test/spec/directives/private/case-list-library/case-list-view/visual-view/chart-directives/bipolar-chart/bipolar-chart.directive.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/directives/private/case-list-library/case-list-view/visual-view/chart-directives/donut-chart/donut-chart.directive.test.js" afterPath="$PROJECT_DIR$/test/spec/directives/private/case-list-library/case-list-view/visual-view/chart-directives/donut-chart/donut-chart.directive.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/directives/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.directive.test.js" afterPath="$PROJECT_DIR$/test/spec/directives/private/case-list-library/case-list-view/visual-view/chart-directives/gender-chart/gender-chart.directive.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/directives/private/case-list-library/case-list-view/visual-view/visual-panel.directive.test.js" afterPath="$PROJECT_DIR$/test/spec/directives/private/case-list-library/case-list-view/visual-view/visual-panel.directive.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/directives/private/query-builder/query-builder.directive.test.js" afterPath="$PROJECT_DIR$/test/spec/directives/private/query-builder/query-builder.directive.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/directives/private/query-builder/query-string.directive.test.js" afterPath="$PROJECT_DIR$/test/spec/directives/private/query-builder/query-string.directive.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/directives/private/user/user-group-select.directive.test.js" afterPath="$PROJECT_DIR$/test/spec/directives/private/user/user-group-select.directive.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/ingredient.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/ingredient.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/manage-metrics.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/manage-metrics.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/preferences.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/preferences.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/private/case-list-library/case-list-view/data-view/data-view.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/private/case-list-library/case-list-view/data-view/data-view.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/private/case-list-library/case-list.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/private/case-list-library/case-list.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/private/case-list-library/case.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/private/case-list-library/case.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/private/home/dashboard-charts-cache.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/private/home/dashboard-charts-cache.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/private/notification/notification.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/private/notification/notification.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/private/query-library/query-library.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/private/query-library/query-library.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/report-run.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/report-run.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/factories/report.factory.test.js" afterPath="$PROJECT_DIR$/test/spec/factories/report.factory.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.fn-annotation-save.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.fn-annotation-save.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-annotation-details.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-annotation-details.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-events.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-events.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-ids.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-ids.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-list-dates-check.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-list-dates-check.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-submission-history-expedited.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-submission-history-expedited.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-submission-history-periodic.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-submission-history-periodic.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-suspect-products.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-case-suspect-products.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-distinct-cases.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-distinct-cases.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-selected-case-details.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-selected-case-details.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-top-case-ids.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.get-top-case-ids.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.include-exclude-cases.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.include-exclude-cases.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-factory.upload-cases.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-factory.upload-cases.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/case-list-factory.get-case-list-data.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/case-list-factory.get-case-list-data.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/ingredient-factory.get-ingredients.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/ingredient-factory.get-ingredients.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/manage-metrics.get-saved-metrics-charts.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/manage-metrics.get-saved-metrics-charts.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/notification-factory.get-filter-config-data.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/notification-factory.get-filter-config-data.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/notification-factory.get-filter-list-data.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/notification-factory.get-filter-list-data.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/preference-factory.get-user-persisted-data.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/preference-factory.get-user-persisted-data.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/query-builder-controller.fn-populate-query-builder.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/query-builder-controller.fn-populate-query-builder.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/query-factory.get-query-data.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/query-factory.get-query-data.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/query-generator.compute-sql-for-sets.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/query-generator.compute-sql-for-sets.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/report-factory.get-report-types.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/report-factory.get-report-types.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/report-factory.get-workspace-report-counts.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/report-factory.get-workspace-report-counts.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-boe-token.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-boe-token.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-group-users.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-group-users.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-groups.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-groups.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-logout-token.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-logout-token.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-session.test.json" afterPath="$PROJECT_DIR$/test/spec/fixtures/user-service.get-session.test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/providers/constant.provider.test.js" afterPath="$PROJECT_DIR$/test/spec/providers/constant.provider.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/providers/cookie.provider.test.js" afterPath="$PROJECT_DIR$/test/spec/providers/cookie.provider.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/providers/date.provider.test.js" afterPath="$PROJECT_DIR$/test/spec/providers/date.provider.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/providers/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/bar-chart.provider.test.js" afterPath="$PROJECT_DIR$/test/spec/providers/private/case-list-library/case-list-view/visual-view/chart-directives/horizontal-bar-chart/bar-chart.provider.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/providers/private/case-list-library/case-list-view/visual-view/chart-directives/world-map-chart/map.provider.test.js" afterPath="$PROJECT_DIR$/test/spec/providers/private/case-list-library/case-list-view/visual-view/chart-directives/world-map-chart/map.provider.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/providers/private/user/user.provider.test.js" afterPath="$PROJECT_DIR$/test/spec/providers/private/user/user.provider.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/providers/saint.provider.test.js" afterPath="$PROJECT_DIR$/test/spec/providers/saint.provider.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/providers/string-operations.provider.test.js" afterPath="$PROJECT_DIR$/test/spec/providers/string-operations.provider.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/providers/url.provider.test.js" afterPath="$PROJECT_DIR$/test/spec/providers/url.provider.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/case-list-dimension-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/case-list-dimension-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/ingredient-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/ingredient-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/license-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/license-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/preferences-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/preferences-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/private/case-list-library/case-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/private/case-list-library/case-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/private/case-list-library/case-list-view/case-list-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/private/case-list-library/case-list-view/case-list-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/private/notification/notification-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/private/notification/notification-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/private/query-builder/query-generator.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/private/query-builder/query-generator.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/private/query-library/query-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/private/query-library/query-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/product-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/product-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/report-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/report-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/report-milestone-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/report-milestone-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/report-status.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/report-status.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/report-type-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/report-type-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/signal-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/signal-entity.service.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/services/user-entity.service.test.js" afterPath="$PROJECT_DIR$/test/spec/services/user-entity.service.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/private/signaling/_signaling.scss" afterPath="$PROJECT_DIR$/app/styles/private/signaling/_signaling.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/private/signaling/_signaling.scss" afterPath="$PROJECT_DIR$/src/modules/private/signaling/_signaling.scss" />
     </list>
     <ignored path="ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -612,12 +28,9 @@
       <file leaf-file-name="private.module.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/modules/private/private.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1316">
+            <state relative-caret-position="2482">
               <caret line="146" column="11" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="11" />
-              <folding>
-                <marker date="1490953473156" expanded="true" signature="13955:13960" ph="{...}" />
-                <marker date="1490953473156" expanded="true" signature="13955:13964" ph="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -625,7 +38,7 @@
       <file leaf-file-name="private.module.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/private/private.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="1360">
               <caret line="80" column="61" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
               <folding />
             </state>
@@ -635,7 +48,7 @@
       <file leaf-file-name="workspace.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/private/home/workspace.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-707">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -655,7 +68,7 @@
       <file leaf-file-name="launchpad.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/private/home/launchpad.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="561">
               <caret line="57" column="11" selection-start-line="56" selection-start-column="4" selection-end-line="66" selection-end-column="10" />
               <folding>
                 <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -669,7 +82,7 @@
       <file leaf-file-name="launchpad.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/private/home/launchpad.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="1156">
               <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
               <folding />
             </state>
@@ -686,7 +99,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="430">
@@ -699,21 +112,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adhoc-analysis.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/private/analysis/adhoc/adhoc-analysis.controller.js">
+      <file leaf-file-name="_signaling.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/private/signaling/_signaling.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="178">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adhoc-analysis.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/private/analysis/adhoc/adhoc-analysis.css">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/private/signaling/dashboard/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="75" column="90" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -759,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/modules/private/private.module.js" />
         <option value="$PROJECT_DIR$/src/modules/private/home/launchpad.html" />
         <option value="$PROJECT_DIR$/src/dashboard.html" />
+        <option value="$PROJECT_DIR$/src/modules/private/signaling/_signaling.scss" />
       </list>
     </option>
   </component>
@@ -801,6 +215,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1341,7 +756,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1789,14 +1203,15 @@
       <workItem from="1490937166302" duration="127000" />
       <workItem from="1490939141121" duration="4986000" />
       <workItem from="1490945363376" duration="5233000" />
+      <workItem from="1490956602857" duration="273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29343000" />
+    <option name="totallyTimeSpent" value="29616000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="1" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1813,7 +1228,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35145482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17449665" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1825,6 +1239,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17449665" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1847,20 +1262,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/private/case-list-library/case-list-view/visual-view/visuals-layout.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="144" column="25" selection-start-line="144" selection-start-column="14" selection-end-line="144" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/private/case-list-library/case-list-view/visual-view/visual.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/private/case-list-library/case-list-view/navigation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1935,7 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1957,7 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="101" column="127" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="127" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1965,7 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="74" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2010,7 +1408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2018,7 +1415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2034,7 +1430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2042,7 +1437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2050,10 +1444,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6052">
           <caret line="356" column="107" selection-start-line="356" selection-start-column="107" selection-end-line="356" selection-end-column="107" />
-          <folding>
-            <marker date="1490953542787" expanded="true" signature="2318:2469" ph="..." />
-            <marker date="1490953542787" expanded="true" signature="2411:2437" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2163,12 +1554,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/modules/private/private.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1316">
+        <state relative-caret-position="2482">
           <caret line="146" column="11" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="11" />
-          <folding>
-            <marker date="1490953473156" expanded="true" signature="13955:13960" ph="{...}" />
-            <marker date="1490953473156" expanded="true" signature="13955:13964" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2190,7 +1578,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/private/private.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="1360">
           <caret line="80" column="61" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
           <folding />
         </state>
@@ -2198,7 +1586,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/private/home/workspace.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-707">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -2206,7 +1594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/private/home/launchpad.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="561">
           <caret line="57" column="11" selection-start-line="56" selection-start-column="4" selection-end-line="66" selection-end-column="10" />
           <folding>
             <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -2218,7 +1606,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/private/home/launchpad.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="1156">
           <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
           <folding />
         </state>
@@ -2248,6 +1636,22 @@
             <marker date="1490953542647" expanded="true" signature="2318:2469" ph="..." />
             <marker date="1490953542647" expanded="true" signature="2411:2437" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/private/signaling/dashboard/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="75" column="90" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/private/signaling/_signaling.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
