@@ -1,0 +1,13 @@
+<div id="ganttWindow"viewport-auto-height data-ng-show="showGanttPanel"
+     data-ng-class="(showFilterPanel)?'col-xs-9':'col-xs-12'"
+     class="dsui-vertical-panel">
+  <div class="dsui-filter-verticalbar" data-ng-show="!showFilterPanel" data-ng-click="fnToggleFilterPanel()">
+    <div>
+      <div class="text-center dsui-collpase-icon">
+        <span class="fa fa-angle-double-right"></span>
+      </div>
+      <div class="dsui-text-rotator"><span data-i18n="common.BUNDLE_FILTER_AND_SORT"></span></div>
+    </div>
+  </div>
+  <div data-ng-include="VIEWS.GANTT_CHART_MONTH_VIEW"></div>
+</div>

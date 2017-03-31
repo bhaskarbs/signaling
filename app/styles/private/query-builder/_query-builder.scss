@@ -1,0 +1,490 @@
+//FIXME: Delete
+$ticks-width: 2px !default;
+$ticks-position: 5px, 14px !default;
+
+.dsui{
+  .dsui-header{
+  }
+  .dsui-content{
+    .dsui-query-builder-template {
+      .dsui-query-in-sort{
+        background: $saint-white-color;
+        margin-top: 1em;
+      }
+    }
+    .dsui-query-1 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-naviblue-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid  $saint-naviblue-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-naviblue-color;
+        }
+      }
+    }
+
+    .dsui-query-2 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-skyblue-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid $saint-skyblue-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-skyblue-color;
+        }
+      }
+    }
+
+    .dsui-query-3 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-darkpink-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid $saint-darkpink-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-darkpink-color;
+        }
+      }
+    }
+
+    .dsui-query-4 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-lightorange-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid $saint-lightorange-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-lightorange-color;
+        }
+      }
+    }
+
+    .dsui-query-5 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-lightorangered-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid $saint-lightorangered-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-lightorangered-color;
+        }
+      }
+    }
+    .dsui-calendar-group{
+      padding-left: 10px;
+      .dsui-calendar-icon {
+        border: 1px solid $saint-user-tag-border;
+        border-radius: 7px 0px 0px 7px;
+        padding: 7px 4px 9px 8px;
+        margin-right: -1px;
+      }
+     }
+    .dsui-query-6 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-mixedblue-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid $saint-mixedblue-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-mixedblue-color;
+        }
+      }
+    }
+
+    .dsui-query-7 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-dark-darkpink-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid $saint-dark-darkpink-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-dark-darkpink-color;
+        }
+      }
+    }
+
+    .dsui-query-8 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-light-mixedgreen-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid $saint-light-mixedgreen-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-light-mixedgreen-color;
+        }
+      }
+    }
+
+    .dsui-query-9 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-dark-darkyellow-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid $saint-dark-darkyellow-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-dark-darkyellow-color;
+        }
+      }
+    }
+
+    .dsui-query-0 {
+      .dsui-toggle-btn-grp.cssonly div input.active-operator + label {
+        @include color-background($saint-white-color, $saint-light-darkpink-color);
+      }
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border: 1px solid $saint-light-darkpink-color;
+      }
+      .dsui-query-group-conditions > * {
+        &::before,
+        &::after {
+          border-color: $saint-light-darkpink-color;
+        }
+      }
+    }
+
+
+    .dsui-query-builder-template{
+      .dsui-query-area-fix{
+        margin-left: 5px
+      }
+      .dsui-group{
+        margin-bottom: 10px;
+        background-color: $saint-case-list-fill-color;
+        border-radius: 0;
+        padding: 12px 14px 12px 14px;
+        border: 1px solid $saint-refresh-query-border-color;
+      }
+
+      .dsui-group .input-sm{
+        border-radius: 0px;
+        height: 36px;
+        line-height: 36px;
+        margin-right: 23px;
+        margin-right: 23px;
+      }
+      .group{
+        background-color: $saint-white-color;
+        padding: 15px;
+        border-radius: 5px;
+        border: solid 1px $saint-title-gray-color;
+      }
+
+      .dsui-group-options-btn{
+        background: $saint-white-color;
+        font-size: 20px;
+        padding: 0px;
+        margin-left: 10px;
+        margin-right: 0px;
+        border: 1px solid $saint-refresh-query-border-color;
+      }
+
+      .dsui-group-close-btn{
+        background: $saint-white-color;
+        font-size: 20px;
+        padding: 0px;
+        margin-right: 0px;
+        border: 1px solid $saint-refresh-query-border-color;
+      }
+
+      .dsui-compress-pad-right{
+        padding-right: 4px;
+      }
+      .dsui-group-collapse-btn{
+        height: 36px;
+        width: 96px;
+        font-family: Roboto;
+        font-size: 14px;
+        border: 0.1px solid $saint-refresh-query-border-color;
+        border-radius: 2px;
+        @include color-background($saint-unfavourite-color, $saint-white-color);
+      }
+      .dsui-query-group-conditions{
+        margin-left: 20px;
+        position:relative
+      }
+
+      .dsui-query-group-conditions>* {
+        &::before,
+        &::after
+        {
+          content: '';
+          position: absolute;
+          left: #{-1 * nth($ticks-position, 2)};
+          width: nth($ticks-position, 2);
+          height: calc(50% + 15px);
+          border-style: solid;
+        }
+
+        &::before {
+          top: -12px;
+          border-width: 0 0 $ticks-width $ticks-width;
+        }
+
+        &::after {
+          top: 50%;
+          border-width: 0 0 0 $ticks-width;
+        }
+
+        &:first-child::before {
+          top: -13px;
+        }
+
+        &:last-child::before {
+          border-radius: 0 0 0 0;
+        }
+
+        &:last-child::after {
+          display: none;
+        }
+      }
+
+      .alert-group{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .group{
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+
+      .dsui-query-condition{
+        list-style: none;
+        margin-top:12px;
+        margin-bottom:12px;
+        position: relative;
+      }
+
+      .dsui-query-condition .dsui-rule {
+        border: 1px solid $saint-refresh-query-border-color;
+        min-height: 50px;
+        padding-top: 7px;
+        background: $saint-white-color !important;
+        .select2-container-disabled {
+          .select2-chosen{
+            background-color: $saint-cool-gray-color;
+          }
+        }
+      }
+
+      .dsui-operator{
+        width: 182px;
+      }
+
+      .dsui-rule-close-btn{
+        font-size: 20px;
+        padding: 2px 8px 0px 0px;
+        margin-right: 10px !important;
+        border: 1px solid $saint-refresh-query-border-color;
+        margin-left: 5px;
+      }
+
+      .dsui-query-condition .dsui-rule .dsui-rule-button-common{
+        margin-left: 10px;
+        margin-right: 0px;
+        height: 36px;
+        border-radius: 2px;;
+      }
+      /* Radio changes for  AND OR Group operator toggle --start */
+      .dsui-toggle-btn-grp.cssonly{
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        vertical-align: middle;
+        height: 36px;
+        .dsui-operator-and{
+          width: 54px;
+        }
+        .dsui-operator-or{
+          width: 46px;
+        }
+      }
+      .dsui-toggle-btn-grp.cssonly * {
+        width:54px;
+        height:36px;
+        line-height:36px;
+        margin :0px;
+        display:inline-block;
+      }
+      .dsui-toggle-btn-grp.cssonly div {
+        display:inline-block;
+        position:relative;
+        margin:0px 0px;
+      }
+
+      .dsui-toggle-btn-grp.cssonly div label {
+        position:absolute;
+        z-index:0;
+        padding:0;
+        text-align:center;
+      }
+
+      .dsui-toggle-btn-grp.cssonly div input {
+        position:absolute;
+        z-index:1;
+        cursor:pointer;
+        opacity:0;
+      }
+
+      .dsui-toggle-btn-grp.cssonly div input + label {
+        border-radius:0px;
+        background-color:$saint-white-color;
+      }
+      /*  Radio changes for  AND OR Group operator toggle --end */
+
+      /*Overriding select2 css- start*/
+      .dsui-rule .select2-container, .select2-drop, .select2-search, .select2-search input{
+        margin-left: 10px !important;
+        margin-right: 0px !important;
+        border: 1px solid $saint-favourite-border-color !important;
+        border-radius: 2px;
+        height: 36px !important;
+      }
+
+      .dsui-rule .select2-container .select2-choice .select2-arrow {
+        display: inline-block;
+        width: 18px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 2px !important;
+        border-left: none !important;
+        border-radius: none !important;
+        background-clip: none !important;
+        background: none !important;
+
+      }
+
+      .dsui-rule .select2-container .select2-choice {
+        display: block;
+        height: 34px !important;
+        padding: 0 0 0 0 !important;
+        overflow: hidden;
+        position: relative;
+        border: none !important;
+        white-space: nowrap;
+        line-height: 36px !important;
+        color: $saint-dark-gray-color;
+        text-decoration: none;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: $saint-white-color;
+        background-image: none !important;
+      }
+
+      .dsui-rule .select2-container .select2-choice > .select2-chosen {
+        padding-left: 10px;
+        color: $saint-light-darkgrey-color;
+        font-size: 12px;
+      }
+
+      /*Overriding select2 css- end*/
+      .dsui-rule .dsui-multiple-values{
+        padding: 5px 0 0 5px;
+        .dsui-breadcrumbs-text {
+            padding-left: 10px;
+            white-space: nowrap;
+                padding-left: 10px;
+                white-space: nowrap;
+                font-size: 12px;
+                font-family: $font-roboto;
+                color: $saint-unfavourite-color;
+          }
+        .dsui-multi-value-display {
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: $saint-panel-cool-gray-color;
+        border-radius: 15px;
+        span{
+        i{
+        cursor: pointer;
+        vertical-align: sub;
+        font-size: 20px;
+        }
+        }
+      }
+      }
+    }
+  }
+  .dsui-footer{
+  }
+
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

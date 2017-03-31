@@ -1,0 +1,63 @@
+<div class="modal fade dsui-exclude-include" id="dsui-exclude-list" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                data-ng-click="fnOnCancel('dsui-exclude-list')"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" data-i18n="private-case-list-library.BUNDLE_EXCLUDE"></h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="col-sm-12 dsui-no-padding dsui-file-upload-section">
+            <div class="col-sm-3 dsui-no-padding">
+              <label data-i18n="private-case-list-library.BUNDLE_UPLOAD" class="dsui-upload-label"></label>
+            </div>
+            <div class="col-sm-1 dsui-no-padding text-left dsui-upload-icon-section">
+              <span class="fa fa-upload dsui-upload-icon"></span>
+              <input type="file" class="dsui-attachment-icon" data-on-read-file="showContent($fileContent,fileName)"
+                     data-ng-disabled="casesListData.length>0"/>
+            </div>
+            <div class="col-sm-8 dsui-no-padding text-left dsui-error" data-ng-show="isFileAvailableError">
+              <span class="dsui-warning-text"><span class="fa fa-exclamation-triangle"></span><span
+                data-i18n="private-case-list-library.BUNDLE_CASES_NOT_AVAILABLE_IN_CASELIST"></span></span>
+            </div>
+          </div>
+          <hr style="margin-top: -20px">
+          <div class="dsui-exclude-line"></div>
+          <div data-field="caseId"><span data-i18n="private-case-list-library.BUNDLE_CASE_ID"></span></div>
+          <div class="dsui-exclude-include-table-border">
+            <div data-ng-repeat="row in casesListData" class="dsui-exclude-include-table">
+              <div data-ng-class="row.status=== '0'&&'dsui-warning-text'||''">
+                <span data-ng-bind="row.caseId"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dsui-exclude-include-status">
+            <label ng-bind="validCases.length"></label> <label data-i18n="private-case-list-library.BUNDLE_CASEID_STATUS_EXCLUDE"></label>
+          </div>
+
+          <div class="dsui-exclude-include-invalid">
+            <label id="inValidCasesCount" ng-bind="inValidCases.length"></label> <label data-i18n="private-case-list-library.BUNDLE_CASEID_STATUS_EXCLUDE_INVALID"></label>
+          </div>
+
+          <div>
+            <label for="dsuiExcludeDescription" data-i18n="private-case-list-library.BUNDLE_REASON_EXCLUDE" class="dsui-reason-label"></label>
+                  <textarea class="form-control" id="dsuiExcludeDescription" name="dsuiExcludeDescription"
+                            placeholder="" data-i18n-attr="{placeholder:'private-case-list-library.BUNDLE_REASON'}"
+                            data-ng-model="cases.DESCRIPTION" minlength="1" maxlength="500"
+                            data-ng-required="true"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary dsui-new-caselists-apply-button" data-i18n="private-case-list-library.BUNDLE_SAVE"
+                data-ng-click="fnCasesListSave()"></button>
+        <button type="button" class="btn btn-default" data-i18n="private-case-list-library.BUNDLE_NEW_CASE_LIST_CANCEL"
+                data-ng-click="fnOnCancel('dsui-exclude-list')"></button>
+      </div>
+    </div>
+  </div>
+</div>

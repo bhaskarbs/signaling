@@ -1,0 +1,40 @@
+<div id="reportsLibrary" class="dsui-reports-library">
+  <div data-ng-include="VIEWS.REPORTS_LIBRARY_SECONDARY_NAVIGATION"></div>
+  <div class="col-xs-12 dsui-no-padding dsui-filter-breadcrumb-container">
+    <filter-breadcrumb controller-name="ReportsFilterBreadcrumb"></filter-breadcrumb>
+    <div class="dsui-no-padding">
+      <div class="dsui-icon-list">
+        <div class="dsui-view-icons">
+          <ul class="nav nav-pills">
+            <li data-ng-click="fnChangeTab(CONSTANTS.STATE.REPORT_LIBRARY_LIST)" data-i18n-attr="{title:'private-reports-library.BUNDLE_LIST_VIEW'}" class="dsui-no-left-margin"><span
+              class="dsui-icon-tab"
+              data-ng-class="currentTab===CONSTANTS.STATE.REPORT_LIBRARY_LIST?'dsui-active-view':'dsui-deactive-view'">
+              <i class="fa fa-th-list"></i></span></li>
+            <li data-ng-click="fnChangeTab(CONSTANTS.STATE.REPORT_LIBRARY_GANTT_CHART)" data-i18n-attr="{title:'private-reports-library.BUNDLE_GANTT_VIEW'}" class="dsui-no-left-margin"><span
+              class="dsui-icon-tab "
+              data-ng-class="currentTab===CONSTANTS.STATE.REPORT_LIBRARY_GANTT_CHART?'dsui-active-view':'dsui-deactive-view'"><i
+              class="fa fa-calendar"></i></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 dsui-no-padding dsui-main-panel">
+      <div data-ng-class="showFilterPanel ? 'col-xs-3' : 'hidden'"
+           class="dsui-vertical-panel dsui-nopadding-right"
+           id="filterPanel">
+        <div data-ng-include="VIEWS.REPORTS_LIBRARY_FILTER_SORT_PANEL_VIEW"></div>
+      </div>
+      <div data-ui-view="listView" data-ng-class="currentTab==CONSTANTS.STATE.REPORT_LIBRARY_LIST?'dsui-list-panel':''">
+      </div>
+      <div data-ui-view="ganttView"
+           data-ng-class="currentTab==CONSTANTS.STATE.REPORT_LIBRARY_GANTT?'dsui-list-panel':''">
+      </div>
+      <div data-ui-view="reportView"
+           data-ng-class="currentTab==CONSTANTS.STATE.REPORT_LIBRARY_GANTT?'dsui-list-panel':''">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

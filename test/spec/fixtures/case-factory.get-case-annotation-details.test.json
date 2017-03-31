@@ -1,0 +1,31 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.caselist.CaselistService.CaseAnnotationTagType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/caselist/CaselistService.xsodata/CaseAnnotationTag('8199256091674841')"
+        },
+        "ID": "8199256091674841",
+        "ANNOTATION": "Annoatation Text",
+        "CASE_ANNOTATION_KEY": 17,
+        "FK_CASE_KEY": 167767,
+        "FK_CASE_TAG_KEY": 17,
+        "CaseAnnotationTag": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.caselist.CaselistService.CaseTagViewType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/caselist/CaselistService.xsodata/CaseTagView('8199256092396031')"
+              },
+              "ID": "8199256092396031",
+              "CASE_TAG_KEY": 17,
+              "FK_TAG_KEY": 1,
+              "FK_TAG_TYPE_KEY": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

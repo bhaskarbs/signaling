@@ -1,0 +1,101 @@
+<div class="dsui-analysis-library">
+  <div class="col-sm-12 clearfix dsui-breadcrumb">
+    <div class="col-xs-8 dsui-bread-crumbs dsui-no-left-padding">
+      <span data-ng-click="fnNavigate(CONSTANTS.HOME)" data-i18n="common.BUNDLE_DASHBOARD_NAVIGATION" class="dsui-pointer-cursor"></span>
+      <span><span class="fa fa-angle-right dsui-angle-right-icon"></span>&nbsp;<span data-i18n="private-analysis.BUNDLE_ANALYSIS_DASHBOARD_LIBRARY"></span></span>
+    </div>
+    <div class="col-xs-4 dsui-no-padding dsui-create-new-dashboard text-right">
+      <button type="submit" class="btn create-button">
+        <i></i>&nbsp;<span data-i18n="private-analysis.BUNDLE_CREATE_NEW_DASHBOARD"></span>
+      </button>
+    </div>
+  </div>
+  <div class="dsui-library-panel col-sm-12">
+    <div class="dsui-library-sidebar" data-ng-class="showSidebar ? 'col-xs-3' : 'hidden'">
+      <div class="dsui-library-sidebar-title col-xs-12">
+        <span data-i18n="private-analysis.BUNDLE_ANALYSIS_DASHBOARD"></span>
+        <a><span data-ng-click="fnToggleSidebar()" class="fa fa-angle-double-left dsui-collapse-icon"></span></a>
+      </div>
+      <!--Drop down list starts-->
+      <div class="dsui-library-category col-sm-12">
+        <div class="col-sm-12 dsui-library-category-header ">
+          <div class="dsui-library-category-panel col-sm-10">
+            <div class="panel panel-default ng-scope dsui-library-category-panel-text">
+              <div class="panel-heading dsui-category-header">
+                <div class="panel-title dsui-category-header-text pull-left">
+                  <a  data-ng-click="fnToggleCategoryPanel('All')" data-ng-class="collapseAll ? 'dsui-panel-header-expand' : '' " class="dsui-panel-header-expand" data-i18n="private-analysis.BUNDLE_ANALYSIS_CATEGORY_ALL"></a>
+                </div>
+                <div class="dsui-panel-title-icons pull-right dsui-panel-title-icons">
+                  <span class="fa fa-chevron-up" data-ng-show="collapseAll" data-ng-click="fnToggleCategoryPanel()"></span>
+                  <span class="fa fa-chevron-down ng-hide" data-ng-show="!collapseAll" data-ng-click="fnToggleCategoryPanel('All')"></span>
+                </div>
+                <div></div>
+                <div class="clearfix"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="panel panel-default col-sm-2 dsui-search-icon dsui-no-padding"><div class="panel-heading dsui-search-icon-text" data-ng-click="scope.searchAll = !scope.searchAll"><i class="glyphicon glyphicon-search"></i></div> </div>
+        </div>
+        <div class="panel panel-default col-xs-12 dsui-no-padding dsui-search-dailog"  data-ng-show="scope.searchAll">
+          <div class="panel-heading dsui-left-inner-addon">
+            <i class="glyphicon glyphicon-search"></i>
+            <input type="text" placeholder="Search Templates" class="form-control ng-pristine ng-valid ng-touched" ng-model="searchTextAll">
+          </div>
+        </div>
+        <div class="collapseStatus col-sm-12"  data-ng-if="collapseAll || searchTextAll" data-ng-repeat="item in allCategory | filter:searchTextAll">
+          <div tabindex="{{$index+1}}" id={{item.catName+'all'}} data-ng-class="$index === 0 ?'dsui-library-list-selected': ''" data-ng-init="fnSelectDefaultChart($index,item.catName+'all',item.cuid,item.type)" class="dsui-library-list" data-ng-click="fnSelectDashboard(item.catName+'all',item.cuid,item.type)" data-ng-bind="item.catName"></div>
+        </div>
+      </div>
+      <div class="dsui-library-category col-sm-12" data-ng-repeat="data in chartData">
+        <div class="col-sm-12 dsui-library-category-header ">
+          <div class="dsui-library-category-panel col-sm-10">
+            <div class="panel panel-default ng-scope dsui-library-category-panel-text">
+              <div class="panel-heading dsui-category-header">
+                <div class="panel-title dsui-category-header-text pull-left">
+                  <a data-ng-bind="data.RPT_CAT_NAME" data-ng-click="data.isSelected=!data.isSelected" data-ng-class="data.isSelected ? 'dsui-panel-header-expand' : '' " class="dsui-panel-header-expand">Status</a>
+                </div>
+                <div class="dsui-panel-title-icons pull-right dsui-panel-title-icons">
+                  <span class="fa fa-chevron-up" data-ng-show="data.isSelected" data-ng-click="data.isSelected=!data.isSelected"></span>
+                  <span class="fa fa-chevron-down ng-hide" data-ng-show="!data.isSelected" data-ng-click="data.isSelected=!data.isSelected"></span>
+                </div>
+                <div></div>
+                <div class="clearfix"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="panel panel-default col-sm-2 dsui-search-icon dsui-no-padding"><div class="panel-heading dsui-search-icon-text" data-ng-click="data.search = !data.search"><i class="glyphicon glyphicon-search"></i></div> </div>
+        </div>
+        <div class="panel panel-default col-xs-12 dsui-no-padding dsui-search-dailog"  data-ng-show="data.search">
+          <div class="panel-heading dsui-left-inner-addon">
+            <i class="glyphicon glyphicon-search"></i>
+            <input type="text" placeholder="Search Templates" class="form-control ng-pristine ng-valid ng-touched" ng-model="searchText">
+          </div>
+        </div>
+        <div class="collapseStatus col-sm-12" data-ng-if="data.isSelected || searchText" data-ng-repeat="item in data.dashboardSummary.results | filter:searchText">
+          <div tabindex="{{$index+1}}" id={{item.NAME+'custom'}} class="dsui-library-list" data-ng-click="fnSelectDashboard(item.NAME+'custom',item.CUID,item.TYPE)" data-ng-bind="item.NAME"></div>
+        </div>
+      </div>
+      <!--Drop Down list ends-->
+    </div>
+    <div class="dsui-libary-chart-window" data-ng-class="showSidebar ? 'col-xs-9' : 'col-xs-12'" >
+      <div class="dsui-filter-verticalbar" data-ng-click="fnToggleSidebar()" data-ng-class="showSidebar ? 'hidden' : ''" >
+        <div>
+          <div class="text-center dsui-collpase-icon">
+            <span class="fa fa-angle-double-right"></span>
+          </div>
+          <div class="dsui-text-rotator"><span data-i18n="private-analysis.BUNDLE_ANALYSIS_DASHBOARD"></span></div>
+        </div>
+      </div>
+      <div class="col-sm-12 dsui-charts-panel" data-ng-class="showSidebar ? 'dsui-charts-panel-collapsed' : 'dsui-charts-panel-expanded'">
+        <div class="col-sm-12 dsui-chart-content"  visual-expand url="url" load="load" options="options" height="height"></div>
+        <div class="col-sm-12 dsui-last-updated" ><span data-i18n="private-analysis.BUNDLE_ANALYSIS_LAST_UPDATED_ON"></span><span data-ng-bind="lastUpdatedOn"></span></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,454 @@
+.dsui{
+  .dsui-header{
+  }
+  .dsui-content{
+    .dsui-visual-icon-font{
+      font-size: 18px;
+      color: $saint-title-gray-color;
+    }
+    .dsui-visuals-panel{
+
+    }
+    .dsui-name-count-header{
+      padding-right : 20px !important;
+      padding-left : 20px !important;
+      .dsui-name-count-header-row1{
+        margin-bottom: 20px;
+        margin-top: 23px;
+        .dsui-date-picker-form-control{
+          z-index: 0;
+        }
+      }
+      .dsui-count-text{
+        color: $saint-title-gray-color;
+        font-size: 14px;
+        font-family : $font-roboto;
+      }
+      .dsui-case-name{
+        font-size: 20px;
+        font-family : $font-roboto;
+        color: $saint-unfavourite-color;
+      }
+      .dsui-cases-count{
+        .dsui-lastrun-count {
+          font-family : $font-roboto;
+          color: $saint-unfavourite-color;
+          font-size: 20px;
+        }
+        .dsui-lastSaved-count{
+          margin-left: 23px;
+          color: $saint-blue-color;
+          font-size: 20px;
+          font-family : $font-roboto;
+        }
+        .fa{
+          color: $saint-close-panel;
+        }
+        .fa-undo{
+          color: $saint-refresh-query-color;
+          cursor: pointer;
+        }
+      }
+      .dsui-discard-changes{
+        font-family : $font-roboto;
+        color: $saint-unfavourite-color;
+        font-size: 13px;
+        border: 1px solid $saint-cool-gray-color;
+        border-radius: 10px;
+        background-color: $saint-case-list-fill-color;
+        padding: 0.5%;
+        margin-left: 5%;
+      }
+      .dsui-as-of-date{
+        font-family : $font-roboto;
+        padding-right: 5px;
+        .dsui-as-of-date-input{
+          padding-left: 11px !important;
+        }
+      }
+      .dsui-track-all-counts {
+        .dsui-vertical-line {
+          border-right: 1px solid $saint-cool-gray-color;
+        }
+        .dsui-count {
+          font-family: $font-roboto-medium;
+          color: $saint-blue-color;
+          font-size: 14px;
+          cursor: pointer;
+        }
+        .dsui-all-count{
+          display: inline-block;
+          padding: 1.2% !important;
+        }
+      }
+    }
+    .dsui-cases-view{
+      .modal{
+        overflow: hidden;
+            }
+      .dsui-fixed-top{
+        //position: fixed;
+        background-color: $saint-white-color;
+        z-index:1;
+        margin-bottom: 5% !important;
+
+      }
+      .dsui-data-view-page{
+        .dsui-modal-page{
+          background-color:$saint-white-color;
+        }
+        top: 118px;
+        background: $saint-white-color;
+        z-index: 1;
+        @include translate3d(585);
+        @include transition('-webkit-transform','.4s','ease');
+        width: 585px;
+        position: absolute;
+        right: 10px;
+        margin:5px;
+        bottom: 3em;
+        /* float: right; */
+      }
+      .dsui-show-data-view-page{
+         @include translate3d(0);
+        -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5); //TODO FIXME to be removed after inclusion of popover
+        -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+        .dsui-data-view-searchbar{
+          height:60px;
+          .dsui-clear-all-selection{
+            margin-right: 20px;
+            margin-top: 20px;
+            float: right;
+            display: inline-block;
+            cursor: pointer;
+            color: $saint-blue-color !important;
+          }
+          .dsui-left-inner-addon {
+            padding: 12px;
+          }
+          .dsui-left-inner-addon input {
+                padding-left: 30px;
+                border-radius: 0px;
+                width: 400px;
+                display: inline-block;
+                height: 36px;
+          }
+          .dsui-left-inner-addon i {
+            color: $saint-title-gray-color;
+            position: absolute;
+            padding: 23px 10px;
+            pointer-events: none;
+          }
+        }
+        .dsui-data-view-content{
+          border-top: 1px solid $saint-cool-gray-color;
+          height: calc(100% - 60px - 60px); /** 60px searchbar and 60px bottom*/
+          overflow: hidden;
+          .dsui-data-view-menu{
+            height: 100%;
+            overflow-y: auto;
+            border-right: 1px solid $saint-cool-gray-color;
+            .dsui-list-group{
+              .dsui-list-group-item{
+                cursor: pointer;
+                position: relative;
+                display: block;
+                padding: 10px 15px;
+                background-color: $saint-white-color;
+                border-bottom: 1px solid $saint-cool-gray-color;
+                .dsui-category-text{
+                  font-size: 14px;
+                }
+                .badge{
+                  float:right;
+                  font-size: 14px;
+                  color: $saint-close-panel;
+                  background-color: transparent;
+                }
+                .dsui-selected-count{
+                  background-color: $saint-blue-color;
+                  color:$saint-white-color;
+                }
+              }
+              .dsui-highlight-group{
+                background-color: $saint-mixedblue-color;
+              }
+            }
+          }
+          .dsui-data-view-list {
+              height : 100%;
+              overflow-y: auto;
+                .dsui-group-key{
+                  @include color-fontsize-fontweight($saint-blue-color,1em,bold);
+                  text-align: left;
+                  padding-left: 20px;
+                  font-style: normal;
+                }
+              .dsui-unordered-dv-list {
+                .angular-ui-tree-placeholder{
+                  background: none;
+                  border: none;
+                }
+              list-style-type: none;
+              padding-left: 0px;
+                .dsui-dimension-list{
+                  margin-top: 5px;
+                  padding-left: 20px;
+                }
+              .dsui-selected-highlight {
+                background-color: $saint-hightlight-data-view-color;
+              }
+              .dsui-dimension-data {
+                font-size: 14px;
+                font-family: $font-roboto-regular;
+                color: $saint-unfavourite-color;
+                cursor: pointer;
+              }
+                .dsui-selected-close{
+                  visibility: hidden;
+                }
+                .dsui-selected-dimension:hover .dsui-selected-close{
+                  margin-right: 10px;
+                  visibility: visible;
+                  cursor: pointer;
+                }
+              }
+              .angular-ui-tree-empty{
+                    border: none;
+                    background-color: $saint-white-color;
+                }
+          }
+          .dsui-scroll-drag{
+            cursor:all-scroll;
+          }
+          .dsui-scroll-drag-disable{
+            cursor: pointer;
+          }
+        }
+        .dsui-data-view-footer{
+        height: 60px;
+          border-top: 1px solid $saint-cool-gray-color;
+          padding-top: 15px !important;
+          .btn{
+            width:100%;
+          }
+        }
+      }
+      .dsui-no-show-data-view-page{
+        display:none;
+      }
+      .dsui-top-margin{
+        top: 355px;
+        bottom: 0px !important;
+      }
+      .dsui-divider{
+        border-bottom : 1px solid $saint-favourite-border-color;
+      }
+      .dsui-secondary-header{
+        .icon-IcoMoon-14{
+          font-size: 20px;
+        }
+      }
+      .btn-secondary{
+        background-color: $saint-case-list-fill-color;
+      }
+      .dsui-btn-height{
+        height : 36px;
+        margin-right: 10px;
+      }
+      .dsui-btn-width{
+        width : 36px;
+        padding: 0px;
+      }
+      .dsui-icon-1x{
+        font-size:1em;
+      }
+      .dsui-btn-query-builder{
+        width : 139px;
+        font-family : $font-roboto;
+        font-size : 14px;
+        color : $saint-title-gray-color
+      }
+      .dsui-query-builder-bottom-buttons{
+        .btn-default{
+          font-size: 14px;
+        }
+        background-color: $saint-case-list-fill-color;
+        border-radius: 0;
+        padding: 12px 14px 12px 14px;
+        border: 1px solid $saint-refresh-query-border-color;
+        border-top: none;
+        margin-top: -30px;
+        height: 55px;
+      }
+      .dsui-query-builder-top-buttons-container{
+        margin-bottom: 15px;
+        .dsui-query-builder-top-buttons{
+          border-radius: 0px;
+          height: 36px;
+          font-family: $font-roboto;
+          color: $saint-unfavourite-color;
+          border: none;
+          font-size: 14px;
+        }
+        .dsui-query-builder-top-buttons.active{
+          background-color: $saint-querylibrary-modal-selected;
+          color: $saint-white-color;
+        }
+        .dsui-query-builder-top-buttons.inactive{
+          background-color: $saint-case-list-fill-color !important;
+        }
+        .dsui-set-query-message{
+          padding-left: 15px;
+          font-size: 14px;
+          color: $saint-close-panel;
+        }
+      }
+      .dsui-btn-report-package{
+        margin-left: 15px;
+      }
+      .dsui-page-content-navigation{
+        .dsui-icons-container{
+          margin-right: 1.3%;
+          margin-top: 1.6%;
+          .dsui-list-icon-div{
+            text-align: right;
+            display: inline-block;
+          }
+          .dsui-border-right-icon{
+            border-top-left-radius: 10%;
+            border-bottom-left-radius: 10%;
+
+          }
+          .dsui-list-icon{
+            border-radius: 0px;
+          }
+          .dsui-border-left-icon{
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+          }
+          .dsui-list-icon,.dsui-border-left-icon, .dsui-border-right-icon{
+            padding: 0.7em;
+            background-color: $saint-case-list-fill-color;
+            border:solid $saint-cool-gray-color;
+            border-width:1px 1px 1px 1px;
+            width: 36px;
+            height: 36px;
+            margin-right: -5px;
+          }
+          .dsui-disable-toggle-buttons{
+            pointer-events: none;
+            cursor: not-allowed;
+            filter: alpha(opacity=65);
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            opacity: .65;
+          }
+        }
+      }
+    }
+    .dsui-query-outer{
+      padding-left: 20px;
+      padding-right: 20px;
+      .dsui-expand-query{
+        height: 84px !important;
+        overflow-y: auto !important;
+      }
+      .dsui-query-builder{
+        border:1px solid $saint-cool-gray-color;
+        margin-top: 15px;
+        border-radius: 2px;
+        margin-bottom: 15px;
+        min-height: 32px;
+        max-height: 84px;
+        overflow-y: auto;
+        .dsui-query{
+          width: 91%;
+          margin: 5px 10px;
+          height: 36px;
+          max-height: 50px;
+          .dsui-final-query{
+            margin: 10px 0px;
+            font-family: $font-roboto;
+            color: $saint-filter-query-green-color;
+          }
+          .dsui-default-query{
+            margin: 10px 0px;
+            font-family: $font-roboto;
+            color: $saint-unfavourite-color;
+          }
+          .dsui-no-content-query{
+            margin: 10px 5px;
+            font-family: $font-roboto;
+            color: $saint-close-panel;
+          }
+        }
+
+      }
+      .dsui-refresh {
+        width: 6%;
+        margin-top: 0.4%;
+        margin-right: 5px;
+        .dsui-refresh-query {
+          padding: 5px;
+          width: 30%;
+          background-color: $saint-case-list-fill-color;
+          i {
+            font-size: 18px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .dsui-footer{
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    font-size:16px;
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    font-size:16px;
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

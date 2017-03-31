@@ -1,0 +1,1257 @@
+{
+  "status": 200,
+  "data": {
+    "D_CASE_SOURCE_TYPE" : [
+      {
+        "name": "DSUR",
+        "value": 4
+      },
+      {
+        "name": "PADER",
+        "value": 9
+      },
+      {
+        "name": "PSUR",
+        "value": 7
+      },
+      {
+        "name": "PBRER",
+        "value": 4
+      }
+    ],
+    "LIC_NUMBER" : [
+      {
+        "name": "Number 1",
+        "value": 4
+      },
+      {
+        "name": "Number 2",
+        "value": 8
+      },
+      {
+        "name": "Number 3",
+        "value": 2
+      }
+    ],
+    "PT_DESC": [
+      {
+        "name": "Abdominal lymphadenopathy",
+        "value": 1
+      },
+      {
+        "name": "Accessory cardiac pathway",
+        "value": 2
+      },
+      {
+        "name": "Acquired antithrombin III deficiency",
+        "value": 1
+      },
+      {
+        "name": "Acquired thalassaemia",
+        "value": 1
+      },
+      {
+        "name": "Acute myocardial infarction",
+        "value": 27
+      },
+      {
+        "name": "Adams-Stokes syndrome",
+        "value": 6
+      },
+      {
+        "name": "Agranulocytosis",
+        "value": 2
+      },
+      {
+        "name": "Allergic eosinophilia",
+        "value": 2
+      },
+      {
+        "name": "Anaemia",
+        "value": 32
+      },
+      {
+        "name": "Anaemia of pregnancy",
+        "value": 1
+      },
+      {
+        "name": "Anaemia vitamin B12 deficiency",
+        "value": 6
+      },
+      {
+        "name": "Anaemia vitamin B6 deficiency",
+        "value": 8
+      },
+      {
+        "name": "Angina pectoris",
+        "value": 12
+      },
+      {
+        "name": "Angina unstable",
+        "value": 5
+      },
+      {
+        "name": "Antiphospholipid syndrome",
+        "value": 1
+      },
+      {
+        "name": "Aplasia pure red cell",
+        "value": 3
+      },
+      {
+        "name": "Aplastic anaemia",
+        "value": 5
+      },
+      {
+        "name": "Arrhythmia",
+        "value": 6
+      },
+      {
+        "name": "Arrhythmia neonatal",
+        "value": 3
+      },
+      {
+        "name": "Arrhythmia supraventricular",
+        "value": 2
+      },
+      {
+        "name": "Arteriosclerosis coronary artery",
+        "value": 9
+      },
+      {
+        "name": "Arteriospasm coronary",
+        "value": 4
+      },
+      {
+        "name": "Arteritis coronary",
+        "value": 1
+      },
+      {
+        "name": "Athletic heart syndrome",
+        "value": 1
+      },
+      {
+        "name": "Atrial fibrillation",
+        "value": 18
+      },
+      {
+        "name": "Atrial flutter",
+        "value": 3
+      },
+      {
+        "name": "Atrial tachycardia",
+        "value": 2
+      },
+      {
+        "name": "Atrial thrombosis",
+        "value": 2
+      },
+      {
+        "name": "Atrioventricular block",
+        "value": 13
+      },
+      {
+        "name": "Atrioventricular block complete",
+        "value": 4
+      },
+      {
+        "name": "Atrioventricular block first degree",
+        "value": 11
+      },
+      {
+        "name": "Atrioventricular dissociation",
+        "value": 3
+      },
+      {
+        "name": "Autoimmune aplastic anaemia",
+        "value": 1
+      },
+      {
+        "name": "Autoimmune haemolytic anaemia",
+        "value": 9
+      },
+      {
+        "name": "Autoimmune pancytopenia",
+        "value": 1
+      },
+      {
+        "name": "B-lymphocyte abnormalities",
+        "value": 1
+      },
+      {
+        "name": "Blood disorder",
+        "value": 1
+      },
+      {
+        "name": "Blood loss anaemia neonatal",
+        "value": 1
+      },
+      {
+        "name": "Bone marrow failure",
+        "value": 24
+      },
+      {
+        "name": "Bone marrow haemorrhage",
+        "value": 1
+      },
+      {
+        "name": "Bone marrow infiltration",
+        "value": 2
+      },
+      {
+        "name": "Bone marrow ischaemia",
+        "value": 2
+      },
+      {
+        "name": "Bone marrow oedema",
+        "value": 7
+      },
+      {
+        "name": "Bone marrow oedema syndrome",
+        "value": 1
+      },
+      {
+        "name": "Bone marrow reticulin fibrosis",
+        "value": 1
+      },
+      {
+        "name": "Bradyarrhythmia",
+        "value": 3
+      },
+      {
+        "name": "Bradycardia",
+        "value": 2
+      },
+      {
+        "name": "Bradycardia foetal",
+        "value": 1
+      },
+      {
+        "name": "Bundle branch block",
+        "value": 8
+      },
+      {
+        "name": "Bundle branch block left",
+        "value": 6
+      },
+      {
+        "name": "Cardiac arrest",
+        "value": 5
+      },
+      {
+        "name": "Cardiac arrest neonatal",
+        "value": 1
+      },
+      {
+        "name": "Cardiac discomfort",
+        "value": 1
+      },
+      {
+        "name": "Cardiac disorder",
+        "value": 1
+      },
+      {
+        "name": "Cardiac fibrillation",
+        "value": 9
+      },
+      {
+        "name": "Cardiac flutter",
+        "value": 3
+      },
+      {
+        "name": "Cardiac haemolytic anaemia",
+        "value": 4
+      },
+      {
+        "name": "Cardiac perforation",
+        "value": 1
+      },
+      {
+        "name": "Cardio-respiratory arrest neonatal",
+        "value": 2
+      },
+      {
+        "name": "Cardiovascular disorder",
+        "value": 2
+      },
+      {
+        "name": "Cardiovascular insufficiency",
+        "value": 3
+      },
+      {
+        "name": "Carditis",
+        "value": 13
+      },
+      {
+        "name": "Coagulation disorder neonatal",
+        "value": 2
+      },
+      {
+        "name": "Coagulation factor deficiency",
+        "value": 1
+      },
+      {
+        "name": "Coagulopathy",
+        "value": 2
+      },
+      {
+        "name": "Cold type haemolytic anaemia",
+        "value": 5
+      },
+      {
+        "name": "Conduction disorder",
+        "value": 3
+      },
+      {
+        "name": "Coombs negative haemolytic anaemia",
+        "value": 22
+      },
+      {
+        "name": "Coombs positive haemolytic anaemia",
+        "value": 23
+      },
+      {
+        "name": "Coronary artery aneurysm",
+        "value": 1
+      },
+      {
+        "name": "Coronary artery dissection",
+        "value": 1
+      },
+      {
+        "name": "Coronary artery embolism",
+        "value": 1
+      },
+      {
+        "name": "Coronary artery insufficiency",
+        "value": 5
+      },
+      {
+        "name": "Coronary artery occlusion",
+        "value": 4
+      },
+      {
+        "name": "Coronary artery stenosis",
+        "value": 18
+      },
+      {
+        "name": "Coronary artery thrombosis",
+        "value": 3
+      },
+      {
+        "name": "Coronary ostial stenosis",
+        "value": 2
+      },
+      {
+        "name": "Cutaneous extramedullary haemopoiesis",
+        "value": 1
+      },
+      {
+        "name": "Cyanosis",
+        "value": 10
+      },
+      {
+        "name": "Cyclic neutropenia",
+        "value": 1
+      },
+      {
+        "name": "Cytopenia",
+        "value": 1
+      },
+      {
+        "name": "Defect conduction intraventricular",
+        "value": 4
+      },
+      {
+        "name": "Deficiency anaemia",
+        "value": 1
+      },
+      {
+        "name": "Dermatopathic lymphadenopathy",
+        "value": 1
+      },
+      {
+        "name": "Dissecting coronary artery aneurysm",
+        "value": 1
+      },
+      {
+        "name": "Disseminated intravascular coagulation",
+        "value": 3
+      },
+      {
+        "name": "Dysglobulinaemia",
+        "value": 5
+      },
+      {
+        "name": "Elephantiasis",
+        "value": 6
+      },
+      {
+        "name": "Elliptocytosis",
+        "value": 2
+      },
+      {
+        "name": "Eosinopenia",
+        "value": 2
+      },
+      {
+        "name": "Eosinophilia myalgia syndrome",
+        "value": 1
+      },
+      {
+        "name": "Erythroblastosis",
+        "value": 2
+      },
+      {
+        "name": "Erythroid maturation arrest",
+        "value": 6
+      },
+      {
+        "name": "Erythropenia",
+        "value": 1
+      },
+      {
+        "name": "Erythrophagocytosis",
+        "value": 1
+      },
+      {
+        "name": "Erythropoiesis abnormal",
+        "value": 1
+      },
+      {
+        "name": "Extrasystoles",
+        "value": 11
+      },
+      {
+        "name": "Extravascular haemolysis",
+        "value": 13
+      },
+      {
+        "name": "Factor VII inhibition",
+        "value": 1
+      },
+      {
+        "name": "Factor VIII inhibition",
+        "value": 1
+      },
+      {
+        "name": "Factor XIII Inhibition",
+        "value": 1
+      },
+      {
+        "name": "Febrile bone marrow aplasia",
+        "value": 1
+      },
+      {
+        "name": "Febrile neutropenia",
+        "value": 2
+      },
+      {
+        "name": "Foetal heart rate acceleration abnormality",
+        "value": 2
+      },
+      {
+        "name": "Foetal heart rate deceleration abnormality",
+        "value": 5
+      },
+      {
+        "name": "Foetal heart rate disorder",
+        "value": 4
+      },
+      {
+        "name": "Gastrocardiac syndrome",
+        "value": 1
+      },
+      {
+        "name": "Granulocytes maturation arrest",
+        "value": 1
+      },
+      {
+        "name": "Granulocytopenia",
+        "value": 6
+      },
+      {
+        "name": "Granulocytopenia neonatal",
+        "value": 1
+      },
+      {
+        "name": "Haematotoxicity",
+        "value": 1
+      },
+      {
+        "name": "Haemoconcentration",
+        "value": 2
+      },
+      {
+        "name": "Haemoglobinaemia",
+        "value": 7
+      },
+      {
+        "name": "Haemolysis",
+        "value": 8
+      },
+      {
+        "name": "Haemolysis neonatal",
+        "value": 2
+      },
+      {
+        "name": "Haemolytic anaemia enzyme specific",
+        "value": 6
+      },
+      {
+        "name": "Haemolytic icteroanaemia",
+        "value": 1
+      },
+      {
+        "name": "Haemolytic uraemic syndrome",
+        "value": 4
+      },
+      {
+        "name": "Haemorrhage coronary artery",
+        "value": 1
+      },
+      {
+        "name": "Haemorrhagic anaemia",
+        "value": 2
+      },
+      {
+        "name": "Haemorrhagic diathesis",
+        "value": 1
+      },
+      {
+        "name": "Haemorrhagic disease of newborn",
+        "value": 1
+      },
+      {
+        "name": "Haemorrhagic disorder",
+        "value": 2
+      },
+      {
+        "name": "Heinz bodies",
+        "value": 1
+      },
+      {
+        "name": "Heparin-induced thrombocytopenia",
+        "value": 3
+      },
+      {
+        "name": "Hilar lymphadenopathy",
+        "value": 1
+      },
+      {
+        "name": "Histiocytosis haematophagic",
+        "value": 7
+      },
+      {
+        "name": "Hyperchromic anaemia",
+        "value": 2
+      },
+      {
+        "name": "Hypercoagulation",
+        "value": 1
+      },
+      {
+        "name": "Hypereosinophilic syndrome",
+        "value": 1
+      },
+      {
+        "name": "Hyperglobulinaemia",
+        "value": 1
+      },
+      {
+        "name": "Hyperkinetic heart syndrome",
+        "value": 1
+      },
+      {
+        "name": "Hyperprothrombinaemia",
+        "value": 8
+      },
+      {
+        "name": "Hypersplenism",
+        "value": 1
+      },
+      {
+        "name": "Hypertensive cardiomegaly",
+        "value": 1
+      },
+      {
+        "name": "Hypertensive heart disease",
+        "value": 7
+      },
+      {
+        "name": "Hyperthrombinaemia",
+        "value": 1
+      },
+      {
+        "name": "Hypochromasia",
+        "value": 1
+      },
+      {
+        "name": "Hypochromic anaemia",
+        "value": 1
+      },
+      {
+        "name": "Hypocoagulable state",
+        "value": 1
+      },
+      {
+        "name": "Hypofibrinogenaemia",
+        "value": 2
+      },
+      {
+        "name": "Hypoglobulinaemia",
+        "value": 1
+      },
+      {
+        "name": "Hypoprothrombinaemia",
+        "value": 6
+      },
+      {
+        "name": "Hypothromboplastinaemia",
+        "value": 2
+      },
+      {
+        "name": "Idiopathic neutropenia",
+        "value": 1
+      },
+      {
+        "name": "Immune thrombocytopenic purpura",
+        "value": 16
+      },
+      {
+        "name": "Increased tendency to bruise",
+        "value": 3
+      },
+      {
+        "name": "Intracardiac thrombus",
+        "value": 3
+      },
+      {
+        "name": "Intravascular haemolysis",
+        "value": 3
+      },
+      {
+        "name": "Iron deficiency anaemia",
+        "value": 14
+      },
+      {
+        "name": "Isoimmune haemolytic disease",
+        "value": 2
+      },
+      {
+        "name": "Jaundice acholuric",
+        "value": 4
+      },
+      {
+        "name": "Junctional ectopic tachycardia",
+        "value": 1
+      },
+      {
+        "name": "Left ventricular heave",
+        "value": 2
+      },
+      {
+        "name": "Leukaemoid reaction",
+        "value": 2
+      },
+      {
+        "name": "Leukocyte vacuolisation",
+        "value": 5
+      },
+      {
+        "name": "Leukocytosis",
+        "value": 2
+      },
+      {
+        "name": "Leukoerythroblastic anaemia",
+        "value": 4
+      },
+      {
+        "name": "Leukopenia",
+        "value": 3
+      },
+      {
+        "name": "Leukostasis syndrome",
+        "value": 4
+      },
+      {
+        "name": "Long QT syndrome",
+        "value": 1
+      },
+      {
+        "name": "Lymph node fibrosis",
+        "value": 4
+      },
+      {
+        "name": "Lymph node haemorrhage",
+        "value": 2
+      },
+      {
+        "name": "Lymphadenocyst",
+        "value": 11
+      },
+      {
+        "name": "Lymphadenopathy mediastinal",
+        "value": 1
+      },
+      {
+        "name": "Lymphatic disorder",
+        "value": 2
+      },
+      {
+        "name": "Lymphatic obstruction",
+        "value": 1
+      },
+      {
+        "name": "Lymphatic sinus catarrh",
+        "value": 9
+      },
+      {
+        "name": "Lymphoblastosis",
+        "value": 2
+      },
+      {
+        "name": "Lymphocytic infiltration",
+        "value": 1
+      },
+      {
+        "name": "Lymphoid tissue hyperplasia",
+        "value": 5
+      },
+      {
+        "name": "Macrocytosis",
+        "value": 2
+      },
+      {
+        "name": "Malignant hypertensive heart disease",
+        "value": 1
+      },
+      {
+        "name": "Mast cell activation syndrome",
+        "value": 1
+      },
+      {
+        "name": "Melanaemia",
+        "value": 2
+      },
+      {
+        "name": "Methaemoglobinaemia",
+        "value": 3
+      },
+      {
+        "name": "Microangiopathic haemolytic anaemia",
+        "value": 2
+      },
+      {
+        "name": "Microcytic anaemia",
+        "value": 3
+      },
+      {
+        "name": "Microcytosis",
+        "value": 1
+      },
+      {
+        "name": "Monocytopenia",
+        "value": 1
+      },
+      {
+        "name": "Monocytosis",
+        "value": 1
+      },
+      {
+        "name": "Myelocytosis",
+        "value": 2
+      },
+      {
+        "name": "Myeloid maturation arrest",
+        "value": 2
+      },
+      {
+        "name": "Myocardial infarction",
+        "value": 7
+      },
+      {
+        "name": "Necrotising granulomatous lymphadenitis",
+        "value": 1
+      },
+      {
+        "name": "Neutropenia",
+        "value": 1
+      },
+      {
+        "name": "Neutrophilia",
+        "value": 1
+      },
+      {
+        "name": "Nodal arrhythmia",
+        "value": 11
+      },
+      {
+        "name": "Nodal rhythm",
+        "value": 4
+      },
+      {
+        "name": "Non-immune heparin associated thrombocytopenia",
+        "value": 2
+      },
+      {
+        "name": "Normochromic normocytic anaemia",
+        "value": 6
+      },
+      {
+        "name": "Nucleated red cells",
+        "value": 1
+      },
+      {
+        "name": "Palpitations",
+        "value": 3
+      },
+      {
+        "name": "Pancytopenia",
+        "value": 1
+      },
+      {
+        "name": "Parasystole",
+        "value": 2
+      },
+      {
+        "name": "Paratracheal lymphadenopathy",
+        "value": 24
+      },
+      {
+        "name": "Paroxysmal arrhythmia",
+        "value": 1
+      },
+      {
+        "name": "Pernicious anaemia",
+        "value": 4
+      },
+      {
+        "name": "Placental transfusion syndrome",
+        "value": 1
+      },
+      {
+        "name": "Plasma cell disorder",
+        "value": 2
+      },
+      {
+        "name": "Platelet destruction increased",
+        "value": 5
+      },
+      {
+        "name": "Platelet disorder",
+        "value": 17
+      },
+      {
+        "name": "Platelet dysfunction",
+        "value": 1
+      },
+      {
+        "name": "Platelet maturation arrest",
+        "value": 2
+      },
+      {
+        "name": "Poikilocytosis",
+        "value": 1
+      },
+      {
+        "name": "Polycythaemia",
+        "value": 11
+      },
+      {
+        "name": "Polymorphonuclear chromatin clumping",
+        "value": 1
+      },
+      {
+        "name": "Protein deficiency anaemia",
+        "value": 1
+      },
+      {
+        "name": "Pseudolymphoma",
+        "value": 24
+      },
+      {
+        "name": "Pulseless electrical activity",
+        "value": 1
+      },
+      {
+        "name": "Punctate basophilia",
+        "value": 1
+      },
+      {
+        "name": "Pure white cell aplasia",
+        "value": 1
+      },
+      {
+        "name": "Red blood cell abnormality",
+        "value": 28
+      },
+      {
+        "name": "Red blood cell vacuolisation",
+        "value": 15
+      },
+      {
+        "name": "Reperfusion arrhythmia",
+        "value": 1
+      },
+      {
+        "name": "Reticulocytopenia",
+        "value": 1
+      },
+      {
+        "name": "Reticulocytosis",
+        "value": 1
+      },
+      {
+        "name": "Reticuloendothelial dysfunction",
+        "value": 2
+      },
+      {
+        "name": "Reticuloendothelial system stimulated",
+        "value": 2
+      },
+      {
+        "name": "Retroperitoneal lymphadenopathy",
+        "value": 3
+      },
+      {
+        "name": "Rhythm idioventricular",
+        "value": 2
+      },
+      {
+        "name": "Rouleaux formation",
+        "value": 1
+      },
+      {
+        "name": "Sickle cell anaemia with crisis",
+        "value": 6
+      },
+      {
+        "name": "Sideroblastic anaemia",
+        "value": 6
+      },
+      {
+        "name": "Sinoatrial block",
+        "value": 6
+      },
+      {
+        "name": "Sinus arrest",
+        "value": 11
+      },
+      {
+        "name": "Sinus arrhythmia",
+        "value": 1
+      },
+      {
+        "name": "Sinus bradycardia",
+        "value": 1
+      },
+      {
+        "name": "Sinus node dysfunction",
+        "value": 4
+      },
+      {
+        "name": "Sinus tachycardia",
+        "value": 2
+      },
+      {
+        "name": "Sinusoidal foetal heart rate pattern",
+        "value": 1
+      },
+      {
+        "name": "Spherocytic anaemia",
+        "value": 7
+      },
+      {
+        "name": "Spleen congestion",
+        "value": 1
+      },
+      {
+        "name": "Spleen disorder",
+        "value": 3
+      },
+      {
+        "name": "Splenic cyst",
+        "value": 1
+      },
+      {
+        "name": "Splenic embolism",
+        "value": 2
+      },
+      {
+        "name": "Splenic fibrosis",
+        "value": 3
+      },
+      {
+        "name": "Splenic haemorrhage",
+        "value": 2
+      },
+      {
+        "name": "Splenic infarction",
+        "value": 1
+      },
+      {
+        "name": "Splenic vein occlusion",
+        "value": 1
+      },
+      {
+        "name": "Splenitis",
+        "value": 1
+      },
+      {
+        "name": "Splenomegaly",
+        "value": 3
+      },
+      {
+        "name": "Spur cell anaemia",
+        "value": 3
+      },
+      {
+        "name": "Stress polycythaemia",
+        "value": 1
+      },
+      {
+        "name": "Supraventricular extrasystoles",
+        "value": 10
+      },
+      {
+        "name": "Supraventricular tachycardia",
+        "value": 1
+      },
+      {
+        "name": "Tachyarrhythmia",
+        "value": 1
+      },
+      {
+        "name": "Tachycardia",
+        "value": 5
+      },
+      {
+        "name": "Tachycardia foetal",
+        "value": 3
+      },
+      {
+        "name": "Tachycardia paroxysmal",
+        "value": 9
+      },
+      {
+        "name": "Thrombasthenia",
+        "value": 4
+      },
+      {
+        "name": "Thrombocytopenia",
+        "value": 1
+      },
+      {
+        "name": "Thrombocytosis",
+        "value": 12
+      },
+      {
+        "name": "Thrombotic microangiopathy",
+        "value": 2
+      },
+      {
+        "name": "Thymus disorder",
+        "value": 4
+      },
+      {
+        "name": "Torsade de pointes",
+        "value": 3
+      },
+      {
+        "name": "Ventricular arrhythmia",
+        "value": 2
+      },
+      {
+        "name": "Ventricular asystole",
+        "value": 2
+      },
+      {
+        "name": "Ventricular extrasystoles",
+        "value": 6
+      },
+      {
+        "name": "Ventricular fibrillation",
+        "value": 10
+      },
+      {
+        "name": "Ventricular flutter",
+        "value": 3
+      },
+      {
+        "name": "Ventricular pre-excitation",
+        "value": 1
+      },
+      {
+        "name": "Ventricular tachycardia",
+        "value": 6
+      },
+      {
+        "name": "Warm type haemolytic anaemia",
+        "value": 1
+      },
+      {
+        "name": "White blood cell disorder",
+        "value": 3
+      },
+      {
+        "name": "Withdrawal arrhythmia",
+        "value": 5
+      },
+      {
+        "name": "Wolff-Parkinson-White syndrome",
+        "value": 1
+      }
+    ],
+    "LABELLED_DESC": [
+      {
+        "name": "Yes",
+        "value": 841
+      },
+      {
+        "name": "No",
+        "value": 621
+      }
+    ],
+    "CLASSIFICATION_DESC" : [
+    {
+        "name": "Listed",
+        "value": 522
+      },
+      {
+        "name": "Unlisted",
+        "value": 529
+      }
+    ],
+    "LISTEDNESS": [
+      {
+        "name": "Listed",
+        "value": 522
+      },
+      {
+        "name": "Unlisted",
+        "value": 529
+      }
+    ],
+    "COUNTRY_NAME": [
+      {
+        "name": "ARUBA",
+        "value": 2
+      },
+      {
+        "name": "AUSTRALIA",
+        "value": 25
+      },
+      {
+        "name": "BHUTAN",
+        "value": 1
+      },
+      {
+        "name": "CANADA",
+        "value": 15
+      },
+      {
+        "name": "CHILE",
+        "value": 1
+      },
+      {
+        "name": "CHINA",
+        "value": 6
+      },
+      {
+        "name": "FINLAND",
+        "value": 25
+      },
+      {
+        "name": "FRANCE",
+        "value": 32
+      },
+      {
+        "name": "GHANA",
+        "value": 2
+      },
+      {
+        "name": "ICELAND",
+        "value": 79
+      },
+      {
+        "name": "INDIA",
+        "value": 188
+      },
+      {
+        "name": "INDONESIA",
+        "value": 1
+      },
+      {
+        "name": "LITHUNIA",
+        "value": 25
+      },
+      {
+        "name": "NEW ZEALAND",
+        "value": 32
+      },
+      {
+        "name": "NORTH KOREA",
+        "value": 69
+      },
+      {
+        "name": "RUSSIA",
+        "value": 12
+      },
+      {
+        "name": "SOUTH AFRICA",
+        "value": 3
+      },
+      {
+        "name": "SPAIN",
+        "value": 2
+      },
+      {
+        "name": "TIBET",
+        "value": 2
+      },
+      {
+        "name": "UAE",
+        "value": 1
+      },
+      {
+        "name": "UKRAINE",
+        "value": 41
+      },
+      {
+        "name": "UNITED KINGDOM",
+        "value": 28
+      },
+      {
+        "name": "UNITED STATES",
+        "value": 255
+      }
+    ],
+    "PATIENT_SEX_DESC": [
+      {
+        "name": "Female",
+        "value": 488
+      },
+      {
+        "name": "Male",
+        "value": 260
+      },
+      {
+        "name": "Others",
+        "value": 99
+      }
+    ],
+    "FORMULATION_DESC":[
+      {
+        "name": "Capsule",
+        "value": 5
+      },{
+        "name": "Oral Solution",
+        "value": 6
+      },{
+        "name": "Tablet",
+        "value": 7
+      }
+    ]
+  }
+}

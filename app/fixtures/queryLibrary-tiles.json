@@ -1,0 +1,153 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905762')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal1",
+        "DESCRIPTION": "i AM QUERY 2",
+        "NAME": "Query 2",
+        "ID": 2,
+        "IS_SHARED": false
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": false
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      },{
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('155994364888905761')"
+        },
+        "LAST_EDITED_DATE": "/Date(1457913600000)/",
+        "CREATED_BY": "Manu Khandelwal",
+        "DESCRIPTION": "i AM QUERY 1",
+        "NAME": "Query 1",
+        "ID": 1,
+        "IS_SHARED": true
+      }
+    ],
+    "__count": "13"
+  }
+}

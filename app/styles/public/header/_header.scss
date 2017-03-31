@@ -1,0 +1,75 @@
+.dsui{
+	.dsui-header{
+		background-color: $saint-blue-color !important;
+		height: 60px;
+    padding:0 20px;
+    z-index: 2;
+    width: 100%;
+		.dsui-app-name{
+			color:$saint-white-color !important;
+      font-size: 20px;
+			line-height: 60px;
+      .dsui-app-firstname{
+        font-family:$font-open-sans !important;
+      }
+      .dsui-app-lastname{
+        @include Open-Sans-Generic(Light);
+      }
+		}
+		.dsui-sign-in{
+			line-height: 60px;
+			.dsui-btn-signin{
+				background-color:  $saint-blue-color !important;
+				border-color: $saint-white-color !important;
+			}
+		}
+	}
+	.dsui-content{
+  }
+	.dsui-footer{
+	}
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+	.dsui{
+		.dsui-header{
+		}
+		.dsui-content{
+		}
+		.dsui-footer{
+		}
+	}
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+	.dsui{
+		.dsui-header{
+		}
+		.dsui-content{
+		}
+		.dsui-footer{
+		}
+	}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.dsui{
+		.dsui-header{
+		}
+		.dsui-content{
+		}
+		.dsui-footer{
+		}
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.dsui{
+		.dsui-header{
+		}
+		.dsui-content{
+		}
+		.dsui-footer{
+		}
+	}
+}

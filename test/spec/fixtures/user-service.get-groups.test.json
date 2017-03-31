@@ -1,0 +1,110 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.UserRolesType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserRoles(182645L)"
+        },
+        "ROLE_NAME": "Deloitte.Innovation.saint.Admin::SafetyReportingAnalyst",
+        "ROLE_ID": "182645",
+        "ROLE_MODE": "LOCAL",
+        "GLOBAL_IDENTITY": null,
+        "CREATOR": "_SYS_REPO",
+        "CREATE_TIME": "/Date(1431430026070)/",
+        "CONTEXT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.UserRolesType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserRoles(193600L)"
+        },
+        "ROLE_NAME": "Deloitte.Innovation.saint.Admin::SafetyReportingAdministrator",
+        "ROLE_ID": "193600",
+        "ROLE_MODE": "LOCAL",
+        "GLOBAL_IDENTITY": null,
+        "CREATOR": "_SYS_REPO",
+        "CREATE_TIME": "/Date(1431612549692)/",
+        "CONTEXT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.UserRolesType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserRoles(942936L)"
+        },
+        "ROLE_NAME": "Deloitte.Innovation.Saintqa.Admin::Developer",
+        "ROLE_ID": "942936",
+        "ROLE_MODE": "LOCAL",
+        "GLOBAL_IDENTITY": null,
+        "CREATOR": "_SYS_REPO",
+        "CREATE_TIME": "/Date(1436799883570)/",
+        "CONTEXT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.UserRolesType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserRoles(942937L)"
+        },
+        "ROLE_NAME": "Deloitte.Innovation.Saintqa.Admin::Extractor",
+        "ROLE_ID": "942937",
+        "ROLE_MODE": "LOCAL",
+        "GLOBAL_IDENTITY": null,
+        "CREATOR": "_SYS_REPO",
+        "CREATE_TIME": "/Date(1436799926900)/",
+        "CONTEXT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.UserRolesType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserRoles(942938L)"
+        },
+        "ROLE_NAME": "Deloitte.Innovation.Saintqa.Admin::ReleaseManager",
+        "ROLE_ID": "942938",
+        "ROLE_MODE": "LOCAL",
+        "GLOBAL_IDENTITY": null,
+        "CREATOR": "_SYS_REPO",
+        "CREATE_TIME": "/Date(1436799965708)/",
+        "CONTEXT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.UserRolesType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserRoles(942939L)"
+        },
+        "ROLE_NAME": "Deloitte.Innovation.Saintqa.Admin::Tester",
+        "ROLE_ID": "942939",
+        "ROLE_MODE": "LOCAL",
+        "GLOBAL_IDENTITY": null,
+        "CREATOR": "_SYS_REPO",
+        "CREATE_TIME": "/Date(1436799998909)/",
+        "CONTEXT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.UserRolesType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserRoles(942940L)"
+        },
+        "ROLE_NAME": "Deloitte.Innovation.Saintqa.Admin::Analyzer",
+        "ROLE_ID": "942940",
+        "ROLE_MODE": "LOCAL",
+        "GLOBAL_IDENTITY": null,
+        "CREATOR": "_SYS_REPO",
+        "CREATE_TIME": "/Date(1436800023285)/",
+        "CONTEXT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.UserRolesType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserRoles(1102122L)"
+        },
+        "ROLE_NAME": "Deloitte.Innovation.Saintqa.Admin::ReportExtractor",
+        "ROLE_ID": "1102122",
+        "ROLE_MODE": "LOCAL",
+        "GLOBAL_IDENTITY": null,
+        "CREATOR": "_SYS_REPO",
+        "CREATE_TIME": "/Date(1437743361643)/",
+        "CONTEXT": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+<div class="col-sm-12 dsui-no-padding" data-ng-controller="CaseListLibrarySortController">
+  <div class="dsui-sort-list">
+    <div class="dsui-sort-icons">
+      <ul class="nav nav-pills">
+        <li class="dsui-no-left-margin" data-ng-click="fnApplySort(sortBy,secondarySort,sortOrderASC,filterName)"><span
+          class="dsui-sort-tab" data-ng-class="isActiveTab?'dsui-deactive-sort-tab':'dsui-active-sort-tab'"><i
+          class="icon-sort-alpha-asc"></i></span></li>
+        <li class="dsui-no-left-margin" data-ng-click="fnApplySort(sortBy,secondarySort,sortOrderDESC,filterName)"><span
+          class="dsui-sort-tab " data-ng-class="isActiveTab?'dsui-active-sort-tab':'dsui-deactive-sort-tab'"><i
+          class="icon-sort-alpha-desc"></i></span></li>
+      </ul>
+    </div>
+    <div data-ng-repeat="item in sortData track by $index" class="dsui-radio-text">
+      <input type="radio" data-ng-model="$parent.sortBy" value="{{item.columnName}}"
+             data-ng-change="fnApplySort(sortBy,item.secondarySort,sortOrderASC,item.filterName)"><span
+      data-ng-bind="item.filterName"></span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="modal fade dsui-query-builder-share-query" id="{{dialogId}}" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"
+     data-ng-controller="QueryLibraryShareQueryController">
+  <div class="col-md-8 modal-main">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="icon-close close" data-ng-click="fnOnCancel()"></span>
+          <h4 class="modal-title" data-i18n="private-query-library.BUNDLE_SHARE_QUERY"></h4>
+        </div>
+
+        <hr class="dsui-border-line">
+        <div class="modal-body">
+          <form role="form">
+
+            <div id={{userSelectId}} data-ng-if="loadUserGroupSelect">
+              <user-group-select-dropdown
+                user-select-id='userSelectId'
+                is-select-all-shown='true'
+                get-selected-user-group='query.getSelectedUsersGroup'
+                set-selected-user-group='query.selectedUsersGroup'
+                update-select-all-user='query.includeAllUserData'
+                assignee-display-text='language.USERS'
+              ></user-group-select-dropdown>
+            </div>
+
+          </form>
+        </div>
+
+        <!--</div>-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary dsui-create-query" data-i18n="private-query-library.BUNDLE_SAVE"
+                  data-ng-click="fnSaveShareQuery()"></button>
+          <button type="button" class="btn btn-default dsui-cancel-query"
+                  data-i18n="private-query-library.BUNDLE_CANCEL"
+                  data-ng-click="fnOnCancel()"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

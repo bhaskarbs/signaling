@@ -1,0 +1,212 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-home-dashboard {
+      .dsui-home-tile{
+        @include transition(all, 0.3ms, ease-in-out);
+        box-shadow: 0px 3px 0px -1px $saint-color-light-grey-blue;
+        -webkit-box-shadow: 0px 3px 0px -1px $saint-color-light-grey-blue;
+        -moz-box-shadow: 0px 3px 0px -1px $saint-color-light-grey-blue;
+        -ms-box-shadow: 0px 3px 0px -1px $saint-color-light-grey-blue;
+        cursor: pointer;
+        height: 270px;
+
+        &:hover{
+          border-width: 2px;
+          border-color:  $saint-hover-border-color;
+        }
+      }
+      .panel{
+        border-width: 1px;
+        margin-bottom: 20px;
+        background-color: $saint-white-color;
+        border-radius: 2px;
+        .panel-heading{
+          padding: 5px 15px;
+        }
+      }
+      .dsui-home-text {
+        font-size: 0.9em;
+        color: $saint-gray-color;
+      }
+      .dsui-home-text1 {
+        font-size: 0.8em;
+        color: $saint-gray-color;
+      }
+
+      .dsui-home-workspace {
+        .dsui-workspace {
+          min-height: 270px;
+          .dsui-workspace-colored {
+            color: $saint-white-color;
+            padding: 15px !important;
+            min-height: 150px;
+            border-radius: 2px 2px 0px 0px;
+            .dsui-icon-3x{
+              font-size:3em;
+            }
+            .dsui-workspace-text {
+              padding: 0px 0px 0px 25px !important;
+              h3 {
+                font-size: 1em !important;
+                margin: 0px !important;
+              }
+              span {
+                font-size: 1em !important;
+              }
+            }
+            .dsui-overdue-div {
+              background-color: $saint-dark-red-color;
+              border-radius: 10px;
+              padding: 4px 10px 4px 10px !important;
+              font-size: 10px;
+              border: 2px solid $saint-white-color;
+            }
+          }
+          .dsui-workspace-plane {
+            position: absolute;
+            bottom: 0px;
+            min-height: 75px;
+            padding: 12px !important;
+            .dsui-workspace-question {
+              font-size: 15px;
+              color: $saint-black-color;
+            }
+          }
+          .dsui-pending {
+            background-color: $saint-report-inProgress;
+          }
+          .dsui-due-days {
+            background-color: $saint-dark-blue-color;
+          }
+          .dsui-completed-reports {
+            background-color: $saint-create-report-button;
+          }
+          .dsui-assigned-action {
+            background-color: #00a3de;
+          }
+          .dsui-circle {
+            @include Roboto-Medium(2.5em !important,$saint-white-color);
+            font-weight: bold;
+            text-align: center;
+            max-height: 0px !important;
+            margin-top: -35px !important;
+            span {
+              text-align: center;
+              border-radius: 50%;
+              padding: 25px 20px;
+              background-color: inherit;
+              border: 3px solid $saint-white-color;
+            }
+          }
+        }
+      }
+      .dsui-home-metrics {
+        .dsui-metrics-tiles{
+          .dsui-metrics-graph {
+            height:200px !important;
+          }
+        }
+      }
+      .dsui-home-launchpad {
+        .dsui-launchpad-tile {
+          position: relative;
+          .dsui-launchpad-icons {
+            color : $saint-blue-color;
+            position: absolute;
+            bottom: 10px;
+          .dsui-icon-4x{
+            font-size:4em;
+          }
+          }
+        }
+      }
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+
+.dsui-signal {
+  min-height: 220px !important;
+}
+.chart {
+  background-color: #eee;
+  height:300px;
+  width:100%;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-home-dashboard {
+        .dsui-home-workspace {
+          .dsui-workspace {
+            .dsui-workspace-colored {
+              .dsui-workspace-text {
+                h3 {
+                  font-size: 14px !important;
+                }
+                span {
+                  font-size: 14px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": 200,
+  "result": [
+    {
+      "CASE_NUMBER": "20100102072",
+      "STATUS": "1",
+      "STATUS_MESSAGE": "SUCCESSFUL"
+    },
+    {
+      "CASE_NUMBER": "20100102001",
+      "STATUS": "0",
+      "STATUS_MESSAGE": "CASE NOT FOUND"
+    }
+  ]
+}

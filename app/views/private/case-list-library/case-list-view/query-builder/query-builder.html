@@ -1,0 +1,110 @@
+<div class="col-md-12 dsui-no-padding" data-ng-controller="QueryBuilderController">
+  <div data-ng-include="VIEWS.INSERT_QUERY_MODAL_VIEW"></div>
+  <div data-ng-include="VIEWS.QUERY_BUILDER_SAVE_QUERY"></div>
+  <div data-ng-include="VIEWS.QUERY_ERROR_SAVE_QUERY"></div>
+  <div data-ng-include="VIEWS.SET_OPERATIONS_CONFIRM_DELETE"></div>
+  <div class="dsui-query-builder col-sm-12">
+    <p class="clearfix"/>
+    <div class="dsui-query-builder-top-buttons-container">
+      <button class="btn btn-sm btn-default dsui-query-area-fix dsui-query-builder-top-buttons"  data-ng-class="caseListObject.queryBuilderObject.type == CONSTANTS.SET_OPERATION_CONTEXT ? 'active' : 'inactive' "
+              data-i18n="private-query-builder.BUNDLE_SET_OPERATIONS" data-ng-click="fnSetOperation()"></button>
+      <span class="dsui-set-query-message" data-i18n="private-query-builder.BUNDLE_SET_QUERY_MESSAGE"></span>
+      <button data-ng-click="decorator.click(PRIVILEGES.CASE_LIST_ANALYSE,fnRunQuery,[]);"
+              data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_ANALYSE) || !isQueryValid"
+              class="btn btn-sm
+                dsui-query-area-fix dsui-query-builder-top-buttons inactive pull-right"
+              data-i18n="private-query-builder.BUNDLE_RUN_QUERY"></button>
+    </div>
+    <div>
+      <div data-ng-if="caseListObject.queryBuilderObject.type == CONSTANTS.SET_OPERATION_CONTEXT">
+        <div class="dsui-expression-eval">
+          <!--Query Builder Set Operations Start-->
+          <div id="board" style="display:inline-block;" data-ng-controller="QuerySetOperationController">
+            <!--<span class="pull-right" data-ng-if="!validityRespose.validity">Invalid Operation</span>-->
+            <div class="dsui-wrapper sortable-row ng-pristine ng-untouched ng-valid" as-sortable="sortableOptions"
+                 data-ng-model="filter.expressionEntity">
+              <div data-ng-repeat="item in filter.expressionEntity track by item.id" as-sortable-item
+                   data-ng-class="item.data.type==CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_OPERAND?'as-sortable-item':item.data.type === CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_BRACKET?'dsui-parenthesis-object':'dsui-operator-object'" data-ng-click="fnCallOut(this)">
+                <div data-ng-click="fnSelectTab(item.data.setId,item.data.name)" data-ng-if="item.data.type==CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_OPERAND"
+                     data-ng-class="item.data.setId === selectedTab.setId?'dsui-selected-set':'dsui-de-selected-set'">
+                  <div data-ng-if="item.data.setId === selectedTab.setId" class="dsui-no-tooltip dsui-tooltip" data-ng-class="filter.setEntities.length>1?'dsui-operand-tooltip-with-delete':'dsui-operand-tooltip'">
+                    <span class="dsui-callout-btn" data-i18n-attr="{title:'private-query-builder.BUNDLE_ADD_OPEN_BRACKET'}" data-ng-click="fnManageParenthesis(CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_OPEN_BRACKET,item.data.setId,$index,true)"><span data-ng-bind="CONSTANTS.SET_QUERY_CONFIG.SET_ADD_OPEN_PARENTHESIS"></span></span>
+                    <span class="dsui-callout-btn" data-i18n-attr="{title:'private-query-builder.BUNDLE_ADD_CLOSE_BRACKET'}" data-ng-click="fnManageParenthesis(CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_CLOSE_BRACKET,item.data.setId,$index,true)"><span data-ng-bind="CONSTANTS.SET_QUERY_CONFIG.SET_ADD_CLOSE_PARENTHESIS"></span></span>
+                    <span class="dsui-callout-btn" data-i18n-attr="{title:'private-query-builder.BUNDLE_REMOVE_OPEN_BRACKET'}" data-ng-click="fnManageParenthesis(CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_OPEN_BRACKET,item.data.setId,$index,false)"><span data-ng-bind="CONSTANTS.SET_QUERY_CONFIG.SET_DELETE_OPEN_PARENTHESIS"></span></span>
+                    <span class="dsui-callout-btn" data-i18n-attr="{title:'private-query-builder.BUNDLE_REMOVE_CLOSE_BRACKET'}" data-ng-click="fnManageParenthesis(CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_CLOSE_BRACKET,item.data.setId,$index,false)"><span data-ng-bind="CONSTANTS.SET_QUERY_CONFIG.SET_DELETE_CLOSE_PARENTHESIS"></span></span>
+                    <span class="dsui-callout-btn-inv" data-i18n-attr="{title:'private-query-builder.BUNDLE_DELETE_QUERY'}" data-ng-if="filter.setEntities.length>1" data-ng-click="fnConfirmDeleteQuerySet()"><span class="icon-trash"></span></span>
+                  </div>
+                  <div data-as-sortable-item-handle class="dsui-selected-set-name as-sortable-item-handle" data-ng-class="item.data.name.length<18?'dsui-set-name-inline':''"
+                       data-ng-bind="item.data.name"></div>
+                  <div data-ng-class="item.data.setId === selectedTab.setId?'dsui-selected-set-drag':'dsui-de-selected-set-drag'">
+                    <i>|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|</i>
+                  </div>
+                </div>
+                <div data-ng-if="item.data.type!=CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_OPERAND">
+                  <div data-ng-if="item.data.type==CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_OPERATOR && item.data.type !== CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_BRACKET">
+                    <div class="dsui-operator-position">
+                      <div data-i18n-attr="{title:'private-query-builder.BUNDLE_UNION'}" data-ng-if="item.data.name===CONSTANTS.SET_QUERY_CONFIG.UNION"><span class="icon-IcoMoon-09 dsui-operator-color"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span></div>
+                      <div data-i18n-attr="{title:'private-query-builder.BUNDLE_INTERSECTION'}" data-ng-if="item.data.name===CONSTANTS.SET_QUERY_CONFIG.INTERSECTION"><span class="icon-IcoMoon-10 dsui-operator-color"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span></div>
+                      <div data-i18n-attr="{title:'private-query-builder.BUNDLE_MINUS'}" data-ng-if="item.data.name===CONSTANTS.SET_QUERY_CONFIG.MINUS"><span class="icon-IcoMoon-11 dsui-operator-color"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></div>
+                      <div data-i18n-attr="{title:'private-query-builder.BUNDLE_OPERATOR_PROMPT'}" data-ng-if="item.data.name===CONSTANTS.SET_QUERY_CONFIG.NULL"><span class="icon-IcoMoon-02 dsui-operator-color dsui-display-hide"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></div>
+                      <div class="dsui-no-tooltip dsui-tooltip dsui-operator-tooltip">
+                        <span class="dsui-callout-btn" data-i18n-attr="{title:'private-query-builder.BUNDLE_UNION'}" data-ng-click="fnSelectOperator(CONSTANTS.SET_QUERY_CONFIG.UNION,$index)"><span><span class="icon-IcoMoon-09"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span></span></span>
+                        <span class="dsui-callout-btn" data-i18n-attr="{title:'private-query-builder.BUNDLE_INTERSECTION'}" data-ng-click="fnSelectOperator(CONSTANTS.SET_QUERY_CONFIG.INTERSECTION,$index)"><span><span class="icon-IcoMoon-10"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span></span></span>
+                        <span class="dsui-callout-btn" data-i18n-attr="{title:'private-query-builder.BUNDLE_MINUS'}" data-ng-click="fnSelectOperator(CONSTANTS.SET_QUERY_CONFIG.MINUS,$index)"><span><span class="icon-IcoMoon-11"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-ng-if="item.data.type === CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_BRACKET">
+                    <div data-ng-if="item.data.name === CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_OPEN_BRACKET">(</div>
+                    <div data-ng-if="item.data.name === CONSTANTS.SET_QUERY_CONFIG.SET_OPERATION_CLOSE_BRACKET">)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Query Builder Set Operations End-->
+        </div>
+        <!-- Tabs code starts here-->
+        <span>
+            <ul class="nav nav-tabs">
+              <li data-ng-repeat="filterItem in filter.setEntities"
+                  data-ng-class="selectedTab.setId===filterItem.setId?'dsui-set-tabs active':'dsui-set-tabs'"
+                  class="dsui-active-tab">
+                <a data-ng-click="fnSelectTab(filterItem.setId,filterItem.name)"
+                   data-ng-dblclick="fnTitleRename(true,filter.setEntities,filterItem,setName)"
+                   class="dsui-tab">
+                  <span data-ng-if="!(isNameInEditMode && selectedTab.setId === filterItem.setId)" class="dsui-tab-title-display" data-ng-bind="filterItem.name"></span>
+                  <form data-ng-init="setName = filterItem.name" data-ng-if="selectedTab.setId === filterItem.setId && isNameInEditMode" data-ng-submit="fnTitleRename(false,filter.setEntities,filterItem,setName)">
+                    <input class="dsui-tab-title" maxlength="{{CONSTANTS.SET_QUERY_CONFIG.TAB_NAME_MAX_LENGTH}}" type="text" id="tab-title{{filterItem.setId}}" data-ng-blur="fnTitleRename(false,filter.setEntities,filterItem,setName)" data-ng-model="setName">
+                  </form>
+                </a>
+              </li>
+              <li class="dsui-set-tabs"><a data-ng-click="fnAddTab()" class="fa fa-plus dsui-add-tab"></a></li>
+            </ul>
+          </span>
+        <div data-ng-repeat="filterItem in filter.setEntities" class="dsui-set" data-ng-if="selectedTab.setId === filterItem.setId">
+          <div class="dsui-tab-heading" data-ng-bind="filterItem.name"></div>
+          <query-builder group="filterItem.jSON.group" operands="operands" dimensions="dimensions" operations="operators"
+                         operator-key="{{conditionKey}}" depth="1" case-list-object="caseListObject"
+                         is-read-only="isReadOnly" context="caselist"></query-builder>
+          <div  class="dsui-query-builder-bottom-buttons">
+            <button class="btn btn-sm btn-default" data-ng-click="fnClearCurrentSet()" data-i18n="private-query-builder.BUNDLE_CLEAR_ALL"></button>
+            <button class="btn btn-sm btn-default" data-ng-click="fnConfirmDeleteQuerySet()" data-ng-if="filter.setEntities.length>1" data-i18n="private-query-builder.BUNDLE_DELETE_QUERY"></button>
+            <button class="btn btn-sm btn-default pull-right" data-ng-click="fnOpenSaveQueryModal(filterItem.jSON.group)" data-target="#saveQueryModal" data-i18n="private-query-builder.BUNDLE_SAVE_QUERY"></button>
+          </div>
+        </div>
+      </div>
+      <!-- Tabs code ends here-->
+      <div data-ng-if="caseListObject.queryBuilderObject.type== CONSTANTS.QUERY_BUILDER_CONTEXT">
+        <div data-ng-controller="QuerySetOperationController"></div>
+        <query-builder group="filter.setEntities[0].jSON.group" operands="operands" dimensions="dimensions" operations="operators"
+                       operator-key="{{conditionKey}}" depth="1" case-list-object="caseListObject"
+                       is-read-only="isReadOnly" context="caselist"></query-builder>
+        <div class="dsui-query-builder-bottom-buttons">
+          <button class="btn btn-sm btn-default" data-ng-click="fnClearCurrentSet()" data-i18n="private-query-builder.BUNDLE_CLEAR_ALL"></button>
+          <button class="btn btn-sm btn-default pull-right" data-ng-click="fnOpenSaveQueryModal(filter.setEntities[0].jSON.group)" data-target="#saveQueryModal" data-i18n="private-query-builder.BUNDLE_SAVE_QUERY"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

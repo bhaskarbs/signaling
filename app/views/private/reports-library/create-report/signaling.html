@@ -1,0 +1,102 @@
+<div>
+  <label class="label-name-header" data-i18n="private-reports-library.BUNDLE_SIGNALING"></label>
+  <hr class="form-group product-license-line">
+</div>
+<div class="dsui-seperation"></div>
+<div class="form-group rundates">
+  <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_COMPARATOR_PERIOD"></span></label>
+  <select class="form-control form-control-limit-width" data-ng-model="report.signal.comparatorPeriod" data-ng-change="fnCheckComparatorPeriod()"
+          data-ng-options="compData as compData.name for compData in comparatorData">
+  </select>
+  <div class="dsui-seperation"></div>
+  <div class="form-group row">
+    <div class="col-sm-4 dsui-left-content rundates">
+      <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_CASE_LIST_START_DATE"></span></label>
+      <span class="mandatory">*</span>
+      <!--please don't change the hierarchy of the datepicker (where ever it occurs) as the controller is written accordingly-->
+      <div class="input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectTaskEndDateAdd3')">
+        <div class="input-group-addon dsui-calendar-icon"><i
+          class="fa fa-calendar-o"></i></div>
+        <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+               class="form-control dsui-datepicker-on-top"
+               placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+               id="dsuiProjectTaskEndDateAdd3" name="dsuiProjectTaskEndDateAdd3"
+               data-ng-model="report.signal.comparatorStartDate" data-ng-required="true" />
+      </div>
+    </div>
+    <div class="col-sm-4 dsui-right-content">
+      <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_CASE_LIST_END_DATE"></span></label>
+      <span class="mandatory">*</span>
+      <div class="input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectTaskEndDateAdd4')">
+        <div class="input-group-addon dsui-calendar-icon"><i
+          class="fa fa-calendar-o"></i></div>
+        <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+               class="form-control dsui-datepicker-on-top"
+               placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+               id="dsuiProjectTaskEndDateAdd4" name="dsuiProjectTaskEndDateAdd4"
+               data-ng-model="report.signal.comparatorEndDate" data-ng-required="true"/>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="dsui-seperation"><div>
+  <div data-i18n="private-reports-library.BUNDLE_CUMULATIVE"></div>
+  <div class="dsui-seperation"></div>
+  <div class="form-group row">
+    <div class="col-sm-4 dsui-left-content rundates">
+      <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_CASE_LIST_START_DATE"></span></label>
+      <span class="mandatory">*</span>
+      <div class="input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectTaskEndDateAdd5')">
+        <div class="input-group-addon dsui-calendar-icon"><i
+          class="fa fa-calendar-o"></i></div>
+          <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                 class="form-control dsui-datepicker-on-top"
+                 placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+               id="dsuiProjectTaskEndDateAdd5" name="dsuiProjectTaskEndDateAdd5"
+               data-ng-model="report.signal.cumulativeStartDate" data-ng-required="true"/>
+      </div>
+    </div>
+    <div class="col-sm-4 dsui-right-content">
+        <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_CASE_LIST_END_DATE"></span></label>
+      <span class="mandatory">*</span>
+      <div class="input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectTaskEndDateAdd6')">
+        <div class="input-group-addon dsui-calendar-icon"><i
+          class="fa fa-calendar-o"></i></div>
+          <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                 class="form-control dsui-datepicker-on-top"
+                 placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+               id="dsuiProjectTaskEndDateAdd6" name="dsuiProjectTaskEndDateAdd6"
+               data-ng-model="report.signal.cumulativeEndDate"
+               data-ng-required="true" />
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="dsui-seperation"><div>
+  <div class="form-group">
+    <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_THRESHOLD"></span><span class="mandatory">*</span></label>
+    <div><input type="number" min="0" max="100" placeholder="%" class="form-control rundates form-control-limit-width"
+                data-ng-model="report.signal.threshold"/></div>
+  </div>
+  <div class="form-group">
+    <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_DENOMINATOR"></span><span class="mandatory">*</span></label>
+    <div class="radioButton"><label> <input type="radio" name="denominatorType" data-ng-value="true"
+                                            data-ng-model="report.signal.denominatorType"/><span class="radioButton"
+                                                                                                 data-i18n="private-reports-library.BUNDLE_ALL_CASES_REPORTING_PERIOD"></span></label>
+    </div>
+    <div class="radioButton"><label> <input type="radio" name="denominatorType" data-ng-value="false"
+                                            data-ng-model="report.signal.denominatorType"/><span class="radioButton"
+                                                                                                 data-i18n="private-reports-library.BUNDLE_OTHER"></span></label>
+</div>
+    <div><input type="number" placeholder="#" data-ng-disabled="report.signal.denominatorType"
+                class="form-control rundates form-control-limit-width" data-ng-model="report.signal.denominatorValue"/></div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+  </div>

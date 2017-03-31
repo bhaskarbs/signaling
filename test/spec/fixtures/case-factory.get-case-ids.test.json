@@ -1,0 +1,20 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.SelectCaseType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/SelectCase('20100101281')"
+        },
+        "CASE_NBR": "20100101281"
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.SelectCaseType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/SelectCase('20100109969')"
+        },
+        "CASE_NBR": "20100109969"
+      }
+    ]
+  }
+}

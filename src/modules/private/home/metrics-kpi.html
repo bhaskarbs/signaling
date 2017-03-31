@@ -1,0 +1,33 @@
+<!--Begin Metrics/KPI Section-->
+<div class="dsui-home-metrics">
+  <div class="clearfix">
+    <h4><span data-i18n="private-home.BUNDLE_REPORTS_TITLE"></span>&nbsp;<i
+      class="fa fa-pie-chart fa-1x dsui-manage" data-ng-hide="(decorator.hide(PRIVILEGES.PUBLISH_DASHBOARD))" tooltip-placement="bottom"
+      tooltip-trigger="mouseover" tooltip="Manage"></i></h4>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-6 dsui-metrics-tiles" data-ng-repeat="item in metricsKpiCharts track by $index">
+      <!-- Begin: User Preference Charts-->
+      <div class="panel panel-default dsui-home-tile"
+           data-ng-click="fnNavigateMetric(item.cuid,item.title,item.type)">
+        <div class="panel-heading">
+          <h4 class="dsui-home-text" data-ng-bind="item.title" data-ng-show="item.url"></h4>
+          <h4 class="dsui-home-text" data-i18n="private-home.BUNDLE_REPORT_KPI_TITLE" data-ng-hide="item.url"></h4>
+        </div>
+        <div class="panel-body" ng-switch on="item.modeIndicator" >
+          <img data-ng-if="!item.url" alt="" class="dsui-metrics-graph img-responsive" data-ng-src="images/private/home/new_chart.png"/>
+          <div data-widget-loader status="item.load" data-ng-if="item.url"></div>
+          <div ng-switch-when="story" visual url="item.url" load="item.load" selector="item.selector"
+               class="dsui-metrics-graph img-responsive" mode="item.modeIndicator" data-ng-hide="item.load"  chart-position="item.chartPosition" data-ng-if="item.url" cuid="item.cuid"></div>
+          <img ng-switch-when="visual" visual url="item.url" load="item.load" content="item.content" alt=""
+               selector="item.selector" class="col-sm-12 dsui-metrics-graph img-responsive"
+               data-ng-src="{{item.graph}}" mode="item.modeIndicator" data-ng-hide="item.load" chart-position="item.chartPosition" data-ng-if="item.url" cuid="item.cuid"/>
+        </div>
+      </div>
+      <!-- End: User Preference Charts-->
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!--End Metrics/KPI Section-->

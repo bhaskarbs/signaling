@@ -1,0 +1,12 @@
+{
+  "status": {
+    "STATUS": {
+      "0": {
+        "HTTP_STATUS_CODE": 201,
+        "ERROR_MESSAGE": "Inserted successfully",
+        "DETAIL": "No errors"
+      }
+    }
+  },
+  "result": null
+}

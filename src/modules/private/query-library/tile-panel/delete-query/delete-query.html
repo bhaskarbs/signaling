@@ -1,0 +1,19 @@
+<div class="modal fade dsui-query-delete-message" id="dsui-query-delete-error-message" role="dialog"
+     data-ng-controller="DeleteQueryController" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="col-md-8 modal-main">
+    <div class="modal-dialog dsui-modal-position">
+      <div class="modal-content dsui-modal-content">
+        <div class="modal-body">
+          <div class="dsui-delete-text">
+            <i class="icon-info-circle dsui-icon-delete"></i>
+            <span data-i18n="private-query-library.BUNDLE_DELETE_CONFIRMATION"></span>
+          </div>
+          <div class="dsui-delete-cancel">
+          <button type="button" class="btn btn-primary" data-i18n="private-query-library.BUNDLE_DELETE" data-ng-click="fnQueryDelete()"></button>
+            <button type="button" class="btn btn-default" data-i18n="private-query-library.BUNDLE_CANCEL" data-ng-click="cancelQueryDelete()"></button>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

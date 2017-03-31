@@ -1,0 +1,18 @@
+<div class="modal fade dsui-query-builder-save-error-message" id="dsui-query-builder-save-error-message" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"
+     data-ng-controller="ErrorSaveQueryController">
+  <div class="col-md-8 modal-main">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-body">
+            <div class="dsui-icon-3x dsui-icon-warning icon-warning"></div>
+            <div class="dsui-error-message" data-ng-bind="errorMessage"></div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary dsui-ok-button" data-i18n="private-query-library.BUNDLE_OK"
+                  data-ng-click="fnClosePopup()"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

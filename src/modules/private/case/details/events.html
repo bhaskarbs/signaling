@@ -1,0 +1,60 @@
+<div class="col-sm-6 dsui-events-padding">
+  <div class="col-sm-12 dsui-no-padding dsui-case-details-panel">
+    <div class="dsui-case-events dsui-case-summary-layout">
+          <span class="col-sm-12 dsui-case-summary-label"
+                data-i18n="private-case-list-library.BUNDLE_CASE_EVENTS"></span>
+      <div class="col-sm-12 dsui-no-padding dsui-case-summary-col1 dsui-event-scroll">
+        <div class="col-sm-12 dsui-case-summary-layout" data-ng-repeat="event in caseEvents">
+              <span class="col-sm-11">
+                <span class="dsui-case-summary-layout" data-ng-bind="($index + 1)+'.'"></span>
+                <span class=" dsui-case-summary-layout" data-ng-bind="event.eventVerbatim|empty:CONSTANTS.EMPTY"></span>
+                <span class=" dsui-case-summary-layout" data-ng-bind="event.ptDesc|empty:CONSTANTS.EMPTY"></span>
+              </span>
+          <div class="col-sm-12 dsui-suspect-sub-label">
+            <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_ONSET_DATE"></span>
+                  <span class="dsui-case-summary-layout"
+                        data-ng-bind="event.eventOnSetDate|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_EVENT_OUTCOME"></span>
+              <span class="dsui-case-summary-layout" data-ng-bind="event.eventOutcome|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_SERIOUSNESS"></span>
+              <span class="dsui-case-summary-layout" data-ng-bind="event.seriousness|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_EVENT_LISTEDNESS"></span>
+              <span class="dsui-case-summary-layout" data-ng-bind="event.listedness|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_TIME_TO_ONSET"></span>
+              <span class="dsui-case-summary-layout" data-ng-bind="event.timeToOnset|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_COMPANY_CAUSALITY"></span>
+                  <span class="dsui-case-summary-layout"
+                        data-ng-bind="event.companyCausality|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_REPORTER_CAUSALITY"></span>
+                  <span class="dsui-case-summary-layout"
+                        data-ng-bind="event.reporterCausality|empty:CONSTANTS.EMPTY"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 dsui-no-padding dsui-case-summary-col1 dsui-assessed-info"
+           data-i18n="private-case-list-library.BUNDLE_ASSESSED_INFO"></div>
+    </div>
+  </div>
+</div>
+

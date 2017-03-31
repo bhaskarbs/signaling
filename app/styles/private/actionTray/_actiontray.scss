@@ -1,0 +1,122 @@
+.tray-close {
+    background-color: $saint-title-gray-color;
+    position: fixed;
+    right: 0px;
+    color: #ffffff;
+    font-size: 14px;
+    z-index: 10001;
+    font-style: normal;
+    bottom: 20px;
+}
+
+html {
+    -ms-overflow-style: scrollbar;
+}
+
+.tray-open {
+    position: fixed;
+    height: 175px;
+    width: 100%;
+    right: 0px;
+    color: #ffffff;
+    font-size: 14px;
+    z-index: 10001;
+    font-style: normal;
+    bottom: 0px;
+}
+
+#tray {
+    height: 25px;
+    width: 175px;
+    background-color: $saint-title-gray-color;
+    position: fixed;
+    right: 0px;
+    color: #ffffff;
+    font-size: 14px;
+    z-index: 10002;
+    font-style: normal;
+    float: right;
+    padding-top: 7px;
+}
+
+.tray-header-open {
+    bottom: 175px;
+}
+
+.tray-header-close {
+    bottom: 0px;
+}
+
+#tray span {
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+#tray span:last-child {
+    float: right;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.actionBar-close {
+    width: 100%;
+    height: 0px;
+    border-style: solid;
+    display: none;
+}
+
+.dsui-no-padding-progressbar {
+    padding: 0 0 0 0;
+}
+
+.dsui-progress-cancel {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.actionBar-open {
+    display: block;
+    width: 100%;
+    height: 175px;
+    background-color: #ffffff;
+    border-color: $saint-title-gray-color;
+    border-width: 0.5px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    z-index: 10001;
+    position: absolute;
+    overflow-y: scroll;
+}
+
+.actionBar-open::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+/*webkit-browser scroll bar*/
+.actionBar-open::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.actionBar-open::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $saint-title-gray-color;
+    background-image: -webkit-linear-gradient(top, #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%);
+}
+
+
+#action-bar > div {
+    display: inline-block;
+    padding: 30px;
+    opacity: 1;
+    color: $saint-title-gray-color;
+    font-size: 12px;
+}
+
+.color-success {
+    color: $saint-title-gray-color;
+}

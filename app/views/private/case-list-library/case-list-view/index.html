@@ -1,0 +1,23 @@
+<div class="dsui-cases-view clearfix">
+  <div data-ng-include="VIEWS.CASE_TRACK_VIEW"></div>
+  <div id="dsui-case-list" data-ng-controller="CaseListHeaderController">
+    <div data-ng-include="VIEWS.CASE_LIST_NAVIGATION"></div>
+    <div class="col-md-12  dsui-no-padding" >
+      <div data-ng-include="VIEWS.CASES_HEADER"></div>
+    </div>
+    <div class="col-md-12 dsui-no-padding">
+      <div data-ng-include="VIEWS.CASE_LIST_COUNT_DETAILS" class="dsui-case-list-count col-sm-12 dsui-no-padding"></div>
+      <div data-ng-include="VIEWS.CASE_LIST_ADVANCED_QUERY" class="col-sm-12 dsui-no-padding" ></div>
+    </div>
+    <div viewport-auto-height body-scroll="true" space-bottom="10"class="col-md-12  dsui-no-padding dsui-data-view-page" data-ng-class="showDataViewPage?'dsui-show-data-view-page':'dsui-no-show-data-view-page'">
+      <div data-ng-if="showDataViewPage" data-ng-include="VIEWS.CASE_LIST_DATA_VIEW" data-ng-class="showDataViewPage?'col-sm-12 dsui-no-padding dsui-full-height':''"></div>
+    </div>
+    <div data-ng-include="VIEWS.DATA_VIEW_CANCEL_MODAL"></div>
+  </div>
+  <div data-ng-include="VIEWS.SAVE_CASE_LIST_MODAL" data-ng-controller="SaveCaseListController"></div>
+  <div data-ng-include="VIEWS.SHARE_CASE_LIST"></div>
+  <div style="margin-top:10px;" class="col-md-12 dsui-no-padding">
+    <div class="col-md-12 dsui-no-padding" data-ui-view="casesView"></div>
+  </div>
+</div>
+

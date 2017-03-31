@@ -1,0 +1,56 @@
+<!-- Modal -->
+<div class="modal fade" id="caselistModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog dsui-caselist-modal-dialog" role="document">
+    <!--DEFAULT VIEW-->
+    <div data-ng-if="defaultView" data-ng-controller="CaseListTilePanelModalController">
+      <div class="modal-content dsui-caselist-modal-content">
+        <div class="modal-header dsui-caselist-modal-header">
+          <span class="input-group">
+            <span class="input-group-addon icon-filter" data-ng-click="fnOpenFilterViewModal()">
+            </span>
+            <span class="input-group-addon dsui-search-modal-icon" id="dsuiGlobalSearch"><span
+              class="glyphicon glyphicon-search"></span></span>
+            <form data-ng-submit="fnFindSearchString(caselistSearch)">
+            <input class="dsui-modal-search" type="text" placeholder=""
+                   data-i18n-attr="{placeholder:'private-header.BUNDLE_SEARCH_PLACEHOLDER_TEXT'}"
+                   data-ng-model="caselistSearch"
+                   aria-describedby="dsuiGlobalSearch"/>
+              </form>
+          </span>
+          </div>
+        <div class="modal-body dsui-default-view-modal-body" id="flux">
+          <div data-ng-include="VIEWS.REPORT_OUTPUT_TILE_PANEL"></div>
+        </div>
+        <div class="modal-footer dsui-caselist-modal-footer">
+          <button type="button" class="btn btn-primary btn-attach" data-ng-click="fnAttachNewCaseList()">Attach</button>
+          <button type="button" class="btn btn-secondary btn-default-cancel" data-ng-click="fnCloseUpdateModal()">Cancel</button>
+         </div>
+      </div>
+    </div>
+    <!--Default ENDS-->
+
+    <!--FILTER VIEW-->
+    <div data-ng-if="!defaultView">
+      <div class="modal-content dsui-caselist-modal-content">
+        <div class="modal-header dsui-caselist-modal-header dsui-filter-modal-header">
+            <span><a class="icon-filter dsui-filter-modal-icon"></a></span><span class="dsui-filter-modal-icon">  FILTERS</span>
+        </div>
+        <div class="modal-body dsui-default-view-modal-body">
+          <div class="col-xs-8">
+            <filter-breadcrumb controller-name="CaseListModalBreadcrumb" context="reportOutput"></filter-breadcrumb>
+          </div>
+          <hr class="dsui-filter-view-modal-hr">
+          <div data-ng-controller="CaseListModalfilterController">
+            <div filter-directive></div>
+            <div data-ng-include="VIEWS.CASE_LIST_DATE_FILTER_VIEW" data-ng-controller="CaseListModalDateFilterController"></div>
+          </div>
+        </div>
+        <div class="modal-footer dsui-caselist-modal-footer">
+          <button type="button" class="btn btn-primary " data-ng-click="fnToggleToDefault()">Apply</button>
+          <button type="button" class="btn btn-secondary" data-ng-click="fnToggleToDefault()">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <!--Filter ENDS-->
+  </div>
+</div>

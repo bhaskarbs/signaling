@@ -1,0 +1,108 @@
+<div class="dsui-gantt" data-ng-controller="GanttChartController">
+  <div class="dsui-reportDisplayDetail-gantt" data-ng-class="showFilterPanel ? 'dsui-ganttNoCollapse' : 'dsui-ganttOnCollapse'">
+    <div class="dsui-reportNumber-gantt">
+      <span data-ng-bind="totalRecords"></span>&nbsp;Reports
+    </div>
+    <div class="dsui-sortStatus-gantt"><span class="dsui-sortStatusText-gantt" data-i18n="common.BUNDLE_SORTED_BY"></span>:&nbsp;<span
+      class="dsui-sortStatusResult-gantt" data-ng-bind="reportFactoryData.reportSort.sortedByName"></span></div>
+  </div>
+
+  <div class="col-sm-12 dsui-gantt-chart dsui-no-padding">
+    <div class="col-sm-12 dsui-gantt-chart-header">
+      <div class="btn-group dsui-no-padding col-sm-3" role="group">
+        <button type="button" class="btn btn-default dsui-button-arrow" data-ng-click="isActiveView === 'month'?fnGetWeekData(-7,true,true):fnGetYearData(-1,true)"><i class="icon-angle-left"></i></button>
+        <button type="button" class="btn btn-default dsui-btn-current" data-ng-click="isActiveView === 'month'?fnGetWeekData(0,true,true):fnGetYearData(0,true)"><span data-i18n = {{currActive}}></span></button>
+        <button type="button" class="btn btn-default dsui-button-arrow" data-ng-click="isActiveView === 'month'?fnGetWeekData(7,true,true):fnGetYearData(1,true)"><i class="icon-angle-right"></i> </button>
+      </div>
+      <div class="col-sm-9">
+        <div class="col-md-8 col-sm-7 dsui-gantt-chart-heading"><span data-i18n={{ganttChartData.chartSpecifications.calenderRangeString}}></span></div>
+        <div class="col-md-4 col-sm-5 text-right">
+          <div class="btn-group dsui-btn-index" role="group">
+            <!-- data-ng-click and data-ng-class added to enable active/deactive button view for toggle -->
+            <button type="button" class="btn btn-default" data-ng-class="{'month': 'dsui-btn-active' , 'year': 'dsui-btn-deactive'}[isActiveView]" data-ng-click="fnGanttChartView('month')"><span data-i18n="private-reports-library.BUNDLE_GANTT_CHART_MONTH" data-ng-class="{'month': 'dsui-btn-active' , 'year': 'dsui-btn-deactive'}[isActiveView]"></span></button>
+            <button type="button" class="btn btn-default" data-ng-class="{'month': 'dsui-btn-deactive' , 'year': 'dsui-btn-active'}[isActiveView]" data-ng-click="fnGanttChartView('year')"><span data-i18n="private-reports-library.BUNDLE_GANTT_CHART_YEAR" data-ng-class="{'month': 'dsui-btn-deactive' , 'year': 'dsui-btn-active'}[isActiveView]"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 dsui-no-padding dsui-gantt-chart-body">
+      <div data-ng-if="isActiveView==='month'">
+        <gantt template-url="views/private/gantt/gantt-chart-week-template.html"
+          first-day-of-week="ganttChartData.chartSpecifications.firstDay"
+          load-data="fnLoadGanttData = fn"
+          remove-data="removeData = fn"
+          clear-data="clearData = fn"
+          sort-mode="ganttChartData.chartSpecifications.mode"
+          view-scale="scale"
+          column-width="scale === 'month' && 20 || (scale === 'week' && 10 || 1.5)"
+          column-sub-scale="scale === 'week' && 7 || 3"
+          weekend-days="ganttChartData.chartSpecifications.weekendDays"
+          show-weekends="ganttChartData.chartSpecifications.showWeekends"
+          max-height="ganttChartData.chartSpecifications.maxHeight"
+          on-gantt-ready="fnAddSamples()"
+          on-row-added="rowEvent(event)"
+          on-row-clicked="rowClicked(event)"
+          on-row-updated="rowEvent(event)"
+          on-scroll="scrollEvent(event)"
+          on-task-clicked="fnTaskClick(event,e)"
+          on-task-updated="taskEvent(event)"
+          from-date="startDate"
+          to-date="endDate"
+          user-id="userId"
+          group-id="groupId"
+          labels-width="ganttChartData.chartSpecifications.labelsWidth"
+          open-date-picker="fnCloseDatepicker"
+          get-milestones="getMilestones"
+          center-date="centerDate = fn"
+          data="renderedData"
+          close-milestone-popover="fnClosePopover"
+          get-milestones-payload="getPayload"
+          mark-milestone-complete="saveMilestones()"
+          constants="CONSTANTS">
+          <div data-widget-loader status="isProgress"></div>
+        </gantt>
+      </div>
+
+      <div data-ng-if="isActiveView==='year'">
+        <gantt template-url="views/private/gantt/gantt-chart-month-template.html"
+                  load-data="fnLoadGanttData = fn"
+                  remove-data="removeData = fn"
+                  clear-data="clearData = fn"
+                  sort-mode="ganttChartData.chartSpecifications.mode"
+                  view-scale="month"
+                  column-width=0.34
+                  column-sub-scale=31
+                  max-height="ganttChartData.chartSpecifications.maxHeight"
+                  on-gantt-ready="fnAddSamples()"
+                  on-row-added="rowEvent(event)"
+                  on-row-clicked="rowClicked(event)"
+                  on-row-updated="rowEvent(event)"
+                  on-scroll="scrollEvent(event)"
+                  on-task-clicked="fnTaskClick(event,e)"
+                  on-task-updated="taskEvent(event)"
+                  from-date="startDate"
+                  to-date="endDate"
+                  user-id="userId"
+                  labels-width="ganttChartData.chartSpecifications.labelsWidth"
+                  data="renderedData">
+          <div data-widget-loader status="isProgress"></div>
+        </gantt>
+      </div>
+    </div>
+
+    <!-- show chart legends -->
+    <div>
+    <ul class="dsui-status-legends" data-ng-class="showFilterPanel ? 'dsui-filterShow' :'dsui-filterHide'">
+      <div class="dsui-open"></div>
+      <li class="dsui-status"><span class="dsui-open-text" data-i18n="private-reports-library.BUNDLE_OPEN"></span></li>
+      <div class="dsui-inprogress"></div>
+      <li class="dsui-status"><span class="dsui-inprogress-text" data-i18n="private-reports-library.BUNDLE_INPROGRESS"></span></li>
+      <div class="dsui-completed"></div>
+      <li class="dsui-status"><span class="dsui-completed-text" data-i18n="private-reports-library.BUNDLE_COMPLETED"></span></li>
+      <div class="dsui-overdue"></div>
+      <li class="dsui-status"><span class="dsui-overdue-text" data-i18n="private-reports-library.BUNDLE_OVERDUE"></span> </li>
+    </ul>
+  </div>
+  </div>
+</div>

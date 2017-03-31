@@ -1,0 +1,342 @@
+.dsui {
+  .dsui-header {
+  }
+
+  .dsui-content {
+    #horizontal-container {
+      display: inline-block;
+    }
+    .dsui-confirm-set-delete{
+      width: 40%;
+      padding-top: 15%;
+      .dsui-delete-query-message{
+        padding-top: 10px;
+        .dsui-query-delete-exclamation{
+          font-size: 40px;
+          color: $saint-dark-yellow-border;
+        }
+        .dsui-query-delete-text{
+          padding-top: 5px;
+          font-family: $font-roboto-medium;
+        }
+      }
+      .dsui-delete-query-buttons{
+        padding: 10px 10px 10px 10px;
+        .btn {
+          min-width: 75px;
+        }
+      }
+    }
+
+    .dsui-query-builder{
+      .dsui-tooltip {
+        border-radius: 3px;
+        background: $saint-gray-color;
+        position: absolute;
+        max-width: 250px;
+        opacity: 1;
+        pointer-events: auto;
+        @include sainttranslateY(0px);
+      }
+
+      .dsui-no-tooltip {
+        display: none;
+      }
+      /* CSS Triangles - see Trevor's post */
+      .dsui-operator-tooltip:after {
+        border-left: solid transparent 8px;
+        border-right: solid transparent 8px;
+        border-top: solid $saint-gray-color 10px;
+        bottom: -9px;
+        content: " ";
+        left: 45px;
+        position: absolute;
+      }
+      .dsui-operand-tooltip:after {
+        border-left: solid transparent 8px;
+        border-right: solid transparent 8px;
+        border-top: solid $saint-gray-color 10px;
+        bottom: -9px;
+        content: " ";
+        left: 62px;
+        position: absolute;
+      }
+      .dsui-operand-tooltip-with-delete:after {
+        border-left: solid transparent 8px;
+        border-right: solid transparent 8px;
+        border-top: solid $saint-gray-color 10px;
+        bottom: -9px;
+        content: " ";
+        left: 75px;
+        position: absolute;
+      }
+      .dsui-callout-btn{
+        padding: 3px 4px 0px 3px;
+        border:1px solid $saint-white-color;
+        border-radius:3px;
+        background-color:$saint-cool-gray-color;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background: $saint-white-color;
+        color:$saint-black-color;
+        margin: 2px;
+        cursor:pointer;
+      }
+      .dsui-callout-btn-inv{
+        padding-left: 10px;
+        cursor: pointer;
+      }
+      .dsui-callout-delete-btn {
+        color: $saint-black-color;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #board .as-sortable-item,
+      #board .as-sortable-placeholder {
+        display: inline-block;
+        width: 120px;
+        height: 45px;
+        float: left;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-left-radius: 0.5px;
+        border-bottom-right-radius: 0.5px;
+        overflow-wrap: break-word;
+        margin-top: 12px;
+      }
+
+      .dsui-operator-object {
+        border: none !important;
+        width: 36px !important;
+        display: inline-block !important;
+        height: 25px !important;
+        float: left !important;
+        border-radius: 4px;
+        margin: 25px 15px 0 12px !important;
+        align-content: center;
+        overflow-wrap: normal !important;
+      }
+
+      .dsui-parenthesis-object {
+        border: none !important;
+        background-color: $saint-case-list-fill-color;
+        display: inline-block !important;
+        height: 45px !important;
+        float: left !important;
+        overflow-wrap: break-word;
+        font-size: 35px;
+        align-content: center;
+        width: 12px !important;
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+      }
+      #board .sortable-row:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+      }
+      .dsui-selected-set {
+        width: 120px;
+        background-color: $saint-querylibrary-modal-selected;
+        stroke: $saint-querylibrary-modal-selected;
+        border-radius: 2px;
+        height: 44px;
+        color: $saint-white-color;
+      }
+
+      .dsui-de-selected-set {
+        background-color: $saint-white-color;
+        stroke: $saint-user-tag-border;
+        border-radius: 2px;
+        height: 44px;
+        color: $saint-black-color;
+      }
+
+      .dsui-selected-set-name {
+        height: 34px;
+        font-size: 12px;
+        overflow-y: hidden;
+        text-align: center;
+      }
+
+      .dsui-set-name-inline{
+        padding-top: 9px;
+      }
+
+      .dsui-set {
+        .dsui-group{
+          border-top: none;
+        }
+      }
+
+      .dsui-group {
+        .dsui-group{
+          border-top: 1px solid $saint-refresh-query-border-color;
+        }
+      }
+
+      .dsui-de-selected-set-drag {
+        background-color: $saint-close-panel;
+        stroke: $saint-close-panel;
+        height: 10px;
+        border-top-color: $saint-white-color;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-top-style: solid;
+        font-size: 4px;
+        border-top-width: 0.25px;
+        text-align: center;
+        color: $saint-white-color;
+      }
+
+      .dsui-selected-set-drag {
+        height: 10px;
+        border-top-color: $saint-white-color;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-top-style: solid;
+        color: $saint-white-color;
+        font-size: 5px;
+        border-top-width: 0.25px;
+        text-align: center;
+        background-color: $saint-querylibrary-modal-selected;
+      }
+      .dsui-no-padding {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .as-sortable-dragging {
+        top: 70px !important;
+      }
+
+      .dsui-expression-eval {
+        background-color: $saint-case-list-fill-color;
+        padding: 0 30px 0 30px;
+      }
+      .dsui-operator-position {
+        padding-left: 5px;
+        padding-top: 0px;
+        border-radius: 2px;
+        width: 36px;
+        height: 25px;
+        border : solid $saint-cool-gray-color 1px;
+      }
+      .dsui-operator-color{
+        font-size: 25px;
+      }
+      .dsui-display-hide{
+        visibility: hidden;
+      }
+      .dsui-operator-tooltip {
+        height: 40px;
+        width: 107px;
+        padding-top: 9px;
+        padding-left: 8px;
+        margin-top: -80px;
+        margin-left: -42px;
+      }
+      .dsui-operand-tooltip {
+        .dsui-callout-btn{
+          padding: 1px 4px 1px 4px;
+        }
+        height: 40px;
+        width: 130px;
+        padding-top: 9px;
+        padding-left: 8px;
+        margin-top: -50px;
+        margin-left: -5px;
+      }
+      .dsui-operand-tooltip-with-delete {
+        .dsui-callout-btn{
+          padding: 1px 4px 1px 4px;
+        }
+        height: 40px;
+        width: 160px;
+        padding-top: 9px;
+        padding-left: 8px;
+        margin-top: -50px;
+        margin-left: -17px;
+      }
+      span[class*="path"]:before {
+        color: $saint-querylibrary-path !important;
+        text-shadow: 0px 0px 0px $saint-querylibrary-path-shadow !important;
+      }
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+
+    .dsui-content {
+    }
+
+    .dsui-footer {
+    }
+  }
+}
+
+/*Ipad Landscape*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .dsui {
+    .dsui-header {
+    }
+
+    .dsui-content {
+    }
+
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+
+    .dsui-content {
+    }
+
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+
+    .dsui-content {
+    }
+
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+
+    .dsui-content {
+    }
+
+    .dsui-footer {
+    }
+  }
+}

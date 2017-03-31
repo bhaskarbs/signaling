@@ -1,0 +1,50 @@
+<!--<div ng-repeat="report in reportData">-->
+<div dir-paginate="caseList in myCaseListData | itemsPerPage: caseListPerPage" total-items="totalCaseList"
+     current-page="pagination.current" pagination-id="caseListTiles">
+  <div class="dsui-caseListTile" data-ng-class="{'dsui-caseListTileClicked':report.isSelected}"
+       data-ng-click="decorator.click(PRIVILEGES.CASE_LIST_VIEW,fnTileSelected,[caseList]);">
+    <div class="dsui-caseListNameClose">
+      <div class="dsui-caseListName pull-left" data-ng-bind="caseList.caseListName">
+      </div>
+      <div data-ng-if="caseList.reportKey==null" class="pull-right dsui-cross icon-times-circle">
+      </div>
+      <div data-ng-if="caseList.reportKey!==null" class="pull-right dsui-lock icon-lock">
+      </div>
+      <div data-ng-show="caseList.isShared" class="pull-right dsui-shared-status">
+        <span class="dsui-shared-status-text" data-i18n="private-query-library.BUNDLE_KEY_SHARED"></span>
+      </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="dsui-dateRange">
+      <div data-ng-if="caseList.allDatesFlag === 1">
+        <span data-i18n="private-reports-library.BUNDLE_ALL_DATES"></span>
+      </div>
+      <div data-ng-if="caseList.allDatesFlag === 0">
+        <span data-ng-bind="fnGetDate(caseList.reportingStartDate)"></span>&nbsp;-&nbsp;<span
+        data-ng-bind="fnGetDate(caseList.reportingEndDate)"></span>
+      </div>
+    </div>
+    <div class="dsui-descStatus">
+      <div class="dsui-desc">{{caseList.description | limitTo:500}}{{caseList.description.length < 500 ? '' : '...'}}
+      </div>
+    </div>
+    <div class="dsui-dateDueDateCreated">
+      <div data-ng-if="caseList.reportKey!==null" class="dsui-caseCount-locked"><span
+        data-ng-bind="caseList.sourceCasesCount"></span>
+        <span data-i18n="private-case-list-library.BUNDLE_CASES"></span>
+      </div>
+      <div data-ng-if="caseList.reportKey==null" class="dsui-caseCount-unlocked"><span
+        data-ng-bind="caseList.sourceCasesCount"></span>
+        <span data-i18n="private-case-list-library.BUNDLE_CASES"></span>
+      </div>
+      <div class="dsui-dateCreated"><span data-i18n="private-case-list-library.BUNDLE_CREATED"></span>:&nbsp<span
+        data-ng-bind="fnGetDate(caseList.creationDate)"></span>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+

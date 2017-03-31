@@ -1,0 +1,231 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-case-details-content {
+      .dsui-case-details-list {
+        background-color: $saint-white-color;
+        .dsui-case-details-view {
+          .dsui-case-details {
+            .dsui-case-details-layout {
+              margin: 1em;
+            }
+
+            //Top section in the case details
+            .dsui-case-number {
+              @include fontsize-color-fontfamily-fontstyle(1.5em, $saint-blue-color, $font-roboto-regular, normal);
+              text-align: left;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              padding-left: 0px;
+            }
+            .dsui-case-details-panel {
+              border-radius: 5px;
+              border: 1px solid $saint-favourite-border-color;
+              margin-bottom: 30px;
+
+              .dsui-align-fa-icon{
+                @include color-fontsize($saint-caption-color, 1.3em);
+                position: relative;
+                top: 2px;
+                padding-left: 10px;
+              }
+              .dsui-align-crumbs{
+                margin-left: 10px;
+              }
+            }
+
+            //Submission history section
+            .dsui-periodic {
+              padding: 10px;
+              font-size: 16px;
+              font-family: $font-roboto-bold;
+            }
+            .dsui-icsr {
+              padding: 10px;
+              font-size: 16px;
+              font-family: $font-roboto-bold;
+            }
+            .dsui-report-name {
+              padding-left: 10px !important;
+            }
+            .dsui-periodic-section {
+              height: 185px;
+            }
+            .dsui-icsr-section {
+              padding-top: 15px;
+              max-height: 179px;
+            }
+            .dsui-separator {
+              position: absolute;
+              border-bottom: 1px solid $saint-favourite-border-color;
+              width: 100%;
+              left: -0%;
+              padding-bottom: 15px;
+            }
+            .dsui-submission-history{
+              height: 357px;
+              overflow-y: auto;
+            }
+
+            //Summary section
+            .dsui-summary-padding {
+              padding-left: 0px;
+            }
+            .dsui-case-summary-col1 {
+              padding: 15px !important;
+            }
+            .dsui-case-summary-col1:first-child {
+              border-right: 1px solid $saint-favourite-border-color;
+            }
+            .dsui-case-details-labels {
+              color: $saint-blue-color;
+              font-size: 0.9em;
+              font-size: 14px;
+              font-family: $font-roboto-medium;
+            }
+            .dsui-case-details-values {
+              font-size: 0.9em;
+            }
+
+            //Events section
+            .dsui-events-padding {
+              @include paddingleft-paddingright(20px, 0px !important);
+            }
+
+            .dsui-case-summary, .dsui-case-products, .dsui-case-events {
+              font-size: 1em;
+              .dsui-case-summary-label {
+                background-color: $saint-panel-cool-gray-color;
+                border-bottom: 1px solid $saint-favourite-border-color;
+                padding: 15px;
+                @include Roboto-Medium(16px, $saint-unfavourite-color);
+              }
+              .dsui-event-scroll {
+                height: 247px;
+                overflow-y: auto;
+              }
+
+              //suspect products section
+              .dsui-suspect-scroll {
+                height: 357px;
+                overflow-y: auto;
+              }
+              .dsui-assessed-info {
+                color: $saint-favourite-border-color;
+              }
+              .dsui-case-summary-col1 {
+                padding: 15px !important;
+              }
+              .dsui-case-summary-col1:first-child {
+                border-right: 1px solid $saint-favourite-border-color;
+              }
+              .dsui-case-details-labels {
+                @include Roboto-Medium(0.9em, $saint-blue-color);
+              }
+              .dsui-case-details-values {
+                font-size: 0.9em;
+              }
+              .dsui-suspect-sub-label{
+                padding-left: 0px;
+              }
+              .dsui-case-summary-layout {
+                margin-top: 1em;
+                font-size: 0.9em;
+                padding: 0px !important;
+                //word-wrap: break-word;
+                font-size: 14px;
+                font-family: $font-roboto-regular;
+                font-style: normal;
+              }
+
+              //Narrative section
+              .dsui-case-narrative {
+                padding: 15px !important;
+              }
+              .dsui-border-line {
+                border-right: 1px solid $saint-favourite-border-color;
+              }
+
+              //Annotation section
+              .dsui-select-tag {
+                @include Roboto-Medium(16px, $saint-title-gray-color);
+              }
+              .dsui-case-summary-col1{
+                 margin-bottom: 0px;
+                 .dsui-case-annotation{
+                      padding-left: 0px;
+                      width:95%;
+                  }
+                 .dsui-case-annotation-save
+                 {
+                    padding-left:0px;
+                    width:5%;
+                    padding-right:0px;
+                   .dsui-case-save-button {
+                         margin-top: 10px;
+                         padding: 4px 20px;
+                         width: initial;
+                         float:left;
+                        @include color-background($saint-white-color, $saint-blue-color);
+                    }
+                  }
+               }
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

@@ -1,0 +1,166 @@
+<div class="gantt clear-fix">
+  <div class="gantt-labels" data-ng-style="(labelsWidth > 0 && {'width': labelsWidth+'px'} || {})"
+       gantt-label-resizable="labelsWidth" resize-min="50">
+    <div class="gantt-labels-head">
+      <div class="gantt-labels-head-row" data-ng-style="::{'margin-top': ((gantt.getActiveHeadersCount()-3)*2)+'em'}">
+        <b><span data-i18n="private-reports-library.BUNDLE_REPORTS_LIBRARY_HEADER_KEY"></span></b></div>
+    </div>
+    <div class="gantt-labels-body" data-ng-style="(maxHeight > 0 && {'max-height': maxHeight+'px'} || {})">
+      <div gantt-vertical-scroll-receiver data-ng-style="::{'position': 'relative'}">
+        <div id="ganttLeftRow{{$index}}" class="gantt-labels-row gantt-row-height gantt-labels-left-row-height"
+             data-ng-class-odd="'gantt-background-row'" data-ng-class-even=""
+             data-ng-repeat="row in gantt.rows track by $index">
+          <span>{{row.name }}</span><br> <span>{{row.description }}</span>
+          </gantt-sortable>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gantt-head">
+    <div gantt-horizontal-scroll-receiver data-ng-style="{'position': 'relative', 'width': gantt.width+'em'}">
+      <div class="gantt-head-row" data-ng-class="(gantt.headers.week !== undefined && 'gantt-head-row-bottom' || '')"
+           data-ng-if="::gantt.headers.month !== undefined" style="display: none;">
+                <span data-ng-style="{'width': c.width+'em', 'left': c.left+'em','height':'40'+'px'}"
+                      data-ng-repeat="c in gantt.headers.month | ganttColumnLimit:scroll_start:scroll_width">
+            <!--{{ c.date | date:'MMMM yyyy' }}-->
+        </span>
+        <gantt-sortable swap="swapRows(a,b)" active="allowRowSorting" data-ng-model="row">
+      </div>
+      <div class="gantt-head-row" data-ng-if="gantt.headers.week !== undefined">
+                <span data-ng-style="{'width': c.width+'em', 'left': c.left+'em','height':'40'+'px'}"
+                      data-ng-repeat="c in gantt.headers.week | ganttColumnLimit:scroll_start:scroll_width">
+          {{($index === 0) && (c.date | date: 'MMMM dd') || ((c.date.getDate() == 7 || c.date.getDate() == 1 || c.date.getDate() == 2 || c.date.getDate() == 3 || c.date.getDate() == 4 || c.date.getDate() == 5 || c.date.getDate() == 6) && (c.date | date: 'MMMM dd') || (c.date | date : 'dd'))}}
+        </span>
+      </div>
+      <!-- {{($index === 0) && (c.date | date: 'MMMM dd') || ((c.date.getDate() == 7 || c.date.getDate() == 1 || c.date.getDate() == 2 || c.date.getDate() == 3 || c.date.getDate() == 4 || c.date.getDate() == 5 || c.date.getDate() == 6) && (c.date | date: 'MMMM dd') || (c.date | date : 'dd'))}}-->
+      <div class="gantt-head-row" data-ng-if="gantt.headers.day !== undefined" style="display: none;">
+                <span data-ng-style="{'width': c.width+'em', 'left': c.left+'em','height':'40'+'px'}"
+                      data-ng-repeat="c in gantt.headers.day | ganttColumnLimit:scroll_start:scroll_width">
+            {{ viewScale === 'hour' && (c.date | date:'dd EEEE') || (c.date | date:'dd') }}
+        </span>
+      </div>
+      <div class="gantt-head-row" data-ng-if="gantt.headers.hour !== undefined">
+                <span data-ng-style="{'width': c.width+'em', 'left': c.left+'em','height':'40'+'px'}"
+                      data-ng-repeat="c in ::gantt.headers.hour | ganttColumnLimit:scroll_start:scroll_width">
+            {{ ::(c.date | date:'HH') }}
+        </span>
+      </div>
+    </div>
+  </div>
+  <div id="ganttScroll" class="gantt-scrollable" gantt-scroll-sender gantt-limit-updater
+       data-ng-style="(maxHeight > 0 && {'max-height': maxHeight+'px', 'overflow-y': 'scroll'} || {'overflow-y': 'hidden'})"
+       data-ng-style="{'overflow-x': (gantt.rows.length == 0 && 'hidden' || 'scroll')}" custom-when-scrolled-gantt>
+    <div class="gantt-body" data-ng-style="{'width': gantt.width+'em'}">
+      <div class="gantt-body-background">
+        <div id="ganttBackgroundRow{{$index}}" class="gantt-row-height gantt-background-row-bottom"
+             data-ng-repeat="row in gantt.rows track by $index">
+        </div>
+      </div>
+      <div class="gantt-body-foreground">
+        <div
+          data-ng-repeat="c in gantt.columns | ganttColumnLimit:scroll_start:scroll_width track by $index">
+          <div data-ng-class="(viewScale === 'hour' && !c.isWorkHour && 'gantt-foreground-col-nonworkhour' || (fnCurrentWeek(c) && 'gantt-foreground-col-weekend' || 'gantt-foreground-col'))"
+                data-ng-style="{'width': c.width+'em', 'left': c.left+'em','border-right':fnWeekEnd(c)+'px solid #ddd '}"></div>
+        </div>
+      </div>
+      <div class="gantt-body-content">
+        <div class="gantt-row gantt-row-height" id="ganttRightRow{{$index}}"
+             data-ng-click="raiseDOMRowClickedEvent($event, row)"
+             data-ng-repeat="row in gantt.rows track by row.id" on-finish-render="gantRowsLoaded">
+          <!-- Left Extended Bar -->
+          <div
+            data-ng-class="{'gantt-task' : task.data.isExtended, 'dsui-left-extended dsui-stripes' : task.data.isExtendedLeft,}"
+            data-ng-style="{'left': (((task.isMilestone === true || task.width === 0) && (task.left-0.3) || (task.data.isPeriodic && task.left-1 || task.left))-2)+'em', 'width': task.width +2.5+'em', 'z-index': (task.isMoving === true && 1 || ''), 'background-color': task.color,'height':30 + 'px'}"
+            data-ng-repeat="task in row.tasks | ganttTaskLimit:scroll_start:scroll_width track by task.id"
+            data-ng-if='task.data.isExtendedLeft'>
+          </div>
+          <!-- Left Extended Bar End -->
+
+          <!--a task will override the row event -->
+
+          <div
+            data-ng-class="{'gantt-task' : !task.isMilestonePresent, 'dsui-stripes' : !task.data.isPeriodic,'dsui-border-dashed':!task.data.isPeriodic}"
+            data-ng-style="{'margin-left': ((task.isMilestone === true || task.width === 0) && (task.left-0.3) || (task.data.isPeriodic?(task.from>fromDate?task.left:task.left-1):(task.left)))+'em', 'width': task.width+((task.from>fromDate && task.to<toDate)?(task.from.getTime()===task.to.getTime())?1.8:1.5:(task.to<toDate)?2.5:(task.from>fromDate)?0.5:1.5)+'em', 'z-index': (task.isMoving === true && 1 || ''), 'background-color': task.color,'height':30 + 'px'}"
+            data-ng-click="raiseDOMTaskClickedEvent($event, task)"
+            data-ng-repeat="task in row.tasks | ganttTaskLimit:scroll_start:scroll_width track by task.id"
+            data-ng-if='fnIdentifyTask(task.id,"t") && !task.data.isExtended'>
+            <div data-ng-if="task.data.isPeriodic && task.from>fromDate"
+                 data-ng-style="{'position': 'absolute', 'top': 2.5+'em','font-size':'12'+'px','white-space':'nowrap'}">
+              <span data-ng-bind="task.from | date:'dd-MMM-yyyy'"></span>
+            </div>
+            <div data-ng-if="task.data.isPeriodic && task.to<toDate"
+                 data-ng-style="{'position': 'absolute', 'top': (task.to-task.from)/(1000 * 3600 * 24)>5?2.5+'em':3.5+'em','right':(task.to-task.from)/(1000 * 3600 * 24)>5?0:initial,'margin-right':-1+'em','width':7+'em','font-size':'12'+'px','white-space':'nowrap'}">
+              <span data-ng-bind="task.to | date:'dd-MMM-yyyy'"></span>
+            </div>
+            <div data-ng-if="!task.data.isPeriodic"
+                 data-ng-style="{'position': 'absolute', 'top': 2.5+'em','left':(task.data.milestones.length===1 && '-0.5' || (task.data.milestones.length>1 && '0.25' || -task.width/2))+1.5+'em','width':7+'em','font-size':'12'+'px','white-space':'nowrap'}">
+              <span data-ng-bind="task.data.submissionRunDate | date:'dd-MMM-yyyy'"></span>
+            </div>
+          </div>
+          <div data-ng-if="row.data.isPeriodic" data-ng-class="(row.data.statusId!==1)?'dsui-row-border-top-line-diff-date':'dsui-row-border-top-line-diff-date'"></div>
+          <div data-ng-if="!row.data.isPeriodic" class="dsui-row-border-top-line-diff-date"></div>
+          <!-- Right Extended Bar -->
+          <div
+            data-ng-class="{'gantt-task' : task.data.isExtended, 'dsui-right-extended dsui-stripes' : task.data.isExtendedRight}"
+            data-ng-style="{'left': (((task.isMilestone === true || task.width === 0) && (task.left-0.3) || (task.data.isPeriodic && task.left-1 || task.left))+1.7)+'em', 'width':task.width+1 +'em', 'z-index': (task.isMoving === true && 1 || ''), 'background-color': task.color,'height':30 + 'px'}"
+            data-ng-repeat="task in row.tasks | ganttTaskLimit:scroll_start:scroll_width track by task.id"
+            data-ng-if='task.data.isExtendedRight'>
+          </div>
+
+          <div data-ng-class="(task.isMilestone === true && 'gantt-task-milestone' || 'gantt-task')"
+               data-ng-style="{'left': ((task.isMilestone === true || task.width === 0) && (task.left-1) || task.left)+1.9+'em', 'top':0.7+'em', 'z-index': (task.isMoving === true && 1 || ''),'color':task.color}"
+               data-ng-click="raiseDOMTaskClickedEvent($event, task)"
+               data-ng-repeat="task in row.tasks | ganttTaskLimit:scroll_start:scroll_width track by task.id"
+               data-ng-if='fnIdentifyTask(task.id,"m")'>
+
+            <div data-ng-if="!task.data.isPeriodic" class="gantt-task-content">
+
+              <i class="fa fa-stop dsui-rotate-diamond" data-ng-if="task.data.submissionRunDate"></i>
+                            <span data-ng-click="getClickedMilestones(task,$event)"
+                                  data-ng-if="task.data.milestones.length>0"
+                                  data-ng-style="{'color':task.color,'position':'relative','left':(task.data.milestones.length>1 && '-3' || '-2.7')+'em','top':(task.data.milestones.length>1 && '-1' || '0.2')+'em'}">
+                <div id="milestoneFlagNonPeriodic" class="gantt-task-content-milestone-flag-flex"><i
+                  data-ng-class="task.data.isMilestoneComplete?'icon-flag':'icon-flag-o'" class="gantt-task-content-milestone-flag-align"></i>
+                  <div><span
+                    class="badge gantt-task-milestone-flag-operational" data-ng-if="task.data.milestones.length>1"
+                    data-ng-bind="task.data.milestones.length"></span></div>
+                </div></span>
+            </div>
+            <div>
+              <div data-ng-if="task.data.isPeriodic">
+
+                <div data-ng-if="!task.data.isDateRepeated" data-ng-style="{'color':task.color}">
+                  <!--if dates are not repeated in a report-->
+                  {{task.data.isExtendedLeft}}
+                  <div id="milestoneFlag" data-ng-class="task.data.isSubDateSameAsMilDate?'dsui-gantt-milestone-submission':(task.data.isMilestoneBeforeRptEndDate)?'dsui-gantt-milestone-beforeEndDate':''"><i data-ng-click="getClickedMilestones(task,$event)"
+                                             data-ng-class="task.data.milestone.milestoneStatus==0?'icon-flag-o':'icon-flag'"></i>
+                    </div>
+                </div>
+                <div data-ng-if="task.data.isDateRepeated">
+                  <!--if dates are repeated in a report-->
+                                <span data-ng-if="task.data.repeatedDatesCount==0"><!--if a particular date  has no multiple  milestones-->
+                <div id="milestoneFlagNoCount" data-ng-class="task.data.isSubDateSameAsMilDate?'dsui-gantt-milestone-submission':(task.data.isMilestoneBeforeRptEndDate)?'dsui-gantt-milestone-beforeEndDate':''"><i data-ng-click="getClickedMilestones(task,$event)"
+                                                  data-ng-class="task.data.milestone.milestoneStatus==0?'icon-flag-o':'icon-flag'"></i></div></span>
+
+                                <span data-ng-if="task.data.repeatedDatesCount!==0" class="dsui-gantt-milestone"><!--if a particular date has multiple  milestones-->
+                <div id="milestoneFlagCount" data-ng-class="task.data.isSubDateSameAsMilDate?'dsui-gantt-milestone-submission-count':(task.data.isMilestoneBeforeRptEndDate)?'dsui-gantt-milestone-beforeEndDateCount':''" class="dsui-gantt-milestone-flex"><i
+                  data-ng-click="getClickedMilestones(task,$event)"
+                  data-ng-class="task.data.isMilestoneComplete?'icon-flag':'icon-flag-o'"
+                  data-ng-style="{'color':task.color}"
+                ></i>
+                <div class="dsui-gantt-milestone-flag"><span data-ng-bind="task.data.repeatedDatesCount"
+                                                             class="dsui-gantt-milestone-count"></span></div></div>
+                            </span>
+                </div>
+              </div>
+            </div>
+            <div data-ng-click="fnClosePopover($event)"
+                 data-ng-include="'views/private/gantt/milestone-popover/milestone-popover.html'">
+            </div>
+          </div>
+        </div>
+        <milestone-modal mark-milestone="fnMarkMilestoneComplete()"></milestone-modal>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="dsui-list-tags">
+  <div data-ng-controller="ListTagController">
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+        <input data-ng-model="searchTag.tagName" class="form-control" type="text" data-i18n-attr="{placeholder:'private-header.BUNDLE_SEARCH_PLACEHOLDER_TEXT'}" />
+      </div>
+    </div>
+    <p class="clearfix"/>
+    <div class="dsui-list-taglist">
+      <div class="dsui-list-tag" data-ng-repeat="tag in listTagData.allTags | filter:searchTag:strict" data-ng-bind="tag.tagName" data-ng-click="fnAddSelected(tag)"></div>
+    </div>
+  </div>
+</div>

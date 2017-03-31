@@ -1,0 +1,18 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.REPORT_TYPE_LISTType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/REPORT_TYPE_LIST(1)"
+        },
+        "RPT_TYPE_KEY": 1,
+        "NAME": "DSUR",
+        "Audit.CreatedBy": "",
+        "Audit.CreatedDt": "\/Date(-210866803200000)\/",
+        "Audit.UpdatedBy": "",
+        "Audit.UpdatedDt": "\/Date(-210866803200000)\/"
+      }
+    ]
+  }
+}

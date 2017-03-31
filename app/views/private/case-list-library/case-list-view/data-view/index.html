@@ -1,0 +1,60 @@
+<div data-ng-controller="DataViewController" class="dsui-full-height">
+<div class="col-md-12  dsui-no-padding dsui-data-view-searchbar">
+  <div class="col-md-8 dsui-no-padding">
+    <div class="dsui-left-inner-addon">
+      <i class="glyphicon glyphicon-search"></i>
+      <input type="text" class="form-control" data-i18n-attr="{placeholder:'private-header.BUNDLE_SEARCH_PLACEHOLDER_TEXT'}" data-ng-model="search.dimensionName">
+    </div>
+  </div>
+  <div class="col-md-4 dsui-no-padding" data-ng-click="fnClearSelection()">
+    <span class="dsui-clear-all-selection" data-i18n="private-case-list-library.BUNDLE_DATA_VIEW_CLEAR_SELECTIONS"></span>
+  </div>
+</div>
+<div class="col-md-12  dsui-no-padding dsui-data-view-content">
+  <div class="col-md-4 dsui-no-padding dsui-data-view-menu">
+    <div class="dsui-list-group">
+      <li class="dsui-list-group-item" data-ng-click="fnGetGroupDimensions(null,true)" data-ng-class="isSelectedGroup?'dsui-highlight-group':''">
+        <span class="dsui-category-text" data-i18n="private-case-list-library.BUNDLE_DATA_VIEW_SELECTED"></span>
+        <span class="badge"  data-ng-bind="selectedDataViewsObj.length" data-ng-class="'SELECTED' ? 'dsui-selected-count': ''"></span>
+      </li>
+      <li class="dsui-list-group-item" data-ng-click="fnGetGroupDimensions(ConstantService.EMPTY_STRING,false)" data-ng-class="(selectedGroup===ConstantService.EMPTY_STRING)?'dsui-highlight-group':''">
+        <span class="dsui-category-text" data-i18n="private-case-list-library.BUNDLE_DATA_VIEW_ALL"></span>
+      </li>
+      <li class="dsui-list-group-item" data-ng-class="selectedGroup==group.dimensionGroup?'dsui-highlight-group':'' " data-ng-repeat="group in dimensionGroupObj" data-ng-click="fnGetGroupDimensions(group.dimensionGroup,false)">
+        <span data-ng-bind="group.dimensionGroup" class="dsui-category-text"></span>
+        <span class="badge" data-ng-bind="group.selectedCount"></span>
+      </li>
+    </div>
+  </div>
+  <div id="data-view-list" viewport-auto-height body-scroll="true" space-bottom="70" class="col-md-8 dsui-no-padding  dsui-data-view-list">
+  <div  ui-tree="" collapse="!isSelectedGroup" id="data-view-tree" data-drag-delay="200" data-drag-enabled="isSelectedGroup" >
+    <ul ui-tree-nodes="" data-ng-model="selectedDataViewsObj" class="dsui-unordered-dv-list">
+      <li ui-tree-handle ui-tree-node  class="dsui-dimension-list" data-ng-repeat="object in selectedDataViewsObj |filter:search">
+          <div class="dsui-selected-dimension">
+          <span class="dsui-dimension-data" data-ng-bind="object.dimensionName"></span>
+          <span data-ng-show="isSelectedGroup" data-ng-click="fnSelectDataView(object)"><i class="pull-right dsui-selected-close icon-times-circle"></i></span>
+          </div>
+      </li>
+    </ul>
+  </div>
+  <div  collapse="isSelectedGroup">
+      <div data-ng-repeat="(key,value) in dataViewsObject|filter:search">
+        <div data-ng-bind="key" class="dsui-group-key"></div>
+        <ul style="list-style-type:none" class="dsui-unordered-dv-list" class="dsui-unordered-dv-list">
+          <li data-ng-repeat="dimension in value|filter:search" class="dsui-dimension-list" data-ng-class="dimension.isSelected===1 && 'dsui-selected-highlight' || ''" data-ng-if="((dimension.dimensionGroup==selectedGroup || selectedGroup===ConstantService.EMPTY_STRING) && dimension.dimensionName)">
+            <div data-ng-click="fnSelectDataView(dimension)" class="dsui-dimension-data" data-ng-bind="dimension.dimensionName"></div>
+          </li>
+        </ul>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="col-md-12  dsui-no-padding dsui-data-view-footer">
+  <div class="col-md-3 col-md-offset-5 ">
+    <div class="btn btn-sm btn-primary full" data-ng-click="fnApplyDataViews()"><span data-i18n="private-case-list-library.BUNDLE_DATA_VIEW_APPLY"></span></div>
+  </div>
+  <div class="col-md-3 col-md-offset-1 ">
+    <div class="btn btn-sm btn-default full" data-ng-click="fnCancelDataViews()"><span data-i18n="private-case-list-library.BUNDLE_DATA_VIEW_CANCEL"></span></div>
+  </div>
+</div>
+</div>

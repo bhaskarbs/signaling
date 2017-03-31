@@ -1,0 +1,83 @@
+<div class="modal fade dsui-exclude-include" id="dsui-include-list" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                data-ng-click="fnOnCancel('dsui-include-list')"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" data-i18n="private-case-list-library.BUNDLE_INCLUDE"></h4>
+      </div>
+      <div class="modal-body dsui-include-exclude-body">
+        <form role="form">
+          <div class="col-md-12 col-sm-12 dsui-no-padding">
+            <label data-i18n="private-case-list-library.BUNDLE_INCLUDE_SELECT_CASE"
+                   class="dsui-reason-label"></label>
+            <div class="col-md-11 col-sm-11 dsui-no-padding">
+              <div class="inner-addon left-addon dsui-ui-select">
+                <div class = "fa fa-search dsui-custom-class-search"></div>
+                <ui-select ng-model="cases.selected">
+                  <ui-select-match placeholder = "Search"><span class = "dsui-case-number" data-ng-bind = "$select.selected.CASE_NBR"></span></ui-select-match>
+                  <ui-select-choices class="dsui-top-20-dropdown-menu" repeat="caseId in caseIds track by $index | limitTo : 20"  refresh="fnSearchCase($select.search)" refresh-delay="0">
+                    <div ng-bind="caseId.CASE_NBR"></div>
+                  </ui-select-choices>
+                </ui-select>
+              </div>
+            </div>
+            <div class="col-md-1 col-sm-1 text-right dsui-no-padding">
+              <button type="button" class="btn btn-default"
+                      data-ng-click="fnChosenCase()" data-i18n="private-case-list-library.BUNDLE_ADD"></button>
+            </div>
+          </div>
+          <div class="col-sm-12 dsui-no-padding dsui-file-upload-section">
+            <div class="col-sm-3 dsui-no-padding">
+              <label data-i18n="private-case-list-library.BUNDLE_UPLOAD" class="dsui-upload-label"></label>
+            </div>
+            <div class="col-sm-1 dsui-no-padding text-left dsui-upload-icon-section">
+              <span class="fa fa-upload dsui-upload-icon"></span>
+              <input type="file" class="fa fa-upload dsui-attachment-icon"
+                     data-on-read-file="showContent($fileContent,fileName)"/>
+            </div>
+            <div class="col-sm-8 dsui-no-padding text-left dsui-error" data-ng-show="isFileAvailableError">
+                            <span class="dsui-warning-text"><span class="fa fa-exclamation-triangle"></span><span
+                              data-i18n="private-case-list-library.BUNDLE_CASES_NOT_AVAILABLE_IN_SAINT"></span></span>
+            </div>
+          </div>
+          <hr style="margin-top: -5px">
+          <div class="dsui-include-line"></div>
+
+            <div data-field="caseId"><b><span data-i18n="private-case-list-library.BUNDLE_CASE_ID"></span></b></div>
+
+          <div class="dsui-exclude-include-table-border">
+            <div data-ng-repeat="row in casesListData" class="dsui-exclude-include-table">
+              <div data-ng-class="row.status=== '0'&&'dsui-warning-text'||''"><span
+                data-ng-bind="row.caseId"></span></div>
+            </div>
+          </div>
+
+          <div class="dsui-exclude-include-status">
+            <label ng-bind="validCases.length"></label> <label data-i18n="private-case-list-library.BUNDLE_CASEID_STATUS_INCLUDE"></label>
+          </div>
+          <div class="dsui-exclude-include-invalid">
+            <label ng-bind="inValidCases.length"></label> <label data-i18n="private-case-list-library.BUNDLE_CASEID_STATUS_INCLUDE_INVALID"></label>
+          </div>
+
+          <div class="form-group">
+            <label for="dsuiIncludeDescription" data-i18n="private-case-list-library.BUNDLE_REASON_INCLUDE"
+                   class="dsui-reason-label"></label>
+                        <textarea class="form-control" id="dsuiIncludeDescription" name="dsuiIncludeDescription"
+                                  placeholder="" data-i18n-attr="{placeholder:'private-case-list-library.BUNDLE_REASON'}"
+                                  data-ng-model="cases.DESCRIPTION" minlength="1" maxlength="500"
+                                  data-ng-required="true"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary dsui-new-caselists-apply-button" data-i18n="private-case-list-library.BUNDLE_SAVE"
+                data-ng-click="fnCasesListSave()"></button>
+        <button type="button" class="btn btn-default" data-i18n="private-case-list-library.BUNDLE_NEW_CASE_LIST_CANCEL"
+                data-ng-click="fnOnCancel('dsui-include-list')"></button>
+      </div>
+    </div>
+  </div>
+</div>

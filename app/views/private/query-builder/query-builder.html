@@ -1,0 +1,82 @@
+<!--<div data-ng-include="'views/private/query-builder/query-library/query-library-modal.html'"></div>-->
+<div class="dsui-query-builder-template" data-ng-class="'dsui-query-'+{{depth%10}}">
+  <div class="dsui-group">
+    <div class="form-inline">
+      <div class="dsui-toggle-btn-grp cssonly">
+        <div data-ng-repeat="operatorObject in operators" data-ng-if="isReadOnly?(group.groupOperator.name==operatorObject.name?true:false):true">
+          <input type="radio" data-ng-value="operatorObject" data-ng-disabled="group.source==CONSTANTS.SOURCE" data-ng-class="group.groupOperator.name==operatorObject.name?'active-operator':''" data-ng-model="group.groupOperator" />
+          <label onclick="" class="btn dsui-toggle-btn" data-ng-bind="operatorObject.name"></label>
+        </div>
+      </div>
+      <button  data-ng-click="addCondition()" data-i18n-attr="{title:'private-query-builder.BUNDLE_ADD_RULE'}" data-ng-if="isReadOnly?false:true" data-ng-disabled="group.source==CONSTANTS.SOURCE" class="btn btn-secondary dsui-query-area-fix dsui-btn-width dsui-btn-height dsui-group-options-btn"><i class="icon-IcoMoon-15"></i></button>
+      <button data-ng-click="addGroup()" data-i18n-attr="{title:'private-query-builder.BUNDLE_ADD_GROUP'}" data-ng-if="isReadOnly?false:true" data-ng-disabled="group.source==CONSTANTS.SOURCE" class="btn btn-secondary dsui-query-area-fix dsui-btn-width dsui-btn-height dsui-group-options-btn"><i class="icon-IcoMoon-16" ></i></button>
+      <button data-ng-if="!isReadOnly" data-i18n-attr="{title:'private-query-builder.BUNDLE_ADD_FROM_QUERY_LIBRARY'}" data-ng-disabled="group.source==CONSTANTS.SOURCE" class="btn btn-secondary dsui-query-area-fix dsui-btn-width dsui-btn-height dsui-group-options-btn" data-ng-click="fnOpenModal(group)"  data-target="#queryModal" ><i class="icon-IcoMoon-17 "></i></button>
+      <div class="form-inline pull-right">
+        <button  class="btn btn-secondary dsui-query-area-fix dsui-group-collapse-btn" data-ng-hide="group.isCollapsed || depth==1" data-ng-click="group.isCollapsed=depth>1;"><i class="icon-compress dsui-compress-pad-right"></i><span data-i18n="private-query-builder.BUNDLE_COLLAPSE"></span></button>
+        <button  class="btn btn-secondary dsui-query-area-fix dsui-group-collapse-btn" data-ng-hide="!group.isCollapsed || depth==1" data-ng-click="group.isCollapsed=!(depth>1);"><i class="icon-expand dsui-compress-pad-right"></i><span data-i18n="private-query-builder.BUNDLE_EXPAND"></span></button>
+        <button  data-ng-if="!(isReadOnly || group.source==CONSTANTS.SOURCE)" data-ng-disabled="$parent.$parent.group.source==CONSTANTS.SOURCE" data-ng-hide="depth==1" data-i18n-attr="{title:'private-query-builder.BUNDLE_REMOVE_GROUP'}" data-ng-click="removeGroup()" class="btn btn-secondary dsui-query-area-fix dsui-btn-width dsui-btn-height dsui-group-close-btn"><i class="icon-times-circle"></i></button>
+      </div>
+    </div>
+    <div class="dsui-query-group-conditions" data-ng-if="group.isCollapsed" data-ng-click="group.isCollapsed=false;">
+      <div class="well dsui-query-in-sort"><span query-string group="group" operators="operators" case-list-object="caseListObject"></span></div>
+    </div>
+    <div class="dsui-query-group-conditions" data-ng-if="!group.isCollapsed">
+      <div data-ng-repeat="rule in group.rules | orderBy:'index'" class="dsui-query-condition">
+        <div data-ng-switch="rule.hasOwnProperty('group')">
+          <div data-ng-switch-when="true">
+            <query-builder is-read-only="isReadOnly" group="rule.group" operands="operators" dimensions="fields" operations="conditions" operator-key="{{conditionKey}}" depth="depth+1" case-list-object="caseListObject" ></query-builder>
+          </div>
+          <div data-ng-switch-default="ng-switch-default">
+            <div class="form-inline dsui-rule">
+              <div>
+                <select
+                  class="dsui-select2-single form-control select2-choices select2-search-choice"
+                  ngyn-select2 id="selectQuery-dimension" data-ng-disabled="group.source==CONSTANTS.SOURCE || isReadOnly"
+                  data-ng-options="fieldObject as fieldObject.name group by fieldObject.group  for fieldObject in fields"
+                  data-ng-model="rule.dimension"
+                  data-ng-change="fnClearValue(rule)"
+                  required style="width: 20%"></select>
+                <select
+                  class="dsui-select2-single form-control select2-choices select2-search-choice"
+                  ngyn-select2 id="selectQuery-operator"
+                  data-ng-disabled="group.source==CONSTANTS.SOURCE || isReadOnly "
+                  data-ng-options="conditionObject as conditionObject.name for conditionObject in fnGetConditions(rule.dimension, conditions)"
+                  data-ng-model="rule.operator" data-ng-change="fnClearValue(rule)"
+                  required style="width: 20%"></select>
+                <span data-ng-include="'views/private/query-builder/query-value-form-field.html'"></span>
+                <button data-ng-if="!(isReadOnly || group.source==CONSTANTS.SOURCE)" data-i18n-attr="{title:'private-query-builder.BUNDLE_REMOVE_RULE'}" data-ng-disabled="$parent.$parent.group.source==CONSTANTS.SOURCE" data-ng-click="removeCondition($index)" class="btn btn-secondary dsui-btn-width dsui-btn-height dsui-rule-close-btn pull-right"><i class="icon-times-circle"></i></button>
+              </div>
+              <div class="dsui-multiple-values" data-ng-if="rule.dimension.isLOV && rule.operator.sQLDisplayName===CONSTANTS.CASE_LIST_QUERY_INCLUDES">
+                 <span data-ng-if="group.source!=CONSTANTS.SOURCE" data-ng-repeat="value in rule.selectedValues">
+                  <span class="dsui-multi-value-display">
+                    <span class="dsui-breadcrumbs-text" data-ng-bind="value.name"></span>
+                     <span data-ng-if="!isReadOnly && group.source!=CONSTANTS.SOURCE" data-ng-click=" (!(rule.selectedValues.length>1) && group.source==CONSTANTS.SOURCE) || fnRemoveSelectedLOV(rule,value)">
+                      <i class="icon-times-circle"></i>
+                     </span>
+                  </span>
+                </span>
+                <span data-ng-if="group.source==CONSTANTS.SOURCE && (rule.dimension.columnName==CONSTANTS.PRODUCT_COLUMN_NAME || rule.dimension.columnName==CONSTANTS.LICENSE_COLUMN_NAME)" data-ng-repeat="value in caseListObject.selectedLicProd.selectedValues">
+                  <span class="dsui-multi-value-display">
+                    <span class="dsui-breadcrumbs-text" data-ng-bind="value.name"></span>
+                     <span data-ng-if="!isReadOnly && (rule.dimension.columnName==CONSTANTS.PRODUCT_COLUMN_NAME || rule.dimension.columnName==CONSTANTS.LICENSE_COLUMN_NAME)" data-ng-click=" (!(caseListObject.selectedLicProd.selectedValues.length>1) && group.source==CONSTANTS.SOURCE) || fnRemoveSelectedLOV(caseListObject.selectedLicProd,value)">
+                      <i class="icon-times-circle"></i>
+                     </span>
+                  </span>
+                </span>
+                <span  data-ng-if="group.source==CONSTANTS.SOURCE && rule.dimension.columnName==CONSTANTS.INGREDIENT_COLUMN_NAME" data-ng-repeat="value in caseListObject.selectedIngredients.selectedValues">
+                  <span class="dsui-multi-value-display">
+                    <span class="dsui-breadcrumbs-text" data-ng-bind="value.name"></span>
+                     <span data-ng-if="!isReadOnly && rule.dimension.columnName==CONSTANTS.INGREDIENT_COLUMN_NAME" data-ng-click=" (!(caseListObject.selectedIngredients.selectedValues.length>1) && group.source==CONSTANTS.SOURCE) || fnRemoveSelectedLOV(caseListObject.selectedIngredients,value)">
+                      <i class="icon-times-circle"></i>
+                     </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+

@@ -1,0 +1,356 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    /*--------------Gantt Chart Style Start-----------------*/
+    .dsui-ganttNoCollapse{
+    }
+    .dsui-ganttOnCollapse{
+      width: calc(100% + 25px);
+    }
+    .dsui-reportDisplayDetail-gantt {
+      border: 0px solid $saint-black-color;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      .dsui-reportNumber-gantt {
+        border: 0px solid $saint-black-color;
+        @include Roboto-Medium(1em, $saint-unfavourite-color);
+        /*font-family: roboto medium;
+        font-size: 16px;
+        color: #333333;*/
+        width: 50%;
+        float: left;
+      }
+
+      .dsui-sortStatus-gantt {
+        text-align: right;
+        border: 0px solid $saint-black-color;
+        margin-right: 35px;
+
+        .dsui-sortStatusText-gantt {
+          @include Roboto-Bold(0.875em, $saint-unfavourite-color);
+        }
+        .dsui-sortStatusResult-gantt {
+          @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+          /*font-family: roboto;
+          font-size: 14px;
+          color: #333333;*/
+        }
+      }
+    }
+    .dsui-gantt-chart {
+      width: calc(100% - 30px);
+      color: $saint-unfavourite-color;
+      border: 1px solid $saint-cool-gray-color;
+      border-radius: 10px 10px 0px 0px;
+      font-size: 14px !important;
+      .dsui-stripes {
+        background-image: -webkit-repeating-linear-gradient(135deg, $saint-white-color, $saint-white-color .25em , $saint-panel-cool-gray-color 0, $saint-panel-cool-gray-color .75em);
+        background-image: -moz-repeating-linear-gradient(135deg, $saint-white-color, $saint-white-color .25em , $saint-panel-cool-gray-color 0, $saint-panel-cool-gray-color .75em);
+        background-image: -ms-repeating-linear-gradient(135deg, $saint-white-color, $saint-white-color .25em , $saint-panel-cool-gray-color 0, $saint-panel-cool-gray-color .75em);
+        background-image: -o-repeating-linear-gradient(135deg, $saint-white-color, $saint-white-color .25em , $saint-panel-cool-gray-color 0, $saint-panel-cool-gray-color .75em);
+        background-image: repeating-linear-gradient(135deg, $saint-white-color, $saint-white-color .25em , $saint-panel-cool-gray-color 0, $saint-panel-cool-gray-color .75em);
+      }
+      .dsui-border-dashed{
+      border-style:dashed;
+      border-color:$saint-light-gray-color;
+      border-width:1px;
+      }
+      .dsui-right-extended{
+              border-style: dashed;
+              border-color: $saint-light-gray-color;
+              border-width: 1px;
+              border-left: none;
+              cursor: default;
+      }
+      .dsui-left-extended{
+              border-style: dashed;
+              border-color: $saint-light-gray-color;
+              border-width: 1px;
+              border-right: none;
+              cursor: default;
+      }
+      .dsui-rotate-diamond{
+        @include saintRotateDeg(45deg);
+        font-size: 0.7em;
+      }
+      .dsui-border-dashed-year{
+        opacity: 0.1;
+        border-style:dashed;
+        border-color:$saint-light-gray-color;
+        border-width:1px;
+      }
+      .dsui-stripes-year{
+        opacity:0;
+        color: $saint-black-color;
+      }
+
+      .icomps{
+
+      }
+      .dsui-button-arrow,.dsui-btn-current,.dsui-btn-month,.dsui-btn-year{
+          z-index: 0;
+          font-family:$font-roboto;
+        }
+      .dsui-gantt-chart-header {
+        padding: 15px !important;
+        .dsui-btn-month {
+          background-color: $saint-blue-color;
+          color: $saint-white-color;
+        }
+      }
+
+      /*
+      @uthored by: bhdwivedi
+      April 19, 2016
+      enable toggle of gantt views */
+      .dsui-btn-deactive{
+        background-color: $saint-lighter-gray-color;
+        color: $saint-black-color;
+      }
+      .dsui-btn-active
+      {
+        background-color: $saint-blue-color;
+        color: $saint-white-color;
+      }
+      .dsui-gantt-chart-heading {
+        white-space: pre-wrap;
+        text-align: center;
+        font-size: 16px !important;
+        text-align: center;
+        font-weight: bold;
+        font-family:$font-roboto-medium;
+      }
+      .dsui-btn-index{
+        z-index:0;
+      }
+      #milestoneFlag:hover{
+        font-size:16px;
+      }
+      #milestoneFlagNonPeriodic:hover{
+        font-size:16px;
+      }
+      #milestoneFlagCount:hover{
+        font-size:16px;
+      }
+      #milestoneFlagNoCount:hover{
+        font-size:16px;
+      }
+      .dsui-gantt-chart-body {
+        .gantt {
+          //.gantt-labels-body, .gantt-body{
+          //  max-height: 24em !important;
+          overflow-y: auto;
+          //}
+          .gantt-task-content{
+            margin: -2.5px;
+            overflow: inherit;
+            .gantt-task-content-milestone-flag-flex{
+              display:flex;
+              .gantt-task-content-milestone-flag-align{
+                margin-top:4%;
+                margin-right:8%;
+                color:$saint-close-panel;
+              }
+            .gantt-task-milestone-flag-operational{
+              background-color: $saint-favourite-border-color;
+              color: black;
+              margin-left: 4%;
+              border-radius: 10px;
+              width: 20px;
+              padding-top: 6%;
+              font-size: 10px;
+            }}
+            .dsui-operational-hover{
+
+            }
+            .dsui-operational-hover:hover{
+                font-size:20px;
+            }
+          }
+
+          .gantt-row-height {
+            .dsui-row-border-bottom-line{
+              border-bottom: 1px dotted;
+              padding-top: 30px;
+              border-bottom-color: $saint-cool-gray-color;
+            }
+
+            .dsui-row-border-top-line-diff-date {
+              border-bottom: 1px dotted;
+              padding-top: 30px;
+              border-bottom-color: $saint-cool-gray-color;
+            }
+            .dsui-row-border-top-line-same-date{
+              border-top: 1px dotted;
+              border-top-color: $saint-cool-gray-color;
+            }
+
+            .dsui-row-year{
+              top: 22.5px;
+            }
+          }
+          .gantt-background-row-bottom{
+            border-bottom: 1px solid $saint-hover-border-color;
+          }
+          .gantt-labels-left-row-height{
+            min-height:55px;
+            white-space: normal;
+          }
+
+          .gantt-background-row-alt {
+            border: 1px solid $saint-hover-border-color;
+          }
+          .dsui-gantt-milestone {
+            display: flex;
+            .dsui-gantt-milestone-flex{
+              display:flex;
+            }
+            .dsui-gantt-milestone-flag {
+              width: 20px;
+              background-color: $saint-favourite-border-color;
+              color: black;
+              border-radius: 10px;
+              margin-left: 10%;
+              font-size: 10px;
+              padding-top: 6%;
+              .dsui-gantt-milestone-count {
+                margin-left: 5px;
+              }
+
+            }
+          }.dsui-gantt-milestone-submission{
+             margin-left:-0.7em;
+           }
+          .dsui-gantt-milestone-beforeEndDate{
+            margin-left:-1em;
+          }
+          .dsui-gantt-milestone-beforeEndDateCount{
+            margin-left:-3em;
+          }
+          .dsui-gantt-milestone-submission-count{
+            margin-left:-2em;
+          }
+
+        }
+      }
+    }
+    .dsui-status-legends {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      float: right;
+      list-style: none;
+      display: inline;
+      padding: 0px !important;
+      li {
+        display: inline;
+        padding-right: 5px;
+      }
+      div {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+      }
+      .dsui-open {
+        background-color: $saint-open-color;
+      }
+      .dsui-open-text {
+        color: $saint-open-color;
+        font-family: Roboto-Medium;
+        font-size: 12px;
+      }
+      .dsui-inprogress {
+        background-color: $saint-report-inProgress;
+      }
+      .dsui-inprogress-text {
+        color: $saint-report-inProgress;
+        font-family: Roboto-Medium;
+        font-size: 12px;
+      }
+      .dsui-completed {
+        background-color: $saint-green-completed;
+      }
+      .dsui-completed-text {
+        color: $saint-green-completed;
+        font-family: Roboto-Medium;
+        font-size: 12px;
+      }
+      .dsui-overdue {
+        background-color: $saint-report-overdue;
+      }
+      .dsui-overdue-text {
+        color: $saint-report-overdue;
+        font-family: Roboto-Medium;
+        font-size: 12px;
+      }
+    }
+    //.dsui-scheduling-wrapper{
+    //  position: absolute !important;
+    //}
+    /*--------------Gantt Chart Style End-----------------*/
+  }
+  .dsui-footer {
+  }
+}
+.dsui-filterShow{
+  margin-right: 20px;
+}
+.dsui-filterHide{
+
+}
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

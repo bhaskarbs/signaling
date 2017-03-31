@@ -1,0 +1,259 @@
+// Color Pallet Colors --saint style tile
+//$saint-blue-color:#00ADE5;
+$saint-exclamation-color: #FFDD65;
+$saint-blue-color: #007CAB;
+$saint-black-color: #000000;
+$saint-gray-color: #616365;
+$saint-red-color: #CC292B;
+$saint-green-color: #7DBA00;
+$saint-yellow-color: #F7D417;
+$saint-purple-color: #4A245E;
+$saint-pink-color: #D6006E;
+$saint-light-blue-color: #75D1E0;
+$saint-white-color: #fff;
+$saint-cool-gray-color: #ddd;
+$saint-thick-orange-color: #FF5900;
+$saint-dark-gray-color: #444;
+$saint-light-gray-color: #777;
+$saint-link-text-color: #00A3D9;
+$saint-caption-color: #999;
+$saint-hover-border-color: #e5e5e5;
+$saint-workspace4-background-color: #444444;
+$saint-workspace1-hover-border-color: #DD7F63;
+$saint-workspace2-hover-border-color: #EC008B;
+$saint-workspace3-hover-border-color: #E8D070;
+$saint-workspace4-hover-border-color: #BCCC98;
+$saint-sub-nav-bar-gray: #E3E3E3;
+$saint-grey-blue-color: #326178;
+$saint-blue-green-color: #214F5C;
+$saint-required-star-color: #FF0000;
+$saint-dark-blue-color: #235163;
+$saint-dark-red-color: #E26149;
+$saint-lighter-gray-color: #F8F7F6;
+$saint-bark-blue: #2A87B1;
+$saint-faint-blue: #EEEEEE;
+$saint-faint-blue-letter: #736666;
+// External colors for Style tile
+$saint-light-mixedgreen-color: #d2e200;
+$saint-background-gray-color: #f4f4f4;
+$saint-thick-gray-color: #eee;
+$saint-favourite-border-color: #ccc;
+$saint-light-red-color: #C73300;
+$saint-switch-gray-color: #DEDEDE;
+$saint-yellow-border-color: #EFEFCD;
+$saint-red-border-color: #FF9494;
+$saint-active-background-color: #E7EBEE;
+$saint-collapsible-blue-color: #e6faff;
+$saint-very-light-gray: #E0E0E0;
+$saint-filter-light-gray: #E2E2E2;
+$saint-case-list-border: #AEAEAE;
+$saint-panel-cool-gray-color: #EFEFEF;
+$saint-light-green-color: #7DBA00;
+$saint-yellow-green-color: #8E8E00;
+$saint-unfavourite-color: #333333;
+$saint-title-gray-color: #666666;
+$saint-cases-in-active: #CD3705;
+$saint-manage-metrics-text: #888888;
+$saint-manage-metrics-blue-color: #00ADE5;
+$saint-onhover-highlight: #d5edf7;
+$saint-collapse-panel: #c6c6c6;
+$saint-close-panel: #999999;
+$saint-dark-line-dropdown: #9C9999;
+$saint-bar-chart-blue-color: #1f77b4;
+$saint-light-yellow-color: #ffffcc;
+$saint-case-list-fill-color: #f1f1f2;
+$saint-refresh-query-color: #e53935;
+$saint-refresh-query-border-color: #bbbbbb;
+$saint-user-tag-border: #cccccc;
+$saint-empty-additional-template-color: #ccebff;
+$saint-empty-additional-template-border: #adc6d2;
+$saint-empty-ui-tree-background: #f0f9ff;
+$saint-file-pdf-color: #c93827;
+$saint-file-excel-color: #349846;
+$saint-report-package-tile : #dddddd;
+$saint-report-package-hover : #bbdefb;
+$saint-report-package-shadow-hover: #90caf9;
+$saint-dropdown-color: #f7f7f7;
+$saint-naviblue-color: #001f3f;
+$saint-skyblue-color: #39CCCC;
+$saint-darkpink-color: #B10DC9;
+$saint-lightorange-color: #FF851B;
+$saint-lightorangered-color: #FF4136;
+$saint-mixedblue-color: #7FDBFF;
+$saint-dark-darkpink-color: #85144b;
+$saint-dark-darkyellow-color: #FFDC00;
+$saint-light-darkpink-color: #F012BE;
+$saint-light-darkgrey-color: #555;
+$saint-color-blue: #428bca;
+$saint-notification-view-all: #127dad;
+$saint-color-light-blue: #357ebd;
+$saint-color-light-grey-blue: rgba(100,100,100,0.5);
+$saint-background-padding-notiication: #f5f5f5;
+// Font Sizes -- saint syle tile
+$saint-report-overdue: #e53a35;
+$saint-report-open: #0dabe3;
+$saint-report-inProgress: #f8971d;
+$saint-report-completed: #66cc99;
+$saint-create-report-button: #1ea64a;
+$saint-filter-category-border: #e6e6e6;
+$saint-tile-hover: #deeef9;
+$saint-dark-yellow-border: #fbc02d;
+$saint-dark-yellow-fill: #ffffcc;
+$saint-green-completed: #18A634;
+$saint-open-color: #265263;
+$saint-filter-query-green-color: #388e3c;
+$saint-tree-selected-color: #aaddff;
+$saint-hightlight-data-view-color : #f7e8d0;
+$saint-querylibrary-modal-selected: #0091ea;
+$saint-querylibrary-path: #00bfa5;
+$saint-querylibrary-path-shadow: #109083;
+$saint-light-blue-color: #75D1E0;
+$saint-light-blue-report-selected:#ddecf7;
+// Font Sizes -- saint style tile
+$font-roboto-slab-regular: 'RobotoSlab-Regular';
+$font-roboto-regular: 'Roboto-Regular';
+$font-roboto-thin: 'Roboto-Thin';
+$font-roboto-light: 'Roboto-Light';
+$font-roboto-bold: 'Roboto-Bold';
+$font-roboto-medium: 'Roboto-Medium';
+$font-roboto: 'Roboto';
+$font-open-sans: 'Open Sans';
+
+
+@mixin Open-Sans-Generic($input){
+
+  @if $input == 'Light' {
+    @include Open-Sans(300,normal);
+  } @else if $input == 'LightItalic'  {
+    @include Open-Sans(300,italic);
+  } @else if $input == 'Italic'{
+    @include Open-Sans(normal,italic);
+  } @else if $input == 'Semibold'{
+    @include Open-Sans(600,normal);
+  }@else if $input == 'SemiboldItalic'{
+    @include Open-Sans(600,italic);
+  }@else if $input == 'Bold'{
+    @include Open-Sans(bold,normal);
+  }@else {@include Open-Sans(normal,normal)};
+
+}
+
+@mixin Open-Sans($fontweight,$fontstyle) {
+  font-family: $font-open-sans;
+  font-style: $fontstyle;
+  font-weight: $fontweight;
+}
+
+@mixin color-fontsize($color, $fontSize) {
+  color: $color;
+  font-size: $fontSize;
+}
+
+@mixin paddingleft-paddingright($padding-left, $padding-right) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+@mixin color-fontsize-background($color, $fontSize, $background) {
+  font-size: $fontSize;
+  @include color-background($color, $background);
+}
+
+@mixin color-fontsize-backgroundcolor($color, $fontSize, $background-color) {
+  font-size: $fontSize;
+  @include color-backgroundcolor($color, $background-color);
+}
+
+@mixin color-background($color, $background) {
+  color: $color;
+  background: $background;
+}
+
+@mixin color-backgroundcolor($color, $background-color) {
+  color: $color;
+  background-color: $background-color;
+}
+
+@mixin color-fontfamily($color, $font-family) {
+  color: $color;
+  font-family: $font-family;
+}
+
+@mixin fontsize-color-fontfamily-fontstyle($fontSize, $color, $font-family, $font-style) {
+  font-size: $fontSize;
+  @include color-fontfamily($color, $font-family);
+  font-style: $font-style;
+}
+
+@mixin fontsize-fontweight($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin color-fontsize-fontweight($color, $font-size, $font-weight) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin Roboto-Regular($fontSize, $color) {
+  font-size: $fontSize;
+  font-family: $font-roboto-regular;
+  color: $color;
+}
+
+@mixin Roboto-Bold($fontSize, $color) {
+  font-size: $fontSize;
+  font-family: $font-roboto-bold;
+  color: $color;
+}
+
+@mixin Roboto-Light($fontSize, $color) {
+  font-size: $fontSize;
+  font-family: $font-roboto-light;
+  color: $color;
+}
+
+@mixin Roboto-Medium($fontSize, $color) {
+  font-size: $fontSize;
+  font-family: $font-roboto-medium;
+  color: $color;
+}
+
+@mixin saintRotateDeg($degree) {
+  -moz-transform: rotate($degree);
+  -webkit-transform: rotate($degree);
+  -o-transform: rotate($degree);
+  -ms-transform: rotate($degree);
+}
+
+@mixin sainttranslateY($YPos){
+  -webkit-transform: translateY($YPos);
+  -moz-transform: translateY($YPos);
+  -ms-transform: translateY($YPos);
+  -o-transform: translateY($YPos);
+  transform: translateY($YPos);
+}
+
+@mixin transition($property, $duration, $effect) {
+  -webkit-transition: $property $duration $effect;
+  -moz-transition: $property $duration $effect;
+  -o-transition: $property $duration $effect;
+  -ms-transition: $property $duration $effect;
+  transition: $property $duration $effect;
+}
+
+@mixin background-size($start, $end) {
+  -webkit-background-size: $start $end;
+  -moz-background-size: $start $end;
+  -ms-background-size: $start $end;
+  -o-background-size: $start $end;
+  background-size: $start $end;
+}
+@mixin translate3d($width) {
+  -moz-transform: translate3d($width,0,0);
+  -o-transform: translate3d($width,0,0);
+  -ms-transform: translate3d($width,0,0);
+  -webkit-transform: translate3d($width,0,0);
+  transform: translate3d($width,0,0);
+}

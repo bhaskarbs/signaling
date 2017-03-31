@@ -1,0 +1,147 @@
+<span data-ng-if="$parent.$parent.group.source!==CONSTANTS.SOURCE">
+    <span data-ng-if="rule.dimension.isLOV && (rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_CONTAINS && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_DOES_NOT_CONTAIN && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_INCLUDES && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_IS_NOT_NULL && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_IS_NULL) && !isReadOnly">
+    <input type='hidden'
+       ngyn-select2="fnGetSearchOptions(rule,0)"
+       data-ng-model="rule.value"
+       custom-rendering="true"
+       required style="width:200px"/>
+    </span>
+    <span data-ng-if="rule.dimension.isLOV && rule.operator.sQLDisplayName===CONSTANTS.CASE_LIST_QUERY_INCLUDES && !isReadOnly">
+    <input type='hidden'
+       ngyn-select2="fnGetMultiSearchOptions(rule,0)"
+       data-ng-model="rule.value"
+       custom-rendering="true"
+       required style="width:200px"/>
+    </span>
+    <span data-ng-if="rule.dimension.isLOV && (rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_CONTAINS && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_DOES_NOT_CONTAIN && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_INCLUDES) && isReadOnly">
+    <input type='hidden'
+       ngyn-select2="fnGetSearchOptions(rule,0)"
+       data-ng-model="rule.value"
+       custom-rendering="true"
+       data-ng-disabled="isReadOnly"
+       required style="width:200px"/>
+    </span>
+    <span data-ng-if="rule.dimension.isLOV && rule.operator.sQLDisplayName===CONSTANTS.CASE_LIST_QUERY_INCLUDES && isReadOnly">
+    <input type='hidden'
+       ngyn-select2="fnGetMultiSearchOptions(rule,0)"
+       data-ng-model="rule.value"
+       custom-rendering="true"
+       data-ng-disabled="isReadOnly"
+       required style="width:200px"/>
+    </span>
+    <span data-ng-if="rule.dimension.isLOV && rule.operator.sQLDisplayName==CONSTANTS.CASE_LIST_QUERY_CONTAINS">
+      <input data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_TEXT" data-ng-disabled="isReadOnly" type="text" data-ng-model="rule.value" class="form-control input-sm dsui-query-area-fix dsui-rule-button-common"/>
+    </span>
+    <span data-ng-if="rule.dimension.isLOV && rule.operator.sQLDisplayName==CONSTANTS.CASE_LIST_QUERY_DOES_NOT_CONTAIN">
+      <input data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_TEXT" data-ng-disabled="isReadOnly" type="text" data-ng-model="rule.value" class="form-control input-sm dsui-query-area-fix dsui-rule-button-common"/>
+    </span>
+    <span data-ng-if="!rule.dimension.isLOV">
+        <input data-ng-if="!rule.operator.dataType" data-ng-disabled="true" type="text" class="form-control input-sm dsui-query-area-fix dsui-rule-button-common"/>
+        <span data-ng-if="rule.operator.sQLDisplayName==CONSTANTS.CASE_LIST_QUERY_EQUALS || rule.operator.sQLDisplayName==CONSTANTS.CASE_LIST_QUERY_DOES_NOT_EQUAL || rule.operator.sQLDisplayName==CONSTANTS.CASE_LIST_QUERY_LT_OR_EQUALS || rule.operator.sQLDisplayName==CONSTANTS.CASE_LIST_QUERY_GT_OR_EQUALS" >
+            <input data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_NUMERIC" data-ng-disabled="isReadOnly" type="number" data-ng-model="rule.value" class="form-control input-sm dsui-query-area-fix dsui-rule-button-common"/>
+            <input data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_TEXT" data-ng-disabled="isReadOnly" type="text" data-ng-model="rule.value" class="form-control input-sm dsui-query-area-fix dsui-rule-button-common"/>
+            <span data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" class="dsui-calendar-group">
+            <span class="dsui-calendar-icon" data-ng-click="fnOpenDatePicker('#dsuiProjectReportEqStartDateAdd'+$index)">
+                    <i class="fa fa-calendar-o"></i>
+                  </span>
+            <input data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" data-ng-disabled="isReadOnly" placeholder="" data-i18n="{placeholder:'private-case-list-library.BUNDLE_DATEPICKER_FORMAT'}" data-ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE , changeYear: true , changeMonth: true}" type="text"
+               class="form-control" data-ng-model="rule.valueOperators" data-ng-change="changeRefToMSTime(rule)" id="dsuiProjectReportEqStartDateAdd{{$index}}"
+               name="queryBuilderdataDate" show-weeks="datePicker.showWeeks"/>
+               </span>
+        </span>
+        <span data-ng-if="rule.operator.sQLDisplayName==CONSTANTS.CASE_LIST_QUERY_BETWEEN" data-ng-init="changeValueToArray(rule)">
+            <input data-ng-disabled="isReadOnly" data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_NUMERIC" type="number" data-ng-model="rule.value[0]" class="form-control input-sm dsui-query-area-fix dsui-rule-button-common"/>
+            <input data-ng-disabled="isReadOnly" data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_NUMERIC" type="number" data-ng-model="rule.value[1]" class="form-control input-sm dsui-query-area-fix dsui-rule-button-common"/>
+            <span data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" class="dsui-calendar-group">
+            <span class="dsui-calendar-icon" data-ng-click="fnOpenDatePicker('#dsuiProjectReportBtwStartDateAdd'+$index)">
+                    <i class="fa fa-calendar-o"></i>
+                  </span>
+            <input data-ng-disabled="isReadOnly" data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" placeholder="" data-i18n="{placeholder:'private-case-list-library.BUNDLE_DATEPICKER_FORMAT'}" data-ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE , changeYear: true , changeMonth: true}" type="text"
+               class="form-control" data-ng-model="rule.value1" data-ng-change="changeRefToMSTimeBtwStart(rule)" id="dsuiProjectReportBtwStartDateAdd{{$index}}"
+               name="queryBuilderdataDate1" show-weeks="datePicker.showWeeks"/>
+               &nbsp;-&nbsp;
+               <span class="dsui-calendar-icon" data-ng-click="fnOpenDatePicker('#dsuiProjectReportBtwEndDateAdd'+$index)">
+                    <i class="fa fa-calendar-o"></i>
+                  </span>
+            <input data-ng-disabled="isReadOnly" data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" placeholder="" data-i18n="{placeholder:'private-case-list-library.BUNDLE_DATEPICKER_FORMAT'}" data-ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE , changeYear: true , changeMonth: true}" type="text"
+               class="form-control" data-ng-model="rule.value2" data-ng-change="changeRefToMSTimeBtwEnd(rule)" id="dsuiProjectReportBtwEndDateAdd{{$index}}"
+               name="queryBuilderdataDate2" show-weeks="datePicker.showWeeks"/>
+               </span>
+        </span>
+    </span>
+</span>
+<span data-ng-if="$parent.$parent.group.source==CONSTANTS.SOURCE && isReadOnly">
+    <span data-ng-if="rule.dimension.isLOV && (rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_CONTAINS && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_DOES_NOT_CONTAIN && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_INCLUDES) ">
+    <input
+       data-ng-disabled="isReadOnly"
+       type='hidden'
+       ngyn-select2="fnGetSearchOptions(rule,1)"
+       data-ng-model="rule.value"
+       custom-rendering="true"
+       required style="width:200px"/>
+    </span>
+    <span data-ng-if="rule.dimension.isLOV && rule.operator.sQLDisplayName===CONSTANTS.CASE_LIST_QUERY_INCLUDES">
+    <input type='hidden'
+       data-ng-disabled="isReadOnly"
+       ngyn-select2="fnGetMultiSearchOptions(rule,1)"
+       data-ng-model="rule.value"
+       custom-rendering="true"
+       required style="width:200px"/>
+    </span>
+    <span data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" class="dsui-calendar-group">
+    <span class="dsui-calendar-icon" data-ng-click="fnOpenDatePicker('#dsuiProjectReportBtwStartDateAddSource1'+$index)">
+            <i class="fa fa-calendar-o"></i>
+          </span>
+    <input data-ng-disabled="isReadOnly" data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" placeholder="" data-i18n="{placeholder:'private-case-list-library.BUNDLE_DATEPICKER_FORMAT'}"
+       data-ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+       , changeYear: true , changeMonth: true}"
+       type="text" class="form-control" data-ng-model="caseListObject.reportingStartDate" id="dsuiProjectReportBtwStartDateAddSource1{{$index}}" name="dsuiProjectReportBtwStartDateAddSource1{{$index}}"/>
+       &nbsp;-&nbsp;
+            <i class="fa fa-calendar-o"></i>
+          </span>
+    <input data-ng-disabled="isReadOnly" data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" placeholder="" data-i18n="{placeholder:'private-case-list-library.BUNDLE_DATEPICKER_FORMAT'}" data-ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE , changeYear: true , changeMonth: true}" type="text"
+       class="form-control" data-ng-model="caseListObject.reportingEndDate"  id="dsuiProjectReportBtwEndDateAddSource1{{$index}}" name="dsuiProjectReportBtwEndDateAddSource1{{$index}}"/>
+       </span>
+</span>
+<span data-ng-if="$parent.$parent.group.source==CONSTANTS.SOURCE && !isReadOnly">
+    <span data-ng-if="rule.dimension.isLOV && (rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_CONTAINS && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_DOES_NOT_CONTAIN && rule.operator.sQLDisplayName!==CONSTANTS.CASE_LIST_QUERY_INCLUDES) ">
+    <input
+       data-ng-disabled="isReadOnly"
+       type='hidden'
+       ngyn-select2="fnGetSearchOptions(rule,1)"
+       data-ng-model="rule.value"
+       custom-rendering="true"
+       required style="width:200px"/>
+    </span>
+    <span data-ng-if="rule.dimension.isLOV && rule.operator.sQLDisplayName===CONSTANTS.CASE_LIST_QUERY_INCLUDES">
+    <input type='hidden'
+       data-ng-if="rule.dimension.columnName==CONSTANTS.LICENSE_COLUMN_NAME || rule.dimension.columnName==CONSTANTS.PRODUCT_COLUMN_NAME"
+       data-ng-disabled="isReadOnly"
+       ngyn-select2="fnGetMultiSearchOptions(caseListObject.selectedLicProd,1)"
+       data-ng-model="caseListObject.selectedLicProd.value"
+       custom-rendering="true"
+       required style="width:200px"/>
+    <input type='hidden'
+       data-ng-if="rule.dimension.columnName==CONSTANTS.INGREDIENT_COLUMN_NAME"
+       data-ng-disabled="isReadOnly"
+       ngyn-select2="fnGetMultiSearchOptions(caseListObject.selectedIngredients,1)"
+       data-ng-model="caseListObject.selectedIngredients.value"
+       custom-rendering="true"
+       required style="width:200px"/>
+    </span>
+    <span data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" class="dsui-calendar-group">
+          <span class="dsui-calendar-icon" data-ng-click="fnOpenDatePicker('#dsuiProjectReportBtwStartDateAddSource2'+$index)">
+            <i class="fa fa-calendar-o"></i>
+          </span>
+    <input data-ng-disabled="isReadOnly" data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" placeholder="" data-i18n="{placeholder:'private-case-list-library.BUNDLE_DATEPICKER_FORMAT'}"
+       data-ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+       , changeYear: true , changeMonth: true}"
+       type="text" class="form-control" data-ng-model="caseListObject.reportingStartDate" id="dsuiProjectReportBtwStartDateAddSource2{{$index}}" name="dsuiProjectReportBtwStartDateAddSource2"/>
+       &nbsp;-&nbsp;
+       <span class="dsui-calendar-icon" data-ng-click="fnOpenDatePicker('#dsuiProjectReportBtwEndDateAddSource2'+$index)">
+            <i class="fa fa-calendar-o"></i>
+          </span>
+    <input data-ng-disabled="isReadOnly" data-ng-if="rule.operator.dataType==CONSTANTS.CASE_LIST_QUERY_DATA_TYPE_DATE" placeholder="" data-i18n="{placeholder:'private-case-list-library.BUNDLE_DATEPICKER_FORMAT'}" data-ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE , changeYear: true , changeMonth: true}" type="text"
+       class="form-control" data-ng-model="caseListObject.reportingEndDate"  id="dsuiProjectReportBtwEndDateAddSource2{{$index}}" name="dsuiProjectReportBtwEndDateAddSource2{{$index}}"/>
+       </span>
+</span>

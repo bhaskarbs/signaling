@@ -1,0 +1,171 @@
+<!--<div data-ng-include="VIEWS.FILTER_VIEW_CASELIST_MODAL"></div>-->
+<div class="dsui-case-list-library dsui-build-report-package">
+<div data-ng-include="VIEWS.DEFAULT_VIEW_CASELIST_MODAL"></div>
+<script type="text/ng-template" id="additionalSubReport.html">
+<div class="row dsui-no-margin">
+                    <div class="col-sm-6 dsui-no-padding dsui-select-addsubreport">
+                      <input data-nodrag type="checkbox" data-ng-model="subreport.isSelectedInPackage" data-ng-click="fnSelectTemplate()"/>
+
+                      <span data-ng-class="dsui-template-name" data-ng-bind="subreport.subReportName"></span><br/>
+                      <span class="dsui-caseListName"><span data-i18n="private-report-output.BUNDLE_CASE_LIST"></span><span data-ng-bind="subreport.bclDisplayName"></span></span>
+                      <span data-nodrag class="dsui-update" data-ng-click="fnOpenUpdateCaseListModal(subreport)"  data-i18n="private-reports-library.BUNDLE_UPDATE"></span>
+
+                    </div>
+                    <div></div>
+                    <div class="col-sm-6 dsui-no-padding dsui-functional-panel pull-right">
+                      <div data-nodrag class="btn-group">
+                        <button type="button" class="btn btn-white btn-default" data-ng-click="fnSelectDocumentormat(subreport,0)" data-ng-class="subreport.documentType==0?'dsui-btn-select':''"><i class="fa fa-file-pdf-o"></i></button>
+                        <button type="button" class="btn btn-white btn-default" data-ng-click="fnSelectDocumentormat(subreport,1)" data-ng-class="subreport.documentType==1?'dsui-btn-select':''"> <i class="fa fa-file-excel-o"></i></button>
+                      </div>
+                      <div data-nodrag class="dsui-delete">
+                      <div data-ng-click="remove(this)" data-ng-show="subreport.mouseEnter" class="icon-times-circle"></div>
+                      </div>
+                    </div>
+</div>
+</script>
+<script type="text/ng-template" id="templateTree.html">
+
+          <div data-ng-click="showList(node)"  class="tree-node tree-node-content dsui-folder">
+                <i class="dsui-report-folder-icon" data-ng-class="node.expand?'icon-folder-open-o':'icon-folder-o'" aria-hidden="true"></i><span class="dsui-report-type-name" data-ng-bind="node.templateName"></span>
+            </div>
+              <ol data-ng-show="node.expand"  ui-tree-nodes=""  data-ng-model="node.children" parent-data="{{node.reportParentKey}}">
+                <li class="dsui-sub-report-tree" data-ng-repeat="reports in node.children" ui-tree-node parent-data="{{node.reportParentKey}}">
+                  <div data-ng-click="showList(reports)"   class="tree-node tree-node-content">
+                    <i class="dsui-report-folder-icon" data-ng-class="reports.expand?'icon-folder-open-o':'icon-folder-o'" aria-hidden="true"></i><span class="dsui-report-type-name" data-ng-bind="reports.templateName"></span>
+                  </div>
+                  <ol data-ng-show="reports.expand" ui-tree-nodes="" data-ng-model="reports.children" parent-data="{{reports.reportParentKey}}">
+                    <li ui-tree-handle class="dsui-sub-report-tree" data-ng-repeat="subReports in reports.children | filter:searchReports" ui-tree-node="" parent-data="{{reports.reportParentKey}}">
+                      <div data-ng-click="showList(subReports)"  class="tree-node tree-node-content">
+                        <i class="icon-file-text-o" aria-hidden="true"></i><span class="dsui-sub-report-name" data-ng-bind="subReports.templateName" title="{{subReports.templateName}}"></span>
+                      </div>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+</script>
+
+
+  <div class="col-xs-12 clearfix dsui-case-list-library-secondary-navigation dsui-no-padding">
+    <div class="col-xs-8 dsui-navigation-text">
+    <span data-ng-click="fnNavigate(CONSTANTS.HOME)" data-i18n="common.BUNDLE_DASHBOARD_NAVIGATION"
+          class="dsui-pointer-cursor"></span>
+      <span>
+        <span class="fa fa-angle-right dsui-angle-right-icon"></span>&nbsp;
+        <span data-ng-if="!isFromCaselist" class="dsui-pointer-cursor" data-i18n="private-reports-library.BUNDLE_REPORTS_LIBRARY_HEADER_KEY" data-ng-click="fnNavigate(CONSTANTS.STATE.REPORT_LIBRARY_LIST)"></span>
+        <span data-ng-if="isFromCaselist" class="dsui-pointer-cursor" data-i18n="private-case-list-library.BUNDLE_KEY_CASE_LIST_LIBRARY" data-ng-click="fnNavigate(CONSTANTS.STATE.CASE_LIST_LIBRARY)"></span>
+        <span class="fa fa-angle-right dsui-angle-right-icon"></span>&nbsp;
+        <span data-ng-if="isFromCaselist" class="dsui-pointer-cursor" data-i18n="private-case-list-library.BUNDLE_REGULATORY_CASELIST_HEADER_KEY" data-ng-click="fnNavigatePrevious()"></span>
+        <span  data-ng-if="isFromCaselist" class="fa fa-angle-right dsui-angle-right-icon">&nbsp;</span>
+        <span cass="dsui-pointer-cursor" data-i18n="private-case-list-library.BUNDLE_GENERATE_REPORT_OUTPUT"></span>
+      </span>
+
+    </div>
+  </div>
+  <div class="col-xs-12  dsui-package-header">
+    <div class="col-xs-7 dsui-case-list-name">
+      <span data-ng-bind="headerReportOutput" class="dsui-generate-report-label"></span>
+    </div>
+    <div class="col-xs-5 dsui-no-padding dsui-button">
+      <button data-ng-if="isSaveEnable" data-ng-click="fnSavePackage()" type="submit" class="btn dsui-save-button">
+        <span data-i18n="private-case-list-library.BUNDLE_SAVE"></span>
+      </button>
+      <button data-ng-controller="generateReportController" data-ng-click="fnGenerateReport(reportDetails.cuid,reportDetails.bclKey,reportDetails.reportName)" type="submit" class="btn dsui-generate-button">
+        <span data-i18n="private-case-list-library.BUNDLE_GENERATE"></span>
+      </button>
+    </div>
+  </div>
+  <div class="col-xs-12 dsui-no-padding dsui-border-header-bottom"></div>
+  <div class="col-sm-12 dsui-no-padding dsui-main-panel" viewport-auto-height space-bottom="41">
+    <div class="col-sm-3 dsui-left-panel" data-ng-show="showLeftPanel">
+        <div class="dsui-template-header">
+          <span data-i18n="private-report-output.BUNDLE_TEMPLATE"></span>
+        </div>
+        <div class="dsui-collapse" data-ng-click="fnToggleLeftPanel()">
+            <span  class="fa fa-angle-double-left"></span>
+        </div>
+      <div class="dsui-left-inner-search-addon">
+        <hr class="dsui-border-top">
+          <i class="glyphicon glyphicon-search"></i>
+          <input type="text" placeholder="{{CONSTANTS.FILTER_DESCRIPTION_PLACEHOLDER}}" class="form-control dsui-search-reports" data-ng-model="searchReports" data-ng-change="openReportFolder()"/>
+        </div>
+        <div ui-tree id="left-panel-tree" data-nodrop-enabled="true" data-clone-enabled="true" class="dsui-left-panel-tree">
+          <ol ui-tree-nodes ng-model="templateData" >
+            <li class="dsui-report-types" ng-repeat="node in templateData" ui-tree-node ng-include="'templateTree.html'"></li>
+          </ol>
+    </div>
+    </div>
+
+    <!-- Right Panel Starts here -->
+    <div class="dsui-right-panel" data-ng-class="showLeftPanel?'col-xs-9':'col-xs-12 dsui-no-rpad'">
+      <!-- Default locked templates START-->
+      <div class="dsui-filter-verticalbar" data-ng-show="!showLeftPanel" data-ng-click="fnToggleLeftPanel()">
+        <div>
+          <div class="text-center dsui-collpase-icon">
+            <span class="fa fa-angle-double-right"></span>
+          </div>
+          <div class="dsui-text-rotator"><span data-i18n="private-case-list-library.ADD_TEMPLATE_VERTICAL_BAR"></span></div>
+        </div>
+      </div>
+      <div data-ng-class="!showLeftPanel?'dsui-right-panel-overflow-collapsed':'dsui-right-panel-overflow-expanded'">
+      <div class="dsui-no-padding dsui-button-banner">
+      <div class="dsui-select-all">
+        <input type="checkbox" data-ng-model="isSelectAll" data-ng-click="fnselectAll(isSelectAll)" />&nbsp;<span data-i18n="private-reports-library.BUNDLE_PROJECTS_SELECT_ALL_TEXT"></span>
+      </div>
+      <div class="dsui-right-panel-button">
+        <div class="dsui-draft-button">
+          <input type="radio" class="dsui-draft" data-ng-model="isDraftOrFinal" value="{{constants.DRAFT_STRING}}"><span class="dsui-second-text" data-i18n="private-reports-library.BUNDLE_DRAFT"></span> &nbsp;
+          <input type="radio" class="dsui-final" data-ng-model="isDraftOrFinal" value="{{constants.FINAL_STRING}}"><span class="dsui-second-text" data-i18n="private-reports-library.BUNDLE_FINAL"></span>
+        </div>
+        <div class="dsui-blinded-button">
+          <input type="radio" class="dsui-blinded" data-ng-model="isBlindedOrUnblinded" value="{{constants.REPORT_UNBLINDED}}"><span class="dsui-second-text" data-i18n="private-reports-library.BUNDLE_UNBLINDED"></span> &nbsp;
+          <input type="radio" class="dsui-unblinded" data-ng-model="isBlindedOrUnblinded" value="{{constants.REPORT_BLINDED}}"><span class="dsui-second-text" data-i18n="private-reports-library.BUNDLE_BLINDED"></span>
+        </div>
+        </div>
+      </div>
+      <div class="dsui-default-templates" data-ng-if="loadDefaultTemplates">
+        <!-- <i data-ng-class="!node.expand?'fa fa-folder-o':'fa fa-folder-open-o'" aria-hidden="true"></i> -->
+        <div class="dsui-locked-template-well">
+        <div class="dsui-default-sub-header">
+          <div data-ng-bind="headerReportOutput" class="dsui-sub-report-name"></div>
+          <div class="dsui-default-case-list"> <span data-i18n="private-report-output.BUNDLE_CASE_LIST"></span><span data-ng-bind="selectedCaseListName"></span></div>
+        </div>
+        <div class="col-xs-12 dsui-no-padding dsui-border-subheader-bottom"></div>
+
+        <div data-ng-repeat="node in defaultTemplates">
+        <div class="dsui-selected-template-row">
+          <div class="col-sm-6 dsui-no-padding dsui-select-subreport" >
+            <input type="checkbox" data-ng-model="node.isSelectedInPackage" data-ng-click="fnSelectTemplate()"/>
+            <span class="dsui-template-name" data-ng-bind="node.subReportName"></span>
+          </div>
+          <div class="col-sm-6 dsui-no-padding dsui-functional-panel pull-right">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default" data-ng-click="fnSelectDocumentormat(node,0)" data-ng-class="node.documentType==0?'dsui-btn-select':''"><i class="fa fa-file-pdf-o"></i></button>
+              <button type="button" class="btn btn-default" data-ng-click="fnSelectDocumentormat(node,1)" data-ng-class="node.documentType==1?'dsui-btn-select':''"> <i class="fa fa-file-excel-o"></i></button>
+            </div>
+          </div>
+          </div>
+          <div data-ng-class="$last?'':'dsui-border-subreport-bottom'"></div>
+        </div>
+        </div>
+      </div>
+      <!-- Default locked templates END-->
+
+      <div class="dsui-additional-header-well">
+      <div class="dsui-no-padding dsui-additional-header">
+        <span data-i18n="private-report-output.BUNDLE_ADDITIONAL_SUB_REPORTS"></span>
+      </div>
+      <!-- Drag and Drop templates START-->
+      <div class="dsui-additional-templates">
+      <div ui-tree="treeOptions" id="additional-report" data-ng-class="showDropArea?'dsui-empty-additional-template':''">
+      <ol ui-tree-nodes ng-model="additionalReportTree">
+        <li ui-tree-handle class="dsui-selected-template-row" ng-mouseenter="subreport.mouseEnter=true" ng-mouseleave="subreport.mouseEnter=false" ng-repeat="subreport in additionalReportTree" ui-tree-node ng-include="'additionalSubReport.html'"></li>
+      </ol>
+    </div>
+      </div>
+      </div>
+      <!-- Drag and Drop templates END-->
+    </div>
+    </div>
+    <!-- Right Panel Ends here -->
+  </div>
+</div>

@@ -1,0 +1,51 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.common.CommonService.ConfigurationsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/common/CommonService.xsodata/Configurations(16)"
+        },
+        "KEY": "Query Name",
+        "CONFIG_TYPE": "FILTER",
+        "KEY_NAME": "QUERY_NAME",
+        "KEY_TYPE": "Text",
+        "SCREEN_NAME": "CASELIST_LIBRARY",
+        "VALUE": 1,
+        "CONFIG_KEY": 16,
+        "PRIMARY_SORT": null,
+        "SECONDARY_SORT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.common.CommonService.ConfigurationsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/common/CommonService.xsodata/Configurations(17)"
+        },
+        "KEY": "Created By",
+        "CONFIG_TYPE": "FILTER",
+        "KEY_NAME": "Audit_CreatedBy",
+        "KEY_TYPE": "LOV",
+        "SCREEN_NAME": "CASELIST_LIBRARY",
+        "VALUE": 1,
+        "CONFIG_KEY": 17,
+        "PRIMARY_SORT": null,
+        "SECONDARY_SORT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.common.CommonService.ConfigurationsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/common/CommonService.xsodata/Configurations(18)"
+        },
+        "KEY": "Description",
+        "CONFIG_TYPE": "FILTER",
+        "KEY_NAME": "DESCRIPTION",
+        "KEY_TYPE": "Text",
+        "SCREEN_NAME": "CASELIST_LIBRARY",
+        "VALUE": 1,
+        "CONFIG_KEY": 18,
+        "PRIMARY_SORT": null,
+        "SECONDARY_SORT": null
+      }
+    ]
+  }
+}

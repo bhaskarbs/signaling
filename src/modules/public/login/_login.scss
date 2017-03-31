@@ -1,0 +1,155 @@
+.dsui{
+  .dsui-header{
+  }
+  .dsui-content{
+    .dsui-loginContainer{
+      margin: 0 auto;
+      width: 20.56em;
+      margin-top: 6.88em;
+      margin-bottom: 6em;
+      .panel{
+        border-radius: 0px;
+      }
+      label{
+        font-weight:normal !important;
+      }
+      .panel-heading {
+        h3 {
+          margin: 0px !important;
+          color: $saint-close-panel;
+        }
+      }
+      .sign-in-label{
+        margin-bottom: 15px;
+        h3{
+          color:$saint-dark-gray-color;
+          font-family: $font-roboto-regular;
+          font-size: 20px;
+        }
+      }
+      .dsui-login-username{
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border: none;
+        color:$saint-dark-gray-color;
+        font-size: 14px;
+        outline: none;
+        border-bottom: 1px solid $saint-favourite-border-color;
+        font-family: $font-roboto-regular;
+        width: 100%;
+        box-shadow: none;
+      }
+      .dsui-login-password{
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border: none;
+        color:$saint-dark-gray-color;
+        font-size: 14px;
+        outline: none;
+        border-bottom: 1px solid $saint-favourite-border-color;
+        font-family: $font-roboto-regular;
+        width: 100%;
+        box-shadow: none;
+      }
+      .dsui-remember-me-section{
+        margin-bottom: 15px;
+      }
+      .dsui-remember-me{
+        font-size: 12px;
+        padding-left: 0;
+        color: $saint-dark-gray-color;
+      }
+      .dsui-toggle-switch{
+        .cmn-toggle {
+          position: absolute;
+          margin-left: -9999px;
+          visibility: hidden;
+        }
+        .cmn-toggle + label {
+          display: block;
+          position: relative;
+          cursor: pointer;
+          outline: none;
+          user-select: none;
+        }
+      }
+      .dsui-forgot-password-text {
+        text-align: right;
+        color: $saint-blue-color;
+      }
+      .dsui-sign-in {
+        margin-top: 15px;
+        color: $saint-white-color;
+        width: 100%;
+        background-color: $saint-blue-color !important;
+        border-color: $saint-blue-color !important;
+      }
+      .dsui-sign-in-seperation-line{
+        hr{
+          margin-top: 15px;
+          margin-bottom: 15px;
+          border-top: 1px solid $saint-favourite-border-color;
+        }
+      }
+      .dsui-create-account {
+        color: $saint-dark-gray-color;
+        background-color: $saint-cool-gray-color !important;
+        border-color: $saint-cool-gray-color !important;
+        margin-bottom: 15px;
+      }
+      .dsui-forgot-password{
+        font-size: 12px;
+        /*font-family:Roboto Regular;*/
+        a{
+          color: $saint-blue-color;
+        }
+      }
+    }
+  }
+  .dsui-footer{
+  }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

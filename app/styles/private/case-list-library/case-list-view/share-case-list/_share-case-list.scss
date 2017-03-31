@@ -1,0 +1,125 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-share-caselist {
+
+      .modal-main {
+        margin-left: 17% !important;
+        margin-right: 17% !important;
+        .modal-dialog {
+          width: 700px !important;
+          margin-top: 20% !important;
+          .dsui-full-height {
+          }
+          .modal-content {
+            margin-top: 15%;
+            .dsui-border-line {
+              border-top: 1px solid $saint-cool-gray-color;
+              margin: 0px;
+
+            }
+
+            .modal-header {
+              border-bottom: 0px;
+              padding: 25px 0px 25px 30px;
+
+              .close {
+                font-size: 1em;
+                color: $saint-black-color;
+                opacity: 1;
+                margin-top: -15px;
+                margin-right: 0px;
+                padding-right: 32px;
+                padding-top: 14px;
+              }
+              .modal-title {
+                font-family: $font-roboto;
+                font-size: 20px;
+
+                color: $saint-unfavourite-color;
+              }
+            }
+            .modal-body {
+              padding: 30px 55px 30px 55px;
+
+              .dsui-query-name {
+                font-family: $font-roboto-light;
+                font-size: 15px;
+                color: $saint-unfavourite-color;
+              }
+
+            }
+
+            .modal-footer {
+
+              margin-top: 0px;
+              padding: 20px 30px 20px;
+
+              .dsui-create-query {
+                width: 74px;
+                height: 36px;
+
+              }
+              .dsui-cancel-query {
+                width: 74px;
+                height: 36px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .dsui-footer {
+
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

@@ -1,0 +1,192 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+  .dsui-track-caselist {
+    .modal-main {
+      margin-left: 17% !important;
+      margin-right: 17% !important;
+      height: 100%;
+      .modal-dialog {
+        height: 100%;
+        width: 830px !important;
+        margin: 0px;
+        .dsui-full-height {
+          height: 100%;
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+        }
+        .modal-content {
+          height: 90%;
+          margin-top: 5%;
+          margin-bottom: 5%;
+          .dsui-border-line {
+            border: 1px solid $saint-cool-gray-color;
+            margin: 0px;
+            width: 100%;
+            //FIXME Use Mixin
+            width: -webkit-calc(100% + 26px); // Border need to occupy fill width
+            width: -moz-calc(100% + 26px);
+            width: calc(100% + 26px);
+            margin-left: -14px;
+          }
+
+          .modal-header {
+            border-bottom: 0px;
+            padding: 30px 0px 25px 0px;
+            .close {
+              font-size: 1em;
+              color: $saint-black-color;
+              opacity: 1;
+              margin-top: -15px;
+            }
+            .modal-title {
+              font-family: $font-roboto-medium;
+              font-size: 18px;
+
+              color: $saint-dark-gray-color;
+            }
+          }
+          .modal-body {
+            height: 100%;
+            padding: 0px;
+            padding-bottom: 25px;
+            .dsui-reportNumber {
+              padding-top: 25px;
+              padding-bottom: 15px;
+              border: 0px solid $saint-black-color;
+              @include Roboto-Medium(1em, $saint-unfavourite-color);
+            }
+
+            .dsui-table-header {
+              width: 100%;
+              margin-bottom: 0px !important;
+              border: 1px solid $saint-cool-gray-color;
+              .dsui-thead-class {
+                vertical-align: top;
+              }
+              .dsui-caseLists-table-headers {
+                color: $saint-blue-color;
+                font-size: 14px;
+                font-family: $font-roboto-bold;
+                vertical-align: top;
+                .dsui-table-data {
+                  max-width: 25%;
+                  min-width: 25%;
+                  display: inline-block;
+                  .dsui-column-head {
+                    word-wrap: break-word;
+                    width: 70% !important;
+                    text-align: center;
+                    margin: 1em auto 1em auto;
+                  }
+                }
+              }
+            }
+            .dsui-list-table-items {
+              height: 80%;
+              //FIXME Use Mixin
+              height: -webkit-calc(100% - 110px - 80px); //Header and sub head
+              height: -moz-calc(100% - 110px - 80px); //Header and sub head
+              height: calc(100% - 110px - 80px); //Header and sub head
+
+              overflow-y: auto;
+              .dsui-table-detail {
+                width: 100%;
+                .dsui-table-row {
+                  border: 1px solid $saint-cool-gray-color;
+                  height: 46px;
+                  align-content: center;
+                }
+                .dsui-table-row:hover {
+                  background-color: $saint-collapsible-blue-color;
+                }
+                td {
+                  max-width: 25%;
+                  min-width: 25%;
+                  display: inline-block;
+                  /* IE 10+ */
+                  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    min-width: 24%;
+                    margin-left: 4px;
+                    display: inline-block;
+                  }
+                  .dsui-column-head {
+                    text-align: center;
+                    word-wrap: break-word;
+                    width: 70% !important;
+                    margin : 1em auto 0.5em auto;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  a {
+                    color: $saint-blue-color;
+                    cursor: pointer;
+                  }
+                }
+
+              }
+            }
+          }
+
+          .modal-footer {
+            padding-bottom: 25px;
+            border-top: hidden;
+            text-align: center;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+.dsui-footer {
+
+}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

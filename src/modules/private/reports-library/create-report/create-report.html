@@ -1,0 +1,35 @@
+<div class="dsui-create-new-report">
+  <div class="modal fade" role="dialog" id="dsui-create-new-report" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content dsui-create-report-content">
+        <div class="modal-header dsui-create-report-modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                  data-ng-click="fnCreateNewReportCancel()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 data-ng-if="!isModalInEditMode" class="modal-title" data-i18n="private-reports-library.BUNDLE_NEW_REPORT"></h4>
+          <h4 data-ng-if="isModalInEditMode" class="modal-title" data-i18n="private-reports-library.BUNDLE_EDIT_REPORT"></h4>
+        </div>
+        <div class="modal-body dsui-create-modal-body" id="dsui-create-modal-body">
+          <form role="form">
+            <div data-ng-include="VIEWS.REPORT_BASIC_DETAILS"></div>
+            <div class="form-group report-details" data-ng-include="VIEWS.REPORT_DETAILS"></div>
+            <div data-ng-if="report.reportType.reportKey==signalingReportTypeKey || report.reportType == null" class="form-group signaling-details" data-ng-include="VIEWS.REPORT_SIGNALING"></div>
+            <div class="form-group milestone-details" data-ng-include="VIEWS.REPORT_MILESTONES"></div>
+          </form>
+        </div>
+        <div class="modal-footer dsui-create-modal-footer">
+          <button type="button" data-ng-if="isModalInEditMode" data-ng-disabled="isSaving" class="btn btn-primary" data-ng-click="fnCheckAndSave()">
+            <span data-ng-if="isModalInEditMode" data-i18n="private-reports-library.BUNDLE_UPDATE"></span>
+          </button>
+          <button type="button" data-ng-if="!isModalInEditMode" data-ng-disabled="isSaving" class="btn btn-primary" data-ng-click="fnCheckAndSave()">
+            <span data-ng-if="!isModalInEditMode" data-i18n="private-reports-library.BUNDLE_SAVE"></span>
+          </button>
+          <button type="button" class="btn btn-default" data-i18n="private-reports-library.BUNDLE_NEW_CASE_LIST_CANCEL"
+                  data-ng-click="fnCreateNewReportCancel()"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-ng-include="VIEWS.REPORT_CONFIRMATION"></div>
+</div>

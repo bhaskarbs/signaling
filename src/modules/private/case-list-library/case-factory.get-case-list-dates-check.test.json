@@ -1,0 +1,17 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.DateFlagsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/DateFlags('149222134609152301')"
+        },
+        "ID": "149222134609152301",
+        "INITIAL_RCPT_DT_FLAG": 0,
+        "FOLLOWUP_RCPT_DT_FLAG": 1,
+        "EVENT_RCPT_DT_FLAG": 0,
+        "ICSR_SUBMISSION_DT_FLAG": 0
+      }
+    ]
+  }
+}

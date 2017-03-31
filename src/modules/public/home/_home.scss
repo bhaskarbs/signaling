@@ -1,0 +1,252 @@
+.dsui {
+  background: $saint-white-color !important;
+  .dsui-header {
+
+  }
+  .dsui-content {
+    .dsui-home {
+      background-color: $saint-white-color !important;
+      padding-bottom: 2em;
+      .dsui-image-section {
+        .dsui-home-carousel {
+          .left.carousel-control, .right.carousel-control {
+            z-index: 1;
+          }
+          .icon-prev, .icon-next {
+            font-size: 75px;
+            top: 40%;
+          }
+          .icon-prev {
+            margin-left: -40% !important;
+          }
+          .icon-next {
+            margin-right: -40% !important;
+          }
+        }
+        .dsui-lions-banner {
+          padding-left: 50px;
+          color: $saint-white-color;
+          background-size: 100% 100%;
+          margin-right: 0px !important;
+          margin-left: 0px !important;
+          font-weight: 100 !important;
+          word-spacing: 2px;
+          line-height: 1.35em;
+          font-family: $font-roboto-slab-regular;
+          position: absolute;
+          top: 60px;
+          left: 1%;
+          .dsui-logo-text {
+            margin-top: 3.75em;
+            .dsui-lions-heading {
+              margin-bottom: 50px;
+              font-size: 1.725em;
+              float:left;
+              font-family: $font-roboto-slab-regular;
+              .dsui-lions-heading-firstname{
+                font-family:$font-open-sans;
+              }
+              .dsui-lions-heading-lastname{
+                font-family:$font-roboto-light;
+              }
+            }
+            .dsui-lions-banner-content {
+              font-family: $font-roboto-regular;
+              font-size: 1.750em;
+              line-height: 30px;
+              text-align: left;
+            }
+            p {
+              font-size: 1em !important;
+            }
+            .dsui-lions-last-line {
+              font-family: $font-roboto-regular;
+              font-size: 1.313em;
+              color: $saint-create-report-button;
+              padding: 56px 0 56px 0;
+              text-align: left;
+
+            }
+          }
+        }
+      }
+      .dsui-offers {
+        padding: 0 20px;
+        margin-top: 0.5em;
+        font-size: 1.125em;
+        .dsui-offers-text {
+          padding-right: 15px !important;
+          font-size: 1em;
+          color: $saint-dark-gray-color;
+        }
+        .dsui-link-last-line {
+          color: $saint-blue-color;
+          padding-top: 20px;
+        }
+        .dsui-offers-heading {
+          padding:20px 0;
+          h4 {
+            font-family: $font-roboto-light;
+            font-size: 2.250em;
+            color: $saint-dark-gray-color;
+          }
+        }
+      }
+    }
+  }
+  .dsui-footer {
+
+  }
+}
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+
+    }
+    .dsui-content {
+      .dsui-home {
+        .dsui-image-section {
+          .dsui-home-carousel {
+            .left.carousel-control, .right.carousel-control {
+            }
+            .icon-prev, .icon-next {
+            }
+            .icon-prev {
+            }
+            .icon-next {
+            }
+          }
+          .dsui-lions-banner {
+            .dsui-logo-text {
+              margin-top: 6.75em;
+              .dsui-lions-heading {
+                .dsui-lions-heading-firstname{
+                  font-family:$font-open-sans;
+                }
+                .dsui-lions-heading-lastname{
+                  font-family:$font-roboto-light;
+                }
+              }
+              .dsui-lions-banner-content {
+              }
+              p {
+              }
+              .dsui-lions-last-line {
+              }
+            }
+          }
+        }
+        .dsui-offers {
+          .dsui-offers-text {
+          }
+          .dsui-link-last-line {
+          }
+          .dsui-offers-heading {
+            h4 {
+            }
+          }
+        }
+      }
+    }
+    .dsui-footer {
+
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+
+    }
+    .dsui-content {
+      .dsui-home {
+        .dsui-image-section {
+          .dsui-lions-banner {
+            .dsui-logo-text {
+              margin-top: 1em;
+              .dsui-lions-heading {
+                font-size: 1.725em!important;
+              }
+              .dsui-lions-banner-content {
+                font-size: 1.350em;
+                line-height: 25px;
+              }
+              .dsui-lions-last-line {
+                padding: 2% 0 3% 0 !important;
+              }
+            }
+          }
+        }
+        .dsui-offers {
+          .dsui-link-last-line {
+            padding-bottom: 20px;
+            padding-top: 0px !important;
+          }
+          .dsui-offers-heading {
+            h4 {
+            }
+          }
+        }
+      }
+    }
+    .dsui-footer {
+
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+
+    }
+    .dsui-content {
+      .dsui-home {
+        .dsui-image-section {
+          .dsui-lions-banner {
+            .dsui-logo-text {
+              margin-top: 1.7em;
+            }
+          }
+        }
+        .dsui-offers {
+          .dsui-link-last-line {
+            padding-bottom: 20px;
+            padding-top: 0px !important;
+          }
+          .dsui-offers-heading {
+            h4 {
+            }
+          }
+        }
+      }
+    }
+    .dsui-footer {
+
+    }
+  }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+
+    }
+    .dsui-content {
+
+    }
+    .dsui-footer {
+
+    }
+  }
+}

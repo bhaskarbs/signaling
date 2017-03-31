@@ -1,0 +1,59 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.TableViewType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/TableView('149177417969593011')"
+        },
+        "ID": "149177417969593011",
+        "CASE_NBR": "20100101954",
+        "VERSION_NBR": 4,
+        "PATIENT_DOB": "\/Date(-27107481600000)\/",
+        "PATIENT_AGE": 55,
+        "PATIENT_AGE_UNIT_DESC": "Year",
+        "WORKFLOW_STATUS_DESC": "Not in Workflow",
+        "COUNTRY_OF_INCIDENCE": "UNITED STATES",
+        "INIT_RECV_DT_KEY": 20100104,
+        "EVENT_RECEIPT_DT_KEY": 20091226,
+        "REPORT_TYPE_DESC": "Report From Study",
+        "LABELLED_DESC": "Unlisted",
+        "D_CASE_SERIOUSNESS_DESC": "Yes",
+        "CASE_ASSESS_LABELED_DESC": "Unlisted",
+        "CASE_ASSESS_OUTCOME_DESC": null,
+        "D_CASE_SOURCE_TYPE": "Report From Study",
+        "FORMULATION_DESC": null,
+        "THERAPY_START_DT_KEY": null,
+        "THERAPY_END_DT_KEY": null,
+        "EVENT_DESC_AS_REPORTED": "GUN SHOT WOUND",
+        "ONSET_DT_KEY": 20091226,
+        "EVENT_REPORTED_SERIOUS_INDIC": 1,
+        "PRODUCT_TYPE_INDIC": "2",
+        "INITIAL_RECEIVED_DATE": "\/Date(1262563200000)\/",
+        "REPORTED_CASUALITY_DESC": "1",
+        "STUDY_NUMBER": 1,
+        "PATIENT_SEX_DESC": "",
+        "CASE_CASUALITY": "",
+        "CASE_NARRATIVE": "",
+        "ANNOTATION": "This is for testing purpose",
+        "CASE_KEY": 175360,
+        "INDICATION": "",
+        "ROUTE": "",
+        "PRIME_SUSPECT_PROD_INDIC": 1,
+        "PATIENT_ID": "1610457",
+        "PATIENT_ID_CALC": "1610457",
+        "FAMILY_DESC": null,
+        "CPE_PRODUCT_TRADE_NAME": null,
+        "PT_DESC": "GUN SHOT WOUND",
+        "FOLLOWUP_RECV_DT_KEY": 20100331,
+        "REPORT_FORM_DESC": null,
+        "REPORT_AGENCY_DESC": null,
+        "SUBMIT_DT_KEY": null,
+        "PATIENT_INITIAL": null,
+        "PATIENT_DATE_OF_BIRTH": "\/Date(-27107481600000)\/",
+        "FOLLOWUP_RECEIVED_DATE": "\/Date(1269993600000)\/",
+        "EVENT_RECEIPT_DATE": "\/Date(1261785600000)\/"
+      }
+    ]
+  }
+}

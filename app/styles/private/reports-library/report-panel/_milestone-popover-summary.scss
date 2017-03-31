@@ -1,0 +1,170 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+
+      .dsui-milestone-popover-summary {
+        display:none;
+
+        .dropdown-scope {
+          padding-bottom: 0px;
+          padding-right: 0px;
+        }
+
+        .dropdown-menu::after {
+          position: absolute;
+          top: 16%;
+          left: 96%;
+          display: inline-block;
+          border-right: 17px solid transparent;
+          border-bottom: 15px solid white;
+          border-left: 17px solid transparent;
+          content: '';
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+        .dsui-shadow-div::after {
+          position: absolute;
+          top: 16%;
+          left: 97%;
+          display: inline-block;
+          border-right: 15px solid transparent;
+          border-bottom: 12px solid;
+          border-left: 15px solid transparent;
+          content: '';
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+
+        .dropdown-backdrop {
+          position: fixed;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          z-index: 990;
+          cursor: default;
+        }
+        .dropdown-menu {
+          display: block;
+          cursor: default;
+          position: fixed;
+          left: -185%;
+          top: -50px;
+
+          .dsui-dropdown-header {
+            background-color: $saint-dropdown-color;
+
+          }
+          .dsui-scrollable-menu {
+            max-height: 350px;
+            width: 300px;
+            overflow-y: auto;
+            color: $saint-black-color;
+            overflow-x: hidden;
+            .dsui-milestone-elements {
+              padding-left: 15px;
+              border-bottom: 1px solid $saint-panel-cool-gray-color;
+              .dsui-milestone-summary-name{
+                font-family:$font-roboto-medium;
+                font-size:12px;
+              }
+              .dsui-milestone-summary-date{
+                font-family:$font-roboto;
+                font-size:12px;
+              }
+            }
+            .dsui-milestone-apply-button {
+              margin-left: 38%;
+              margin-top: 5%;
+              margin-bottom: 5%;
+            }
+          }
+
+        }
+        /* IE 10+ */
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          .drop-wide {
+            margin-top: 23px;
+          }
+        }
+
+        /*  .dropdown:hover .dropdown-menu{
+            display: block;
+            cursor: default;
+          }*/
+
+        .dsui-dropdown-row-eq-height {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          .dsui-milestone-datepicker-text-box{
+            width:85%;
+          }
+          .dsui-milestone-complete-text{
+            font-size:12px;
+          }
+        }
+
+      }
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+
+
+
+
+
+

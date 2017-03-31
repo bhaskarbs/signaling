@@ -1,0 +1,58 @@
+<div id="milestone-popover{{::task.id}}" class="dsui-milestone-popover">
+    <div class="dropdown">
+        <span class="dropdown-toggle" data-toggle="dsui-dropdown" aria-haspopup="true"
+		aria-expanded="false">
+    </span>
+    <span>
+    <div>
+      <div class="dropdown-menu drop-wide" role="menu">
+        <div class="dsui-shadow-div">
+        </div>
+        <div class="dsui-scrollable-menu">
+          <div data-ng-repeat="milestone in task.data.selectedMilestones track by $index">
+            <div data-ng-if="milestone.milestoneStatus==0 ||
+                 milestone.milestoneStatus==1">
+              <div id="milestonePopOver" class="dsui-milestone-elements">
+                <div >
+                <span class="dsui-milestone-name" data-ng-bind="($index+1) + '.  ' + milestone.milestoneName"></span>
+                <div class="dsui-milestone-date" data-ng-bind=" '   ' + (milestone.reportMilestoneDate | date:'dd-MMM-yyyy')"></div>
+                </div>
+                <div>
+                  <div class="row dsui-dropdown-row-eq-height">
+                    <div class="col-xs-5">
+                      <span>
+                    <input  type="checkbox" data-ng-hide="task.data.tempMilestoneStatus[$index]"
+                           data-ng-disabled="milestone.milestoneStatus==1 || (!task.data.enableMilestoneUserCheckbox[$index] && !task.data.enableMilestoneUserGroupCheckbox[$index])"
+                           data-ng-model="task.data.tempMilestoneStatus[$index]">
+                    <input  type="checkbox" data-ng-hide="!task.data.tempMilestoneStatus[$index]"
+                           data-ng-disabled="milestone.milestoneStatus==1 || (!task.data.enableMilestoneUserCheckbox[$index] && !task.data.enableMilestoneUserGroupCheckbox[$index])"
+                           data-ng-model="task.data.tempMilestoneStatus[$index]" data-ng-checked="true"><span
+                        class="dsui-milestone-complete-text" data-i18n="private-reports-library.BUNDLE_MILESTONE_COMPLETE"></span></span>
+                    </div>
+                    <div class="col-xs-7">
+                      <div class="input-group dsui-datepicker-input-padding">
+                        <div class="input-group-addon dsui-calendar-icon" data-ng-click="(milestone.milestoneStatus==1 || !task.data.tempMilestoneStatus[$index])?'':enableDatePicker('#milestoneDatePicker'+$index)"><i
+                          class="fa fa-calendar-o"></i></div>
+                        <input ui-date="{ dateFormat:constants.DATEPICKER_FORMAT , dayNamesMin:constants.DATEPICKER_DAY_NAMES , yearRange:constants.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                               id="milestoneDatePicker{{$index}}"class="form-control dsui-datepicker-on-top dsui-datepicker-input-text-padding" placeholder=""
+                               data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}"
+                               data-ng-disabled="milestone.milestoneStatus==1 || !task.data.tempMilestoneStatus[$index] || (!task.data.enableMilestoneUserCheckbox[$index] && !task.data.enableMilestoneUserGroupCheckbox[$index])"
+                               type="text" data-ng-model="milestone.milestoneCompletedDate">
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="dsui-milestone-apply-button btn btn-primary" data-ng-click="applyMilestoneChanges(task)"
+                  data-i18n="private-reports-library.BUNDLE_APPLY_BUTTON">
+          </button>
+        </div>
+      </div>
+    </div>
+      </span>
+  </div>
+</div>

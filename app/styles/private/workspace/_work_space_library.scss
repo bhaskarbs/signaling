@@ -1,0 +1,34 @@
+.wssv-mian-content {
+    padding: 0 330px;
+    .wssv-valid-list {
+        float: right;
+        ul {
+            list-style: none;
+            li {
+                float: left;
+                margin: 0 9px;
+                border-bottom: 3px solid blue;
+            }
+        }
+    }
+    .wssv-valid-list-lat {
+        text-align: right;
+        width: 90%;
+        float: right;
+        padding: 0;
+        line-height: 40px;
+        margin-bottom: 20px;
+        div {
+            border-bottom: 4px solid #ccc;
+            margin: 0px 7px 0 0;
+            text-align: left;
+            padding: 0;
+        }
+        div:first-child {
+            border-bottom: 4px solid #016698;
+        }
+    }
+    .wssv-bar {
+        .wssv-bar-first {}
+    }
+}

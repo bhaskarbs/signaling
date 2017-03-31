@@ -1,0 +1,246 @@
+.dsui{
+  .dsui-header{
+  }
+  .dsui-content{
+    .dsui-notification-tiles{
+      margin-bottom: -1px;
+      height:70vh ;
+    }
+    .dsui-notification-main{
+      margin-top: 60px;
+      padding-left: 0px;
+      padding-right: 0px;
+
+    }
+    .dsui-notification-vertical-panel {
+      border: $saint-favourite-border-color solid;
+      border-width: 1px 0px 1px 1px;
+      height: 100%;
+    }
+    .dsui-nopadding-right {
+      padding-right: 0px;
+    }
+    .dsui-height{
+      height: 870px;
+    }
+    .dsui-notification-filter-verticalbar {
+      background-color: $saint-favourite-border-color;
+      width: 30px;
+      float: left;
+      cursor: pointer;
+      height: 100%;
+      overflow-y: hidden !important;
+      .dsui-notification-collpase-icon {
+        color: $saint-unfavourite-color;
+        margin-top: 10px;
+        font-size: 20px;
+
+       .pull-right{
+         margin-right: 10px;
+         margin-top: -30px;
+        }
+
+      }
+      .dsui-notification-text-rotator {
+        white-space: nowrap;
+        color: $saint-unfavourite-color;
+        width: 25px;
+        font-size: 16px;
+        margin-top: 45px;
+        @include saintRotateDeg(90deg);
+      }
+    }
+    .dsui-notification-heading{
+      height: 60px;
+      border-bottom: 2px solid $saint-caption-color;
+      margin-top: 0px;
+      background-color: $saint-white-color;
+      padding: 20px 10px 15px 10px;
+
+      .dsui-notification-notification{
+        padding-top: 20px;
+        padding-left: 15px;
+        @include fontsize-color-fontfamily-fontstyle(18px,$saint-unfavourite-color,$font-roboto-regular,normal);
+      }
+
+      .dsui-notification-setting{
+
+        font-family: $font-roboto-regular;
+        font-size: 14px;
+        color: $saint-unfavourite-color;
+        font-style: normal;
+        padding-right: 0px;
+        float:right;
+      }
+    }
+    .dsui-padding-right15 {
+      padding-right: 15px;
+      margin-top: 15px;
+    }
+    .dsui-notification-collapse-list {
+      float: right;
+      margin-top: -21px;
+      .dsui-notification-collapse-icon {
+        font-size: 20px;
+        color: $saint-unfavourite-color;
+        cursor: pointer;
+      }
+    }
+    .dsui-notification-filter-library {
+
+      .icon-filter{
+        color: $saint-blue-color;
+      }
+      .dsui-notification-filter-header-text {
+        font-family: $font-roboto;
+        font-size: 14px;
+        color: $saint-blue-color;
+        margin-left: 10px;
+      }
+    }
+    .dsui-notification-filter-panel{
+      margin-top: 15px;
+    }
+    .dsui-notification-milestone-list{
+      margin-top:5px;
+    }
+    .dsui-notification-label-name{
+      font-family: $font-roboto-regular;
+      font-size: 14px;
+      color: $saint-unfavourite-color;
+      font-style: normal;
+    }
+  }
+  .dsui-notification-data-list{
+    padding-left:0px;
+  }
+  .dsui-notification-item-height{
+    min-height: 90px !important;
+  }
+  .dsui-notification-background-padding{
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: $saint-background-padding-notiication;
+    margin-top: -2px;
+  }
+  .dsui-notification-data-list-item{
+
+    min-height: 135px;
+    padding: 15px 10px 15px 10px;
+    .dsui-top-heading{
+      padding: 0px;
+      .dsui-notification-heading-text{
+        font-family: $font-roboto-medium;
+        padding:0px;
+        font-size: 16px;
+        color: $saint-unfavourite-color;
+        font-style: normal;
+      }
+      .dsui-pin-icon{
+        text-align: right;
+        .icon-thumb-tack{
+          display: inline-block;
+         @include saintRotateDeg(45deg);
+        }
+      }
+    }
+    .dsui-notification-heading-text{
+      font-family: $font-roboto-medium;
+      padding:0px;
+      font-size: 16px;
+      color: $saint-unfavourite-color;
+      font-style: normal;
+    }
+    .dsui-complete-text {
+      padding: 0px;
+      .dsui-notif-message {
+        padding: 0px;
+        max-width: 54em;
+        .dsui-notification-message {
+          font-family: $font-roboto;
+          font-size: 14px;
+          color: $saint-unfavourite-color;
+          font-style: normal;
+        }
+      }
+    }
+    .dsui-blue-heading {
+      color: $saint-blue-color;
+      cursor: pointer;
+    }
+    .dsui-notification-created{
+      float:right;
+    }
+    .dsui-created-date{
+      font-size: 14px;
+      color: $saint-caption-color;
+    }
+    .dsui-modal-notif-date{
+      margin-top: 5px;
+    }
+    .dsui-notification-overall-data{
+      padding-bottom: 15px;
+    }
+  }
+
+  .dsui-footer{
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/*Ipad Landscape*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

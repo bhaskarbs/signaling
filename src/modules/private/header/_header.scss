@@ -1,0 +1,203 @@
+.dsui{
+  .dsui-header{
+    background:$saint-blue-color !important;
+    z-index: 3;
+    width: 100%;
+    .dsui-app-name{
+      margin-top: 5px;
+      font-size: 20px;
+      color:$saint-white-color !important;
+      .dsui-app-firstname{
+        font-family:$font-open-sans;
+      }
+      .dsui-app-lastname{
+        @include Open-Sans-Generic(Light);
+      }
+    }
+    .form-control{
+      height: 31px !important;
+    }
+    .dsui-search-icon{
+      background-color: $saint-white-color !important;
+      height: 29px !important;
+      span{
+        color: $saint-blue-color;
+      }
+    }
+    input{
+      box-shadow: none;
+      border-left: 0px;
+      padding-left: 0px;
+    }
+    input.form-control::-webkit-input-placeholder{
+      color: $saint-light-gray-color;
+    }
+    input.form-control:-moz-placeholder{
+      color: $saint-light-gray-color;
+    }
+    input.form-control:-ms-input-placeholder{
+      color: $saint-light-gray-color;
+    }
+    input.form-control::-moz-placeholder {
+      color: $saint-light-gray-color;
+    }
+    .dsui-navbar{
+      background:$saint-blue-color !important;
+      border-radius: 0px;
+      border:none;
+      height: 60px;
+      margin-bottom: 0 !important;
+      form.dsui-search-form{
+        width: 40%;
+        padding-top: 4px;
+      }
+    }
+    .dsui-navbar-right{
+      .dsui-bell-icon{
+        margin-top:22px;
+      }
+      .badge{
+        background: $saint-red-color;
+        font-size: 0.5em;
+        padding: 3px 5px;
+        position: relative;
+        top: -10px;
+        left: -2px
+      }
+      .dropdown .dropdown-toggle{
+        color:$saint-white-color !important;
+        padding: 0 !important;
+        margin-top: 20px;
+        margin-right: 15px;
+        background: none;
+      }
+      .dropdown.open .dropdown-toggle{
+        background:$saint-bark-blue !important;
+        border:$saint-blue-color !important;
+        color:$saint-white-color !important;
+      }
+      .dropdown.open ul{
+        width: 100%;
+      }
+      .dropdown .dsui-notification-modal {
+        padding-top: 0px !important;
+        .dsui-shadow-div::after {
+          position: absolute;
+          top: -12px;
+          right: 2px;
+          display: inline-block;
+          border-right: 15px solid transparent;
+          border-bottom: 12px solid;
+          border-left: 15px solid transparent;
+          content: '';
+          color: $saint-panel-cool-gray-color;
+        }
+        .dsui-notification-modal-box {
+          width: 430px !important;
+          height: 526px !important;
+
+          //height: 430px;
+          .dsui-notification-header {
+            height: 60px;
+            border-bottom-color: $saint-hover-border-color;
+            background-color: $saint-panel-cool-gray-color;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            .dsui-notification-header-text {
+              padding-top: 20px;
+              padding-left: 15px;
+              @include fontsize-color-fontfamily-fontstyle(18px, $saint-unfavourite-color, $font-roboto-regular, normal);
+            }
+            .dsui-notification-header-view-all {
+              padding-top: 20px;
+              padding-right: 15px;
+              color: $saint-notification-view-all;
+              cursor: pointer;
+            }
+          }
+          .dsui-notification-modal-data-list {
+            padding-left: 0px;
+            overflow-y: scroll !important;
+            height: 466px !important;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-menu{
+    margin-top: 20px !important;
+    margin-right: 6px;
+  }
+
+
+  .dsui-content{
+
+  }
+  .dsui-footer{
+  }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    .dsui-header{
+      .dsui-navbar{
+        height: auto !important;
+      }
+      .dsui-search-form{
+        width: 40% !important;
+        border:0px !important;
+        padding-top: 4px;
+      }
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+      .dsui-navbar{
+        height: auto !important;
+      }
+      .dsui-search-form{
+        width: 100% !important;
+        border:0px !important;
+        padding-top: 4px;
+      }
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+
+
+
+

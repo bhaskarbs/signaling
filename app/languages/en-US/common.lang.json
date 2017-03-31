@@ -1,0 +1,20 @@
+{
+  "BUNDLE_APPLICATION_TITLE": "ConvergeHEALTH Safety",
+  "BUNDLE_FILTER": "Filter",
+  "BUNDLE_SORT": "Sort",
+  "BUNDLE_DASHBOARD_NAVIGATION": "Workspace",
+  "BUNDLE_FILTER_AND_SORT": "FILTER & SORT",
+  "BUNDLE_SORTED_BY": "Sorted by",
+  "BUNDLE_HEADER_TITLE_FIRSTNAME":"ConvergeHEALTH",
+  "BUNDLE_HEADER_TITLE_LASTNAME":" Safety",
+  "BUNDLE_FILTERED_BY": "Filtered by:",
+  "BUNDLE_NAME": "Name",
+  "BUNDLE_VALUE": "Value",
+  "BUNDLE_SORT_BY": "Sort By",
+  "BUNDLE_NOTIFICATION_HEADER_KEY": "Notification Center",
+  "BUNDLE_FILTER_NOTIFICATION": "Filter Notification",
+  "BUNDLE_PANEL_NOTIFICATION": "Notifications",
+  "BUNDLE_NOTIFICATION_SETTINGS":"Settings",
+  "BUNDLE_YES":"Yes",
+  "BUNDLE_NO":"No"
+}

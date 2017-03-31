@@ -1,0 +1,35 @@
+<div dir-paginate="query in myQueryData | itemsPerPage: queryPerPage" total-items="totalQuery"
+     current-page="pagination.current" pagination-id="queryTiles">
+  <div class="dsui-query-tile" data-ng-click="fnTilesSelected(query)"
+       data-ng-class="{'dsui-query-tile-clicked':query.isSelected}">
+
+    <div class="dsui-query-name-close" data-ng-click="$event.stopPropagation()">
+      <div class="dsui-query-name" data-ng-bind="query.queryName">
+      </div>
+      <div data-ng-show="query.isShared" class="dsui-shared-status">
+        <span class="dsui-shared-status-text" data-i18n="private-query-library.BUNDLE_KEY_SHARED"></span>
+      </div>
+      <div>
+        <div data-ng-show="!query.isShared" class="dsui-cross fa fa-times-circle" data-ng-click="fnDeleteQuery(query)">
+      </div>
+      <div data-ng-include="VIEWS.QUERY_LIBRARY_DELETE_QUERY"></div>
+      </div>
+    </div>
+
+    <div class="dsui-desc-status">
+      <div class="dsui-desc" data-ng-bind="query.queryDesc">
+      </div>
+    </div>
+
+    <div class="dsui-date-due-date-created">
+      <div class="dsui-date-due"><span data-i18n="private-query-library.BUNDLE_KEY_CREATE_BY"></span>:&nbsp<span
+        data-ng-bind="query.createdBy"></span>
+      </div>
+      <div class="dsui-date-created"><span data-i18n="private-query-library.BUNDLE_KEY_LAST_EDITED"></span>:&nbsp<span
+        data-ng-bind="fnGetDate(query.lastEditedDate)"></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+

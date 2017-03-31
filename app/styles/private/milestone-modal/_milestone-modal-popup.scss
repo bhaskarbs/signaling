@@ -1,0 +1,93 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+.dsui-milestone-modal {
+  .dsui-milestone-modal-header{
+    padding:3%;
+  }
+  .dsui-milestone-modal-header-text {
+    font-size: 20px;
+    color: $saint-unfavourite-color;
+    font-family: $font-roboto-regular;
+  }
+  .dsui-milestone-modal-report-info{
+    padding:5%;
+  }
+  .dsui-milestone-modal-report-info-text {
+    font-size: 18px;
+    color: $saint-unfavourite-color;
+    font-family: $font-roboto-regular;
+  }
+  .dsui-milestone-modal-button-complete {
+    font-size: 14px;
+    background: $saint-blue-color;
+    color: $saint-white-color;
+    font-family: $font-roboto-regular;
+    border-radius: 0px;
+    width: 17%;
+  }
+  .dsui-milestone-modal-button-close {
+    font-size: 14px;
+    color: $saint-unfavourite-color;
+    font-family: $font-roboto-regular;
+    border-radius: 0px;
+    width: 14%;
+  }
+}}
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+

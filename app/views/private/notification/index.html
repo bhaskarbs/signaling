@@ -1,0 +1,14 @@
+<div id="notification" class="dsui-notification">
+  <div data-ng-include="VIEWS.NOTIFICATION_SECONDARY_NAVIGATION"></div>
+
+  <div class="col-sm-12 dsui-notification-main">
+    <div data-ng-class="showFilterPanel?'col-xs-3':'hidden'">
+      <div data-ng-include="VIEWS.FILTER_NOTIFICATION"></div>
+    </div>
+
+    <div data-ng-class="(showFilterPanel)?'col-xs-9':'col-xs-12'" class="dsui-no-padding" >
+      <div data-ng-include="VIEWS.NOTIFICATION_RIGHT_PANEL"></div>
+    </div>
+  </div>
+
+</div>

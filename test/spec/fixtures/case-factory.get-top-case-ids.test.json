@@ -1,0 +1,13 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.SelectCaseType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/SelectCase('2010008449')"
+        },
+        "CASE_NBR": "2010008449"
+      }
+    ]
+  }
+}

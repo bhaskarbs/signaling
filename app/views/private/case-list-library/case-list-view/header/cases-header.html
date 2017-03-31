@@ -1,0 +1,65 @@
+<div class="col-sm-12 clearfix dsui-data-view dsui-secondary-header">
+  <div class=" col-lg-6 col-sm-8 dsui-bread-crumbs dsui-no-left-padding" >
+    <span>
+      <button type="button" data-i18n-attr="{title:'private-case-list-library.BUNDLE_MEDDRA_DICTIONARY'}" data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_ACCESS_MEDDRAB)" class="btn btn-secondary dsui-btn-width dsui-btn-height">
+        <i class="icon-book dsui-visual-icon-font"></i>
+      </button>
+    </span>
+     <span>
+      <button type="button" data-i18n-attr="{title:'private-case-list-library.BUNDLE_EXPORT_CASE_LIST'}" data-ng-click="decorator.click(PRIVILEGES.CASE_LIST_EXPORT,fnDownloadExcel,[]);" data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_EXPORT)" class="btn btn-secondary dsui-btn-width dsui-btn-height">
+        <i class="icon-IcoMoon-12 dsui-visual-icon-font"></i>
+        <i class="caret dsui-visual-icon-font"></i>
+      </button>
+     </span>
+     <span>
+      <button type="button" data-ng-click="decorator.click(PRIVILEGES.CASE_LIST_SAVE,fnSaveCaseList,[]);" class="btn btn-secondary dsui-btn-width dsui-btn-height" data-i18n-attr="{title:'private-case-list-library.BUNDLE_SAVE_CASE_LIST'}"
+              data-toggle="modal"  data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_SAVE, caseList.disableSave)">
+        <i class="icon-save dsui-visual-icon-font"></i>
+      </button>
+     </span>
+     <span>
+      <button type="button" data-ng-click="decorator.click(PRIVILEGES.CASE_LIST_SAVE,fnSaveAsCaseList,[]);" data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_SAVE, caseList.disableSaveAs)" class="btn btn-secondary dsui-btn-width dsui-btn-height" data-i18n-attr="{title:'private-case-list-library.BUNDLE_SAVE_CASE_LIST_AS'}"
+                   data-toggle="modal" data-target="#dsui-saveAsCaseListModal">
+        <i class="icon-IcoMoon-14 dsui-visual-icon-font"></i>
+      </button>
+     </span>
+    <span>
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.SHARE_CASE_LIST, caseList.disableShareCaselist)" data-i18n-attr="{title:'private-case-list-library.BUNDLE_SHARE_CASE_LIST'}" data-ng-click="fnShareCaseList()" type="button" data-ng-if="getPageMode() === CONSTANTS.SHARED_MODE"
+                class="btn btn-secondary disabled dsui-btn-width dsui-btn-height">
+          <i class="dsui-visual-icon-font icon-share-alt"></i>
+        </button>
+      <button data-ng-disabled="decorator.disabled(PRIVILEGES.SHARE_CASE_LIST, caseList.disableShareCaselist)" data-i18n-attr="{title:'private-case-list-library.BUNDLE_SHARE_CASE_LIST'}" data-ng-click="fnShareCaseList()" type="button" data-ng-if="getPageMode() !== CONSTANTS.SHARED_MODE"
+              class="btn btn-secondary dsui-btn-width dsui-btn-height">
+          <i class="dsui-visual-icon-font icon-share-alt"></i>
+        </button>
+      </span>
+    <span>
+      <button type="button" class="btn btn-secondary dsui-btn-width dsui-btn-height" data-i18n-attr="{title:'private-case-list-library.BUNDLE_DELETE_CASE_LIST'}">
+        <i class="fa fa-trash dsui-visual-icon-font"></i>
+      </button>
+     </span>
+    <span><button type="button" data-ng-disabled="decorator.disabled(PRIVILEGES.REPORT_PACKAGE_CREATE_MODIFY)" class="btn btn-primary btn-height dsui-btn-report-package" ui-sref="reportPackage({isFromCaselist:1, caseListKey:bclkey})">
+      <span data-i18n="private-case-list-library.BUNDLE_REPORT_PACKAGE"></span>
+    </button></span>
+  </div>
+  <div class=" col-lg-6 col-sm-4 dsui-no-padding dsui-page-content-navigation">
+    <div class=" col-lg-4 pull-right dsui-no-padding dsui-icons-container">
+      <div class="dsui-no-padding dsui-list-icon-div">
+        <span data-ng-click="fnToggleView(1)" data-i18n-attr="{title:'private-case-list-library.BUNDLE_CL_VISUALS_VIEW'}"
+            class="icon-bar-chart dsui-visual-icon-font dsui-border-right-icon dsui-pointer-cursor "
+            data-ng-class="casesList.currentView=== 1?'dsui-active-item':(caseList.disableToggleButtons)?'dsui-disable-toggle-buttons':''"></span>
+      </div>
+      <div class=" dsui-no-padding dsui-list-icon-div">
+        <span data-ng-click="fnToggleView(2)" data-i18n-attr="{title:'private-case-list-library.BUNDLE_CL_QB_VIEW'}"
+            class="icon-IcoMoon-19 dsui-visual-icon-font dsui-list-icon dsui-pointer-cursor "
+            data-ng-class="casesList.currentView=== 2 && 'dsui-active-item' || ''"></span>
+      </div>
+      <div class=" dsui-no-padding dsui-list-icon-div" data-ng-disable="caseList.disableToggleButtons">
+        <span data-ng-click="fnToggleView(3);" data-i18n-attr="{title:'private-case-list-library.BUNDLE_CL_TABLE_VIEW'}"
+            class="icon-list-ul dsui-visual-icon-font dsui-border-left-icon dsui-pointer-cursor "
+            data-ng-class="casesList.currentView=== 3?'dsui-active-item':(caseList.disableToggleButtons)?'dsui-disable-toggle-buttons':''"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12 dsui-divider"></div>

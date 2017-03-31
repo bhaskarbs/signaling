@@ -1,0 +1,892 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-report-panel {
+      .col-xs-9 {
+        width: 86%;
+        padding-right: 0px;
+        border-left: $saint-favourite-border-color 1px solid;
+      }
+      .dsui-spy-left-panel {
+        .fa-angle-double-left {
+          padding-left: 4px;
+          padding-top: 23px;
+        }
+        .dsui-menu-spy {
+          padding-left: 0px;
+          padding-right: 0px;
+          .fa {
+            height: 60px;
+            padding-top: 23px;
+            color: $saint-unfavourite-color;
+          }
+          .dsui-users {
+            color: $saint-unfavourite-color;
+            font-size: 20px;
+            font-weight: 600;
+          }
+          .dsui-additional-reports{
+            color: $saint-unfavourite-color;
+            font-size: 20px;
+          }
+        }
+        .dsui-menu-spy ul {
+          list-style: none;
+          padding-left: 0px;
+          text-align: center;
+        }
+
+        .dsui-menu-spy li:hover, .dsui-menu-spy li:focus, .dsui-menu-spy li:active {
+          background: $saint-panel-cool-gray-color;
+          Stroke: None;
+        }
+
+        .dusi-user-spied{
+          height: 60px;
+          padding-top: 18px;
+        }
+        width: 14%;
+      }
+      .dsui-spy-left-panel a {
+        text-decoration: none;
+        color: $saint-black-color;
+      }
+      .dsui-spy-right-panel {
+        .dsui-spy-right-panel a {
+          text-decoration: none;
+          color: $saint-black-color;
+        }
+
+        .dsui-right-panel-top-nav-first {
+          padding-top: 20px;
+          .dsui-right-panel-top-nav-first-icons{
+            float: left;
+            width:5%;
+          }
+          .dsui-top-nav-heading-icon {
+            float: left;
+            padding-top: 4px;
+            color: $saint-blue-color;
+            font-size:16px;
+          }
+          .dsui-top-nav-heading {
+            padding-left: 10px;
+            font-family: $font-roboto-regular;
+            font-size: 16px;
+            color: $saint-blue-color;
+            width: 83%;
+            word-wrap: break-word;
+          }
+          .dsui-top-nav-heading-expand{
+            width: 1165px;
+          }
+          .dsui-top-nav-close {
+            color: $saint-title-gray-color;
+            font-size: 16px;
+            width: 4px;
+          }
+        }
+        .dsui-right-panel-top-nav-sec {
+          padding-left: inherit;
+          margin-bottom: 12px;
+          font-family: $font-roboto-medium;
+          font-size: 14px;
+          color: $saint-unfavourite-color !important;
+          .dsui-button-sec-bottom-extend{
+            margin-bottom: -35px;
+            margin-top: 12px;
+            .dsui-nav-sec-blinded-extend{
+              padding-right: 0px;
+              margin-top: -49px;
+            }
+
+          }
+          .dsui-generate-report-btn-collapsed {
+              background: $saint-blue-color;
+              padding: 0.15em 0.5em;
+              color: $saint-panel-cool-gray-color;
+              height: 36px;
+              font-family: $font-roboto-regular;
+              width:100% !important;
+          }
+          .dsui-generate-report-btn-expanded{
+            background: $saint-blue-color;
+            padding: 0.15em 0.5em;
+            color: $saint-panel-cool-gray-color;
+            height: 36px;
+            font-family: $font-roboto-regular;
+          }
+          .btn-text {
+            width: 143px;
+          }
+        .dsui-drop-down-toggle-collapsed {
+          .dropdown-toggle {
+            background: $saint-panel-cool-gray-color;
+            z-index: 1;
+            .dsui-report-status-drop-down {
+              height: 35px;
+              border-right: 2px solid $saint-collapse-panel;
+              padding-top: 6px;
+              margin-top: -5px;
+              text-align: left;
+              margin-left: 10px;
+              .dsui-open {
+                color: $saint-open-color;
+              }
+              .dsui-completed {
+                color: $saint-green-completed;
+              }
+              .dsui-final {
+                color: $saint-report-inProgress;
+              }
+              .dsui-inprogress {
+                color: $saint-report-inProgress;
+              }
+            }
+            .dsui-dropdown-blinded {
+              width: 97px;
+            }
+            .fa {
+              float: left;
+              padding-top: 5px;
+              margin-left: 15px;
+            }
+            .dsui-open {
+              color: $saint-open-color;
+            }
+            .dsui-completed {
+              color: $saint-green-completed;
+            }
+            .dsui-final {
+              color: $saint-report-inProgress;
+            }
+            .dsui-inprogress {
+              color: $saint-report-inProgress;
+            }
+            .dsui-overdue {
+              color: $saint-report-overdue;
+            }
+
+            .caret {
+              margin-top: 4px;
+              margin-left: 4px;
+            }
+          }
+          .btn-group button {
+            height: 36px;
+            border: none;
+            width: 100% !important;
+            margin-bottom: 12px;
+            margin-top: 12px;
+          }
+          .dsui-status-dropdown{
+            width: 50%;
+            margin-top: -10px !important;
+            z-index:1;
+            .dsui-open {
+              color: $saint-open-color;
+            }
+            .dsui-completed {
+              color: $saint-green-completed;
+            }
+            .dsui-final {
+              color: $saint-report-inProgress;
+            }
+            .dsui-inprogress {
+              color: $saint-report-inProgress;
+            }
+            .dsui-status-list{
+              margin-left: 10px;
+              margin-right: 175px;
+            }
+          }
+        }
+          .dsui-drop-down-toggle-expanded {
+            width:100%;
+            .dropdown-toggle {
+              width: 100% !important;
+              background: $saint-panel-cool-gray-color;
+              z-index: 1;
+              .dsui-report-status-drop-down {
+                height: 35px;
+                border-right: 2px solid $saint-collapse-panel;
+                padding-top: 6px;
+                margin-top: -5px;
+                text-align: left;
+                padding-left: 9px;
+                margin-left: 10px;
+                .dsui-open {
+                  color: $saint-open-color;
+                }
+                .dsui-completed {
+                  color: $saint-green-completed;
+                }
+                .dsui-final {
+                  color: $saint-report-inProgress;
+                }
+                .dsui-inprogress {
+                  color: $saint-report-inProgress;
+                }
+              }
+              .dsui-dropdown-blinded {
+                width: 97px;
+              }
+              .fa {
+                float: left;
+                padding-top: 5px;
+                margin-left: 15px;
+              }
+              .dsui-open {
+                color: $saint-open-color;
+              }
+              .dsui-completed {
+                color: $saint-green-completed;
+              }
+              .dsui-final {
+                color: $saint-report-inProgress;
+              }
+              .dsui-inprogress {
+                color: $saint-report-inProgress;
+              }
+              .dsui-overdue {
+                color: $saint-report-overdue;
+              }
+
+              .caret {
+                margin-top: 4px;
+                margin-left: 2px;
+              }
+            }
+            .btn-group button {
+              height: 36px;
+              border: none;
+              width: 165px;
+              margin-bottom: 12px;
+              margin-top: 12px;
+            }
+            .dsui-status-dropdown{
+              width: 50%;
+              margin-left: -15px;
+              margin-top: -10px !important;
+              z-index:1;
+              .dsui-open {
+                color: $saint-open-color;
+              }
+              .dsui-completed {
+                color: $saint-green-completed;
+              }
+              .dsui-final {
+                color: $saint-report-inProgress;
+              }
+              .dsui-inprogress {
+                color: $saint-report-inProgress;
+              }
+              .dsui-status-list{
+                margin-left: 10px;
+              }
+            }
+          }
+          .col-xs-2 {
+            width: 15%;
+          }
+        }
+        .dusi-last-update-window {
+          @include color-fontsize-backgroundcolor($saint-unfavourite-color,0.875em,$saint-light-yellow-color);
+          font-family: $font-roboto-regular;
+          border-color: $saint-dark-yellow-border;
+          height: 36px;
+          margin-bottom: 12px;
+          padding-top: 8px;
+          .fa {
+            color: $saint-dark-yellow-border;;
+          }
+          .top-nav {
+            margin-left: -20px;
+          }
+          .col-xs-12 {
+            margin-left: 13px;
+          }
+        }
+        .dsui-last-update-expand{
+          margin-left: 13px;
+          margin-top: -15px;
+        }
+        .dsui-overflowing-list-panel {
+          margin-right: 15px;
+          overflow-x: hidden;
+        }
+        .dsui-non-overflowing-list-panel {
+          overflow: hidden;
+        }
+        .dsui-report-list-panel {
+          .dsui-report-detail-collapsed {
+            margin-bottom: 40em;
+          }
+          .dsui-report-detail-section {
+
+            .dsui-report-user-group {
+              margin-left: inherit;
+            }
+            .dsui-report-user-adhoc {
+              padding-left: initial;
+            }
+            .dsui-report-user-scheduling {
+              padding-left: initial;
+            }
+            .dsui-report-user-package {
+              padding-left: initial;
+            }
+            .dsui-report-detail-heaader {
+              margin-bottom: 10px;
+              .dsui-report-detail-text {
+                font-size: 16px;
+                margin-bottom: 5px;
+                color: $saint-unfavourite-color;
+                font-family: $font-roboto-medium;
+              }
+              .dsui-manage-button{
+                background-color: $saint-blue-color;
+                float: right;
+                display: table;
+                border: none;
+                border-radius: 4px;
+                height: 20px;
+                width: 65px;
+                text-align: center;
+                font-family: $font-roboto;
+                font-size: 13px;
+                color: $saint-white-color;
+                margin-right: 12px;
+                .dsui-manage-report-text{
+                  margin-left: -4px;
+                }
+              }
+              .dsui-line {
+                border: 1px solid $saint-cool-gray-color;
+                margin-left: 15px;
+              }
+              .dsui-line-only {
+                border: 1px solid $saint-cool-gray-color;
+              }
+              .dsui-edit-icon {
+                float: right;
+                cursor: pointer;
+              }
+            }
+            .dsui-display-add-reports{
+              @include fontsize-color-fontfamily-fontstyle(14px, $saint-close-panel, $font-roboto-regular, italic);
+              margin-bottom: 30px;
+            }
+            .dsui-report-detail-overflow{
+              max-height: 150px;
+              overflow: auto;
+              margin-bottom: 5px;
+            }
+            .dsui-report-additional-text{
+              font-size: 14px;
+            }
+            .dsui-report-additional-view-all{
+              margin-bottom: 10px;
+              margin-top: 15px;
+            }
+            .dsui-report-detail-name {
+
+
+              margin-bottom: 10px;
+              .dsui-report-name {
+                font-size: 14px;
+                color: $saint-unfavourite-color;
+                font-family: $font-roboto-medium;
+
+              }
+              .dsui-report-name-text {
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                -ms-word-break: break-all;
+                word-break: break-all;
+                font-size: 14px;
+                color: $saint-unfavourite-color;
+                font-family: $font-roboto-regular;
+                .dsui-milestone-flag {
+                  float:right;
+                }
+                .dsui-milestone-flag-complete{
+                  color:$saint-create-report-button
+                }
+                .dsui-milestone-flag-padding{
+                  background-color: $saint-panel-cool-gray-color;
+                  float: right;
+                  padding: 4%;
+                }
+              }
+              .dsui-report-view-all {
+
+                margin-top: 6px;
+                .dsui-report-view-all-text {
+                  font-size: 14px;
+                  cursor: pointer;
+                }
+              }
+            }
+            .dsui-report-detail-case-list {
+
+              margin-bottom: 10px;
+              .dsui-report-case-list-text {
+                margin-top: 10px;
+                font-size: 14px;
+                color: $saint-unfavourite-color;
+                font-family: $font-roboto-regular;
+                .dsui-spied-panel-case-description{
+                  width:275px;
+                }
+                .dsui-report-case-list-text-description{
+                  overflow-wrap: break-word;
+                  word-wrap: break-word;
+                  -ms-word-break: break-all;
+                  word-break: break-all;
+                  margin-top:10px;
+                  margin-bottom:10px;
+                }
+                .dsui-report-case-list-view-all {
+
+                  margin-top: 6px;
+                  margin-bottom: 10px;
+                  .dsui-report-case-list-view-all-text {
+                    font-size: 14px;
+                    cursor: pointer;
+                  }
+                }
+              }
+              .dsui-report-case-list-manage-case-list {
+
+                margin-top: 6px;
+                margin-bottom: 10px;
+                .dsui-report-case-list-manage-case-list-text {
+                  font-size: 14px;
+                  cursor: pointer;
+                }
+              }
+
+            }
+            .dsui-report-detail-adhoc-scheduling-reportpackage {
+              margin-bottom: 10px;
+                .dsui-report-adhoc-scheduling-reportpackage-view-all {
+                  margin-top: 6px;
+                  margin-bottom: 10px;
+                  .dsui-report-adhoc-scheduling-reportpackage-view-all-text {
+                    font-size: 14px;
+                    cursor: pointer;
+                  }
+                }
+            }
+
+            .dsui-report-detail-license {
+              margin-bottom: 10px;
+              .dsui-report-detail-milestone-overflow{
+                max-height: 225px;
+                overflow: auto;
+              }
+              .dsui-report-detail-license-section {
+                margin-top: 6px;
+                .dsui-report-detail-overflow{
+                  max-height: 150px;
+                  overflow: auto;
+                }
+                .dsui-report-license {
+                  margin-top: 6px;
+                  font-size: 14px;
+                  color: $saint-unfavourite-color;
+                  font-family: $font-roboto-medium;
+
+                }
+                .dsui-report-license-text {
+                  margin-top: 6px;
+                  font-size: 14px;
+                  color: $saint-unfavourite-color;
+                  font-family: $font-roboto-regular;
+
+                }
+                .dsui-report-license-view-all {
+                  margin-top: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .dsui-button-sec-bottom {
+       margin-left: -15px;
+        padding-right: 0px!important;
+        margin-top: 12px;
+      }
+      .dsui-check{
+        float: right;
+      }
+      .dsui-collapse{
+        margin: 0px;
+        display: flex;
+      }
+      .dsui-extend{
+        float: right;
+        margin-top: -59px;
+        width: 87%;
+        display: flex;
+      }
+      .dsui-progress-bar-extend{
+        padding-left: 15px;
+      }
+      .dsui-nav-sec-blinded{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 0px;
+        .dsui-drop-down-toggle-collapsed{
+          .btn-group{
+            width:100% !important;
+            .dropdown-toggle{
+              margin-left:0px !important;
+            }
+          }
+        }
+      }
+        .dsui-button-sec-bottom-generate{
+          .dsui-generate-report-btn {
+            background: $saint-blue-color;
+            padding: 0.15em 0.5em;
+            color: $saint-panel-cool-gray-color;
+            width: 10em;
+            height: 35px;
+            margin-left: -15px;
+            font-family: $font-roboto-regular;
+
+
+          }
+        }
+        .dsui-button-sec-bottom-package{
+          margin-left: 1% !important;
+          .dsui-report-package-btn{
+            background: $saint-light-gray-color;
+            padding: 0.15em 0.5em;
+            color: $saint-panel-cool-gray-color;
+            width: 100%;
+            height: 35px;
+            margin-left: -3px;
+            font-family: $font-roboto-regular;
+          }
+        }
+      .dsui-button-sec-bottom-package-collapsed{
+        width:50%;
+      }
+
+
+    }
+    .dsui-print{
+      margin-right: 4px;
+    }
+    .dsui-print-text{
+      margin-left: 4px;
+    }
+    /*Modal for status change css starts */
+    .dsui-modal-button-cross {
+      color: $saint-unfavourite-color;
+      opacity: 1;
+    }
+    .dsui-modal-final-to-inprogress {
+      .modal-header{
+          height: 78px;
+          padding-top: 25px;
+        .dsui-modal-header {
+            height:78px;
+            font-size: 20px;
+            color: $saint-unfavourite-color;
+            font-family: $font-roboto-regular;
+        }
+      }
+      .dsui-modal-report-title {
+        margin-bottom: 12px;
+        font-size: 24px;
+        color: $saint-blue-color;;
+        font-family: $font-roboto-regular;
+      }
+      .dsui-modal-report-info {
+        font-size: 18px;
+        color: $saint-unfavourite-color;
+        font-family: $font-roboto-regular;
+      }
+      .dsui-modal-report-comments {
+        margin-top: 12px;
+        .dsui-modal-report-description {
+          font-size: 12px;
+          color: $saint-unfavourite-color;
+          font-family: $font-roboto-regular;
+        }
+        .dsui-modal-report-char-limit {
+          font-size: 12px;
+          color: $saint-close-panel;
+          font-family: $font-roboto-regular;
+        }
+        .dsui-modal-report-description-text {
+          height: 114px;
+          width: 632px;
+          margin-left: 40px;
+        }
+      }
+      .dsui-modal-button-save {
+        width: 70px;
+        font-size: 14px;
+        background: $saint-blue-color;
+        color: $saint-white-color;
+        font-family: $font-roboto-regular;
+        border-radius: 0px;
+      }
+      .dsui-modal-button-close {
+        font-size: 14px;
+        color: $saint-unfavourite-color;
+        font-family: $font-roboto-regular;
+        border-radius: 0px;
+      }
+    }
+    .dsui-modal-finalize {
+      .fa {
+        color: $saint-dark-yellow-border;
+      }
+      .dsui-modal-finalize-header {
+        font-size: 20px;
+        color: $saint-unfavourite-color;
+        font-family: $font-roboto-regular;
+      }
+
+      .dsui-modal-finalize-title {
+        font-size: 24px;
+        color: $saint-unfavourite-color;
+        font-family: $font-roboto-regular;
+      }
+      .dsui-modal-finalize-report-name {
+        font-size: 24px;
+        color: $saint-blue-color;
+        font-family: $font-roboto-regular;
+      }
+      .dsui-modal-finalize-info {
+        margin-top: 15px;
+        font-size: 18px;
+        color: $saint-unfavourite-color;
+        font-family: $font-roboto-regular;
+      }
+      .dsui-modal-button-save {
+        width: 70px;
+        font-size: 14px;
+        background: $saint-blue-color;
+        color: $saint-white-color;
+        font-family: $font-roboto-regular;
+        border-radius: 0px;
+      }
+      .dsui-modal-button-close {
+        font-size: 14px;
+        color: $saint-unfavourite-color;
+        font-family: $font-roboto-regular;
+        border-radius: 0px;
+      }
+    }
+  }
+
+  .dsui-final-draft1{
+    border: solid 1px;
+    border-color:$saint-favourite-border-color;
+    font-family:$font-roboto-regular ;
+    font-size: 14px;
+    margin-left:15px;
+    width: 40%;
+    height: 36px;
+    padding-top: 6px;
+    padding-left: 2%;
+    padding-right:0px;
+    margin-bottom: 10px;
+  }
+  .dsui-final-draft2{
+    border: solid 1px;
+    border-color:$saint-favourite-border-color;
+    font-family:$font-roboto-regular ;
+    font-size: 14px;
+    margin-left: 3px;
+    width: 50%;
+    height: 36px;
+    padding-top: 6px;
+    margin-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 2%;
+  }
+  .dsui-final-draft-extend1{
+    border: solid 1px;
+    border-color: $saint-favourite-border-color;
+    font-family: $font-roboto-regular;
+    font-size: 14px;
+    height: 36px;
+    width: 130px;
+    margin-left: 15px;
+    margin-top: 12px;
+    padding-top: 6px;
+    top:-27px
+  }
+  .dsui-final-draft-extend2{
+    border: solid 1px;
+    border-color: $saint-favourite-border-color;
+    font-family: $font-roboto-regular;
+    font-size: 14px;
+    height: 36px;
+    width: 179px;
+    margin-left: 15px;
+    margin-top: 12px;
+    padding-top: 6px;
+    top:-27px;
+  }
+  .dsui-extended-position{
+    float: left;
+    margin-left: 40%;
+  }
+  .dsui-generate-report-extend-btn{
+    background: red;
+    padding: 0.15em 0.5em;
+    color: $saint-panel-cool-gray-color;
+    width: 10em;
+    height: 44px;
+   float:right;
+    font-family: $font-roboto-regular;
+  }
+  .dsui-extend-package{
+    margin-left: -28px !important;
+  }
+  .dsui-report-text{
+    margin-left: 3px;
+  }
+  .dsui-footer {
+  }
+}
+.dsui-second-text-active{
+  color : $saint-black-color;
+}
+.dsui-second-text-inactive{
+  color : $saint-title-gray-color;
+}
+.dsui-main-report-panel{
+  height :100%;
+}
+.dsui-report-license-view-all-text{
+  cursor:pointer;
+  font-size: 14px;
+}
+/*Ipad Landscape*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-report-panel {
+        .col-xs-9 {
+          width: 19.8em;
+        }
+        .dsui-spy-right-panel {
+          margin-right: -20px;
+          .dsui-right-panel-top-nav-first{
+            margin-left: -20px;
+            .dsui-top-nav-heading {
+                width: 13em;
+            }
+            .dsui-top-nav-heading-expand{
+               width: 60em;
+            }
+          }
+          .dsui-right-panel-top-nav-sec {
+            margin-left: -10px;
+            .dropdown-toggle {
+              .dsui-report-status-drop-down {
+                  padding-top: 6px;
+              }
+              .fa {
+                padding-left: 12px;
+              }
+            }
+          }
+          .dsui-overflowing-list-panel {
+              width: 20em;
+              margin-left: -19px;
+
+          }
+        }
+        .dsui-button-sec-bottom {
+          width: 20em;
+        }
+      }
+    }
+    .dsui-final-draft{
+       width: 15.69em;
+    }
+    .dsui-final1{
+       margin-left: 37px;
+    }
+    .dsui-final2{
+       margin-left: 8px;
+    }
+    .dsui-generate-report-extend-btn{
+       margin-right: 50px;
+    }
+
+    .dsui-footer {
+    }
+  }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-report-status-drop-down{
+        width:85px !important;
+      }
+      .dsui-generate-report-btn{
+        margin-left: -15px !important;
+      }
+      .dsui-report-package-btn{
+        margin-left: 1px !important;
+      }
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

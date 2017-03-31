@@ -1,0 +1,56 @@
+<!-- Modal -->
+<div class="modal fade" id="queryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     data-ng-controller="QueryLibraryModalController">
+    <div class="modal-dialog dsui-query-lib-modal-dialog" role="document">
+        <div class="modal-content dsui-query-lib-modal-content">
+            <div class="modal-header dsui-query-lib-modal-header">
+                <div class="input-group">
+            <span class="input-group-addon .input-group-addon-modal" id="dsuiGlobalSearch"><span
+                    class="glyphicon glyphicon-search"></span></span>
+                    <input type="text" class="form-control" placeholder=""
+                           data-i18n-attr="{placeholder:'private-header.BUNDLE_SEARCH_PLACEHOLDER_TEXT'}"
+                           data-ng-model="querySearch" data-ng-change="fnSearchQuerydata()"
+                           aria-describedby="dsuiGlobalSearch"/>
+                </div>
+            </div>
+            <div class="modal-body dsui-query-lib-modal-body" when-scrolled="fnLoadMoreQueries()">
+
+                <div ng-repeat="query in myQueryData" class="dsui-tile-panel-modal">
+                    <div class="dsui-query-tile-modal" data-ng-click="fnFetchQueryData(query.queryId)"
+                         data-ng-class="query.queryId == selectedQueryData.queryId ? 'selected_tile' : 'unselected_tile' ">
+
+                        <div class="dsui-query-name-close">
+                            <div class="dsui-query-name" data-ng-bind="query.queryName">
+                            </div>
+                            <div data-ng-show="query.isShared" class="dsui-shared-status">
+                                <span class="dsui-shared-status-text"
+                                      data-i18n="private-query-library.BUNDLE_KEY_SHARED"></span>
+                            </div>
+                        </div>
+
+                        <div class="dsui-desc-status">
+                            <div class="dsui-desc" data-ng-bind="query.queryDesc">
+                            </div>
+                        </div>
+
+                        <div class="dsui-date-due-date-created">
+                            <div class="dsui-date-due">
+                                <span data-ng-bind="query.createdBy"></span>
+                            </div>
+                            <div class="dsui-date-created">
+                                <span data-ng-bind="fnGetDate(query.lastEditedDate)"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--ENDS-->
+            </div>
+            <div class="modal-footer dsui-query-lib-modal-footer">
+                <button type="button" class="col-sm-6 btn btn-primary dsui-btn" data-ng-click="fnInsQuery()">Insert
+                </button>
+                <button type="button" class="col-sm-6 btn btn-default dsui-btn" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,99 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+      .dsui-query-library-builder-secondary-navigation {
+        height: 58px;
+        background-color: $saint-panel-cool-gray-color;
+        .dsui-query-navigation-angle-right-icon {
+          font-size: 15px;
+        }
+      }
+      .dsui-navigation-text {
+        font-size: 1.125em;
+        font-family: $font-roboto-medium;
+        color: $saint-light-gray-color;
+        line-height: 3.3em;
+      }
+      .dsui-create-new-query-button {
+        line-height: 3.3em;
+        .dsui-create-button {
+
+          .dsui-icon-1x {
+            font-size: 1em;
+          }
+          .dsui-button-text {
+            padding-left: 10px;
+          }
+          float: right;
+          height: 36px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-right: 20px;
+          background-color: $saint-create-report-button;
+          color: $saint-white-color;
+        }
+        .dsui-create-button:hover,
+        .dsui-create-button:active,
+        .dsui-create-button:focus {
+          color: $saint-white-color;
+        }
+      }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

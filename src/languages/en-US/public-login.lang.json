@@ -1,0 +1,9 @@
+{
+  "BUNDLE_LOGIN_MEMBER_SIGN_IN":"Member Sign in",
+  "BUNDLE_LOGIN_USERNAME_PLACEHOLDER":"Username",
+  "BUNDLE_LOGIN_PASSWORD_PLACEHOLDER":"Password",
+  "BUNDLE_LOGIN_REMEMBER_ME":"Remember me",
+  "BUNDLE_LOGIN_SIGN_IN":"Sign In",
+  "BUNDLE_LOGIN_NEED_ACCOUNT":"Need an account?",
+  "BUNDLE_LOGIN_FORGOT_PASSWORD":"Forgot your email or password?"
+}

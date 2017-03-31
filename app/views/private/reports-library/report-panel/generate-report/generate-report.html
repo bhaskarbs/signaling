@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" style="width:100%;height:100%;background:url('../../../../../images/icomps/loader.gif');background-position-x:center;background-position-y:center;background-repeat: no-repeat">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Report</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="saintGenerateReportApp" ng-controller="GenerateReportController" style="width:100%;height:100%">
+</div>
+</body>
+</html>
+
+<script>
+  var app = angular.module('saintGenerateReportApp', []);
+  app.controller('GenerateReportController', function ($scope, $http) {
+
+    //to get token from URL
+    $scope.getToken = function () {
+      var temp = window.location.search.split('token=')
+      var token = temp[temp.length - 1];
+      return token;
+    }
+    //get other URL parameters
+    $scope.getQueryStrings = function () {
+      // This function is anonymous, is executed immediately and
+      // the return value is assigned to QueryString!
+      var query_string = {};
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        // If first entry with this name
+        if (typeof query_string[pair[0]] === "undefined") {
+          query_string[pair[0]] = decodeURIComponent(pair[1]);
+          // If second entry with this name
+        } else if (typeof query_string[pair[0]] === "string") {
+          var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
+          query_string[pair[0]] = arr;
+          // If third or later entry with this name
+        } else {
+          query_string[pair[0]].push(decodeURIComponent(pair[1]));
+        }
+      }
+      return query_string;
+    };
+
+    $scope.getInstance = function () {
+      var headers = {'X-SAP-LogonToken': $scope.token};
+      var url = $scope.host + '/secure/rptapi/infostore/cuid_' + $scope.cuid + '/rpt/instance';
+      $http({
+        'method': 'GET',
+        'url': url,
+        'headers': headers
+      })
+        .success(function (data) {
+          $scope.parseXML(data);
+        })
+        .error(function () {
+          console.log("Failed to generate the report!");
+          $scope.fnDownloadFile();
+        });
+    };
+
+    $scope.parseXML = function (instanceXML) {
+      //Converting XML to DOM
+      var domParserObj = new DOMParser();
+      var parsedXmlObj = domParserObj.parseFromString(instanceXML, 'text/xml');
+      parsedXmlObj.getElementsByTagName('attr')[1].textContent = $scope.bclKey;
+
+      //Converting DOM to XML String
+      var serializerObj = new XMLSerializer();
+      var xmlStringObject = serializerObj.serializeToString(parsedXmlObj);
+      $scope.fnGetResourceURL(xmlStringObject);
+    };
+
+    $scope.fnGetResourceURL = function (xmlStringObject) {
+      var headers = {'content-type': 'application/xml', 'X-SAP-LogonToken': $scope.token};
+      var url = $scope.host + '/secure/rptapi/infostore/cuid_' + $scope.cuid + '/rpt/instance';
+      $http({
+        'method': 'POST',
+        'url': url,
+        'data': xmlStringObject,
+        'headers': headers
+      })
+        .success(function (data) {
+          var reportResourceXML = data;
+          //Converting XML to DOM
+          var domParserObj = new DOMParser();
+          var parsedXmlObj = domParserObj.parseFromString(reportResourceXML, 'text/xml');
+          var reportId = parsedXmlObj.getElementsByTagName('id')[0].textContent;
+          $scope.fnGenerateReport(reportId);
+        })
+        .error(function () {
+          console.log("Failed to generate the report!");
+          $scope.fnDownloadFile();
+        });
+
+    };
+
+    $scope.fnGenerateReport = function (reportId) {
+      var headers = {'Content-type': 'application/json', 'Accept': 'application/pdf', 'X-SAP-LogonToken': $scope.token};
+      var url = $scope.host + '/secure/rptapi/infostore/cuid_' + $scope.cuid + '/rpt/' + reportId + '/export?mime_type=application/PDF&isCreateBookmarksFromGroupTree=true';
+      $http({
+        'method': 'GET',
+        'url': url,
+        'headers': headers,
+        'responseType': 'arraybuffer'
+      })
+        .success(function (data) {
+          $scope.fnDownloadFile(data);
+        })
+        .error(function () {
+          $scope.fnDownloadFile();
+          console.log("Failed to generate the report!");
+        });
+    };
+    $scope.fnDownloadFile = function (reportData) {
+      if(reportData){
+        var report_name = $scope.reportName + '.pdf';
+        var blob = new Blob([reportData], {type: 'application/pdf'});
+        var objectUrl = URL.createObjectURL(blob);
+        if (window.navigator.msSaveOrOpenBlob) {
+          window.navigator.msSaveOrOpenBlob(blob, report_name);
+        } else {
+          var a = document.createElement("a");
+          document.body.appendChild(a);
+          a.style = "display: none";
+          a.href = objectUrl;
+          a.download = report_name;
+          a.click();
+          setTimeout(function () {
+            window.URL.revokeObjectURL(objectUrl);
+            window.close();
+          }, 1000);
+        }
+      }
+    };
+
+    var queryStrings = $scope.getQueryStrings();
+    document.title = queryStrings.context === '0' ? 'Generate Report' : 'Build Report Package';
+    $scope.cuid = queryStrings.cuid;
+    $scope.bclKey = queryStrings.id;
+    $scope.host = window.location.origin;
+    $scope.token = queryStrings.token;
+    $scope.reportName = queryStrings.reportName;
+    $scope.getInstance();
+  });
+
+
+</script>

@@ -1,0 +1,66 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.common.CommonService.ConfigurationsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/common/CommonService.xsodata/Configurations(22)"
+        },
+        "KEY": "Query Name",
+        "CONFIG_TYPE": "SORT",
+        "KEY_NAME": "BCL_NAME",
+        "KEY_TYPE": "LOV",
+        "SCREEN_NAME": "CASELIST_LIBRARY",
+        "VALUE": 1,
+        "CONFIG_KEY": 22,
+        "PRIMARY_SORT": "BCL_NAME",
+        "SECONDARY_SORT": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.common.CommonService.ConfigurationsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/common/CommonService.xsodata/Configurations(23)"
+        },
+        "KEY": "Created By",
+        "CONFIG_TYPE": "SORT",
+        "KEY_NAME": "Audit_CreatedDt",
+        "KEY_TYPE": "DATE",
+        "SCREEN_NAME": "CASELIST_LIBRARY",
+        "VALUE": 1,
+        "CONFIG_KEY": 23,
+        "PRIMARY_SORT": "Audit_CreatedDt",
+        "SECONDARY_SORT": "BCL_NAME"
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.common.CommonService.ConfigurationsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/common/CommonService.xsodata/Configurations(23)"
+        },
+        "KEY": "Date Created",
+        "CONFIG_TYPE": "SORT",
+        "KEY_NAME": "Audit_CreatedDt",
+        "KEY_TYPE": "DATE",
+        "SCREEN_NAME": "CASELIST_LIBRARY",
+        "VALUE": 1,
+        "CONFIG_KEY": 23,
+        "PRIMARY_SORT": "Audit_CreatedDt",
+        "SECONDARY_SORT": "BCL_NAME"
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.common.CommonService.ConfigurationsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/common/CommonService.xsodata/Configurations(23)"
+        },
+        "KEY": "Date Last Updated",
+        "CONFIG_TYPE": "SORT",
+        "KEY_NAME": "Audit_CreatedDt",
+        "KEY_TYPE": "DATE",
+        "SCREEN_NAME": "CASELIST_LIBRARY",
+        "VALUE": 1,
+        "CONFIG_KEY": 23,
+        "PRIMARY_SORT": "Audit_CreatedDt",
+        "SECONDARY_SORT": "BCL_NAME"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.common.CommonService.ConfigurationsType",
+          "uri": "http://dcidsthana01.dci.local:8000/deloitte/innovation/ls/safety/services/common/CommonService.xsodata/Configurations(33)"
+        },
+        "KEY": null,
+        "CONFIG_TYPE": "FILTER",
+        "KEY_NAME": "EVENT_NOTIFICATION_GROUP_KEY",
+        "KEY_TYPE": "LOV",
+        "SCREEN_NAME": "NOTIFICATION_CENTER",
+        "VALUE": 1,
+        "CONFIG_KEY": 33,
+        "PRIMARY_SORT": null,
+        "SECONDARY_SORT": null
+      }
+    ]
+  }
+}

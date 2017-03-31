@@ -1,0 +1,11 @@
+<div class="col-sm-12 dsui-no-padding dsui-case-details">
+  <div class="col-sm-12 dsui-no-padding dsui-case-details-layout">
+    <span class="col-sm-12 dsui-case-number"><span
+      data-ng-bind="caseDetails.caseId|empty:CONSTANTS.EMPTY"></span></span>
+  </div>
+  <div data-ng-include="VIEWS.CASE_LIST_CASE_ANNOTATION_VIEW"></div>
+  <div data-ng-include="VIEWS.CASE_LIST_SUMMARY_VIEW"></div>
+  <div data-ng-include="VIEWS.CASE_LIST_SUSPECT_PRODUCTS_VIEW"></div>
+  <div class="clearfix"></div>
+  <div data-ng-include="VIEWS.CASE_LIST_NARRATIVE_VIEW"></div>
+</div>

@@ -1,0 +1,106 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.querylibrary.querylist.QueryDetailsFilterType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/querylibrary/querylist.xsodata/QueryDetailsFilter('15957193049865471')"
+        },
+        "QUERY_NAME": "Query_Name_Australia",
+        "QUERY_KEY": 8,
+        "Audit_UpdatedDt": "\/Date(1462147200000)\/",
+        "Audit_CreatedBy": "SANALYST1",
+        "DESCRIPTION": "Queries with multiple nesting structure with country australia"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.querylibrary.querylist.QueryDetailsFilterType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/querylibrary/querylist.xsodata/QueryDetailsFilter('15957193049865472')"
+        },
+        "QUERY_NAME": "Query_Name with country",
+        "QUERY_KEY": 9,
+        "Audit_UpdatedDt": "\/Date(1462147200000)\/",
+        "Audit_CreatedBy": "SANALYST1",
+        "DESCRIPTION": "Australia"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.querylibrary.querylist.QueryDetailsFilterType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/querylibrary/querylist.xsodata/QueryDetailsFilter('15957193049865473')"
+        },
+        "QUERY_NAME": "QUERY OF MULTIPLE PRODUCTS",
+        "QUERY_KEY": 3,
+        "Audit_UpdatedDt": "\/Date(1462147200000)\/",
+        "Audit_CreatedBy": "SANALYST1",
+        "DESCRIPTION": "WONDER_DRUG"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.querylibrary.querylist.QueryDetailsFilterType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/querylibrary/querylist.xsodata/QueryDetailsFilter('15957193049865474')"
+        },
+        "QUERY_NAME": "QUERY NAME WITH MULTIPLE LICENSES",
+        "QUERY_KEY": 5,
+        "Audit_UpdatedDt": "\/Date(1462147200000)\/",
+        "Audit_CreatedBy": "SANALYST1",
+        "DESCRIPTION": "LICENSES LIC-1000, LIC-9675"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.querylibrary.querylist.QueryDetailsFilterType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/querylibrary/querylist.xsodata/QueryDetailsFilter('15957193049865475')"
+        },
+        "QUERY_NAME": "QUERY NAME WITH MULTIPLE CIF",
+        "QUERY_KEY": 1,
+        "Audit_UpdatedDt": "\/Date(1462147200000)\/",
+        "Audit_CreatedBy": "SANALYST1",
+        "DESCRIPTION": "Argentina , United Kingdom, United States"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.querylibrary.querylist.QueryDetailsFilterType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/querylibrary/querylist.xsodata/QueryDetailsFilter('15957193049865476')"
+        },
+        "QUERY_NAME": "PRODUCT_IBUPROFEN_PARACETAMOL",
+        "QUERY_KEY": 6,
+        "Audit_UpdatedDt": "\/Date(1462147200000)\/",
+        "Audit_CreatedBy": "SANALYST1",
+        "DESCRIPTION": "PARACETAMOL"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.querylibrary.querylist.QueryDetailsFilterType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/querylibrary/querylist.xsodata/QueryDetailsFilter('15957193049865477')"
+        },
+        "QUERY_NAME": "PRODUCT_IBUPROFEN",
+        "QUERY_KEY": 2,
+        "Audit_UpdatedDt": "\/Date(1462147200000)\/",
+        "Audit_CreatedBy": "SANALYST1",
+        "DESCRIPTION": "IBUPROFEN"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.querylibrary.querylist.QueryDetailsFilterType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/querylibrary/querylist.xsodata/QueryDetailsFilter('15957193049865478')"
+        },
+        "QUERY_NAME": "NESTED_QUERIES",
+        "QUERY_KEY": 4,
+        "Audit_UpdatedDt": "\/Date(1462147200000)\/",
+        "Audit_CreatedBy": "SANALYST1",
+        "DESCRIPTION": "Queries with multiple nesting structure with country australia"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.querylibrary.querylist.QueryDetailsFilterType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/querylibrary/querylist.xsodata/QueryDetailsFilter('15957193049865479')"
+        },
+        "QUERY_NAME": "Country of incidence",
+        "QUERY_KEY": 7,
+        "Audit_UpdatedDt": "\/Date(1462147200000)\/",
+        "Audit_CreatedBy": "SANALYST1",
+        "DESCRIPTION": "uk"
+      }
+    ],
+    "__count": "9"
+  }
+}

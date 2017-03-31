@@ -1,0 +1,275 @@
+@-webkit-keyframes animate-zoom {
+    0% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      opacity: 1;
+      transition: 0.8s all ease-in-out;
+    }
+    100% {
+      -webkit-transform: scale(.5, .5);
+      transform: scale(.5, .5);
+      opacity: 0;
+    }
+}
+/*.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}*/
+/*.y.axis path,.y.axis text{
+  display:none;
+}*/
+.x.axis path{
+  fill: none;
+  stroke-width: 1px;
+  stroke: $saint-black-color;
+}
+.y.axis path{
+  fill: none;
+  stroke-width: 1px;
+  stroke: $saint-black-color;
+}
+/*.bar:hover {
+  fill: rgb(221,143,27) ;
+}*/
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  @include color-background($saint-white-color,$saint-black-color);
+  border-radius: 2px;
+}
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  width: 100%;
+  line-height: 1;
+  @include color-fontsize($saint-black-color, 10px);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+.axis .minor line {
+  stroke: $saint-light-gray-color;
+  stroke-dasharray: 1,1;
+}
+@-ms-viewport {
+  width: device-width;
+}
+input[type=text]::-ms-clear  {
+  display: none;
+  height: 0;
+  width: 0;
+}
+.btn.btn-primary, .btn.btn-secondary {
+ pointer-events: auto !important;
+}
+.dsui {
+  .dsui-datepicker-on-top{
+     z-index: 10000;
+   }
+  .dsui-datepicker-on-top:not(.focus){
+    outline: none;
+  }
+  .dsui-datepicker-input-padding{
+    padding-right:15px;
+  }
+  .dsui-datepicker-input-text-padding{
+    padding:5px;
+  }
+  .dsui-blue-color{
+    color:$saint-blue-color;
+  }
+  .dsui-gray-color{
+    color:$saint-cool-gray-color;
+  }
+  .dsui-red-color {
+    color: $saint-report-overdue;
+  }
+  .dsui-white-background{
+    background-color: $saint-white-color;
+  }
+  .dsui-pointer-cursor {
+    cursor: pointer;
+  }
+    .dsui-pointer-default {
+        cursor: default;
+    }
+  .dsui-text-underline {
+      text-decoration: underline;
+  }
+  .dsui-text-underline:hover {
+      text-decoration: underline;
+  }
+  .dsui-no-padding {
+      padding: 0 !important;
+  }
+  .dsui-no-right-padding {
+      padding-right: 0 !important;
+  }
+  .dsui-no-left-padding {
+      padding-left: 0 !important;
+  }
+  .dsu-verical-align-middle {
+      vertical-align: middle !important;
+  }
+  .dsui-verical-align-top {
+    vertical-align: top !important;
+  }
+  .dsui-no-resize{
+    resize: none;
+  }
+  .dsui-collapse-horizontal{
+    width:0px;
+    transition:all 1s ease-out;
+  }
+  .icomps-wloader {
+    margin-top: 100px;
+  }
+  .dsui-svg-hover{
+    stroke-width: 6px;
+    stroke-opacity: 0.5;
+  }
+  .dsui-chart-legend{
+    font-family: $font-roboto;
+    @include color-fontsize($saint-title-gray-color, 12px);
+  }
+  .dsui-header {}
+  .dsui-content {}
+  .dsui-footer {}
+  .dsui-display-in-line{
+    display: inline;
+  }
+  .dsui-animate-zoom{
+    animation-name: animate-zoom;
+    animation-duration: 1s;
+  }
+  .dsui-select2-single{
+    border: 0px;
+    padding: 0px;
+    box-shadow: 0px;
+    a.select2-choice{
+      height: 34px;
+    }
+  }
+  .dsui-select2-multi-select{
+    border-radius: 5px;/*
+    max-height:100px;*/
+    .select2-choices{
+      border-radius: 5px;
+      border:1px solid $saint-favourite-border-color;
+      /*max-height:100px;
+      overflow-y: auto;*/
+      .select2-search-choice{
+        width:98%;
+        div[title]{
+          word-wrap: break-word !important;
+        }
+      }
+    }
+    .select2-search-field{
+      input{
+        padding:4px;
+      }
+    }
+  }
+  .dsui-sticky-header {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 4;
+    background:$saint-white-color;
+  }
+  .dsui-warning-text{
+    color:$saint-cases-in-active;
+  }
+  .dsui-active-item{
+    @include color-backgroundcolor($saint-white-color !important, $saint-blue-color !important);
+    border-color:$saint-blue-color !important;
+  }
+  .tooltip{
+    .tooltip-inner{
+      word-wrap: break-word !important;
+    }
+  }
+  .dsui-word-wrap{
+    word-wrap: break-word !important;
+  }
+  .dsui-font-bold{
+    font-weight: bold !important;
+  }
+  .dsui-breadcrumb{
+    background-color: $saint-background-gray-color;
+    line-height: 4em;
+    .dsui-bread-crumbs{
+      padding-right: 20px;
+      @include Roboto-Medium(1.125em,$saint-light-gray-color);
+    }
+  }
+  .dsui-config-data-views{
+    float: right;
+    margin-top: 15px;
+  }
+  .dsui-data-view{
+    background-color: $saint-white-color;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .dsui-button-1{
+    border: none;
+    @include color-background($saint-black-color, $saint-hover-border-color);
+  }
+  .dsui-button-2{
+    border-color: $saint-caption-color;
+    @include color-background($saint-black-color, $saint-hover-border-color);
+  }
+  .dsui-button-2:hover{
+    border-color: $saint-caption-color;
+  }
+}
+/* Large desktop */
+
+@media (min-width: 1200px) {
+    .dsui {
+        .dsui-header {}
+        .dsui-content {}
+        .dsui-footer {}
+    }
+}
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .dsui {
+        .dsui-header {}
+        .dsui-content {}
+        .dsui-footer {}
+    }
+}
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+    .dsui {
+        .dsui-header {}
+        .dsui-content {}
+        .dsui-footer {}
+    }
+}
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    .dsui {
+        .dsui-header {}
+        .dsui-content {}
+        .dsui-footer {}
+    }
+}
+@-ms-viewport {
+  width: device-width;
+}

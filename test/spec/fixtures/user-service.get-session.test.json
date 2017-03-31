@@ -1,0 +1,16 @@
+{
+  "Roles": {
+    "0": {"ROLE_NAME": "PUBLIC"},
+    "1": {"ROLE_NAME": "CONTENT_ADMIN"},
+    "2": {"ROLE_NAME": "deloitte.innovation.ls.safety.roles::SafetyReportingAnalyst"}
+  },
+  "UserID": "11",
+  "UserNAME": "SANALYST1",
+  "LastName": "Analyst",
+  "FIrstName": "Safety",
+  "Email": "sanalyst1@deloitte.com",
+  "privileges": {
+    "ProjectAdd": false,
+    "ManageMetricsButton": false
+  }
+}

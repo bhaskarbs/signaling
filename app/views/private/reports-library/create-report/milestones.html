@@ -1,0 +1,64 @@
+<div>
+  <label class="label-name-header" data-i18n="private-reports-library.BUNDLE_MILESTONES"></label>
+  <div class="col-xs-3 dsui-no-padding milestonebtn">
+    <button type="button" class="btn btn-secondary" data-ng-click="addNewMilestone()">
+      <i class="fa fa-plus"></i>&nbsp;<span data-i18n="private-reports-library.BUNDLE_ADD_MILESTONE"></span>
+    </button>
+  </div>
+  <hr class="form-group milestone-line">
+</div>
+<div class="form-group" data-ng-repeat="milestone in report.reportMilestones track by $index ">
+
+  <div class="col-sm-12 dsui-left-content milestone">
+    <div class="col-sm-12 dsui-left-content milestone-name-date">
+      <div class="col-sm-6 dsui-left-content milestone-name">
+        <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_MILESTONE"></span></label>
+      </div>
+      <div class="col-sm-6 dsui-left-content milestone-date">
+        <label class="label-name"><span
+          data-i18n="private-reports-library.BUNDLE_FROM_REPORTING_PERIOD_END_DATE"></span></label>
+      </div>
+    </div>
+
+    <div class="col-sm-12 dsui-left-content milestone-name-date">
+      <div class="col-sm-6 dsui-left-content milestone-name">
+        <div><input type="text" placeholder="" data-ng-model="milestone.milestoneName" class="form-control"/></div>
+      </div>
+      <div class="col-sm-6 dsui-left-content milestone-date">
+        <span class="input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectTaskEndDateAdd7{{$index}}')">
+             <input class="form-control reportdate" type="number" data-ng-model="milestone.offsetToReportDate"
+                    data-ng-change="calculateReportMilestoneDate($index)"/>
+          <!--please don't change the hierarchy of the datepicker (where ever it occurs) as the controller is written accordingly-->
+             <span class="input-group-addon dsui-calendar-icon"><i
+               class="fa fa-calendar-o"></i></span>
+             <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+              , changeYear: true , changeMonth: true}"
+                    class="form-control dsui-datepicker-on-top"
+                    placeholder="" data-i18n="{placeholder:'private-reports-library.BUNDLE_CASE_LIST_END_DATE'}"
+                    type="text"
+                    id="dsuiProjectTaskEndDateAdd7{{$index}}" name="dsuiProjectTaskEndDateAdd7"
+                    data-ng-model="milestone.reportMilestoneDate"
+                    data-ng-change="calculateReportMilestoneOffset($index)"
+                    data-ng-required="true"/>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+
+
+  <div class="col-sm-12 dsui-milestone-assignee">
+    <div id="{{reportCreationSelectId + $index}}">
+      <user-group-select-dropdown
+        user-select-id='reportCreationSelectId+$index'
+        is-select-all-shown='false'
+        get-selected-user-group='milestone.preAssignedUsersGroups'
+        set-selected-user-group='milestone.postAssignedUserGroups'
+        filter-user-group='report.selectedUsersGroup'
+        milestone-report-owner-case='report.reportOwner'
+        assignee-display-text='language.ASSIGNEES'
+      ></user-group-select-dropdown>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>

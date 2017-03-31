@@ -1,0 +1,280 @@
+/* Case List Display Details*/
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-tile-panel {
+      height: 100%;
+
+      .dsui-caseListPanelLayout {
+        height: 100%;
+
+        .dsui-caseListDisplayDetail {
+          border: 0px solid $saint-black-color;
+          margin-top: 19px;
+          margin-bottom: 19px;
+
+          .dsui-caseListNumber {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Medium(1em, $saint-unfavourite-color);
+            /*font-family: roboto medium;
+            font-size: 16px;
+            color: #333333;*/
+            width: 50%;
+            float: left;
+          }
+          .dsui-sortStatus {
+            text-align: right;
+            border: 0px solid $saint-black-color;
+
+            .dsui-sortStatusText {
+              @include Roboto-Bold(0.875em, $saint-unfavourite-color);
+              /*font-family: roboto;
+              font-size: 14px;
+              color: #333333;
+              font-weight: bold;*/
+            }
+            .dsui-sortStatusResult {
+              @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+              /*font-family: roboto;
+              font-size: 14px;
+              color: #333333;*/
+            }
+          }
+        }
+      }
+      /* For Tiles*/
+      .dsui-case-list-tile-container-without-paginator-height {
+        height: -webkit-calc(100% - 20px - 27px - 20px);
+        height: -moz-calc(100% - 20px - 27px - 20px);
+        height: calc(100% - 20px - 27px - 20px);
+      }
+      .dsui-case-list-tile-container-with-paginator-height {
+        height: -webkit-calc(100% - 20px - 27px - 20px - 30px - 32px - 30px);
+        height: -moz-calc(100% - 20px - 27px - 20px - 30px - 32px - 30px);
+        height: calc(100% - 20px - 27px - 20px - 30px - 32px - 30px);
+      }
+      .dsui-caseListTileContainer {
+        overflow-y: auto;
+        //@include saintCalcHeight(100%,- 159px, 80%); //- 20px - 27px - 20px - 30px - 32px - 30px
+
+
+        .dsui-caseListTileClicked {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-caseListTile {
+          border: 1px solid $saint-favourite-border-color;
+          margin-bottom: 6px;
+          border-radius: 5px;
+
+          .dsui-caseListNameClose {
+            border: 0px solid $saint-black-color;
+            margin-right: 12px;
+            margin-left: 15px;
+            margin-top: 12px;
+
+            .dsui-shared-status {
+
+              border: 1px solid $saint-blue-color;
+              border-radius: 5px;
+              width: 46px;
+              height: 16px;
+              font-family: Roboto;
+              float: right;
+              font-size: 12px;
+              color: $saint-blue-color;
+
+              .dsui-shared-status-text {
+                padding-left: 3px;
+                padding-right: 3px;
+              }
+            }
+
+            .dsui-caseListName {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Bold(16px, $saint-unfavourite-color);
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              max-width: 90%;
+            }
+            .dsui-cross {
+              border: 0px solid $saint-black-color;
+              float: right;
+              display: none;
+              color: $saint-caption-color;
+            }
+            .dsui-lock {
+              border: 0px solid $saint-black-color;
+              float: right;
+              display: block;
+              color: $saint-caption-color;
+            }
+          }
+          .dsui-dateRange {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+            /*font-size: 14px;
+            font-family: roboto;
+            color: #333333;*/
+            margin-left: 15px;
+            margin-right: 12px;
+          }
+          .dsui-descStatus {
+            border: 0px solid $saint-black-color;
+            margin-left: 15px;
+            margin-right: 12px;
+            margin-top: 6px;
+            display: -webkit-flex;
+            display: flex;
+
+            .dsui-desc {
+              border: 0px solid $saint-black-color;
+              //@include saintCalcWidth(100%,- 45px, 80%); //- 30px - 15px
+              width: 80%;
+              width: -webkit-calc(100% - 30px - 15px);
+              width: -moz-calc(100% - 30px - 15px);
+              width: calc(100% - 30px - 15px);
+              display: inline-block;
+              word-wrap: break-word;
+              @include Roboto-Regular(14px, $saint-unfavourite-color);
+              /*font-size: 1em;
+              font-family: roboto;
+              color: #333333;*/
+              overflow: hidden;
+            }
+            .dsui-status {
+              border: 0px solid $saint-black-color;
+              float: right;
+              margin-top: auto;
+              margin-bottom: auto;
+              margin-left: auto;
+            }
+            .dsui-overdue {
+              color: $saint-report-overdue;
+            }
+            .dsui-open {
+              color: $saint-report-open;
+            }
+            .dsui-in-progress {
+              color: $saint-report-inProgress;
+            }
+            .dsui-completed {
+              color: $saint-report-completed;
+            }
+            .dsui-final {
+              color: $saint-report-inProgress;
+            }
+          }
+
+          .dsui-dateDueDateCreated {
+            border: 0px solid $saint-black-color;
+            margin-top: 14px;
+            margin-bottom: 20px;
+            margin-left: 15px;
+            margin-right: 12px;
+
+            .dsui-caseCount-locked {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(20px, $saint-create-report-button);
+              /*font-size: 12px;
+              font-family: roboto;
+              color: #666666;*/
+              width: 50%;
+              float: left;
+
+            }
+            .dsui-caseCount-unlocked {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(20px, $saint-blue-color);
+              /*font-size: 12px;
+              font-family: roboto;
+              color: #666666;*/
+              width: 50%;
+              float: left;
+
+            }
+            .dsui-dateCreated {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(0.75em, $saint-title-gray-color);
+              /*font-size: 12px;
+              font-family: roboto;
+              color: #666666;*/
+              text-align: right;
+            }
+          }
+        }
+        .dsui-caseListTile:hover {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-caseListTile:hover .dsui-cross {
+          display: block;
+          cursor: pointer;
+        }
+      }
+      /* Paginator */
+
+      .dsui-paginatorContainer {
+        border: 0px solid $saint-caption-color;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        .dsui-paginatorControl {
+          border: 0px solid $saint-black-color;
+        }
+      }
+      .dsui-footer {
+      }
+    }
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-content {
+      }
+      .dsui-footer {
+      }
+    }
+  }
+}

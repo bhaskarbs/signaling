@@ -1,0 +1,115 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-confirmation{
+      color: $saint-blue-color;
+      font-size: 32px;
+      font-style: normal;
+      font-family: $font-roboto-regular;
+
+    }
+    .dsui-confirmation-body{
+      padding:50px;
+      padding-left: 53px;
+    }
+    .fa-check-circle {
+      font-size: 50px;
+      color: $saint-green-color;
+
+    }
+    .btn-default1{
+      color: powderblue;
+      position:relative;
+      padding-left: 35px !important;
+      padding-right: 30px;
+      width:300px;
+      height:48px;
+      background-color: $saint-blue-color;
+      font-size:20px;
+      margin-top: 20px;
+      margin-right: 10px;
+      margin-left: 55px;
+    }
+    .btn-default2 {
+      color: $saint-black-color;
+      position: relative;
+      padding-right: 35px !important;
+      width: 299px;
+      height: 48px;
+      background-color: $saint-active-background-color;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-left:25px;
+      margin-right: 55px;
+
+
+    }
+
+    .textConf{
+      font-size: 20px;
+      color: $saint-unfavourite-color;
+      padding-left: 75px;
+    }
+    .textConf{
+      padding-left: 100px;
+
+    }
+    .dsui-confirmation-content{
+      border-radius: 2px;
+      width:770px;
+      height:325px
+    }
+
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

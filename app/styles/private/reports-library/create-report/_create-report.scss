@@ -1,0 +1,253 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-create-report-content{
+      width: 770px;
+      margin-left: -webkit-calc(50% - 375px);
+      margin-left: -moz-calc(50% - 375px);
+      margin-left: calc(50% - 375px);
+      .dsui-create-modal-footer{
+        margin-top: 0px;
+      }
+      .dsui-create-report-modal-header{
+        padding-left: 30px;
+      }
+      .dsui-create-modal-body{
+        height: 65vh;
+        overflow-y: scroll;
+        padding-left: 70px;
+        padding-right: 20px;
+      }
+      .dsui-create-report-form-control{
+        width: 630px;
+        min-height: 36px;
+        height:auto;
+      }
+      .dsui-create-report-form-control-expandable{
+        width: 630px;
+        min-height: 36px;
+        height:auto;
+      }
+      .dsui-create-report-form-control-textarea{
+        height: 125px;
+      }
+      .dsui-product-license {
+        border: solid 1px $saint-cool-gray-color;
+        padding: 15px;
+        border-radius: 5px;
+        width: 262px;
+        .dsui-product-license-radio-bar{
+          height: 30px;
+        }
+        .dsui-product-license-menu{
+          height: 202px;
+          .dsui-products-licenses-options{
+            overflow-y: auto;
+            height: 190px;
+            margin-right: -15px;
+          }
+        }
+      }
+      .dsui-report-details-left-content{
+        border-right: solid 1px $saint-cool-gray-color;
+      }
+      .dsui-run-time-field{
+        padding-left: 25px;
+      }
+      .dsui-calendar-icon{
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+      .dsui-overflow-margins-border{
+        margin-left: -25px;
+        margin-right: -25px;
+      }
+    }
+
+    .milestone {
+      padding-top: 25px;
+
+      .milestone-name-date {
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .milestone-name {
+          padding-left: 0px;
+        }
+        .milestone-date {
+          padding-right: 0px;
+        }
+      }
+    }
+    .dsui-milestone-assignee {
+      margin-top: 20px;
+    }
+
+
+    .label-name {
+      font-weight: normal !important;
+    }
+    .dsui-seperation{
+      height: 10px;
+      padding-top: 10px;
+    }
+    .dsui-all-dates-subtitle{
+      font-size: 10px;
+      color: $saint-gray-color;
+    }
+    .dsui-ingredient-select-all{
+      padding-left: 5px;
+    }
+    .label-name-header {
+      font-weight: normal !important;
+      font-size: 18px;
+    }
+    .product-label {
+      padding-right: 40px;
+    }
+    .mandatory {
+      color: $saint-required-star-color;
+      height: 12px;
+    }
+    .modal.fade.in
+    {
+    overflow:hidden;
+    }
+
+    .product-license-line {
+      padding: 0px !important;
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+    .report-details {
+      border: solid 1px $saint-cool-gray-color;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      height: 650px;
+    }
+    .signaling-details {
+      border: solid 1px $saint-cool-gray-color;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      height: 520px;
+    }
+    .milestone-details {
+      border: solid 1px $saint-cool-gray-color;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+
+    }
+    .dsui-rundatelabel {
+      padding-left: 0px !important;
+    }
+    .dsui-rundate{
+      width: 120%;
+    }
+    .form-control-limit-width{
+      width: 30%;
+    }
+    .dsui-subdate{
+      width: 48%;
+    }
+    .milestonebtn {
+      float: right;
+    }
+    .milestone-line {
+      padding: 0px !important;
+      margin-top: 20px;
+    }
+
+    .milestone-padding {
+      padding-top: 10px;
+    }
+
+    .reportdate {
+      padding-right: 10px;
+      width: 58%;
+      border-radius: 4px;
+    }
+    .inner-addon {
+      position: relative;
+    }
+    .inner-addon .fa {
+      position: absolute;
+      padding: 10px;
+      pointer-events: none;
+    }
+    .left-addon .fa {
+      left: 0px;
+    }
+    .left-addon input {
+      padding-left: 30px;
+    }
+    .radioButton{
+      padding-left: 10px !important;
+      font-weight: normal;
+    }
+    .dsui-report-line {
+      padding: 0px !important;
+      margin-top: 5px;
+    }
+    .dsui-asof-date{
+      margin-top: 10px;
+    }
+    .dsui-subtabledate{
+      padding-right: 10px;
+      padding-top: 35px;
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div data-ng-show="showTilePanel"
+     data-ng-class="(showFilterPanel && showTilePanel && showReportPanel)?'col-xs-5':((showFilterPanel && showTilePanel && !showReportPanel)?'col-xs-9':((!showFilterPanel && showTilePanel && showReportPanel)?'col-xs-8':'col-xs-12'))"
+     id="tilePanel" class="dsui-vertical-panel">
+  <div viewport-auto-height class="dsui-filter-verticalbar" data-ng-show="!showFilterPanel" data-ng-click="fnToggleFilterPanel()">
+    <div>
+      <div class="text-center dsui-collpase-icon">
+        <span class="fa fa-angle-double-right"></span>
+      </div>
+      <div class="dsui-text-rotator"><span data-i18n="common.BUNDLE_FILTER_AND_SORT"></span></div>
+    </div>
+  </div>
+  <div data-ng-include="VIEWS.REPORTS_LIBRARY_TILE_PANEL_VIEW" class="dsui-tile-panel"></div>
+</div>
+<div id="reportPanel" data-ng-show="showReportPanel" data-ng-class="showTilePanel ? 'col-xs-4' : 'col-xs-12'"
+     class="dsui-vertical-panel">
+  <div data-ng-include="VIEWS.REPORTS_LIBRARY_REPORT_PANEL_VIEW"></div>
+</div>

@@ -1,0 +1,98 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.CaseListLibraryType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/CaseListLibrary('147699537398048751')"
+        },
+        "ID": "147699537398048751",
+        "BCL_KEY": 1,
+        "BCL_NAME": "PRODUCT - 1_6-Apr-2015 - 10-Feb-2016_chandra",
+        "DESCRIPTION": "Auto Generated Base Caselist",
+        "CASES_COUNT": 0,
+        "IS_LOCKED": 0,
+        "Audit_CreatedBy": "SANALYST1",
+        "Audit_CreatedDt": "/Date(1456274935000)/",
+        "RPT_START_DATE": "/Date(1428354000000)/",
+        "RPT_END_DATE": "/Date(1455148800000)/",
+        "AS_OF_DATE": "/Date(1388534400000)/",
+        "SUBMISSION_DUE_DATE": "/Date(1454976000000)/",
+        "RUN_DATE": null,
+        "FAMILY_DESC": null,
+        "TRADE_NAME": null,
+        "LIC_NUMBER": null,
+        "LICENSE_KEY": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.CaseListLibraryType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/CaseListLibrary('147699537398048752')"
+        },
+        "ID": "147699537398048752",
+        "BCL_KEY": 2,
+        "BCL_NAME": "PRODUCT - 101_PRODUCT - 106_PRODUCT - 50541_1-Feb-2016 - 29-Feb-2016_Eswaran",
+        "DESCRIPTION": "Auto Generated Base Caselist",
+        "CASES_COUNT": 0,
+        "IS_LOCKED": 0,
+        "Audit_CreatedBy": "SANALYST1",
+        "Audit_CreatedDt": "/Date(1456275852000)/",
+        "RPT_START_DATE": "/Date(1454371200000)/",
+        "RPT_END_DATE": "/Date(1456790400000)/",
+        "AS_OF_DATE": "/Date(1388534400000)/",
+        "SUBMISSION_DUE_DATE": "/Date(1461963600000)/",
+        "RUN_DATE": null,
+        "FAMILY_DESC": null,
+        "TRADE_NAME": null,
+        "LIC_NUMBER": null,
+        "LICENSE_KEY": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.CaseListLibraryType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/CaseListLibrary('147699537398048753')"
+        },
+        "ID": "147699537398048753",
+        "BCL_KEY": 3,
+        "BCL_NAME": "PRODUCT - 103_3-Feb-2016 - 10-Feb-2016_Signal desc",
+        "DESCRIPTION": "Auto Generated Base Caselist",
+        "CASES_COUNT": 0,
+        "IS_LOCKED": 0,
+        "Audit_CreatedBy": "SANALYST1",
+        "Audit_CreatedDt": "/Date(1456276760000)/",
+        "RPT_START_DATE": "/Date(1454515200000)/",
+        "RPT_END_DATE": "/Date(1455120000000)/",
+        "AS_OF_DATE": "/Date(1388534400000)/",
+        "SUBMISSION_DUE_DATE": null,
+        "RUN_DATE": "/Date(1455120000000)/",
+        "FAMILY_DESC": null,
+        "TRADE_NAME": null,
+        "LIC_NUMBER": null,
+        "LICENSE_KEY": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.CaseListLibraryType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/CaseListLibrary('147699537398048754')"
+        },
+        "ID": "147699537398048754",
+        "BCL_KEY": 4,
+        "BCL_NAME": "PRODUCT - 102_1-Jan-1900 - 1-Jan-2999_Description edited",
+        "DESCRIPTION": "Auto Generated Base Caselist",
+        "CASES_COUNT": 0,
+        "IS_LOCKED": 0,
+        "Audit_CreatedBy": "SANALYST1",
+        "Audit_CreatedDt": "/Date(1456280767000)/",
+        "RPT_START_DATE": "/Date(-2208902400000)/",
+        "RPT_END_DATE": "/Date(32472230400000)/",
+        "AS_OF_DATE": "/Date(1388592000000)/",
+        "SUBMISSION_DUE_DATE": null,
+        "RUN_DATE": "/Date(1455696000000)/",
+        "FAMILY_DESC": null,
+        "TRADE_NAME": null,
+        "LIC_NUMBER": null,
+        "LICENSE_KEY": null
+      }
+    ]
+  }
+}

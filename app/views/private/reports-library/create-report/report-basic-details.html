@@ -1,0 +1,91 @@
+  <div class="form-group">
+  <label class="label-name" data-i18n="private-reports-library.BUNDLE_REPORT_NAME"></label>
+  <div class="form-control dsui-create-report-form-control" id="dsuiNewCaseListName" name="dsuiNewCaseListName"
+         data-ng-bind="report.reportName" data-ng-disabled="true"/>
+</div>
+<div class="form-group">
+  <label class="label-name" data-i18n="private-reports-library.BUNDLE_REPORT_TYPE"></label>
+  <span class="mandatory">*</span>
+  <select class="form-control dsui-create-report-form-control" data-ng-model="report.reportType"
+          data-ng-change="fnUpdateReportName();fnCheckReportTypeSpecificActions()"
+          data-ng-options="reportType as reportType.reportType for reportType in data.reportTypes|orderBy:'reportType'"></select>
+</div>
+<div class="form-group">
+  <label class="label-name"
+         data-i18n="private-reports-library.BUNDLE_REGULATORY_REPORT_DESCRIPTION"></label>&nbsp;&nbsp;<span class="text-muted dsui-warn-txt"
+                                                                        data-i18n="private-reports-library.BUNDLE_PROJECT_DESCRIPTION_LIMIT"></span>
+              <textarea id="dsuiProjectDescription" name="dsuiProjectDescription" class="dsui-no-resize form-control dsui-create-report-form-control dsui-create-report-form-control-textarea"
+                        maxlength="500" rows="5" placeholder="" data-ng-change="fnUpdateReportName()"
+                        data-ng-model="report.reportDesc"></textarea>
+</div>
+
+
+  <div class="form-group">
+    <label class="label-name" data-i18n="private-reports-library.BUNDLE_REPORT_OWNER"></label>
+    <span class="mandatory">*</span>
+
+
+    <div>
+      <select
+        class="dsui-select2-single form-control select2-choices select2-search-choice dsui-create-report-form-control"
+        ngyn-select2 id="select-report-owner-users" data-placeholder="Enter user name..."
+        data-ng-model="report.reportOwner"
+        data-ng-options="user.userName for user in allUsers"></select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="dsui-create-report-form-control" id="{{reportCreationSelectId}}"
+         data-ng-if="loadUserGroupSelect">
+      <user-group-select-dropdown
+        user-select-id='reportCreationSelectId'
+        is-select-all-shown='false'
+        get-selected-user-group='report.reportAssignees.results'
+        set-selected-user-group='report.selectedUsersGroup'
+        assignee-display-text='language.USERS'
+      ></user-group-select-dropdown>
+    </div>
+  </div>
+
+
+
+<div class="form-group">
+  <label class="label-name" data-i18n="private-reports-library.BUNDLE_INGREDIENT"></label>
+  <span class="mandatory">*</span>
+  <select id="dsuiProjectIngredientName" name="dsuiProjectIngredientName" class="dsui-select2-single form-control dsui-create-report-form-control"
+          multiple ngyn-select2 data-ng-model="report.reportIngredients" data-ng-change="fnChangeIngredientSet()"
+          data-ng-options="ingredient.ingredientName for ingredient in data.ingredients|orderBy:'ingredientName'">
+    <option value="" selected disabled data-i18n="private-reports-library.BUNDLE_KEY_SELECT"></option>
+  </select>
+</div>
+<div class="form-group dsui-product-license">
+  <div class="dsui-product-license-radio-bar">
+    <input type="radio" name="productOrLicense" data-ng-model="report.isProductBasedSelection" data-ng-change="fnChangeProdLicSelection()" data-ng-value="0" data-ng-click="fnCheckClear()"/> <label class="label-name product-label" data-i18n="private-reports-library.BUNDLE_PRODUCT"></label>
+    <input type="radio" name="productOrLicense" data-ng-model="report.isProductBasedSelection" data-ng-change="fnChangeProdLicSelection()" data-ng-value="1" data-ng-click="fnCheckClear()"/> <label class="label-name product-label" data-i18n="private-reports-library.BUNDLE_LICENSE_FIELD"></label>
+  </div>
+  <div class="dsui-product-license-menu">
+    <hr class="form-group product-license-line"/>
+    <input type="checkbox" data-ng-checked="isIngredientSelectAll" data-ng-click="fnCheckIngredientSelectAll()"/><span class="dsui-ingredient-select-all" data-i18n="private-reports-library.BUNDLE_PROJECTS_SELECT_ALL_TEXT"></span>
+    <div data-ng-if="report.isProductBasedSelection==0" class="dsui-products-licenses-options">
+      <table>
+        <tbody data-ng-repeat="ingredient in report.reportIngredients track by $index">
+        <tr data-ng-repeat="product in ingredient.products | orderBy:'productName'">
+          <td class="dsui-verical-align-top"><input type="checkbox" data-ng-change="fnCheckSelectAll(product.isSelected)" data-ng-model="product.isSelected"/></td>
+          <td>&nbsp;<span data-ng-bind="product.productName"></span>,&nbsp;<span data-ng-bind="product.productFormulation"></span></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div data-ng-if="report.isProductBasedSelection==1" class="dsui-products-licenses-options">
+      <table>
+        <tbody data-ng-repeat="ingredient in report.reportIngredients track by $index">
+        <tr data-ng-repeat="license in ingredient.licenses | orderBy:'licenseName'">
+          <td class="dsui-verical-align-top"><input type="checkbox" data-ng-change="fnCheckSelectAll(license.isSelected)" data-ng-model="license.isSelected"/></td>
+          <td>&nbsp;<span data-ng-bind="license.licenseName"></span></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

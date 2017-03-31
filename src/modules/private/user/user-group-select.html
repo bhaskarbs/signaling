@@ -1,0 +1,20 @@
+<div class="dsui-user-group-dropdown">
+  <div data-ng-show='isSelectAllShown === "true"'>
+    <input type="checkbox" data-ng-model="includeAllUser"/>
+    <span class="dsui-include-all-user" data-i18n="private-query-library.BUNDLE_INCLUDE_ALL_USER"></span>
+  </div>
+
+  <div class="dsui-user-selection-header">
+    <span class="dsui-users" data-ng-bind="assigneeDisplayText"></span>
+    <a><span data-ng-click="clearAll()" class="dsui-clear-all"
+             data-i18n="private-query-library.BUNDLE_CLEAR_ALL"></span></a>
+  </div>
+
+  <select multiple ngyn-select2 class="dsui-select2-single form-control"
+          id="queryLibraryShareQuery" data-ng-change="selectChanged()"
+          data-ng-disabled="includeAllUser"
+          data-ng-model="selectedUsersGroup"
+          data-ng-options="user as user|userGroupFormatter for user in usersGroup"
+          placeholder="{{defaultPlaceholderText + '...'}}">
+  </select>
+</div>

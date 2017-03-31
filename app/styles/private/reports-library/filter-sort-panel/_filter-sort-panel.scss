@@ -1,0 +1,207 @@
+.dsui {
+
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-padding-right15{
+      padding-right:15px;
+    }
+
+    .dsui-sort-header {
+      border-bottom: 2px solid $saint-blue-color;
+      color: $saint-blue-color !important;
+
+    }
+
+
+
+    .dsui-sort-header-text {
+      font-family: $font-roboto-bold;
+      font-size: 14px;
+    }
+
+    .dsui-filter-sort-reports-library:first-child {
+      border-right: $saint-panel-cool-gray-color 1px solid;
+
+    }
+    .dsui-filter-sort-reports-library > a {
+      color: $saint-unfavourite-color;
+      cursor: pointer;
+    }
+
+    .dsui-date-range-top{
+        margin-top: 10px;
+        padding:0px!important;
+        .dsui-no-padding{
+
+        padding:0px!important;
+        }
+    }
+
+
+    .dsui-date-filter-text{
+      font-family: $font-roboto-medium;
+      font-size: 14px;
+    }
+
+    .dsui-filter-sort > a {
+      color: $saint-black-color;
+      cursor: pointer;
+    }
+
+    .glyphicon-filter:before {
+      content: "\e138";
+      vertical-align: -0.1875em;
+    }
+    .glyphicon-sort-by-attributes-alt:before {
+      content: "\e156";
+      vertical-align: -0.1875em;
+    }
+    .dsui-collapse-list {
+      float: right;
+      margin-top: -33px;
+      .dsui-collapse-icon {
+        font-size: 20px;
+        color:$saint-unfavourite-color;
+        cursor: pointer;
+      }
+    }
+    .dsui-status-filter{
+      .panel{
+        margin-bottom: 0px !important;
+        border-radius: 0px !important;
+        margin-top: 15px;
+        margin-right: 15px;
+        border: none;
+      }
+      .fa, .panel-title{
+        cursor: pointer;
+      }
+      .dsui-overdue {
+        color: $saint-report-overdue;
+      }
+      .dsui-open {
+        color: $saint-open-color;
+      }
+      .dsui-inprogress {
+        color: $saint-report-inProgress;
+      }
+      .dsui-final {
+        color: $saint-report-inProgress;
+      }
+      .dsui-completed {
+        color: $saint-green-completed;
+      }
+      .dsui.checkbox-styling{
+        margin-right: 15px;
+        margin-bottom: 10px;
+      }
+      .dsui-checkbox-padding{
+        margin-bottom: 15px;
+      }
+      .dsui-label-name{
+        font-size : 14px;
+        color : $saint-unfavourite-color;
+      }
+      .dsui-category-header{
+        border-radius: 0;
+        border-bottom: none;
+        padding: 0px;
+        height: 36px;
+        background-color: $saint-panel-cool-gray-color;
+        .dsui-panel-header-expand{
+          color : $saint-blue-color !important;
+        }
+        .dsui-category-header-text {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 12px;
+          height: 100%;
+          font-family: $font-roboto;
+          font-size: 14px;
+          a{
+            text-decoration:none;
+          }
+        }
+        .dsui-panel-title-icons {
+          padding-top: 7px;
+          font-size: 15px;
+          color: $saint-title-gray-color;
+          padding-right: 10px;
+          span {
+            font-size: 11px;
+            cursor: pointer;
+          }
+        }
+      }
+      .panel-header{
+        font : {
+          style : $font-roboto-medium;
+          size : 14px;
+        }
+
+      }
+      .dsui-panel-header-expand{
+        color : $saint-blue-color !important;
+      }
+      .dsui-panel-title-icons{
+        font-size: 11px;
+      }
+    }
+  }
+  .dsui-footer {
+  }
+}
+.dsui-date-input-group{
+  .dsui-datepicker-on-top {
+    z-index: 1;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

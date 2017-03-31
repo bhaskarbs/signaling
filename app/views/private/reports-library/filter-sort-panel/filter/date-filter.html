@@ -1,0 +1,66 @@
+<!-- status -->
+<div data-ng-if="enableDateRangeFilter">
+<div class="dsui-filter-directive panel panel-default">
+  <div class="panel-heading dsui-category-header" role="tab" id="statusHeader">
+
+    <div class="dsui-no-padding dsui-full-height col-xs-9 col-sm-10 col-md-11">
+      <div class="dsui-full-height dsui-category-header-text">
+        <a data-i18n="private-reports-library.BUNDLE_REGULATORY_REPORT_DATE"
+           data-ng-click="scope.collapsePanelDate = !scope.collapsePanelDate" data-ng-class="scope.collapsePanelDate ? 'dsui-panel-header-expand' : '' "></a>
+      </div>
+    </div>
+    <div class=" dsui-no-padding dsui-full-height col-xs-3 col-sm-2 col-md-1 pull-right ">
+      <div class="dsui-panel-title-icons dsui-full-height">
+          <span class="fa fa-chevron-up" data-ng-show="scope.collapsePanelDate"
+                data-ng-click="scope.collapsePanelDate = !scope.collapsePanelDate"></span>
+      <span class="fa fa-chevron-down" data-ng-show="!scope.collapsePanelDate"
+            data-ng-click="scope.collapsePanelDate = !scope.collapsePanelDate"></span>
+      </div>
+    </div>
+    <div id="collapseStatus" data-ng-show="scope.collapsePanelDate">
+      <div class="panel-body">
+        <div class="dsui-status-filter-panel">
+          <div data-ng-repeat="item in dateList track by $index ">
+            <input class="dsui-checkbox-padding dsui-date-filter-text" data-ng-if="fnDateCheckbox(item)"
+                   type="checkbox" id="{{'dateFilter-' + $index}}" data-ng-click="fnOnDateSelected(item)" checked>
+
+            <input class="dsui-checkbox-padding dsui-date-filter-text" data-ng-if="!fnDateCheckbox(item)"
+                   type="checkbox" id="{{'dateFilter-' + $index}}" data-ng-click="fnOnDateSelected(item)">
+            <span for="{{'dateFilter-' + $index}}" data-ng-bind="item.name" class="dsui-label-name"></span>
+          </div>
+
+            <div class="col-md-12 dsui-date-range-top">
+            <div data-i18n="private-reports-library.BUNDLE_DATE_FILTER_START" class="col-md-6 dsui-no-padding"></div>
+           </div>
+
+            <div class=" col-md-8 pull-left input-group dsui-date-input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectReportStartDateAdd1')">
+              <div class="input-group-addon dsui-calendar-icon"><i
+                class="fa fa-calendar-o"></i></div>
+              <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                     class="form-control dsui-datepicker-on-top"
+                     placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}"
+                     type="text" id="dsuiProjectReportStartDateAdd1"
+                     data-ng-model="searchDates.searchReportStartDate" data-ng-blur="fnStartEndDate(searchDates.searchReportStartDate,0)"
+                     data-ng-required="true"/>
+            </div>
+            <div class="col-md-12 dsui-date-range-top">
+              <div data-i18n="private-reports-library.BUNDLE_DATE_FILTER_END" class="col-md-6 dsui-no-padding"></div>
+            </div>
+            <div class="col-md-8 pull-left input-group dsui-date-input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectReportEndDateAdd1')">
+              <div class="input-group-addon dsui-calendar-icon"><i
+                class="fa fa-calendar-o"></i></div>
+              <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                     class="form-control dsui-datepicker-on-top"
+                     placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}"
+                     type="text" id="dsuiProjectReportEndDateAdd1"
+                     data-ng-model="searchDates.searchReportEndDate" data-ng-blur="fnStartEndDate(searchDates.searchReportEndDate,1)"
+                     data-ng-required="true"/>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>

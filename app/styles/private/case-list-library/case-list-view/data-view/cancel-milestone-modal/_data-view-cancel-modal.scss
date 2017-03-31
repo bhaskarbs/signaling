@@ -1,0 +1,96 @@
+.dsui{
+  .dsui-header{
+  }
+  .dsui-content{
+    .dsui-data-view-cancel-modal {
+      .dsui-data-view-cancel-modal-header{
+        padding:3%;
+      }
+      .dsui-data-view-cancel-modal-header-text {
+        font-size: 20px;
+        color: $saint-unfavourite-color;
+        font-family: $font-roboto-regular;
+      }
+      .dsui-data-view-cancel-modal-report-info{
+        padding:5%;
+      }
+      .dsui-data-view-cancel-modal-report-info-text {
+        font-size: 18px;
+        color: $saint-unfavourite-color;
+        font-family: $font-roboto-regular;
+      }
+      .dsui-data-view-cancel-modal-button-complete {
+        font-size: 14px;
+        background: $saint-blue-color;
+        color: $saint-white-color;
+        font-family: $font-roboto-regular;
+        border-radius: 0px;
+        width: 17%;
+      }
+      .dsui-data-view-cancel-modal-button-close {
+        font-size: 14px;
+        color: $saint-unfavourite-color;
+        font-family: $font-roboto-regular;
+        border-radius: 0px;
+        width: 17%;
+      }
+    }
+  }
+  .dsui-footer{
+  }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/*Ipad Landscape*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

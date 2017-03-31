@@ -1,0 +1,27 @@
+<div class="dsui-tagFilter" data-ng-show="true">
+  <div class="col-xs-1 dsui-tagFilter-paddingLeft" data-ng-if="context!='reportOutput'">
+    <div class="dsui-filterInfo"><span data-i18n="common.BUNDLE_FILTERED_BY"></span></div>
+  </div>
+  <div class="col-xs-9 dsui-breadcrumbs">
+    <div class="row dsui-breadcrumbs-align">
+      <div class="dsui-breadcrumbs-maxwidth">
+      <span data-ng-repeat="filterData in breadCrumbs">
+        <span data-ng-show="filterData.category!='date'" class="dsui-myTags">
+        <span class="dsui-breadcrumbs-text" data-ng-bind="filterData.filter"></span>
+      <div
+        data-ng-click="fnFilterClick(filterData.filter,filterData.filterName,filterData.dbFilterName,filterData.category)"
+        class="dsui-cancelButton icon-times-circle"></div>
+      </span>
+      <span data-ng-show="filterData.category=='date'" class="dsui-myTags">
+        <span class="dsui-breadcrumbs-text" data-ng-bind="fnDateFormat(filterData.filter)"></span>
+      <div
+        data-ng-click="fnFilterClick(filterData.filter,filterData.filterName,filterData.dbFilterName,filterData.category)"
+        class="dsui-cancelButton icon-times-circle"></div>
+      </span></span>
+      </div>
+      <div class="dsui-clear-filter" data-ng-click="fnClearFilters()" data-ng-if="fnCheckClear()">
+        <span>Clear all filters</span>
+      </div>
+    </div>
+  </div>
+</div>

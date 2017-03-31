@@ -1,0 +1,23 @@
+<div data-ng-controller="filterSortController">
+<ul class="nav nav-tabs nav-justified other dsui-padding-right15" >
+     <li class="dsui-filter-sort-reports-library" data-ng-click="fnSetTab(1)"><a data-ng-class="{'dsui-sort-header':fnIsSet(1)}" class="icon-filter" >
+      <span class="dsui-sort-header-text" data-i18n="common.BUNDLE_FILTER"></span></a></li>
+
+    <li class="dsui-filter-sort-reports-library" data-ng-click="fnSetTab(2)"><a data-ng-class="{'dsui-sort-header':fnIsSet(2)}" class="icon-sort-amount-desc" >
+      <span class="dsui-sort-header-text" data-i18n="common.BUNDLE_SORT"></span></a></li>
+
+    <li class="dsui-collapse-list"><span data-ng-click="fnToggleFilterPanel()" class="fa fa-angle-double-left dsui-collapse-icon"></span></li>
+
+
+</ul>
+
+  <div class="tab-content">
+    <div data-ng-if="fnIsSet(1)" data-ng-class="{active:fnIsSet(1)}" class="tab-pane fade in ">
+      <div viewport-auto-height data-ng-include="VIEWS.REPORTS_LIBRARY_FILTER_PANEL_VIEW"></div>
+    </div>
+    <div data-ng-if="fnIsSet(2)" data-ng-class="{active:fnIsSet(2)}" class="tab-pane fade in">
+       <div data-ng-include="VIEWS.REPORTS_LIBRARY_SORT_PANEL_VIEW"></div>
+    </div>
+
+  </div>
+</div>

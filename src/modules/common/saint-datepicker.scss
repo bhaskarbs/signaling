@@ -1,0 +1,230 @@
+
+.ui-datepicker {
+  z-index: 1001;
+  width: 275px;
+  padding: 0 0 0;
+  display: none;
+
+  select.ui-datepicker-month{
+    color : black;
+  }
+
+  .ui-datepicker-prev,.ui-datepicker-next {
+    top : 0px;
+  }
+
+  select.ui-datepicker-year{
+    color : black;
+  }
+
+  .ui-datepicker-header {
+    position: relative;
+    padding: 0 0;
+  }
+
+  .ui-datepicker-title {
+    margin: 0 1.7em;
+    line-height: 1.8em;
+    text-align: center;
+  }
+
+  table {
+    width: 99% !important;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+    background-color: #ffffff;
+  }
+
+  td {
+    border: 0;
+    padding-right: 5%;
+  }
+  td a {
+    text-align: center;
+  }
+  /* Component containers
+  ----------------------------------*/
+  .ui-widget {
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+    font-size: 1.1em;
+  }
+
+  .ui-widget input,
+  .ui-widget select,
+  .ui-widget textarea,
+  .ui-widget button {
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+    font-size: 1em;
+  }
+  .ui-widget-content {
+    border: 1px solid #a6c9e2;
+    background: #fcfdfd;
+    color: #222222;
+  }
+  .ui-widget-content a {
+    color: #222222;
+  }
+  .ui-widget-header {
+    border: 1px solid #12679B;
+    background: #12679B;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .ui-widget-header a {
+    color: #ffffff;
+  }
+
+  /* Interaction states
+  ----------------------------------*/
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default {
+    border: 0px solid #c5c5c5;
+    background: #ffffff;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+  }
+  .ui-state-default a,
+  .ui-state-default a:link,
+  .ui-state-default a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+  .ui-state-hover,
+  .ui-widget-content .ui-state-hover,
+  .ui-widget-header .ui-state-hover,
+  .ui-state-focus,
+  .ui-widget-content .ui-state-focus,
+  .ui-widget-header .ui-state-focus {
+    border: 0px solid #ffffff;
+    background: #ffffff;
+    font-weight: bold;
+    color: #1d5987;
+    outline: #fff dotted 5px\9 !important;
+  }
+  .ui-state-hover a,
+  .ui-state-hover a:hover,
+  .ui-state-hover a:link,
+  .ui-state-hover a:visited,
+  .ui-state-focus a,
+  .ui-state-focus a:hover,
+  .ui-state-focus a:link,
+  .ui-state-focus a:visited {
+    color: #1d5987;
+    text-decoration: none;
+  }
+  .ui-state-active,
+  .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active {
+    border: 1px solid #12679B;
+    background: #12679B;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 70%;
+  }
+
+  /* Interaction Cues
+  ----------------------------------*/
+  .ui-state-highlight,
+  .ui-widget-content .ui-state-highlight,
+  .ui-widget-header .ui-state-highlight {
+    border: 1px solid #12679B;
+    background: #ffffff;
+    color: #363636;
+    border-radius: 70%;
+  }
+  .ui-state-highlight a,
+  .ui-widget-content .ui-state-highlight a,
+  .ui-widget-header .ui-state-highlight a {
+    color: #363636;
+  }
+  .ui-state-error,
+  .ui-widget-content .ui-state-error,
+  .ui-widget-header .ui-state-error {
+    border: 1px solid #cd0a0a;
+    background: #fef1ec;
+    color: #cd0a0a;
+  }
+  .ui-state-error a,
+  .ui-widget-content .ui-state-error a,
+  .ui-widget-header .ui-state-error a {
+    color: #cd0a0a;
+  }
+  .ui-state-error-text,
+  .ui-widget-content .ui-state-error-text,
+  .ui-widget-header .ui-state-error-text {
+    color: #cd0a0a;
+  }
+
+
+  /* Icons
+  ----------------------------------*/
+
+  .ui-icon,
+  .ui-widget-content .ui-icon {
+    background-image: url("../images/saint-datepicker/ui-icons_222222_256x240.png");
+  }
+  .ui-widget-header .ui-icon {
+    background-image: url("../images/saint-datepicker/ui-icons_222222_256x240.png");
+  }
+  .ui-state-default .ui-icon {
+    background-image: url("../images/saint-datepicker/ui-icons_888888_256x240.png");
+  }
+  .ui-state-hover .ui-icon,
+  .ui-state-focus .ui-icon {
+    background-image: url("../images/saint-datepicker/ui-icons_454545_256x240.png");
+  }
+  .ui-state-active .ui-icon {
+    background-image: url("../images/saint-datepicker/ui-icons_454545_256x240.png");
+  }
+  .ui-state-highlight .ui-icon {
+    background-image: url("../images/saint-datepicker/ui-icons_2e83ff_256x240.png");
+  }
+  .ui-state-error .ui-icon,
+  .ui-state-error-text .ui-icon {
+    background-image: url("../images/saint-datepicker/ui-icons_cd0a0a_256x240.png");
+  }
+
+  /* Misc visuals
+  ----------------------------------*/
+
+  /* Corner radius */
+  .ui-corner-all,
+  .ui-corner-top,
+  .ui-corner-left,
+  .ui-corner-tl {
+    border-top-left-radius: 0px;
+  }
+  .ui-corner-all,
+  .ui-corner-top,
+  .ui-corner-right,
+  .ui-corner-tr {
+    border-top-right-radius: 0px;
+  }
+  .ui-corner-all,
+  .ui-corner-bottom,
+  .ui-corner-left,
+  .ui-corner-bl {
+    border-bottom-left-radius: 0px;
+  }
+  .ui-corner-all,
+  .ui-corner-bottom,
+  .ui-corner-right,
+  .ui-corner-br {
+    border-bottom-right-radius: 0px;
+  }
+
+  /* Overlays */
+
+  .ui-widget-shadow {
+    margin: -8px 0 0 -8px;
+    padding: 8px;
+    background: #aaaaaa;
+    opacity: .3;
+    filter: Alpha(Opacity=30); /* support: IE8 */
+    border-radius: 8px;
+  }
+}
+

@@ -1,0 +1,28 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.common.CommonService.UserPreferencesType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/common/CommonService.xsodata/UserPreferences(FK_USER_ID_KEY=11,KEY='CURR_REPORT_ID',SCREEN_NAME='MANAGE_REPORTS')"
+        },
+        "FK_USER_ID_KEY": 11,
+        "KEY": "CURR_REPORT_ID",
+        "VALUE": "\"73\"",
+        "SCREEN_NAME": "MANAGE_REPORTS",
+        "IS_SESSION_BASED": null
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.common.CommonService.UserPreferencesType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/common/CommonService.xsodata/UserPreferences(FK_USER_ID_KEY=11,KEY='FILTER_STATUS',SCREEN_NAME='MANAGE_REPORTS')"
+        },
+        "FK_USER_ID_KEY": 11,
+        "KEY": "FILTER_STATUS",
+        "VALUE": "{\"filterName\":\"Status\",\"contents\":[\"Overdue\"],\"dbFilterName\":\"STATUS_NAME\",\"category\":\"Status\"}",
+        "SCREEN_NAME": "MANAGE_REPORTS",
+        "IS_SESSION_BASED": null
+      }
+    ]
+  }
+}

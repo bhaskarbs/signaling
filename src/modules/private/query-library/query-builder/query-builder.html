@@ -1,0 +1,22 @@
+<div class="col-xs-12 dsui-no-padding">
+    <div data-ng-include="VIEWS.QUERY_LIBRARY_BUILDER_SECONDARY_NAVIGATION"></div>
+    <div data-ng-include="VIEWS.QUERY_LIBRARY_BUILDER_SECONDARY_HEADER"></div>
+    <div data-ng-include="VIEWS.QUERY_LIBRARY_BUILDER_ADVANCED_QUERY" class="col-sm-12 dsui-no-padding"></div>
+
+    <div class="col-md-12 dsui-cases-view">
+        <div class="dsui-query-builder-top-buttons-container">
+          <button class="btn btn-sm btn-default  dsui-query-area-fix dsui-query-builder-top-buttons inactive" data-i18n="private-query-builder.BUNDLE_SET_OPERATIONS"></button>
+          <span class="dsui-set-query-message" data-i18n="private-query-builder.BUNDLE_SET_QUERY_MESSAGE"></span>
+        </div>
+      <query-builder is-read-only="getPageMode() === CONSTANTS.READ_MODE || getPageMode() === CONSTANTS.SHARED_MODE"
+                     group="filter.group" operands="operands"
+                     dimensions="dimensions" operations="operators" operator-key="{{conditionKey}}"
+                     depth="1"></query-builder>
+
+      <div data-ng-include="VIEWS.QUERY_LIBRARY_BUILDER_SAVE_QUERY"></div>
+      <div data-ng-include="VIEWS.QUERY_LIBRARY_BUILDER_ERROR_SAVE_QUERY"></div>
+      <div data-ng-include="VIEWS.QUERY_LIBRARY_BUILDER_SHARE_QUERY"></div>
+      <div data-ng-include="VIEWS.QUERY_LIBRARY_DELETE_QUERY"></div>
+
+    </div>
+</div>

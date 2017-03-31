@@ -1,0 +1,25 @@
+<div>
+  <!--<div data-ng-click="fnToggleFilterPanel()">-->
+    <!--<i data-ng-class="(showFilterPanel)? 'pull-right icon-angle-double-left' : ''"></i>-->
+  <!--</div>-->
+<ul class="nav nav-tabs nav-justified other dsui-padding-right15">
+  <li class="dsui-notification-filter-library">
+    <i class="icon-filter" ><span class="dsui-notification-filter-header-text" data-i18n="common.BUNDLE_FILTER"></span></i>
+  </li>
+
+  <li class="dsui-notification-collapse-list"><span data-ng-click="fnToggleFilterPanel()" class="icon-angle-double-left dsui-notification-collapse-icon"></span></li>
+
+</ul>
+
+  <div class="dsui-notification-filter-panel">
+    <input  class="dsui-checkbox-padding" type="checkbox" id="selectAll" data-ng-model="select.selectAll" data-ng-click="fnOnSelectAll()">
+    <span for="selectAll" data-i18n="private-notification.BUNDLE_PROJECTS_SELECT_ALL_TEXT" class="dsui-notification-label-name" ></span>
+    <div data-ng-repeat="notification in getFilterConfig track by $index" class="dsui-notification-milestone-list">
+      <div>
+        <input class="dsui-checkbox-padding" data-ng-model="notification.selected" data-ng-change="fnClickfilterCategory(notification)" type="checkbox"  id="{{ 'notification-' + $index }}" data-ng-click="fnOnStatusSelected(item)">
+        <span for="{{ 'notification-' + $index }}" data-ng-bind = "notification.filterCategory" class = "dsui-notification-label-name"></span>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="dsui-loginContainer">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="text-left col-md-12 sign-in-label"><h3 data-i18n="public-login.BUNDLE_LOGIN_MEMBER_SIGN_IN"></h3></div>
+        <div class="panel-body">
+            <form id="loginDiv" action="{{login.action}}" method="post" name="loginForm" data-autofill-sync>
+                <div class="form-group col-md-12">
+                    <input type="email" class="dsui-login-username" data-i18n-attr="{placeholder:'public-login.BUNDLE_LOGIN_USERNAME_PLACEHOLDER'}" name="USER" data-ng-model="login.userName" data-ng-required="true"/>
+                </div>
+                <div class="form-group col-md-12">
+                    <input type="password" class="dsui-login-password" data-i18n-attr="{placeholder:'public-login.BUNDLE_LOGIN_PASSWORD_PLACEHOLDER'}" name="PASSWORD" data-ng-model="login.password" data-ng-required="true"/>
+                </div>
+                <div class="form-group col-md-12 dsui-no-padding dsui-remember-me-section">
+                    <div class="col-xs-3">
+                         <label class="switch">
+                              <input type="checkbox" class="switch-input" checked data-ng-model="login.remember"/>
+                              <span class="switch-label" data-on="" data-off=""></span>
+                              <span class="switch-handle"></span>
+                            </label>
+                    </div>
+                    <div class="col-md-8 dsui-remember-me" data-i18n="public-login.BUNDLE_LOGIN_REMEMBER_ME"></div>
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="hidden" name="target" value="{{login.target}}"/>
+                  <input type="hidden" name="smauthreason" value="{{login.smAuthReason}}"/>
+                  <input type="hidden" name="postpreservationdata" value="" />
+                  <input type="hidden" name="SMENC" value="ISO-8859-1" />
+                  <input type="hidden" name="SMLOCALE" value="US-EN" />
+                  <input type="hidden" name="smquerydata" value="{{login.smQueryData}}" />
+                  <input type="hidden" name="smagentname" value="{{login.smAgentName}}" />
+                  <button type="submit" class="btn dsui-sign-in col-md-12" name="submit" value="Login" data-i18n="public-login.BUNDLE_LOGIN_SIGN_IN"  data-ng-disabled="loginForm.$invalid"></button>
+                </div>
+                <div class="form-group col-md-12">
+                    <div class="col-md-10 col-md-offset-1 dsui-sign-in-seperation-line"><hr/></div>
+                </div>
+                <div class="form-group col-md-12">
+                   <button type="button" class="btn dsui-create-account col-xs-12" data-i18n="public-login.BUNDLE_LOGIN_NEED_ACCOUNT"></button>
+                </div>
+                <div class="form-group col-md-12 dsui-forgot-password">
+                    <a href="javascript:void(0)" data-i18n="public-login.BUNDLE_LOGIN_FORGOT_PASSWORD"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

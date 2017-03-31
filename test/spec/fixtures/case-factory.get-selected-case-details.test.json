@@ -1,0 +1,36 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.caselist.CaselistService.CaseListDetailsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/caselist/CaselistService.xsodata/CaseListDetails('149194111314140881')"
+        },
+        "ID": "149194111314140881",
+        "CASE_NBR": "20100108530",
+        "PATIENT_AGE": null,
+        "PATIENT_AGE_UNIT_DESC": null,
+        "COUNTRY_OF_INCIDENCE": "UNITED KINGDOM",
+        "INIT_RECV_DT_KEY": 20100121,
+        "EVENT_RECEIPT_DT_KEY": null,
+        "D_CASE_SERIOUSNESS_DESC": "Yes",
+        "CASE_ASSESS_LABELED_DESC": "Listed",
+        "CASE_ASSESS_OUTCOME_DESC": null,
+        "D_CASE_SOURCE_TYPE": "Spontaneous",
+        "INITIAL_RECEIVED_DATE": "\/Date(1264032000000)\/",
+        "STUDY_NUMBER": 0,
+        "PATIENT_SEX_DESC": "",
+        "CASE_CASUALITY": "",
+        "CASE_NARRATIVE": "",
+        "ANNOTATION": null,
+        "CASE_KEY": 174267,
+        "PATIENT_ID_CALC": "",
+        "FOLLOWUP_RECV_DT_KEY": 20100204,
+        "PATIENT_INITIAL": null,
+        "PATIENT_DATE_OF_BIRTH": null,
+        "FOLLOWUP_RECEIVED_DATE": "\/Date(1265241600000)\/",
+        "EVENT_RECEIPT_DATE": null
+      }
+    ]
+  }
+}

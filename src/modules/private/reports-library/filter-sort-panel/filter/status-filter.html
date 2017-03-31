@@ -1,0 +1,30 @@
+<!-- status -->
+<div class="panel panel-default" >
+  <div class="panel-heading dsui-category-header" role="tab" id="statusHeader">
+    <div class="panel-title dsui-category-header-text pull-left">
+      <a data-i18n="private-reports-library.BUNDLE_REGULATORY_REPORT_STATUS" data-ng-click="scope.collapse = !scope.collapse" data-ng-class = "scope.collapse ? 'dsui-panel-header-expand' : '' "></a>
+    </div>
+    <div class="dsui-panel-title-icons pull-right dsui-panel-title-icons">
+      <span class="fa fa-chevron-up" data-ng-show="scope.collapse"
+            data-ng-click="scope.collapse = !scope.collapse"></span>
+      <span class="fa fa-chevron-down" data-ng-show="!scope.collapse"
+            data-ng-click="scope.collapse = !scope.collapse"></span>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div id="collapseStatus" data-ng-show="scope.collapse">
+    <div class="panel-body">
+      <div class="dsui-status-filter-panel">
+        <input  class="dsui-checkbox-padding" type="checkbox" id="selectAll" data-ng-model="select.selectAll" data-ng-click="fnOnSelectAll()">
+        <span for="selectAll" data-i18n="private-reports-library.BUNDLE_PROJECTS_SELECT_ALL_TEXT" class="dsui-label-name" ></span>
+        <div data-ng-repeat="item in statusList track by $index ">
+          <div>
+            <input class="dsui-checkbox-padding" type="checkbox" data-ng-model="item.selected" id="{{ 'status-' + $index }}" data-ng-click="fnOnStatusSelected(item)">
+            <span for="{{ 'status-' + $index }}" data-ng-bind = "item.name" class = "dsui-label-name"></span>
+            <span class="fa fa-circle dsui-{{item.name.toLowerCase().replace(' ','')}} pull-right"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

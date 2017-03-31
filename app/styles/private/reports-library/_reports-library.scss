@@ -1,0 +1,174 @@
+@import 'report-panel/report-panel';
+
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-reports-library {
+      .dsui-filter-breadcrumb-container {
+        min-height: 66px;
+        margin-top: 58px;
+        .dsui-icon-list {
+          padding-top: 22px;
+          .dsui-view-icons {
+            float: right;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            .dsui-icon-tab {
+              padding-top: 26px;
+              height: 36px;
+              width: 54px;
+              text-align: center;
+              border-radius: 0px !important;
+              font-size: 20px;
+              padding: 5px;
+            }
+            .dsui-deactive-view {
+              background-color: $saint-panel-cool-gray-color;
+              color: $saint-unfavourite-color;
+              display: inline-block;
+              cursor: pointer;
+            }
+
+            .dsui-active-view {
+              background-color: $saint-blue-color;
+              color: $saint-white-color;
+              display: inline-block;
+              cursor: pointer;
+            }
+
+          }
+          .dsui-radio-text {
+            padding-bottom: 27px;
+            input {
+              padding-left: 5px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      .dsui-main-panel {
+
+        .dsui-list-panel {
+          height: 100%;
+        }
+        .dsui-vertical-panel {
+          border: $saint-favourite-border-color solid;
+          border-width: 1px 0px 1px 1px;
+          padding-right: 0px !important;
+        }
+        .dsui-filter-panel-overflow {
+          overflow-y: auto;
+          overflow-x:hidden;
+        }
+        .dsui-nopadding-right {
+          padding-right: 0px !important;
+        }
+        .dsui-filter-verticalbar {
+          background-color: $saint-favourite-border-color;
+          width: 30px;
+          float: left;
+          cursor: pointer;
+          height: 100%;
+          margin-left: -15px;
+          margin-right: 15px;
+          .dsui-collpase-icon {
+            color: $saint-unfavourite-color;
+            margin-top: 10px;
+            font-size: 20px;
+          }
+          .dsui-text-rotator {
+            white-space: nowrap;
+            color: $saint-unfavourite-color;
+            width: 25px;
+            font-size: 16px;
+            margin-top: 15px;
+            @include saintRotateDeg(90deg);
+          }
+        }
+        .dsui-extended-gantt-summary{
+        padding-left:15px;
+        padding-right:15px;
+        border: $saint-favourite-border-color solid;
+        border-width: 1px 0px 1px 1px;
+        }
+      }
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Ipad Landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-reports-library{
+        .dsui-main-panel {
+          .dsui-vertical-panel {
+            padding-right: 1px !important;
+          }
+        }
+      }
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

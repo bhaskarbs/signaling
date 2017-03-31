@@ -1,0 +1,31 @@
+<!-- Case Annotation Starts -->
+<div class="col-sm-12 dsui-no-padding">
+  <div class="col-sm-12">
+    <div class="col-sm-12 dsui-no-padding dsui-case-details-panel">
+      <div class="dsui-case-products dsui-case-summary-layout">
+          <span class="col-sm-12 dsui-case-summary-label" data-i18n="private-case-list-library.BUNDLE_CASE_ANNOTATION">
+          </span>
+        <div class="col-sm-12 form-group dsui-case-summary-col1">
+          <div class="col-sm-11 dsui-case-annotation">
+            <input type="text" placeholder="Add Annotation"
+                   class="dsui-case-annotation-text dsui-no-resize form-control"
+                   data-ng-model="annotationText"></input>
+          </div>
+          <div class="col-sm-1 dsui-case-annotation-save">
+            <input class="dsui-case-save-button form-control" type="button" data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_ANNOTATION)" value="Save"
+                   data-ng-click="fnSaveAnnotation(annotationText)"/>
+          </div>
+        </div>
+        <div class="col-sm-12 dsui-padding-button dsui-case-list-tags">
+          <div>
+            <span class="dsui-select-tag" data-i18n="private-case-list-library.BUNDLE_CASE_TAGS"></span>&nbsp;&nbsp;
+            <button class="btn btn-default dsui-button-1" data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_ANNOTATION)" ipopover load="caseData.load" page="{{VIEWS.LIST_TAGS}}" data-i18n="private-case-list-library.BUNDLE_ADD_TAG"></button>
+          </div>
+          <p class="clearfix"></p>
+          <div breadcrumbs list="caseData.selectedTags" key="tagName"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Case Annotation Ends -->

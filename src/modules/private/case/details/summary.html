@@ -1,0 +1,92 @@
+<div class="col-sm-12">
+  <!-- Case Summary Starts -->
+  <div class="col-sm-6 dsui-summary-padding">
+    <div class="col-sm-12 dsui-no-padding dsui-case-details-panel">
+      <div class="dsui-no-padding dsui-case-summary dsui-case-summary-layout">
+          <span class="col-sm-12 dsui-case-summary-label"
+                data-i18n="private-case-list-library.BUNDLE_CASE_SUMMARY"></span>
+        <div class="col-sm-12 dsui-no-padding">
+          <div class="col-sm-6 dsui-case-summary-col1">
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_MFR_CONTROL_NUMBER"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.caseId|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout"
+                 data-ng-show="paramsObj.datesCheck.initialRcptDate === CONSTANTS.ONE_KEY">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_INITIAL_RECEIPT_DATE"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.initialReceiptDate|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_REPORT_TYPE"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.reportType|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_COUNTRY"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.countryOfOccurrence|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_SERIOUS"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.caseSerious|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_LISTEDNESS"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.caseListedness|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_CAUSALITY"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.caseCasuality|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_OUTCOME"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.caseOutcome|empty:CONSTANTS.EMPTY"></span>
+            </div>
+          </div>
+          <div class="col-sm-6 dsui-case-summary-col1">
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_STUDY_ID"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.studyId|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_PATIENT_ID"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.patientId|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_PATIENT_INITIALS"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.patientInitials|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_PATIENT_SEX"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.patientSex|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_PATIENT_AGE"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.patientAge|empty:CONSTANTS.EMPTY"></span>
+            </div>
+            <div class="col-sm-12 dsui-case-summary-layout">
+                <span class="col-sm-6 dsui-case-details-labels"
+                      data-i18n="private-case-list-library.BUNDLE_CASE_PATIENT_DOB"></span>
+              <span class="col-sm-6" data-ng-bind="caseDetails.patientDOB|empty:CONSTANTS.EMPTY"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Case Summary Ends -->
+  <!-- Case Events -->
+  <div data-ng-include="VIEWS.CASE_LIST_EVENTS_VIEW"></div>
+  <!-- Case Events End -->
+</div>

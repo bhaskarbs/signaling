@@ -1,0 +1,32 @@
+<div class="dsui-visual-panel-main" data-ng-class="(type=='map')?'col-md-9':(type=='verticalbar' || type=='bar')?'col-md-6':'col-md-3'">
+	<div class="panel panel-default">
+    <div class="panel-heading">
+      <span data-ng-bind="name"></span>
+      <span data-ng-if="type=='verticalbar'" class="pull-right">
+        <span class="dsui-visual-panel-sortedby" data-i18n="private-case-list-library.BUNDLE_SORTED_BY_KEY"></span>&nbsp;
+        <span data-ng-click="fnTriggerSort('name',dimension)" style="cursor:pointer;font-size: 12px;">
+          <span data-ng-class="(isSortedByAlpha > 0)? 'dsui-visual-panel-sortedby bold-text': 'dsui-visual-panel-sortedby'"
+                data-ng-if="name!='Age'" data-i18n="common.BUNDLE_NAME"></span>
+          <span data-ng-class="(isSortedByAlpha > 0)? 'dsui-visual-panel-sortedby bold-text': 'dsui-visual-panel-sortedby'"
+                data-ng-if="name=='Age'" data-i18n="private-case-list-library.BUNDLE_AGE_KEY"></span>
+          <span ng-if="isSortedByAlpha==1" class="icon-caret-down black-sort-icon dsui-visual-panel-sortedby"></span>
+          <span ng-if="isSortedByAlpha==2" class="icon-caret-up black-sort-icon dsui-visual-panel-sortedby"></span>
+        </span>&nbsp;&nbsp;
+        <span data-ng-click="fnTriggerSort('value',dimension)" style="cursor:pointer;">
+          <span class="dsui-visual-panel-sortedby" ng-if="isSortedByValue==0" data-i18n="common.BUNDLE_VALUE"></span>
+          <span class="dsui-visual-panel-sortedby bold-text" ng-if="isSortedByValue>0" data-i18n="common.BUNDLE_VALUE"></span>
+          <span ng-if="isSortedByValue==1" class="icon-caret-down black-sort-icon dsui-visual-panel-sortedby"></span>
+          <span ng-if="isSortedByValue==2" class="icon-caret-up black-sort-icon dsui-visual-panel-sortedby"></span>
+        </span>
+      </span>
+    </div>
+	  <div class="panel-body dsui-visual-panel-body" data-ng-class="(type=='map')?'dsui-visual-panel-double-height':(type=='verticalbar')?'dsui-visual-panel-double-height':'dsui-visual-panel-normal-height'">
+	  	<div data-ng-if="type=='donut'" donut-chart data="data" type="type" dimension="dimension" size="size"></div>
+	  	<div data-ng-if="type=='verticalbar'" vertical-bar-chart data="data" type="type" dimension="dimension" size="size"></div>
+      <div data-ng-if="type=='bar'" bar-chart data="data" type="type" dimension="dimension" size="size"></div>
+      <div data-ng-if="type=='map'" world-map-chart data="data" type="type" dimension="dimension" size="size"></div>
+      <div data-ng-if="type=='gender'" gender-chart data="data" type="type" dimension="dimension" size="size"></div>
+      <div data-ng-if="type=='bipolar'" bipolar-chart data="data" type="type" dimension="dimension" size="size"></div>
+	  </div>
+	</div>
+</div>

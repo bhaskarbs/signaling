@@ -1,0 +1,14 @@
+<div class="col-xs-12 clearfix dsui-query-library-secondary-navigation dsui-no-padding">
+  <div class="col-xs-8 dsui-navigation-text">
+    <span data-ng-click="fnNavigate(CONSTANTS.HOME)" data-i18n="common.BUNDLE_DASHBOARD_NAVIGATION"
+          class="dsui-pointer-cursor"></span>
+    <span><span class="fa fa-angle-right dsui-query-navigation-angle-right-icon"></span>&nbsp;<span
+      data-i18n="private-query-library.BUNDLE_KEY_QUERY_LIBRARY"></span></span>
+  </div>
+  <div class="col-xs-4 dsui-no-padding dsui-create-new-query-button">
+    <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)" type="submit" class="btn dsui-create-button" data-ng-click="fnCreateQueryButtonClicked()">
+      <span><span class="dsui-icon-1x icon-IcoMoon-19"></span>
+        <span class="dsui-button-text" data-i18n="private-query-library.BUNDLE_KEY_CREATE_NEW_QUERY"></span></span>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.icomps .icomps-loader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: #000;
+	color: #000;
+	opacity: 0.5;
+	-webkit-transition: opacity 1s ease, z-index 1s ease;
+	-moz-transition: opacity 1s ease, z-index 1s ease;
+	-ms-transition: opacity 1s ease, z-index 1s ease;
+	-o-transition: opacity 1s ease, z-index 1s ease;
+	transition: opacity 1s ease, z-index 1s ease
+}
+.icomps .icomps-loader.icomps-loaded {
+	opacity: 0;
+	z-index: -1
+}
+.icomps .icomps-loader .icomps-loader-icon {
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	font-size: 84px;
+	margin-left: -42px;
+	margin-top: -42px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 0.1em;
+}
+.icomps .icomps-alerts{
+	/*padding-top: 2.5em;*/
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1051;
+}
+.icomps .icomps-alerts .alert{
+	width: 450px;
+	margin:0 auto;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}

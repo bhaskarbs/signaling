@@ -1,0 +1,16 @@
+
+<div data-ng-controller="CreateReportController">
+<div  class="col-xs-12 clearfix dsui-reports-library-secondary-navigation dsui-no-padding" >
+  <div class="col-xs-8 dsui-navigation-text">
+      <span data-ng-click="fnWrapperNavigate(CONSTANTS.HOME)" data-i18n="common.BUNDLE_DASHBOARD_NAVIGATION" class="dsui-pointer-cursor"></span>
+      <span><span class="fa fa-angle-right dsui-angle-right-icon"></span>&nbsp;<span data-i18n="private-reports-library.BUNDLE_REPORTS_LIBRARY_HEADER_KEY"></span></span>
+   </div>
+   <div class="col-xs-4 dsui-no-padding dsui-create-new-report-button">
+      <button type="submit" class="btn create-button" data-ng-click="fnCreateNewReport()"  data-ng-disabled="decorator.disabled(PRIVILEGES.REPORT_CREATE)">
+      <i class="fa fa-file-text-o"></i>&nbsp;<span data-i18n="private-reports-library.BUNDLE_CREATE_NEW_REPORT"></span>
+      </button>
+   </div>
+</div>
+  <div data-ng-include="VIEWS.CREATE_REPORT"></div>
+  <div data-ng-include="VIEWS.REPORT_CONFIRMATION"></div>
+</div>

@@ -1,0 +1,38 @@
+<div class="dsui-date-submitted">
+  <div class="dropdown">
+    <span class="dropdown-scope" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+    </span>
+    <span>
+    <div>
+      <div class="dropdown-menu drop-wide" data-ng-class="showTilePanel ? 'dsui-dropdown-menu' : 'dsui-dropdown-menu-expanded'"  role="menu">
+        <div class="dsui-scrollable-menu">
+          <div>
+            <div id="dateSubmittedPopOver" class="dsui-ds-elements">
+              <div class="dsui-ds-text1" data-i18n="private-reports-library.BUNDLE_CHANGE_STATUS_TO_COMPLETE"></div>
+              <div>
+                <div class="row dsui-dropdown-row-eq-height">
+                  <div class="input-group">
+                    <span class="dsui-ds-text" data-i18n="private-reports-library.BUNDLE_DATE_SUBMITTED" ></span>
+                    <div class="input-group-addon dsui-calendar-icon"><i
+                      class="fa fa-calendar-o"></i></div>
+                    <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                           class="form-control dsui-datepicker-on-top1" data-ng-class="dsui-ds-input"
+                            placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+                           id="submittedDateId" name="dsui-submitted-date"
+                           data-ng-model="reportPanelDetails.reportDetails.submittedDate" data-ng-required="true" />
+                  </div>
+                    <br>
+              </div>
+            </div>
+          </div>
+          <button class="dsui-date-cancel btn btn-primary" data-ng-click="fnCancel()" data-i18n="private-reports-library.BUNDLE_NEW_CASE_LIST_CANCEL"></button>&nbsp;<button class="dsui-date-submitted-save btn btn-primary" data-ng-click="fnStatusToCompleteConfirmation()" data-i18n="private-reports-library.BUNDLE_OK">
+          </button>
+        </div>
+      </div>
+    </div>
+      </div>
+      </span>
+  </div>
+</div>

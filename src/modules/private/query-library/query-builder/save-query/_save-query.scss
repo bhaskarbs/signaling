@@ -1,0 +1,136 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+  .dsui-query-builder-save-query {
+    .modal-main {
+      margin-left: 17% !important;
+      margin-right: 17% !important;
+
+      .modal-dialog {
+        width: 100% !important;
+        margin-top: 10% !important;
+        .dsui-full-height {
+        }
+        .modal-content {
+          margin-top: 0px !important;
+          .dsui-border-line {
+            border-top: 1px solid $saint-cool-gray-color;
+            margin: 0px;
+           /* width: 100%;
+            //FIXME Use Mixin
+            width: -webkit-calc(100% + 26px); // Border need to occupy fill width
+            width: -moz-calc(100% + 26px);
+            width: calc(100% + 26px);*/
+            //margin-left: -14px;
+            //margin-right: -14px;
+          }
+
+          .modal-header {
+            border-bottom: 0px;
+            padding: 25px 0px 25px 30px;
+
+            .close {
+              font-size: 1em;
+              color: $saint-black-color;
+              opacity: 1;
+              margin-top: -15px;
+              margin-right: 10px;
+            }
+            .modal-title {
+              font-family: $font-roboto;
+              font-size: 20px;
+
+              color: $saint-unfavourite-color  ;
+            }
+          }
+          .modal-body {
+            padding: 30px 26px 25px 26px;
+            .dsui-query-name{
+
+              @include Roboto-Light(0.9em, $saint-unfavourite-color);
+            }
+            .dsui-query-name-input{
+            }
+
+            .dsui-query-description{
+              margin-top: 22px;
+              @include Roboto-Light(0.9em, $saint-unfavourite-color);
+            }
+            .dsui-query-desc-limit {
+              margin-top: 22px;
+              @include Roboto-Light(0.875em, $saint-close-panel);
+            }
+            .dsui-query-description-input{
+              resize: none;
+              height: 100px;
+            }
+
+          }
+
+          .modal-footer {
+
+            margin-top:0px;
+            padding: 22px 30px 22px;
+
+            .dsui-create-query{
+
+            }
+            .dsui-cancel-query{
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.dsui-footer {
+
+}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

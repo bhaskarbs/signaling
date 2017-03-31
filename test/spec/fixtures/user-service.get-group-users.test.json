@@ -1,0 +1,201 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UserGroupsType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/UserGroups('4858631113607771')"
+        },
+        "ID": "4858631113607771",
+        "USER_GRP_NAME": "Group 1",
+        "USER_GRP_KEY": 1,
+        "UsersUsergroups": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114140561')"
+              },
+              "ID": "4858631114140561",
+              "USER_NAME": "KSMITH_SAINT1",
+              "USER_KEY": 1
+            },
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114140562')"
+              },
+              "ID": "4858631114140562",
+              "USER_NAME": "KSMITH_SAINT3",
+              "USER_KEY": 3
+            },
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114140563')"
+              },
+              "ID": "4858631114140563",
+              "USER_NAME": "NPASULA",
+              "USER_KEY": 12
+            },
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114140564')"
+              },
+              "ID": "4858631114140564",
+              "USER_NAME": "SANALYST1",
+              "USER_KEY": 11
+            },
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114140565')"
+              },
+              "ID": "4858631114140565",
+              "USER_NAME": "SANALYST2",
+              "USER_KEY": 13
+            }
+          ]
+        }
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UserGroupsType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/UserGroups('4858631113607772')"
+        },
+        "ID": "4858631113607772",
+        "USER_GRP_NAME": "Group 2",
+        "USER_GRP_KEY": 2,
+        "UsersUsergroups": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114442071')"
+              },
+              "ID": "4858631114442071",
+              "USER_NAME": "JMARY_SAINT1",
+              "USER_KEY": 6
+            },
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114442072')"
+              },
+              "ID": "4858631114442072",
+              "USER_NAME": "JMARY_SAINT3",
+              "USER_KEY": 8
+            }
+          ]
+        }
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UserGroupsType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/UserGroups('4858631113607773')"
+        },
+        "ID": "4858631113607773",
+        "USER_GRP_NAME": "Group 3",
+        "USER_GRP_KEY": 3,
+        "UsersUsergroups": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114524691')"
+              },
+              "ID": "4858631114524691",
+              "USER_NAME": "KSMITH_SAINT2",
+              "USER_KEY": 2
+            },
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114524692')"
+              },
+              "ID": "4858631114524692",
+              "USER_NAME": "KSMITH_SAINT4",
+              "USER_KEY": 4
+            }
+          ]
+        }
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UserGroupsType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/UserGroups('4858631113607774')"
+        },
+        "ID": "4858631113607774",
+        "USER_GRP_NAME": "Group 4",
+        "USER_GRP_KEY": 4,
+        "UsersUsergroups": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114638101')"
+              },
+              "ID": "4858631114638101",
+              "USER_NAME": "JMARY_SAINT2",
+              "USER_KEY": 7
+            },
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114638102')"
+              },
+              "ID": "4858631114638102",
+              "USER_NAME": "JMARY_SAINT4",
+              "USER_KEY": 9
+            }
+          ]
+        }
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UserGroupsType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/UserGroups('4858631113607775')"
+        },
+        "ID": "4858631113607775",
+        "USER_GRP_NAME": "Group 5",
+        "USER_GRP_KEY": 5,
+        "UsersUsergroups": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114715261')"
+              },
+              "ID": "4858631114715261",
+              "USER_NAME": "KSMITH_SAINT5",
+              "USER_KEY": 5
+            }
+          ]
+        }
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UserGroupsType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/UserGroups('4858631113607776')"
+        },
+        "ID": "4858631113607776",
+        "USER_GRP_NAME": "Group 6",
+        "USER_GRP_KEY": 6,
+        "UsersUsergroups": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.reports.ReportsService.UsersType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/reports/ReportsService.xsodata/Users('4858631114769101')"
+              },
+              "ID": "4858631114769101",
+              "USER_NAME": "JMARY_SAINT5",
+              "USER_KEY": 10
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

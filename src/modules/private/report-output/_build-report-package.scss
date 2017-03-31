@@ -1,0 +1,726 @@
+.dsui-additional-header {
+  padding-top: 1.375em !important;
+  padding-bottom: 0.5625em !important;
+}
+
+.dsui-caseListName {
+  color: $saint-blue-color;
+  display: inline-block;
+}
+
+.dsui-no-margin {
+  margin: 0px;
+}
+
+.dsui-update {
+  background-color: $saint-blue-color;
+  color: $saint-white-color;
+  float: right;
+  text-align: center;
+  font-family: $font-roboto;
+  font-size: 0.75em;
+  display: table;
+  border-radius: 0.1875em;
+  height: 1em;
+  width: 4em;
+}
+
+.dsui-select-addsubreport {
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+
+}
+
+.btn-white {
+  background-color: $saint-white-color;
+}
+
+.dsui-btn-select {
+  background-color: $saint-faint-blue;
+  stoke: $saint-user-tag-border;
+}
+
+.fa-file-pdf-o {
+  color: $saint-file-pdf-color;
+  font-size: 1.125em;
+}
+
+.fa-file-excel-o {
+  color: $saint-file-excel-color;
+  font-size: 1.125em;
+
+}
+
+.dsui-delete {
+  display: inline-block;
+  width: 1.25em;
+  .icon-times-circle {
+    padding-right: 0.3125em;
+    cursor: pointer;
+  }
+}
+
+.dsui-functional-panel {
+  padding-top: 0.9375em !important;
+  padding-bottom: 0.9375em !important;
+
+}
+
+.dsui-selected-template-row {
+  background-color: $saint-white-color;
+  min-height: 3.875em;
+  padding-left: 1.5625em !important;
+  margin-bottom: 0.875em;
+
+}
+
+.pull-right {
+  text-align: right;
+}
+
+.angular-ui-tree-drag {
+  opacity: 1;
+}
+
+.dsui-report-output-save {
+  .dsui-text {
+    @include Roboto-Regular(1.125em, $saint-unfavourite-color);
+    padding-left: 1.25em;
+    vertical-align: super;
+  }
+  .dsui-warning {
+    font-size: 2.5em;
+    color: $saint-dark-yellow-border;
+    display: inline-block;
+    padding-top: 0.625em;
+    padding-left: 0.375em;
+  }
+  .dsui-buttons {
+    display: inline-block;
+    width: 100%;
+    .btn {
+      height: 2em;
+      width: 5em;
+    }
+    .dsui-btn-yes {
+      background-color: $saint-blue-color;
+      float: right;
+      color: $saint-white-color;
+    }
+    .dsui-btn-no {
+      background-color: $saint-white-color;
+      float: right;
+      margin-left: 0.625em;
+      border: $saint-user-tag-border 0.0625em solid;
+    }
+
+  }
+}
+
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-build-report-package {
+      .dsui-margin-l-30 {
+        margin-left: 1.875em;
+      }
+      div[data-angular-treeview] {
+        /* prevent user selection */
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        /* default */
+        font-family: $font-roboto-regular;
+        font-size: 14px;
+        color: $saint-unfavourite-color;
+        text-decoration: none;
+        padding-top: 2.625em;
+      }
+
+      div[data-tree-model] ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: none;
+        overflow: hidden;
+      }
+
+      input[type="checkbox"] {
+        margin: 0 0 0 !important;
+      }
+
+      div[data-tree-model] li {
+        position: relative;
+        // padding: 1px 0 0 40px;
+        line-height: 1.5625em;
+      }
+      .dsui-build-report-package-left-dotted {
+        padding-left: 1.5625em !important;
+      }
+
+      .dsui-parent-node {
+        padding-left: 40px !important;
+        font-size: 0.875em;
+        font-family: $font-roboto-regular;
+      }
+
+      .dsui-child-node {
+        padding-left: 0.9375em !important;
+        font-size: 0.875em;
+        font-family: $font-roboto-regular;
+      }
+      .dsui-child-node-highlighted {
+        background-color: $saint-light-blue-report-selected;
+        display: inline;
+        padding: 1%;
+        border-radius: 1%;
+      }
+      .dsui-child-node:before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 1.7em;
+        left: 0em;
+        width: 1em;
+        height: 0;
+        border-top: 1px solid $saint-user-tag-border;
+        z-index: 1;
+      }
+      .dsui-parent-node-left-dotted {
+
+      }
+      .dsui-parent-node-left-dotted:before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 1em;
+        left: 0em;
+        width: 1em;
+        height: 0;
+        border-top: 1px solid $saint-user-tag-border;
+        z-index: 1;
+      }
+      .dsui-child-node-chk-label {
+        padding-left: 12px !important;
+      }
+      .dsui-parent-node-li {
+        padding-bottom: 1.25em;
+      }
+      .dsui-parent-node-li-left-dotted {
+        border: 1px solid $saint-user-tag-border;
+        border-width: 0px 0px 0px 1px;
+      }
+      .dsui-parent-node-li-left-dotted:last-child {
+        border: none;
+      }
+      .dsui-parent-node-li-left-dotted:last-child:before {
+        position: absolute;
+        content: " ";
+        border: 1px solid $saint-user-tag-border !important;
+        border-width: 0px 0px 1em 1px !important;
+        display: inline-block;
+      }
+
+      .dsui-child-node-li {
+        padding-top: 10px;
+      }
+      .dsui-child-node-li-left-dotted {
+        border: 1px solid $saint-user-tag-border;
+        border-width: 0px 0px 0px 1px;
+      }
+      .dsui-child-node-li-left-dotted:last-child {
+        border: none;
+      }
+      .dsui-child-node-li-left-dotted:last-child:before {
+        position: absolute;
+        content: " ";
+        border: 1px $saint-user-tag-border !important;
+        border-style: solid !important;
+        border-width: 0px 0px 2em 1px !important;
+        display: inline-block;
+        top: -0.4em;
+      }
+      .dsui-active-button {
+        z-index: 0 !important;
+      }
+      div[data-tree-model] li .expanded:before {
+        font-size: 20px;
+        padding: 1px 10px;
+        content: "\f07c";
+        font-family: FontAwesome;
+        font-style: normal;
+        left: 0px;
+        position: absolute;
+        top: 0;
+        padding-left: 0.9375em !important;
+        padding-bottom: 0.625em;
+        color: $saint-title-gray-color;
+      }
+
+      div[data-tree-model] li .collapsed:before {
+        font-size: 1.25em;
+        padding: 1px 0.625em;
+        content: "\f07b";
+        font-family: FontAwesome;
+        font-style: normal;
+        left: 0px;
+        position: absolute;
+        top: 0;
+        padding-left: 0.9375em !important;
+        color: $saint-title-gray-color;
+      }
+      div[data-tree-model] li i,
+      div[data-tree-model] li span {
+        cursor: pointer;
+      }
+
+      div[data-tree-model] li .selected {
+        background-color: $saint-tree-selected-color;
+        font-weight: bold;
+        padding: 1px 5px;
+      }
+      .dsui-tree-children {
+
+      }
+      .dsui-package-header {
+        margin-top: 3.625em;
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+        padding-top: 0.625em;
+        padding-bottom: 0.625em;
+        .dsui-case-list-name {
+          padding-left: 0px !important;
+          font-family: $font-roboto;
+          font-size: 1.25em;
+          color: $saint-unfavourite-color;
+        }
+        .dsui-button {
+          float: right;
+          text-align: right;
+
+          .dsui-save-button {
+            display: inline-block;
+            width: 6.25em;
+            height: 2.25em;
+            font-size: 1em;
+            color: $saint-blue-color;
+            background-color: $saint-white-color;
+            border: 1px $saint-blue-color solid;
+          }
+          .dsui-generate-button {
+            display: inline-block;
+            width: 6.25em;
+            height: 2.25em;
+            font-size: 1em;
+            color: $saint-white-color;
+            background-color: $saint-blue-color;
+            margin-left: 0.875em;
+          }
+        }
+      }
+      .dsui-main-panel {
+        .dsui-left-panel {
+          height: inherit;
+          overflow-y: auto;
+          padding-left: 1.25em;
+          padding-right: 0.9375em;
+          .dsui-collapse {
+            margin-top: 10px;
+            float: right;
+            font-size: 20px;
+            height: 40px;
+            cursor: pointer;
+          }
+          .dsui-template-header{
+            margin-top: 0.625em;
+            float: left;
+            font-size: 1em;
+            font-family: $font-roboto-regular;
+          }
+          .dsui-left-inner-search-addon {
+            position: relative;
+            margin-top: 55px;
+            .dsui-search-reports {
+              width: 100%;
+              height: 2em;
+            }
+            .dsui-border-top{
+              margin-left: -1.25em;
+              margin-right: -0.9375em;
+              stroke: $saint-user-tag-border;
+              stroke-width: 1;
+              border-top: 1px $saint-user-tag-border solid;
+            }
+          }
+          .dsui-left-inner-search-addon i {
+            color: $saint-blue-color;
+            position: absolute;
+            padding: 1.7em 0.625em;
+            pointer-events: none;
+          }
+          .dsui-left-inner-search-addon input {
+            padding-left: 1.875em;
+            border-radius: 0px;
+          }
+          .dsui-left-panel-tree {
+            .dsui-report-types {
+              .dsui-folder {
+                cursor: pointer;
+                padding-top: 1.25em;
+              }
+              .dsui-report-folder-icon {
+                cursor: pointer;
+                color: $saint-title-gray-color;
+                font-size: 1em;
+              }
+              .dsui-report-type-name {
+                padding-left: 0.625em;
+                font-family: $font-roboto-regular;
+                font-size: 1em;
+                color: $saint-unfavourite-color;
+              }
+              .dsui-sub-report-tree {
+                cursor: pointer;
+                padding-top: 0.9375em;
+                padding-left: 0.625em;
+                .dsui-sub-report-name {
+                  padding-left: 0.625em;
+                  font-family: $font-roboto;
+                  font-size: 0.875em;
+                  color: $saint-unfavourite-color;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  width: 90%;
+                  display: inline-block;
+                  vertical-align: top;
+                }
+              }
+            }
+          }
+
+        }
+        .dsui-no-rpad{
+          padding-right : 0px !important;
+        }
+        .dsui-right-panel {
+          height: inherit;
+          overflow-y: auto;
+          background-color: $saint-background-padding-notiication;
+          padding-right: 1.25em;
+          .dsui-right-panel-overflow-expanded{
+            height: inherit;
+            overflow-y: auto;
+            margin-right: -1.250em;
+            padding-right: 1.250em;
+          }
+          .dsui-right-panel-overflow-collapsed{
+            height: inherit;
+            overflow-y: auto;
+            margin-right: -1.250em;
+            padding-right: 1.250em;
+            margin-left: 1.875em;
+          }
+          .dsui-button-banner {
+            height: 4.25em;
+          }
+          .dsui-select-all {
+            float: left;
+            padding-top: 1.75em;
+          }
+          .dsui-right-panel-button {
+            float: right;
+            text-align: right;
+            padding-top: 1.125em;
+            padding-bottom: 0.875em;
+            .dsui-draft-button {
+              background-color: $saint-white-color;
+              display: inline-block;
+              font-family: $font-roboto;
+              font-size: 0.875em;
+              padding: 0.4375em;
+              height: 2.25em;
+            }
+            .dsui-blinded-button {
+              margin-left: 0.875em;
+              padding: 0.4375em;
+              background-color: $saint-white-color;
+              display: inline-block;
+              font-family: $font-roboto-regular;
+              font-size: 0.875em;
+              height: 2.25em;
+            }
+          }
+          .dsui-default-templates {
+            .dsui-locked-template-well {
+              background-color: $saint-white-color;
+            }
+            .dsui-default-header-main {
+
+              .dsui-sub-report-name {
+                color: $saint-unfavourite-color;
+                font-family: Roboto-Regular;
+                font-size: 1em;
+                font-style: normal;
+              }
+              .dsui-case-list {
+
+              }
+
+            }
+
+            .dsui-default-sub-header {
+              padding-top: 1em;
+              padding-bottom: 0.625em;
+              padding-left: 1.5625em;
+              padding-right: 1.5625em;
+              .dsui-sub-report-name {
+                color: $saint-unfavourite-color;
+                font-family: Roboto;
+                font-size: 0.875em;
+              }
+              .dsui-default-case-list {
+                color: $saint-blue-color;
+                font-family: Roboto;
+                font-size: 0.875em;
+              }
+            }
+            .dsui-border-subheader-bottom {
+              stroke: $saint-favourite-border-color;
+              stroke-width: 1;
+              border-bottom: 1px $saint-favourite-border-color solid;
+            }
+            .dsui-selected-template-row {
+              min-height: 3.875em;
+              padding-left: 1.5625em;
+              padding-right: 1.5625em;
+              .dsui-select-subreport {
+                padding-top: 1.375em !important;
+              }
+              .dsui-template-name {
+                padding-left: 0.625em;
+                color: $saint-blue-color;
+
+              }
+              .dsui-functional-panel {
+                padding-top: 0.8125em !important;
+                padding-bottom: 0.8125em !important;
+                cursor: default;
+                span {
+                  font-family: $font-roboto-regular;
+                  font-size: 0.75em;
+                  color: $saint-blue-color;
+                  cursor: pointer;
+                  padding-right: 1.875em !important;
+                }
+                .btn-white {
+                  cursor: pointer;
+                  background-color: $saint-white-color;
+                }
+                i {
+                  cursor: pointer;
+                }
+                .dsui-btn-select {
+                  background-color: $saint-faint-blue;
+                  stoke: $saint-user-tag-border;
+                }
+                .fa-file-pdf-o {
+                  color: $saint-file-pdf-color;
+                  font-size: 1.125em;
+                }
+                .fa-file-excel-o {
+                  color: $saint-file-excel-color;
+                  font-size: 1.125em;
+
+                }
+              }
+            }
+            .dsui-selected-template-row:last-child {
+              border-bottom: none;
+            }
+            .dsui-border-subreport-bottom {
+              stroke: $saint-favourite-border-color;
+              stroke-width: 1;
+              border-bottom: 1px $saint-favourite-border-color solid;
+              margin-left: 1em;
+              margin-right: 1em;
+            }
+            .dsui-border-subreport-bottom :last-child {
+              border-bottom: none;
+            }
+          }
+          .dsui-additional-header-well {
+            .dsui-additional-header {
+              padding-top: 1.375em !important;
+              padding-bottom: 0.5625em !important;
+            }
+            .dsui-additional-templates {
+              .dsui-selected-template-row {
+                background-color: $saint-white-color;
+                min-height: 3.875em;
+                padding-left: 1.5625em !important;
+                margin-bottom: 0.875em;
+                .dsui-select-addsubreport {
+                  padding-top: 1em !important;
+                  padding-bottom: 1em !important;
+                  .dsui-update {
+                    background-color: $saint-blue-color;
+                    color: $saint-white-color;
+                    float: right;
+                    text-align: center;
+                    font-family: $font-roboto;
+                    font-size: 0.75em;
+                    display: table;
+                    border-radius: 3px;
+                    height: 1em;
+                    width: 4em;
+                    cursor: pointer;
+                  }
+                }
+                .dsui-functional-panel {
+                  padding-top: 0.9375em !important;
+                  padding-bottom: 0.9375em !important;
+
+                  .btn {
+                    background-color: $saint-white-color;
+                  }
+                  .dsui-btn-select {
+                    background-color: $saint-faint-blue;
+                    stoke: $saint-user-tag-border;
+                  }
+                  .fa-file-pdf-o {
+                    color: $saint-file-pdf-color;
+                    font-size: 1.125em;
+                  }
+                  .fa-file-excel-o {
+                    color: $saint-file-excel-color;
+                    font-size: 1.125em;
+
+                  }
+                  .fa-times {
+                    padding-right: 0.3125em;
+                    padding-left: 0.3125em;
+                  }
+                }
+              }
+              .dsui-empty-additional-template {
+                min-height: 4.5em;
+                background: $saint-empty-additional-template-color;
+                border: 2px dashed $saint-empty-additional-template-border;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+              }
+
+            }
+          }
+        }
+
+      }
+      .dsui-main-panel-add-package {
+        margin-left: 30%;
+        .dsui-main-panel-add-package-button {
+          font-size: 0.875em;
+          font-family: $font-roboto-regular;
+        }
+      }
+      .dsui-generate-report-label {
+        font-family: $font-roboto-regular;
+        font-size: 1.25em;
+        color: $saint-unfavourite-color;
+        font-style: normal;
+      }
+      .dsui-border-header-bottom {
+        stroke: $saint-favourite-border-color;
+        stroke-width: 1;
+        border-bottom: 1px $saint-favourite-border-color solid;
+      }
+      .dsui-margin-top-header {
+        margin-top: 0.4375em;
+      }
+      .dsui-template-name {
+      }
+      .dsui-caseListName {
+        color: $saint-blue-color;
+        display: inline-block;
+      }
+
+    }
+    /*Overriding angular tree css*/
+    .angular-ui-tree-placeholder {
+      min-height: 4.5em;
+      background: $saint-empty-additional-template-color;
+      border: 2px dashed $saint-empty-additional-template-border;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .angular-ui-tree-handle {
+      font-weight: normal;
+    }
+    .angular-ui-tree-empty {
+      min-height: 4.5em;
+      border: none;
+      background: $saint-empty-ui-tree-background;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

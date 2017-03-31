@@ -1,0 +1,29 @@
+<div data-ng-controller="QueryLibraryTilePanelController" class="dsui-queryPanelLayout" id="ql_tile_panel">
+  <div class="dsui-queryDisplayDetail" id="ql_display_detail">
+    <div class="dsui-query-number">
+      <span data-ng-bind="startPageShown"></span>-<span data-ng-bind="endPageShown"></span>&nbsp;of&nbsp;<span
+      data-ng-bind="totalQuery"></span>
+      <span data-i18n="private-query-library.BUNDLE_KEY_QUERIES"></span>
+    </div>
+    <div class="dsui-sort-status"><span class="dsui-sort-status-text" data-i18n="common.BUNDLE_SORTED_BY"></span>:&nbsp;<span
+      class="dsui-sort-status-result" data-ng-bind="queryFactoryData.querySort.sortedByName"></span></div>
+  </div>
+
+  <!-- For Tiles -->
+  <div data-ng-class="fnGetPaginatorClass()">
+    <div data-ng-include="VIEWS.QUERY_LIBRARY_TILE_VIEW"></div>
+  </div>
+
+  <div data-ng-show="totalQuery > queryPerPage" id="ql_paginator">
+    <hr class="dsui-tile-paginator-divider">
+    <!--For Paginator -->
+    <div class="dsui-paginator-container text-center">
+      <div class="dsui-paginator-control" id="paginatorControl">
+        <dir-pagination-controls pagination-id="queryTiles" on-page-change="fnPageChanged(newPageNumber)"
+                                 max-size="6" direction-links="true"
+                                 boundary-links="true"
+        ></dir-pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>

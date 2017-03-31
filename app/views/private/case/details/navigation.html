@@ -1,0 +1,19 @@
+<div class="col-sm-12 clearfix dsui-case-details-secondary-navigation dsui-breadcrumb" >
+  <div class="dsui-bread-crumbs">
+    <span data-ng-click="fnNavigate(CONSTANTS.HOME)" data-i18n="common.BUNDLE_DASHBOARD_NAVIGATION" class="dsui-pointer-cursor"></span>
+     <span>
+        <span class="fa fa-angle-right dsui-angle-right-icon"></span>&nbsp;
+        <span data-ng-if="pageInfo== CONSTANTS.PAGE_NAVIGATION_REPORT" class="dsui-pointer-cursor" data-i18n="private-reports-library.BUNDLE_REPORTS_LIBRARY_HEADER_KEY" data-ng-click="fnNavigate(CONSTANTS.STATE.REPORT_LIBRARY)"></span>
+        <span data-ng-if="pageInfo== CONSTANTS.PAGE_NAVIGATION_CASE_LIST_LIBRARY" class="dsui-pointer-cursor" data-i18n="private-case-list-library.BUNDLE_KEY_CASE_LIST_LIBRARY" data-ng-click="fnNavigate(CONSTANTS.STATE.CASE_LIST_LIBRARY)"></span>
+        <span data-ng-if="pageInfo== CONSTANTS.PAGE_NAVIGATION_CREATE_CASE_LIST" class="dsui-pointer-cursor" data-i18n="private-case-list-library.BUNDLE_KEY_CREATE_CASE_LIST" data-ng-click="fnNavigate(CONSTANTS.STATE.CASE_LIST_LIBRARY)"></span>
+      </span>
+      <span>
+        <span class="fa fa-angle-right dsui-angle-right-icon"></span>&nbsp;
+ 	 	 	 	<span class="dsui-pointer-cursor" data-i18n="private-case-list-library.BUNDLE_REGULATORY_CASELIST_HEADER_KEY" data-ng-click="fnNavigate(CONSTANTS.STATE.CASE_LIST_TABLE_STATE,caseListTableNavigationData)"></span>
+      </span>
+     <span>
+        <span class="fa fa-angle-right dsui-angle-right-icon" ></span>&nbsp;
+ 	 	 	 	<span data-i18n="private-case-list-library.BUNDLE_CASE_DETAILS"></span>
+      </span>
+  </div>
+</div>

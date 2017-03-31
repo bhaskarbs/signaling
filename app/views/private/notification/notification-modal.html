@@ -1,0 +1,32 @@
+<div><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"><span
+  data-ng-click="fnMakeNotificationsRead(notificationsCount.response)"><i class="fa fa-bell dsui-bell-icon"></i>
+        <span class="badge" data-ng-if="notificationsCount.count" data-ng-bind="notificationsCount.count"></span></span></a>
+
+  <ul class="dropdown-menu dsui-notification-modal" data-ng-click="fnKeepModalOpen()" data-ng-if="notificationPopupToggle">
+    <div class="dsui-shadow-div">
+    </div>
+    <div class="dsui-notification-modal-box">
+      <li>
+        <div class="dsui-notification-header"><span class=" pull-left dsui-notification-header-text"
+                                                    data-i18n="private-notification.BUNDLE_POPUP_NOTIFICATION"></span><span
+          class="pull-right dsui-notification-header-view-all" data-ng-click="fnCloseModal()"
+          data-i18n="private-notification.BUNDLE_NOTIFICATION_VIEWALL"></span></div>
+      </li>
+      <div id="notification-modal" data-when-scrolled="fnLoadMoreNotifications()" class="dsui-notification-modal-data-list">
+        <li class="dsui-notification-data-list-item list-group-item"
+            data-ng-repeat="notification in notificationList" >
+          <div>
+            <div class="dsui-notification-heading-text" data-ng-bind="notification.notificationGroupName"></div>
+                    <span data-ng-click="fnNavigateFromNotification(notification)" class="dsui-notification-message"
+                          data-ng-bind-html="fnGetNotificationMessage(notification.DOM)"></span>
+          </div>
+          <div class="dsui-created-date dsui-modal-notif-date">
+            <span data-ng-bind="fnCalculateCreatedDate(notification)"></span>
+          </div>
+        </li>
+      </div>
+    </div>
+  </ul>
+</div>

@@ -1,0 +1,50 @@
+<div class="dsui-height">
+  <!--This is the vertical bar-->
+      <div  class="dsui-notification-filter-verticalbar" data-ng-show="!showFilterPanel" data-ng-click="fnToggleFilterPanel()">
+        <div>
+          <div class="text-center dsui-notification-collpase-icon">
+            <span class="pull-right icon-angle-double-right"></span>
+          </div>
+          <div class="dsui-notification-text-rotator"><span data-i18n="common.BUNDLE_FILTER_NOTIFICATION"></span></div>
+        </div>
+      </div>
+
+<div class="dsui-notification-background-padding">
+  <!--This is the heading containing "Notifications & Settings"-->
+  <div>
+  <span>
+  <div class="dsui-notification-heading">
+      <span class="dsui-notification-notification" data-i18n="common.BUNDLE_PANEL_NOTIFICATION"></span>
+      <span  class="dsui-notification-setting">
+            <i class="icon-cogs"></i>
+            <span  data-i18n="common.BUNDLE_NOTIFICATION_SETTINGS"></span>
+      </span>
+    </div>
+  </span>
+  </div>
+  <!--This contains all the tiles-->
+
+<div id="notificationRightPanel" viewport-auto-height data-when-scrolled="fnLoadMoreNotifications()">
+  <ul class="list-group">
+   <div class="dsui-notification-data-list">
+     <li class="dsui-notification-data-list-item list-group-item dsui-notification-item-height" ng-mouseenter="notification.mouseEnter=true" ng-mouseleave="notification.mouseEnter=false" data-ng-repeat="notification in notificationList">
+       <div data-ng-click="fnNavigateFromNotification(notification)">
+         <div class="dsui-top-heading col-xs-12">
+         <div class=" col-xs-10 dsui-notification-heading-text" data-ng-bind="notification.notificationGroupName"></div>
+          <div data-ng-if="notification.mouseEnter" class="dsui-pin-icon col-xs-2" ><div class="icon-thumb-tack"></div></div>
+       </div>
+
+         <div class="col-xs-12 dsui-complete-text">
+           <div class="dsui-notif-message col-xs-10">
+             <span class="dsui-notification-message" data-ng-bind-html="notification.DOM"></span>
+           </div>
+           <div class="col-xs-2 dsui-notification-create">
+             <span class="dsui-created-date dsui-notification-created" data-ng-bind="fnCalculateCreatedDate(notification)"></span>
+           </div>
+         </div>
+       </div>
+     </li>
+   </div>
+  </ul>
+  </div>
+</div></div>

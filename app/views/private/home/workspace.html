@@ -1,0 +1,74 @@
+<!--Begin Workspace Section-->
+<div class="dsui-home-workspace">
+  <p>&nbsp;</p>
+  <div class="row">
+    <div class="col-sm-4 dsui-workspace-tiles">
+      <div class="panel panel-default dsui-workspace col-sm-12 dsui-no-padding dsui-home-tile"
+           data-ng-click="fnNavigateWorkspace(0,home.statusCount.reportsInProgress)">
+        <div class="col-md-12 dsui-no-padding dsui-workspace-colored dsui-pending">
+          <div class="col-md-1 col-sm-2 dsui-no-padding">
+            <span class="icon-IcoMoon-02 dsui-icon-3x"></span>
+          </div>
+          <div class="col-md-8 col-sm-10 dsui-workspace-text">
+            <h3 data-i18n="private-home.BUNDLE_WORKSPACES1_TITLE"></h3>
+            <span data-i18n="private-home.BUNDLE_WORKSPACES1_SUBTITLE"></span>
+          </div>
+          <div class="col-sm-6 col-lg-3 pull-right dsui-no-padding ">
+            <span class="dsui-overdue-div">
+              <span class="fa fa-exclamation-triangle"></span><span data-ng-bind-html="fnFormatCount(home.statusCount.reportsOverDue)"></span>&nbsp;<span data-i18n="private-home.BUNDLE_CAMELCASE_OVERDUE"></span>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-12 dsui-no-padding dsui-circle dsui-pending">
+          <span data-ng-bind-html="fnFormatCount(home.statusCount.reportsInProgress)"></span>
+        </div>
+        <div class="col-md-12 dsui-no-padding dsui-workspace-plane">
+          <b><div data-i18n="private-home.BUNDLE_WORKSPACES3_PARAGRAPH_QUESTION" class="dsui-workspace-question"></div></b>
+          <div data-i18n="private-home.BUNDLE_WORKSPACES3_PARAGRAPH" class="dsui-home-text"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 dsui-workspace-tiles">
+      <div class="panel panel-default dsui-workspace col-sm-12 dsui-no-padding dsui-home-tile"
+           data-ng-click="fnNavigateWorkspace(1,home.statusCount.reportsDue)">
+        <div class="col-md-12 dsui-no-padding dsui-workspace-colored dsui-due-days">
+          <div class="col-md-1 col-sm-2 dsui-no-padding">
+            <span class="icon-IcoMoon-03 dsui-icon-3x" ></span>
+          </div>
+          <div class="col-md-11 col-sm-10 dsui-workspace-text">
+            <h3 data-i18n="private-home.BUNDLE_WORKSPACES3_DUE_DAYS"></h3>
+          </div>
+        </div>
+        <div class="col-md-12 dsui-no-padding dsui-circle dsui-due-days">
+          <span data-ng-bind-html="fnFormatCount(home.statusCount.reportsDue)"></span>
+        </div>
+        <div class="col-md-12 dsui-no-padding dsui-workspace-plane">
+          <b><div data-i18n="private-home.BUNDLE_WORKSPACE1_SUBTITLE_ADMIN" class="dsui-workspace-question"></div></b>
+          <div data-i18n="private-home.BUNDLE_WORKSPACES1_PARAGRAPH" class="dsui-home-text"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 dsui-workspace-tiles">
+      <div class="panel panel-default dsui-workspace col-sm-12 dsui-no-padding dsui-home-tile"
+           data-ng-click="fnNavigateWorkspace(2,home.statusCount.reportsCompleted)">
+        <div class="col-md-12 dsui-no-padding dsui-workspace-colored dsui-completed-reports">
+          <div class="col-md-1 col-sm-2 dsui-no-padding">
+            <span class="icon-IcoMoon-04 dsui-icon-3x"></span>
+          </div>
+          <div class="col-md-8 col-sm-10 dsui-workspace-text">
+            <h3 data-i18n="private-home.BUNDLE_WORKSPACE4_TITLE"></h3>
+          </div>
+        </div>
+        <div class="col-md-12 dsui-no-padding dsui-circle dsui-completed-reports">
+          <span data-ng-bind-html="fnFormatCount(home.statusCount.reportsCompleted)"></span>
+        </div>
+        <div class="col-md-12 dsui-no-padding dsui-workspace-plane">
+          <b><div data-i18n="private-home.BUNDLE_WORKSPACE4_SUBTITLE" class="dsui-workspace-question"></div></b>
+          <div data-i18n="private-home.BUNDLE_WORKSPACE4_PARAGRAPH" class="dsui-home-text"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!--End Workspace Section-->

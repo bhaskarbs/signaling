@@ -1,0 +1,52 @@
+'use strict';
+angular.module('saintApp').directive('inactiveLogout',[ function() {
+  return {
+    template:'',
+    link:function(scope,element){
+      var tempElement=element[0];
+      tempElement.addEventListener('click',function(){
+        scope.fnClearTimers();
+        scope.fnInitiateTimerForAlert();
+      });
+      tempElement.addEventListener('mousemove',function(){
+        scope.fnClearTimers();
+        scope.fnInitiateTimerForAlert();
+      });
+    },
+    controller:['$scope','$timeout','$interval','$rootScope',function(scope,$timeout,$interval,$rootScope){
+      scope.timeForInactiveAlert=1500000;
+      scope.timeForLogout=300000;
+      scope.timerObjectForAlert=null;
+      scope.timerObjectForLogout=null;
+      scope.fnClearTimers=function(){
+        scope.fnShowLogoutAlert(3);
+        $timeout.cancel(scope.timerObjectForLogout);
+        $interval.cancel(scope.timerObjectForAlert);
+        scope.timerObjectForAlert=null;
+        scope.timerObjectForLogout=null;
+      };
+      scope.fnInitiateTimerForAlert=function(){
+        scope.timerObjectForAlert=$interval(function(){
+          scope.fnShowLogoutAlert(2);
+          scope.fnInitiateTimerForLogout();
+        },scope.timeForInactiveAlert);
+      };
+      scope.fnInitiateTimerForLogout=function(){
+        $interval.cancel(scope.timerObjectForAlert);
+        scope.timerObjectForLogout=$interval(function(){
+          scope.fnDoLogout();
+        },scope.timeForLogout);
+      };
+      scope.fnShowLogoutAlert=function(count){
+        $rootScope.$broadcast('logoutSuccessCast',count);
+      };
+      scope.fnDoLogout=function(){
+        $rootScope.$broadcast('logoutSuccessCast',1);
+      };
+      scope.fnInit=function(){
+        scope.fnInitiateTimerForAlert();
+      };
+      scope.fnInit();
+    }]
+  };
+}]);

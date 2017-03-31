@@ -1,0 +1,48 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.notification.NotificationService.EventNotificationsType",
+          "uri": "http://dcidsthana01.dci.local:8000/deloitte/innovation/ls/safety/services/notification/NotificationService.xsodata/EventNotifications('116365504984888361')"
+        },
+        "EVENT_NOTIFICATION_GROUP_NAME": "Milestone Assignment"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.notification.NotificationService.EventNotificationsType",
+          "uri": "http://dcidsthana01.dci.local:8000/deloitte/innovation/ls/safety/services/notification/NotificationService.xsodata/EventNotifications('116365504984888362')"
+        },
+        "EVENT_NOTIFICATION_GROUP_NAME": "Milestone Completion"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.notification.NotificationService.EventNotificationsType",
+          "uri": "http://dcidsthana01.dci.local:8000/deloitte/innovation/ls/safety/services/notification/NotificationService.xsodata/EventNotifications('116365504984888363')"
+        },
+        "EVENT_NOTIFICATION_GROUP_NAME": "Milestone Overdue"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.notification.NotificationService.EventNotificationsType",
+          "uri": "http://dcidsthana01.dci.local:8000/deloitte/innovation/ls/safety/services/notification/NotificationService.xsodata/EventNotifications('116365504984888364')"
+        },
+        "EVENT_NOTIFICATION_GROUP_NAME": "Report Assignment"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.notification.NotificationService.EventNotificationsType",
+          "uri": "http://dcidsthana01.dci.local:8000/deloitte/innovation/ls/safety/services/notification/NotificationService.xsodata/EventNotifications('116365504984888365')"
+        },
+        "EVENT_NOTIFICATION_GROUP_NAME": "Report Overdue"
+      },
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.notification.NotificationService.EventNotificationsType",
+          "uri": "http://dcidsthana01.dci.local:8000/deloitte/innovation/ls/safety/services/notification/NotificationService.xsodata/EventNotifications('116365504984888366')"
+        },
+        "EVENT_NOTIFICATION_GROUP_NAME": "Sharing"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-notification-secondary-navigation {
+      height: 58px;
+      background-color: $saint-panel-cool-gray-color;
+      position: fixed;
+      z-index: 2;
+    }
+    .dsui-notification-navigation-text {
+      font-size: 1.125em;
+      font-family: $font-roboto-medium;
+      color: $saint-light-gray-color;
+      line-height: 3.3em;
+
+      .dsui-notification-cursor {
+        padding-left: 15px;
+      }
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    font-size: 16px;
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://hana02.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('99021756540904251')"
+        },
+        "ID": "99021756540904251",
+        "SUBMISSION_DUE_DATE": null,
+        "RPT_START_DATE": "/Date(-2208988800000)/",
+        "RPT_END_DATE": "/Date(32472144000000)/",
+        "RPT_CAT_NAME": "Other Reports",
+        "RPT_TYPE_NAME": "CIOMS II Case Listing",
+        "USER_GRP_NAME": "Group 1",
+        "USER_NAME": "KSMITH_SAINT3",
+        "LIC_NUMBER": null,
+        "RPT_KEY": 38,
+        "TRADE_NAME": null,
+        "DESCRIPTION": "What do you know about yourself if you haven't been in a fight before?",
+        "RPT_NAME": "CIOMS II Case Listing_PRODUCT - 102_What do you know about yoursel",
+        "Audit_CreatedBy": "KSMITH_SAINT3",
+        "STATUS_NAME": "Open",
+        "STATUS_KEY": 2,
+        "SUBMITTED_DATE": null,
+        "NAME": "PRODUCT - 102",
+        "FAMILY_DESC": "PRODUCT - 102",
+        "RPT_CAT_KEY": 1,
+        "DAYS_UNTIL_DUE": null,
+        "Audit_CreatedDt": "/Date(1456449719000)/",
+          "RUN_DATE": "/Date(1455931319000)/",
+        "ReportMilestones": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.MilestoneType",
+                "uri": "http://hana02.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/Milestone(4)"
+              },
+              "MILESTONE_KEY": 4,
+              "MILESTONE_NAME": "milestone 1",
+              "MILESTONE_DAYS": 1,
+              "MILESTONE_DATE": "/Date(1455887978769)/",
+              "MILESTONE_STATUS": 0,
+              "FK_RPT_KEY": 16,
+              "Audit.CreatedBy": "KSMITH_SAINT2",
+              "Audit.CreatedDt": "/Date(1456392948000)/",
+              "Audit.UpdatedBy": "KSMITH_SAINT2",
+              "Audit.UpdatedDt": "/Date(1456392948000)/",
+              "MS_COMPLETION_DATE": null
+            },
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.MilestoneType",
+                "uri": "http://hana02.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/Milestone(5)"
+              },
+              "MILESTONE_KEY": 5,
+              "MILESTONE_NAME": "milestone 2",
+              "MILESTONE_DAYS": 2,
+              "MILESTONE_DATE": "/Date(1455887978769)/",
+              "MILESTONE_STATUS": 0,
+              "FK_RPT_KEY": 16,
+              "Audit.CreatedBy": "KSMITH_SAINT2",
+              "Audit.CreatedDt": "/Date(1456392948000)/",
+              "Audit.UpdatedBy": "KSMITH_SAINT2",
+              "Audit.UpdatedDt": "/Date(1456392948000)/",
+              "MS_COMPLETION_DATE": null
+            }
+          ]
+        }
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://hana02.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('990217565409042514')"
+        },
+        "ID": "990217565409042514",
+        "SUBMISSION_DUE_DATE": "/Date(1445745600000)/",
+        "RPT_START_DATE": "/Date(1388552400000)/",
+        "RPT_END_DATE": "/Date(1420002000000)/",
+        "RPT_CAT_NAME": "Periodic Reports",
+        "RPT_TYPE_NAME": "DSUR",
+        "USER_GRP_NAME": "Group 5",
+        "USER_NAME": "KSMITH_SAINT5",
+        "LIC_NUMBER": null,
+        "RPT_KEY": 51,
+        "TRADE_NAME": null,
+        "DESCRIPTION": "OD",
+        "RPT_NAME": "DSUR_PRODUCT - 1_1-Jan-2014 - 31-Dec-2014_OD",
+        "Audit_CreatedBy": "KSMITH_SAINT5",
+        "STATUS_NAME": "Overdue",
+        "STATUS_KEY": 2,
+        "SUBMITTED_DATE": null,
+        "NAME": "PRODUCT - 1",
+        "FAMILY_DESC": "PRODUCT - 1",
+        "RPT_CAT_KEY": 0,
+        "DAYS_UNTIL_DUE": -127,
+        "Audit_CreatedDt": "/Date(1456634883000)/",
+        "RUN_DATE": "0",
+        "ReportMilestones": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://hana02.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('990217565409042514')"
+        },
+        "ID": "990217565409041514",
+        "SUBMISSION_DUE_DATE": "/Date(1455887978769)/",
+        "RPT_START_DATE": "/Date(1388552400000)/",
+        "RPT_END_DATE": "/Date(1420002000000)/",
+        "RPT_CAT_NAME": "Periodic Reports",
+        "RPT_TYPE_NAME": "DSUR",
+        "USER_GRP_NAME": "Group 5",
+        "USER_NAME": "KSMITH_SAINT5",
+        "LIC_NUMBER": null,
+        "RPT_KEY": 52,
+        "TRADE_NAME": null,
+        "DESCRIPTION": "OD1",
+        "RPT_NAME": "DSUR_PRODUCT - 1_1-Jan-2014 - 31-Dec-2014_OD1",
+        "Audit_CreatedBy": "KSMITH_SAINT5",
+        "STATUS_NAME": "Open",
+        "STATUS_KEY": 2,
+        "SUBMITTED_DATE": null,
+        "NAME": "PRODUCT - 1",
+        "FAMILY_DESC": "PRODUCT - 1",
+        "RPT_CAT_KEY": 0,
+        "DAYS_UNTIL_DUE": -127,
+        "Audit_CreatedDt": "/Date(1456634883000)/",
+        "RUN_DATE": "0",
+        "ReportMilestones": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://hana02.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('990217565409042567')"
+        },
+        "ID": "990217565409042567",
+        "SUBMISSION_DUE_DATE": "/Date(1456117200000)/",
+        "RPT_START_DATE": "/Date(1454302800000)/",
+        "RPT_END_DATE": "/Date(1455598800000)/",
+        "RPT_CAT_NAME": "Periodic Reports",
+        "RPT_TYPE_NAME": "DSUR",
+        "USER_GRP_NAME": "Group 4",
+        "USER_NAME": "JMARY_SAINT2",
+        "LIC_NUMBER": null,
+        "RPT_KEY": 16,
+        "TRADE_NAME": null,
+        "DESCRIPTION": "milestone checkbox",
+        "RPT_NAME": "DSUR_PRODUCT - 1_1-Feb-2016 - 8-Feb-2016_milestone checkbox",
+        "Audit_CreatedBy": "KSMITH_SAINT2",
+        "STATUS_NAME": "In Progress",
+        "STATUS_KEY": 3,
+        "SUBMITTED_DATE": null,
+        "NAME": "PRODUCT - 1",
+        "FAMILY_DESC": "PRODUCT - 1",
+        "RPT_CAT_KEY": 0,
+        "DAYS_UNTIL_DUE": -7,
+        "Audit_CreatedDt": "/Date(1456392947000)/",
+        "RUN_DATE": "0",
+        "ReportMilestones": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.MilestoneType",
+                "uri": "http://hana02.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/Milestone(4)"
+              },
+              "MILESTONE_KEY": 4,
+              "MILESTONE_NAME": "milestone 1",
+              "MILESTONE_DAYS": 1,
+              "MILESTONE_DATE": "/Date(1455887978769)/",
+              "MILESTONE_STATUS": 0,
+              "FK_RPT_KEY": 16,
+              "Audit.CreatedBy": "KSMITH_SAINT2",
+              "Audit.CreatedDt": "/Date(1456392948000)/",
+              "Audit.UpdatedBy": "KSMITH_SAINT2",
+              "Audit.UpdatedDt": "/Date(1456392948000)/",
+              "MS_COMPLETION_DATE": null
+            },
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.MilestoneType",
+                "uri": "http://hana02.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/Milestone(5)"
+              },
+              "MILESTONE_KEY": 5,
+              "MILESTONE_NAME": "milestone 2",
+              "MILESTONE_DAYS": 2,
+              "MILESTONE_DATE": "/Date(1455887978769)/",
+              "MILESTONE_STATUS": 0,
+              "FK_RPT_KEY": 16,
+              "Audit.CreatedBy": "KSMITH_SAINT2",
+              "Audit.CreatedDt": "/Date(1456392948000)/",
+              "Audit.UpdatedBy": "KSMITH_SAINT2",
+              "Audit.UpdatedDt": "/Date(1456392948000)/",
+              "MS_COMPLETION_DATE": null
+            }
+          ]
+        }
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportsService.ReportDetailsFilterType",
+          "uri": "http://hana02.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportsService.xsodata/ReportDetailsFilter('990217565409042570')"
+        },
+        "ID": "990217565409042570",
+        "SUBMISSION_DUE_DATE": "/Date(1456308000000)/",
+        "RPT_START_DATE": "/Date(1420106400000)/",
+        "RPT_END_DATE": "/Date(1451556000000)/",
+        "RPT_CAT_NAME": "Periodic Reports",
+        "RPT_TYPE_NAME": "PADER",
+        "USER_GRP_NAME": "Group 5",
+        "USER_NAME": "KSMITH_SAINT5",
+        "LIC_NUMBER": null,
+        "RPT_KEY": 27,
+        "TRADE_NAME": null,
+        "DESCRIPTION": "Completed: 24-Feb-2016 and test",
+        "RPT_NAME": "PADER_PRODUCT - 10_PRODUCT - 10__1-Jan-2015 - 31-Dec-2015_Completed: 24-Feb-2016 and tes",
+        "Audit_CreatedBy": "KSMITH_SAINT5",
+        "STATUS_NAME": "Completed",
+        "STATUS_KEY": 5,
+        "SUBMITTED_DATE": null,
+        "NAME": null,
+        "FAMILY_DESC": null,
+        "RPT_CAT_KEY": 0,
+        "DAYS_UNTIL_DUE": -5,
+        "Audit_CreatedDt": "/Date(1456431771000)/",
+        "RUN_DATE": "0",
+        "ReportMilestones": {
+          "results": []
+        }
+      }
+    ]
+  }
+}

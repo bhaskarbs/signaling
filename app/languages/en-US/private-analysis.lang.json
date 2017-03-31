@@ -1,0 +1,10 @@
+{
+  "BUNDLE_ANALYSIS_OPERATIONAL": "Periodic Reports Dashboard",
+  "BUNDLE_ANALYSIS_ADHOC": "Ad hoc Analysis",
+  "BUNDLE_ANALYSIS_DASHBOARD_LIBRARY": "Dashboard Library",
+  "BUNDLE_ANALYSIS_DASHBOARD": "Dashboards",
+  "BUNDLE_ANALYSIS_COMPLIANCE": "Compliance",
+  "BUNDLE_ANALYSIS_LAST_UPDATED_ON": "Data refreshed on",
+  "BUNDLE_ANALYSIS_CATEGORY_ALL": "All",
+  "BUNDLE_CREATE_NEW_DASHBOARD":"Create New Dashboard"
+}

@@ -1,0 +1,642 @@
+<div class="row dsui-no-padding dsui-report-panel" id="spy-main">
+  <milestone-modal mark-milestone="fnMarkMilestoneComplete()" cancel-milestone-modal="fnCancelMilestone()"></milestone-modal>
+  <div data-ng-show="showReportLeftIcons" class="col-xs-3 dsui-no-padding dsui-spy-left-panel">
+    <div class="col-xs-12 dsui-menu-spy">
+      <ul id="top-menu-spy">
+        <li scroll-element source="spied-panel" destination="description" class="active">
+          <a href="javascript:void(0)" data-toggle="tooltip"
+             title="Report and Description" data-placement="right">
+            <div class="fa fa-file-text-o fa-lg report-desc"></div>
+          </a>
+        </li>
+        <li scroll-element source="spied-panel" destination="additional" class="dusi-user-spied">
+          <a href="javascript:void(0)" data-toggle="tooltip"
+             title="Additional Reports" data-placement="right">
+            <div class="icon-paperclip dsui-additional-reports"></div>
+          </a>
+        </li>
+        <li scroll-element source="spied-panel" destination="user" class="dusi-user-spied">
+          <a href="javascript:void(0)" data-toggle="tooltip"
+             title="Assigned User, User Group" data-placement="right">
+            <div class="icon-IcoMoon-13 dsui-users"></div>
+          </a>
+        </li>
+        <li scroll-element source="spied-panel" destination="milestones">
+          <a href="javascript:void(0)" data-toggle="tooltip" title="Milestones"
+             data-placement="right">
+            <div class="fa fa-flag-o fa-lg"></div>
+          </a>
+        </li>
+        <li scroll-element source="spied-panel" destination="caseList">
+          <a href="javascript:void(0)" data-toggle="tooltip" title="Case List Details"
+             data-placement="right">
+            <div class="fa fa-folder-open-o fa-lg"></div>
+          </a>
+        </li>
+        <li scroll-element source="spied-panel" destination="adhocanalysis">
+          <a href="javascript:void(0)" data-toggle="tooltip"
+             title="Ad Hoc Analysis" data-placement="right">
+            <div class="fa fa-bar-chart-o fa-lg"></div>
+          </a>
+        </li>
+        <li scroll-element source="spied-panel" destination="scheduling">
+          <a href="javascript:void(0)" data-toggle="tooltip" title="Scheduling"
+             data-placement="right">
+            <div class="fa fa-clock-o fa-lg"></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div data-ng-class="showTilePanel ?'col-xs-9 dsui-main-report-panel':'col-xs-12 dsui-main-report-panel'" id="mainrpt">
+    <div class="dsui-no-padding dsui-spy-right-panel">
+      <div id="top-nv">
+      <div class="col-xs-12 dsui-right-panel-top-nav-first" id="rept-header">
+        <a href="javascript:void(0)" data-ng-class="showTilePanel?'dsui-right-panel-top-nav-first-icons':''">
+        <span data-ng-if="isCollapseEnable"
+              data-ng-class="showTilePanel ? 'dsui-top-nav-heading-icon fa fa-long-arrow-left fa-lg' : 'dsui-top-nav-heading-icon fa fa-long-arrow-right fa-lg'"
+              data-ng-click="fnToggleReportPanel(showTilePanel)"></span></a>
+        <div class="dsui-top-nav-heading pull-left" data-ng-class="showTilePanel ? 'dsui-top-nav-heading1 pull-left' : 'dsui-top-nav-heading-expand pull-left'"
+             data-ng-bind="reportPanelDetails.reportDetails.reportCustomName"></div>
+        <a href="javascript:void(0)" data-ng-class="showTilePanel?'dsui-right-panel-top-nav-first-icons':''">
+          <div class="dsui-top-nav-close pull-right fa fa-times" data-ng-click='fnCloseExpandedSummaryView()'></div>
+        </a>
+      </div>
+      <div class="col-xs-12 dsui-right-panel-top-nav-sec">
+          <div data-ng-class="showTilePanel? 'col-xs-6 dsui-drop-down-toggle-collapsed' : 'col-xs-12 dsui-drop-down-toggle-expanded'" selectable-dropdown values="statusList" default="currentStatus" value="currentStatusMenu" status="1"
+               indicator="statusColorIndicator" update-status="updateStatus(value)" disabled="{{decorator.disabled(PRIVILEGES.REPORT_MODIFY_STATUS)}}"
+               change-color-status="getStatusColorIndicator(value)"></div>
+          <div data-ng-if="isStatusChangedOn && showTilePanel=== true" class="dusi-last-update-window alert alert-warning col-xs-12 dsui-last-update-collapse">
+            <a href="#" class="close" data-ng-click="fnCloseNotification()" data-dismiss="alert" aria-label="close">&times;</a>
+            <i class="fa fa-exclamation-triangle fa-lg"></i><span
+            data-i18n="private-reports-library.BUNDLE_REPORT_CHANGED_ON"></span><span
+            data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.reportUpdatedDate)"></span>
+          </div>
+        <div data-ng-class="showTilePanel ? 'col-xs-6 dsui-button-sec-bottom' : 'col-xs-12 dsui-button-sec-bottom-extend'">
+          <div data-ng-class="showTilePanel ? 'dsui-collapse' : 'dsui-extend'" class="dsui-button-sec-bottom-generate" data-ng-controller="generateReportController">
+            <button data-ng-disabled="decorator.disabled(PRIVILEGES.REPORT_GENERATE)"
+              ui-sref="reportPackage({reports:1,collapse:1,key:reportServiceData.selectedTileId})"
+              type="submit"
+              data-ng-class="showTilePanel ? 'btn dsui-generate-report-btn-collapsed' : 'btn dsui-generate-report-btn-expanded'"><!-- data-ng-click = "fnGenerateReportPDF()" -->
+              <i class="icon-print dsui-print"></i><span class="dsui-print-text"data-i18n="private-reports-library.BUNDLE_REGULATORY_REPORT_GENERATE"></span>
+            </button>
+          </div>
+        </div>
+        <div data-ng-if="showDateSubmitted == true" data-ng-include="VIEWS.DATE_SUBMITTED_POPOVER"></div>
+        <!--<div data-ng-class="showTilePanel? '' : 'dsui-extended-position'" >
+        <div data-ng-class="showTilePanel? 'col-xs-6 dsui-final-draft1' : 'col-xs-4 dsui-final-draft-extend1'">
+          <input type="radio" data-ng-disabled="decorator.disabled(PRIVILEGES.REPORT_MODIFY_STATUS)" class="dsui-draft1" data-ng-model="reportPanelDetails.reportDetails.reportMode" value="0" id="draftId" name="radioBtn" data-ng-click="decorator.disabled(PRIVILEGES.REPORT_MODIFY_STATUS,updateMode,[0])" ><span data-ng-class="currentMode==0 ? 'dsui-second-text-active' : 'dsui-second-text-inactive'" class="dsui-second-text" data-i18n="private-reports-library.BUNDLE_DRAFT"></span> &nbsp;
+          <input type="radio" data-ng-disabled="decorator.disabled(PRIVILEGES.REPORT_MODIFY_STATUS)" class="dsui-final1" data-ng-model="reportPanelDetails.reportDetails.reportMode" value="1" id="finalId" name="radioBtn" data-ng-click="decorator.disabled(PRIVILEGES.REPORT_MODIFY_STATUS,updateMode,[1])"><span data-ng-class="currentMode==1 ? 'dsui-second-text-active' : 'dsui-second-text-inactive'" class="dsui-second-text" data-i18n="private-reports-library.BUNDLE_FINAL"></span>
+        </div>
+        <div authorize="{{PRIVILEGES.REPORT_BLINDED_TOGGLE}}" data-ng-class="showTilePanel? 'col-xs-6 dsui-final-draft2' : 'col-xs-4 dsui-final-draft-extend2'">
+          <input type="radio" data-ng-disabled="decorator.disabled(PRIVILEGES.REPORT_MODIFY_STATUS)" class="dsui-draft1" data-ng-model="reportPanelDetails.reportDetails.isBlinded" value="0" data-ng-class="dsui-draft" id="unblindId" name="radioBtnUnblinded" data-ng-click="decorator.disabled(PRIVILEGES.REPORT_MODIFY_STATUS,updateStatus,[0])"><span data-ng-class="isBlinded==0 ? 'dsui-second-text-active' : 'dsui-second-text-inactive'" class="dsui-second-text" data-i18n="private-reports-library.BUNDLE_UNBLINDED"></span> &nbsp;
+          <input type="radio" data-ng-disabled="decorator.disabled(PRIVILEGES.REPORT_MODIFY_STATUS)" class="dsui-final2" data-ng-model="reportPanelDetails.reportDetails.isBlinded" value="1" id="blindId" name="rBBlinded" data-ng-click="decorator.disabled(PRIVILEGES.REPORT_MODIFY_STATUS,updateStatus,[1])"><span data-ng-class="isBlinded==1 ? 'dsui-second-text-active' : 'dsui-second-text-inactive'" class="dsui-second-text" data-i18n="private-reports-library.BUNDLE_BLINDED"></span>
+        </div>
+        </div>-->
+      </div>
+        <div data-ng-if="isStatusChangedOn && showTilePanel!==true" class="dusi-last-update-window alert alert-warning col-xs-3 dsui-last-update-expand">
+          <a href="#" class="close" data-ng-click="fnCloseNotification()" data-dismiss="alert" aria-label="close">&times;</a>
+          <i class="fa fa-exclamation-triangle fa-lg"></i><span
+          data-i18n="private-reports-library.BUNDLE_REPORT_CHANGED_ON"></span><span
+          data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.reportUpdatedDate)"></span>
+        </div>
+        </div>
+      <div viewport-auto-height source="reportsPanelScroll" destination="" class="dsui-report-list-panel pull-left"
+           data-ng-class="showTilePanel ? 'dsui-overflowing-list-panel' : 'dsui-non-overflowing-list-panel'"
+           id="spied-panel">
+        <div data-ng-class="showTilePanel?'dsui-report-detail-collapsed':''" class="dsui-report-detail-section row">
+
+          <div id="description" data-ng-class="showTilePanel?'col-xs-12':'col-xs-4' ">
+            <div >
+              <div class="dsui-no-padding col-xs-12 dsui-report-detail-heaader">
+                <span class="dsui-report-detail-text col-xs-8"
+                      data-i18n="private-reports-library.BUNDLE_REPORT_DESCRIPTION_TITLE"></span><i authorize="{{PRIVILEGES.REPORT_EDIT}}"
+                data-ng-show="reportPanelDetails.reportDetails.reportStatus!==CONSTANTS.REPORT_STATUS_COMPLETED && reportPanelDetails.reportDetails.reportStatus!==CONSTANTS.REPORT_STATUS_FINAL"
+                class="dsui-edit-icon icon-pencil"
+                data-ng-click="fnCallEditReport(reportPanelDetails.reportDetails)"></i>
+                <div class="col-xs-12 dsui-line"></div>
+              </div>
+
+              <div class="col-xs-12 dsui-no-padding dsui-report-detail-name"><span class="dsui-report-name col-xs-12"
+                                                                                   data-i18n="private-reports-library.BUNDLE_REPORT_NAME"></span><span
+                class="dsui-report-name-text col-xs-12"
+                data-ng-bind="reportPanelDetails.reportDetails.reportName"></span></div>
+              <div class="col-xs-12 dsui-no-padding dsui-report-detail-name"><span class="dsui-report-name col-xs-12"
+
+                                                                                   data-i18n="private-reports-library.BUNDLE_REPORT_PERIOD"></span>
+                <div
+                  data-ng-if="reportPanelDetails.reportDetails.reportStartDate!=null && !reportPanelDetails.reportDetails.allDatesFlag"
+                  class="col-xs-12"><span
+                  class="dsui-report-name-text "
+                  data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.reportStartDate)"></span>
+                  - <span class="dsui-report-name-text"
+                          data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.reportEndDate)"></span></div>
+                <div
+                  data-ng-if="reportPanelDetails.reportDetails.reportStartDate==null || reportPanelDetails.reportDetails.allDatesFlag"
+                  class="col-xs-12  dsui-report-detail-name dsui-report-name-text"><span
+                  class="dsui-report-name-text "
+                  data-i18n="private-reports-library.BUNDLE_ALL_DATES"></span>
+                </div>
+              </div>
+
+              <div class="col-xs-12 dsui-no-padding dsui-report-detail-name"><span class="dsui-report-name col-xs-12"
+                                                                                   data-i18n="private-reports-library.BUNDLE_DATE_SUBMITTED"></span><span
+                class="dsui-report-name-text col-xs-12"
+                data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.submittedDate)"></span></div>
+              <div class="col-xs-12 dsui-no-padding dsui-report-detail-name"><span
+                class="dsui-report-name col-xs-12" data-i18n="private-reports-library.BUNDLE_REPORT_DESCRIPTION"></span>
+                <div data-ng-show="reportDescriptionLength==false"><span class="dsui-report-name-text col-xs-12"
+                                                                         data-ng-bind="reportPanelDetails.reportDetails.reportDesc | limitTo:30"></span>
+                  <div class="dsui-report-view-all col-xs-12"
+                       data-ng-show="reportPanelDetails.reportDetails.reportDesc.length>30"><a
+                    class="dsui-report-view-all-text"
+                    data-ng-click="fnChangeReportDescriptionLength()"><span
+                    data-i18n="private-reports-library.BUNDLE_VIEW_MORE"></span> </a></div>
+                </div>
+                <div data-ng-show="reportDescriptionLength==true"><span class="dsui-report-name-text col-xs-12"
+                                                                        data-ng-bind="reportPanelDetails.reportDetails.reportDesc"></span>
+                </div>
+                <div class="col-xs-12 dsui-no-padding dsui-report-detail-license">
+                  <div class="dsui-report-detail-license-section"><span class="dsui-report-license col-xs-12"
+                                                                        data-i18n="private-reports-library.BUNDLE_REPORT_INGREDIENT"></span>
+                    <div class="col-xs-12 dsui-no-padding dsui-report-detail-overflow">
+                    <div data-ng-if="reportPanelDetails.reportDetails.reportIngredientsNames.length<=5">
+
+                      <div class="dsui-report-license-text col-xs-12"
+                           data-ng-repeat="ingredients in reportPanelDetails.reportDetails.reportIngredientsNames track by $index"><span
+                        data-ng-bind="($index+1)"></span> . <span data-ng-bind="ingredients"></span>
+                      </div>
+                    </div>
+                    <div data-ng-if="reportPanelDetails.reportDetails.reportIngredientsNames.length>5 ">
+
+                      <div
+                        data-ng-repeat="ingredients in reportPanelDetails.reportDetails.reportIngredientsNames track by $index">
+                        <div data-ng-show="($index)<5 && reportIngredientLength==false"
+                             class="dsui-report-license-text col-xs-12"><span
+                          data-ng-bind="($index+1)"></span> . <span
+                          data-ng-bind="ingredients"></span>
+                        </div>
+                        <div data-ng-show="reportIngredientLength==true" class="dsui-report-license-text col-xs-12">
+                          <span data-ng-bind="($index+1)"></span> . <span
+                          data-ng-bind="ingredients"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div></div>
+                  <div class="dsui-report-license-view-all col-xs-12"
+                       data-ng-show="reportIngredientLength==false && reportPanelDetails.reportDetails.reportIngredientsNames.length>5">
+                    <a
+                      class="dsui-report-license-view-all-text" data-ng-click="fnChangeReportIngredientLength()"><span
+                      data-i18n="private-reports-library.BUNDLE_VIEW_ALL"></span></a></div>
+                </div>
+                <div class="col-xs-12 dsui-no-padding dsui-report-detail-license"
+                     data-ng-show="reportPanelDetails.reportDetails.reportLicenses.length!=0 && reportPanelDetails.reportDetails.isProductBasedSelection==1">
+                  <div class="dsui-report-detail-license-section"><span class="dsui-report-license col-xs-12"
+                                                                        data-i18n="private-reports-library.BUNDLE_REPORT_LICENSE"></span>
+                    <div class="col-xs-12 dsui-no-padding dsui-report-detail-overflow">
+                    <div data-ng-if="reportPanelDetails.reportDetails.reportLicenses.length<=5">
+                      <div class="dsui-report-license-text col-xs-12"
+                           data-ng-repeat="licenses in reportPanelDetails.reportDetails.reportLicenses track by $index"><span
+                        data-ng-bind="($index+1)"></span> . <span data-ng-bind="licenses.licenseNumber"></span><span
+                        data-ng-show="licenses.licenseDesc">(<span
+                        data-ng-bind="licenses.licenseDesc"></span>)</span>
+                      </div>
+
+                    </div>
+                    <div data-ng-if="reportPanelDetails.reportDetails.reportLicenses.length>5 ">
+                      <div
+                        data-ng-repeat="licenses in reportPanelDetails.reportDetails.reportLicenses track by $index">
+                        <div data-ng-show="($index)<5 && reportLicenseLength==false"
+                             class="dsui-report-license-text col-xs-12"><span
+                          data-ng-bind="($index+1)"></span> . <span
+                          data-ng-bind="licenses.licenseNumber"></span><span
+                          data-ng-show="licenses.licenseDesc">(<span
+                          data-ng-bind="licenses.licenseDesc"></span>)</span>
+                        </div>
+                        <div data-ng-show="reportLicenseLength==true" class="dsui-report-license-text col-xs-12"><span
+                          data-ng-bind="($index+1)"></span> . <span
+                          data-ng-bind="licenses.licenseNumber"></span><span
+                          data-ng-show="licenses.licenseDesc">(<span
+                          data-ng-bind="licenses.licenseDesc"></span>)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </div></div>
+                  <div class="dsui-report-license-view-all col-xs-12"
+                       data-ng-show="reportLicenseLength==false && reportPanelDetails.reportDetails.reportLicenses.length>5">
+                    <a
+                      class="dsui-report-license-view-all-text" data-ng-click="fnChangeReportLicenseLength()"><span
+                      data-i18n="private-reports-library.BUNDLE_VIEW_ALL"></span></a></div>
+                </div>
+                <div class="col-xs-12 dsui-no-padding dsui-report-detail-license"
+                     data-ng-show="reportPanelDetails.reportDetails.reportProducts.length!=0 && reportPanelDetails.reportDetails.isProductBasedSelection==0">
+                  <div class="dsui-report-detail-license-section"><span class="dsui-report-license col-xs-12"
+                                                                        data-i18n="private-reports-library.BUNDLE_CASE_PRODUCTS"></span>
+                    <div class="col-xs-12 dsui-no-padding dsui-report-detail-overflow">
+                    <div data-ng-if="reportPanelDetails.reportDetails.reportProducts.length<=5">
+                      <div class="dsui-report-license-text col-xs-12"
+                           data-ng-repeat="products in reportPanelDetails.reportDetails.reportProducts track by $index"><span
+                        data-ng-bind="($index+1)"></span> . <span data-ng-bind="products.productDisplayName"></span>
+                      </div>
+
+                    </div>
+                    <div data-ng-if="reportPanelDetails.reportDetails.reportProducts.length>5 "
+                    >
+                      <div
+                        data-ng-repeat="products in reportPanelDetails.reportDetails.reportProducts track by $index">
+                        <div data-ng-show="($index)<5 && reportProductsLength==false"
+                             class="dsui-report-license-text col-xs-12"><span
+                          data-ng-bind="($index+1)"></span> . <span
+                          data-ng-bind="products.productDisplayName"></span>
+                        </div>
+                        <div data-ng-show="reportProductsLength==true" class="dsui-report-license-text col-xs-12"><span
+                          data-ng-bind="($index+1)"></span> . <span
+                          data-ng-bind="products.productDisplayName"></span>
+                        </div>
+                      </div>
+                    </div>
+                    </div> </div>
+                  <div class="dsui-report-license-view-all col-xs-12"
+                       data-ng-show="reportProductsLength==false && reportPanelDetails.reportDetails.reportProducts.length>5">
+                    <a
+                      class="dsui-report-license-view-all-text" data-ng-click="fnChangeReportProductsLength()"><span
+                      data-i18n="private-reports-library.BUNDLE_VIEW_ALL"></span></a></div>
+                </div>
+                <div class="col-xs-12 dsui-no-padding dsui-report-detail-name"
+                     data-ng-show="reportPanelDetails.reportDetails.signal.comparatorStartDate!=null"><span
+                  class="dsui-report-name col-xs-12"
+                  data-i18n="private-reports-library.BUNDLE_COMPARATOR_PERIOD"></span>
+                  <div class="col-xs-12"><span class="dsui-report-name-text "
+                                               data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.signal.comparatorStartDate)"></span>
+                    - <span class="dsui-report-name-text"
+                            data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.signal.comparatorEndDate);"></span>
+                  </div>
+                </div>
+                <div class="col-xs-12 dsui-no-padding dsui-report-detail-name"
+                     data-ng-show="reportPanelDetails.reportDetails.signal.cumulativeStartDate!=null"><span
+                  class="dsui-report-name col-xs-12"
+                  data-i18n="private-reports-library.BUNDLE_CUMULATIVE_PERIOD"></span>
+                  <div class="col-xs-12"><span class="dsui-report-name-text "
+                                               data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.signal.cumulativeStartDate)"></span>
+                    - <span class="dsui-report-name-text"
+                            data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.signal.cumulativeEndDate);"></span>
+                  </div>
+                </div>
+                <div class="col-xs-12 dsui-no-padding dsui-report-detail-name"
+                     data-ng-show="reportPanelDetails.reportDetails.signal.threshold!=null"><span
+                  class="dsui-report-name col-xs-12"
+                  data-i18n="private-reports-library.BUNDLE_THRESHOLD"></span>
+                  <div class="col-xs-12 dsui-report-name-text"><span
+                    data-ng-bind="reportPanelDetails.reportDetails.signal.threshold"></span>%
+                  </div>
+                </div>
+                <div class="col-xs-12 dsui-no-padding dsui-report-detail-name"
+                     data-ng-show="reportPanelDetails.reportDetails.signal.denominatorValue!=null"><span
+                  class="dsui-report-name col-xs-12"
+                  data-i18n="private-reports-library.BUNDLE_REPORT_DENOMINATOR"></span><span
+                  class="dsui-report-name-text col-xs-12"
+                  data-ng-bind="reportPanelDetails.reportDetails.signal.denominatorValue"></span></div>
+              </div>
+
+            </div><p class="clearfix"/>
+          </div>
+          <!--description div ends here -->
+          <!--Additional reports div starts here -->
+          <div data-ng-class="showTilePanel?'col-xs-12':'col-xs-4' ">
+          <div id="additional" class="dsui-no-padding col-xs-12">
+
+            <div class="dsui-no-padding col-xs-12 dsui-report-detail-heaader">
+              <span class="dsui-report-detail-text col-xs-8" data-i18n="private-report-output.BUNDLE_ADDITIONAL_REPORTS"></span>
+              <button class="col-xs-2 dsui-manage-button" ui-sref="reportPackage({reports:1,collapse:0,key:reportServiceData.selectedTileId})"><span class="dsui-manage-report-text" data-i18n="private-report-output.BUNDLE_MANAGE"></span></button>
+              <div class="col-xs-12 dsui-line"></div>
+              </div>
+           <div class="col-xs-12 dsui-display-add-reports" data-ng-if="additionalReorts.length == 0"><span data-i18n="private-report-output.BUNDLE_NONE"></span></div>
+              <div class="col-xs-12 dsui-no-padding dsui-report-detail-overflow">
+                <div data-ng-if="additionalReorts.length<=5">
+                  <div class="dsui-report-additional-text col-xs-12"
+                       data-ng-repeat="item in additionalReorts track by $index"><span
+                    data-ng-bind="($index+1)"></span> . <span data-ng-bind="item.SRT_NAME"></span>
+                  </div>
+                </div>
+                <div data-ng-if="additionalReorts.length>5 ">
+
+                  <div class="dsui-report-additional-text col-xs-12"
+                       data-ng-repeat="item in additionalReorts track by $index">
+                    <div data-ng-show="($index)<5 && additionalReportLength==false"><span
+                      data-ng-bind="($index+1)"></span> . <span
+                      data-ng-bind="item.SRT_NAME"></span>
+                    </div>
+                    <div data-ng-show="additionalReportLength"><span data-ng-bind="($index+1)"></span> . <span
+                      data-ng-bind="item.SRT_NAME"></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            <div class="dsui-report-additional-view-all col-xs-12"
+                 data-ng-show="additionalReportLength==false && additionalReorts.length>5">
+              <a
+                class="dsui-report-license-view-all-text" data-ng-click="fnChangeAdditionalReportLength()"><span
+                data-i18n="private-reports-library.BUNDLE_VIEW_ALL"></span></a></div>
+          </div>
+
+          <!--Additional reports div ends here -->
+          <div id="user" class="dsui-no-padding col-xs-12">
+            <div class="col-xs-12 dsui-no-padding dsui-report-detail-heaader">
+                <span class="dsui-report-detail-text col-xs-12"
+                      data-i18n="private-reports-library.BUNDLE_REPORT_ASSIGNED_USER_GROUP_TITLE"></span>
+              <div class="col-xs-12 dsui-line"></div>
+            </div>
+            <div class="col-xs-12 dsui-no-padding dsui-report-detail-license"
+                 data-ng-show="reportPanelDetails.reportDetails.groups.length!=0">
+              <div class="dsui-report-detail-license-section"><span class="dsui-report-license col-xs-12"
+                                                                    data-i18n="private-reports-library.BUNDLE_REPORT_ASSIGNED_USER_GROUP"></span>
+                <div class="col-xs-12 dsui-no-padding dsui-report-detail-overflow">
+                  <div data-ng-if="reportPanelDetails.reportDetails.groups.length<=5">
+                    <div class="dsui-report-license-text col-xs-12"
+                         data-ng-repeat="userGroup in reportPanelDetails.reportDetails.groups track by $index"><span
+                      data-ng-bind="($index+1)"></span> . <span data-ng-bind="userGroup.roleName"></span>
+                    </div>
+                  </div>
+                  <div data-ng-if="reportPanelDetails.reportDetails.groups.length>5 ">
+
+                    <div class="dsui-report-license-text col-xs-12"
+                         data-ng-repeat="userGroup in reportPanelDetails.reportDetails.groups track by $index">
+                      <div data-ng-show="($index)<5 && reportUserGroupLength==false"><span
+                        data-ng-bind="($index+1)"></span> . <span
+                        data-ng-bind="userGroup.roleName"></span>
+                      </div>
+                      <div data-ng-show="reportUserGroupLength==true"><span data-ng-bind="($index+1)"></span> . <span
+                        data-ng-bind="userGroup.roleName"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div></div>
+              <div class="dsui-report-license-view-all col-xs-12"
+                   data-ng-show="reportUserGroupLength==false && reportPanelDetails.reportDetails.groups.length>5">
+                <a
+                  class="dsui-report-license-view-all-text" data-ng-click="fnChangeReportUserGroupLength()"><span
+                  data-i18n="private-reports-library.BUNDLE_VIEW_ALL"></span></a></div>
+            </div>
+            <div class="col-xs-12 dsui-no-padding dsui-report-detail-license"
+            >
+              <div class="dsui-report-detail-license-section"><span class="dsui-report-license col-xs-12"
+                                                                    data-i18n="private-reports-library.BUNDLE_REPORT_ASSIGNED_USER"></span>
+                <div class="col-xs-12 dsui-no-padding dsui-report-detail-overflow">
+                  <div data-ng-if="reportPanelDetails.reportDetails.users.length<=5">
+                    <div class="dsui-report-license-text col-xs-12"
+                         data-ng-repeat="user in reportPanelDetails.reportDetails.users track by $index"><span
+                      data-ng-bind="($index+1)"></span> . <span data-ng-bind="user.name"></span>
+                    </div>
+                  </div>
+                  <div data-ng-if="reportPanelDetails.reportDetails.users.length>5 ">
+
+                    <div class="dsui-report-license-text col-xs-12"
+                         data-ng-repeat="user in reportPanelDetails.reportDetails.users track by $index">
+                      <div data-ng-show="($index)<5 && reportUserLength==false"><span data-ng-bind="($index+1)"></span>
+                        . <span
+                          data-ng-bind="user.name"></span>
+                      </div>
+                      <div data-ng-show="reportUserLength==true"><span data-ng-bind="($index+1)"></span> . <span
+                        data-ng-bind="user.name"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div></div>
+              <div class="dsui-report-license-view-all col-xs-12"
+                   data-ng-show="reportUserLength==false && reportPanelDetails.reportDetails.users.length>5">
+                <a
+                  class="dsui-report-license-view-all-text" data-ng-click="fnChangeReportUserLength()"><span
+                  data-i18n="private-reports-library.BUNDLE_VIEW_ALL"></span></a></div>
+            </div>
+          </div>
+          </div>
+          <div data-ng-class="showTilePanel?'col-xs-12 dsui-report-user-group':'col-xs-4 dsui-report-user-group'">
+
+            <div scroll-element source="reportsPanelScroll" destination=""  id="milestones"
+                 class="col-xs-12 dsui-report-detail-license">
+              <div class="dsui-no-padding dsui-report-detail-heaader">
+                <span class="dsui-report-detail-text col-xs-12"
+                      data-i18n="private-reports-library.BUNDLE_MILESTONES"></span>
+                <div class="col-xs-12 dsui-line"></div>
+              </div>
+              <div class="col-xs-12 dsui-no-padding dsui-report-detail-milestone-overflow">
+                <div data-ng-if=" reportPanelDetails.reportDetails.reportMilestones.length<=5">
+                  <div class="dsui-report-detail-name"
+                       data-ng-repeat="Milestones in reportPanelDetails.reportDetails.reportMilestones track by $index">
+                    <div class="col-xs-7 dsui-no-padding "><span
+                      class="dsui-report-name col-xs-12"
+                      data-ng-bind="Milestones.milestoneName"></span><span
+                      class="dsui-report-name-text col-xs-12"
+                      data-ng-bind="fnGetDateForPanel(Milestones.reportMilestoneDate);"></span></div>
+                    <div class="col-xs-5  dsui-report-name-text">
+                      <div class="dsui-milestone-flag-padding"><i data-ng-click="decorator.disabled(PRIVILEGES.REPORT_MARK_MILESTONE_AS_COMPLETED,fnOpenMilestonePopover,[$index,Milestones,$event])"
+                                                                  class="dsui-milestone-flag"
+
+                                                                  data-ng-class="Milestones.milestoneStatus==0?'fa fa-flag-o':'fa fa-flag dsui-milestone-flag-complete'"></i></div>
+                      <div
+                        data-ng-include="VIEWS.MILESTONE_POPOVER_REPORT_SUMMARY"></div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+                <div data-ng-if=" reportPanelDetails.reportDetails.reportMilestones.length>5"
+                     class="dsui-report-detail-name">
+                  <div data-ng-repeat="Milestones in reportPanelDetails.reportDetails.reportMilestones track by $index">
+                    <div data-ng-show="($index)<5 && reportMilestonesLength==false">
+                      <div class="col-xs-7 dsui-no-padding "><span
+                        class="dsui-report-name col-xs-12"
+                        data-ng-bind="Milestones.milestoneName"></span><span
+                        class="dsui-report-name-text col-xs-12"
+                        data-ng-bind="fnGetDateForPanel(Milestones.reportMilestoneDate);"></span></div>
+                      <div class="col-xs-5  dsui-report-name-text">
+                        <div data-ng-click="decorator.disabled(PRIVILEGES.REPORT_MARK_MILESTONE_AS_COMPLETED,fnOpenMilestonePopover,[$index,Milestones,$event])"><div class="dsui-milestone-flag-padding"><i
+                          class="dsui-milestone-flag"
+
+                          data-ng-class="Milestones.milestoneStatus==0?'fa fa-flag-o':'fa fa-flag dsui-milestone-flag-complete'"></i></div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                    <div data-ng-if="reportMilestonesLength==true">
+                      <div class="col-xs-7 dsui-no-padding "> <span
+                        class="dsui-report-name col-xs-12"
+                        data-ng-bind="Milestones.milestoneName"></span><span
+                        class="dsui-report-name-text col-xs-12"
+                        data-ng-bind="fnGetDateForPanel(Milestones.reportMilestoneDate);"></span></div>
+                      <div class="col-xs-5  dsui-report-name-text">
+                        <div data-ng-click="decorator.disabled(PRIVILEGES.REPORT_MARK_MILESTONE_AS_COMPLETED,fnOpenMilestonePopover,[$index,Milestones,$event])"><div class="dsui-milestone-flag-padding"><i
+                          class="dsui-milestone-flag"
+
+                          data-ng-class="Milestones.milestoneStatus==0?'fa fa-flag-o':'fa fa-flag dsui-milestone-flag-complete'"></i></div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div data-ng-click="decorator.disabled(PRIVILEGES.REPORT_MARK_MILESTONE_AS_COMPLETED,fnOpenMilestonePopover,[$index,Milestones,$event])"
+                         data-ng-include="VIEWS.MILESTONE_POPOVER_REPORT_SUMMARY"></div>
+                  </div>
+                  <div class="dsui-report-view-all col-xs-12"
+                       data-ng-show="reportMilestonesLength==false && reportPanelDetails.reportDetails.reportMilestones.length>5">
+                    <a
+                      class=" dsui-report-view-all-text" data-ng-click="fnChangeReportMilestonesLength()"><span
+                      data-i18n="private-reports-library.BUNDLE_VIEW_ALL"></span></a></div>
+
+                </div></div>
+
+
+            </div>
+            <p class="clearfix"/>
+          </div>
+
+
+          <div data-ng-class="showTilePanel?'col-xs-12':'col-xs-4' ">
+            <div class="col-xs-12">
+              <div id="caseList">
+                <div class="dsui-no-padding dsui-report-detail-heaader">
+                <span class="dsui-report-detail-text"
+                      data-i18n="private-reports-library.BUNDLE_CASE_LIST_DETAILS"></span>
+                  <div class="dsui-line-only"></div>
+                </div>
+                <div class="dsui-report-detail-case-list">
+                  <div class="dsui-report-case-list-text">
+                    <div class="dsui-spied-panel-case-description"
+                         data-ng-bind="reportPanelDetails.reportDetails.baseCaseListCustomName"></div>
+
+                    <div data-ng-show="reportCaseListDescriptionLength==false"><span class="dsui-report-case-list-text-description dsui-no-padding col-xs-12"
+                                                                                     data-ng-bind="reportPanelDetails.reportDetails.caseListDesc | limitTo:30"></span>
+                      <div class="dsui-report-case-list-view-all col-xs-12 dsui-no-padding"
+                           data-ng-show="reportPanelDetails.reportDetails.caseListDesc.length>30"><a
+                        class="dsui-report-case-list-view-all-text"
+                        data-ng-click="fnChangeReportCaseListDescriptionLength()"><span
+                        data-i18n="private-reports-library.BUNDLE_VIEW_MORE"></span> </a></div>
+                    </div>
+                    <div data-ng-show="reportCaseListDescriptionLength==true"><span class="dsui-report-case-list-text-description dsui-no-padding col-xs-12"
+                                                                                    data-ng-bind="reportPanelDetails.reportDetails.caseListDesc"></span>
+                    </div>
+                  </div>
+                  <div class="dsui-report-case-list-manage-case-list"><a class="dsui-report-case-list-manage-case-list-text"><span
+                    data-i18n="private-reports-library.BUNDLE_MANAGE_CASE_LIST"
+                    data-ng-click="fnManageCaseList()"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div id="adhocanalysis" class="dsui-report-user-adhoc">
+                <div class="dsui-no-padding dsui-report-detail-heaader">
+                <span class="dsui-report-detail-text"
+                      data-i18n="private-reports-library.BUNDLE_ADHOC_ANALYSIS"></span>
+                  <div class="dsui-line-only"></div>
+                </div>
+                <div class="dsui-report-detail-adhoc-scheduling-reportpackage">
+                  <div class="dsui-report-adhoc-scheduling-reportpackage-view-all"><a class="dsui-report-adhoc-scheduling-reportpackage-view-all-text"><span
+                    data-i18n="private-reports-library.BUNDLE_IMPORT_ADHOC_ANALYSIS"></span></a></div>
+                </div>
+              </div>
+              <div id="scheduling" class="dsui-report-user-scheduling">
+                <div class="dsui-no-padding dsui-report-detail-heaader">
+                <span class="dsui-report-detail-text"
+                      data-i18n="private-reports-library.BUNDLE_SCHEDULING"></span>
+                  <div class="dsui-line-only"></div>
+                </div>
+                <div class="dsui-report-detail-adhoc-scheduling-reportpackage">
+                  <div class="dsui-report-adhoc-scheduling-reportpackage-view-all"><a class="dsui-report-adhoc-scheduling-reportpackage-view-all-text"><span
+                    data-i18n="private-reports-library.BUNDLE_SCHEDULING_DETAILS"></span></a></div>
+                </div>
+              </div>
+              <div id="reportpackage" class="dsui-report-user-package">
+                <div class="dsui-no-padding dsui-report-detail-heaader">
+                <span class="dsui-report-detail-text"
+                      data-i18n="private-reports-library.BUNDLE_REPORT_PACKAGE"></span>
+                  <div class="dsui-line-only"></div>
+                </div>
+                <div authorize="{{PRIVILEGES.REPORT_PACKAGE_CREATE_MODIFY}}" class="dsui-report-detail-adhoc-scheduling-reportpackage">
+                  <div class="dsui-report-adhoc-scheduling-reportpackage-view-all"><a class="dsui-report-adhoc-scheduling-reportpackage-view-all-text"><span
+                    data-i18n="private-reports-library.BUNDLE_BUILD_REPORT_PACKAGE"></span></a></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="finalToInprogress" class="dsui-modal-final-to-inprogress modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header"><span class="dsui-modal-header"
+                                        data-i18n="private-reports-library.BUNDLE_CHANGE_REPORT_STATUS"></span>
+          <button type="button" class="dsui-modal-button-cross close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" data-ng-bind=""></h4>
+        </div>
+        <div class="modal-body">
+          <div class="dsui-modal-report-title" data-ng-bind="reportPanelDetails.reportDetails.reportCustomName"></div>
+          <span class="dsui-modal-report-info"
+                data-i18n="private-reports-library.BUNDLE_CHANGE_REPORT_STATUS_CHANGE_INPROGRESS"></span><span
+          data-ng-bind="fnGetDateForPanel(reportPanelDetails.reportDetails.reportUpdatedDate)"></span>
+          <div class="dsui-modal-report-comments">
+            <span class="dsui-modal-report-description"
+                  data-i18n="private-reports-library.BUNDLE_REGULATORY_REPORT_REASON"></span><span
+            class="dsui-modal-report-char-limit"
+            data-i18n="private-reports-library.BUNDLE_CHANGE_REPORT_DESCRIPTION_LIMIT"></span>
+            <textarea limit-to="1000" class="dsui-modal-report-description-text form-control" id="comment"
+                      data-ng-model="finaltoInprogressComments"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="dsui-modal-button-save btn btn-default" data-dismiss="modal"
+                  data-i18n="private-reports-library.BUNDLE_STATUS_SAVE"
+                  data-ng-click="fnStatusChangeConfirmation(finaltoInprogressComments)"></button>
+          <button type="button" class="dsui-modal-button-close btn btn-default" data-dismiss="modal"
+                  data-i18n="private-reports-library.BUNDLE_NEW_CASE_LIST_CANCEL"
+                  data-ng-click="fnfinalToInprogressCancel()"></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="dateSubmitted" class="dsui-modal-final-to-inprogress modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="input-group-addon dsui-calendar-icon"
+               data-ng-click="fnOpenDatePicker($event,'dsuiProjectReportStartDateAdd')"><i
+            class="fa fa-calendar-o"></i></div>
+          <input data-ng-disabled="report.allDatesFlag" placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+                 class="form-control dsui-date-input" id="dsuiProjectReportStartDateAdd"
+                 name="dsuiProjectReportStartDateAdd" datepicker-popup={{datePicker.format}}
+                 data-ng-model="report.reportStartDate" data-ng-change="fnUpdateReportName()"
+                 datepicker-options="datePicker.dateOptions" date-disabled="datePicker.dateDisability"
+                 data-ng-required="true" show-weeks="datePicker.showWeeks"
+                 close-on-date-selection="datePicker.closeOnDateSelection"
+                 show-button-bar="datePicker.showButtonBar"
+                 is-open="datePicker.displayStatus.dsuiProjectReportStartDateAdd"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="dsui-modal-button-save btn btn-default" data-dismiss="modal"
+                  data-i18n="private-reports-library.BUNDLE_STATUS_SAVE"
+                  data-ng-click="fnStatusChangeConfirmation()"></button>
+          <button type="button" class="dsui-modal-button-close btn btn-default" data-dismiss="modal"
+                  data-i18n="private-reports-library.BUNDLE_NEW_CASE_LIST_CANCEL"
+                  data-ng-click="fnfinalToInprogressCancel()"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal ends-->
+</div>
+

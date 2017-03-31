@@ -1,0 +1,164 @@
+<div>
+  <label class="label-name-header" data-i18n="private-reports-library.BUNDLE_REPORT_DETAILS"></label>
+  <hr class="form-group dsui-report-line">
+</div>
+<div class="col-sm-8 dsui-left-content dsui-report-details-left-content">
+  <div class="checkbox"><label> <input type="checkbox" data-ng-disabled="selectedDate =='submissionDate'" data-ng-change="fnCheckAllDates()" data-ng-model="report.allDatesFlag"/><span data-i18n="private-reports-library.BUNDLE_ALL_DATES"></span><div class="dsui-all-dates-subtitle" data-i18n="private-reports-library.BUNDLE_ALL_DATES_MESSAGE"></div></label></div>
+  <div class="form-group">
+    <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_ADD_PRODUCT_PEROID_START_DATE_KEY"></span></label>
+    <!--please don't change the hierarchy of the datepicker (where ever it occurs) as the controller is written accordingly-->
+    <div class="input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectReportStartDateAdd')">
+      <div class="input-group-addon dsui-calendar-icon"><i
+              class="fa fa-calendar-o"></i></div>
+      <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+             class="form-control dsui-datepicker-on-top" data-ng-disabled="report.allDatesFlag" placeholder=""
+             data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+             id="dsuiProjectReportStartDateAdd" name="dsuiProjectReportStartDateAdd"
+             data-ng-model="report.reportStartDate" data-ng-required="true" data-ng-change="fnUpdateReportName()" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_ADD_PRODUCT_PEROID_END_DATE_KEY"></span></label>
+    <div class="input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectReportEndDateAdd')">
+      <div class="input-group-addon dsui-calendar-icon"><i
+              class="fa fa-calendar-o"></i></div>
+      <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+             class="form-control dsui-datepicker-on-top"
+             data-ng-disabled="report.allDatesFlag" placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+             id="dsuiProjectReportEndDateAdd" name="dsuiProjectReportEndDateAdd" data-ng-change="fnCheckReportEndDate()"
+             data-ng-model="report.reportEndDate" data-ng-required="true" />
+    </div>
+  </div>
+
+  <div>
+    <hr class="form-group">
+  </div>
+  <div class="form-group">
+    <table>
+      <tr>
+        <td class="dsui-subtabledate"><input type="radio" name="subrundate" data-ng-disabled="true" data-ng-model="selectedDate" value="submissionDate"></td>
+        <td><label class="label-name"><span data-i18n="private-reports-library.BUNDLE_REGULATORY_REPORT_SUBMISSION_DUE"></span></label>
+          <div class="input-group col-sm-12 dsui-left-content" data-ng-click="fnEnableDatepicker('#dsuiProjectTaskEndDateAdd20')">
+            <span class="input-group-addon dsui-calendar-icon"><i
+                    class="fa fa-calendar-o"></i></span>
+            <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                   class="form-control dsui-datepicker-on-top dsui-subdate"
+                   data-ng-disabled="selectedDate =='runDate'"
+                   placeholder="" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+                   id="dsuiProjectTaskEndDateAdd20" name="dsuiProjectTaskEndDateAdd20"
+                   data-ng-model="report.submissionDate" data-ng-required="true"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="dsui-subtabledate"><input type="radio" name="subrundate" data-ng-disabled="true" data-ng-model="selectedDate" value="runDate"></td>
+        <td>
+          <div class="form-group dsui-asof-date">
+            <div class="col-sm-6 dsui-left-content dsui-rundatelabel">
+              <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_RUN_DATE"></span></label>
+              <div class="input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectTaskEndDateAdd21')">
+          <span class="input-group-addon dsui-calendar-icon"><i
+                  class="fa fa-calendar-o"></i></span>
+                <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                       class="form-control dsui-datepicker-on-top dsui-rundate"
+                       data-ng-disabled="selectedDate =='submissionDate'" placeholder=""
+                       data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+                       id="dsuiProjectTaskEndDateAdd21" name="dsuiProjectTaskEndDateAdd21"
+                       data-ng-model="report.submissionRunDate" data-ng-required="true" data-ng-change="fnCheckRunDate()"/>
+              </div>
+            </div>
+            <div class="col-sm-6 dsui-right-content dsui-run-time-field">
+              <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_RUN_TIME"></span></label>
+              <div>
+                <span class="input-group bootstrap-timepicker timepicker">
+                <input id="timepicker2" type="text" data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_TIMEPICKER_FORMAT'}" data-ng-disabled="selectedDate =='submissionDate'"
+                       class="form-control" data-ng-model="report.submissionRunTime" />
+              </span>
+
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <div class="form-group">
+      <label class="label-name dsui-asof-date"><span data-i18n="private-reports-library.BUNDLE_AS_OF_DATE"></span></label>
+      <span class="mandatory">*</span>
+      <div class="dsui-left-content">
+        <label class="label-name"><span data-i18n="private-reports-library.BUNDLE_FROM_REPORTING_PERIOD_END_DATE"></span></label>
+                   <span class="input-group" data-ng-click="fnEnableDatepicker('#dsuiProjectReportEndDateAdd2')">
+                     <input class="form-control reportdate" data-ng-disabled="report.allDatesFlag" data-ng-model="report.asOfDateOffset" data-ng-change="fnCalculateAsOfDate()" type="number"/>
+                     <span class="input-group-addon dsui-calendar-icon"><i
+                             class="fa fa-calendar-o"></i></span>
+                     <input ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                            class="form-control dsui-datepicker-on-top"
+                            data-i18n-attr="{placeholder:'private-reports-library.BUNDLE_DATEPICKER_FORMAT'}" type="text"
+                            id="dsuiProjectReportEndDateAdd2" name="dsuiProjectReport  EndDateAdd2"
+                            data-ng-model="report.reportAsOfDateDetails" data-ng-change="fnCalculateAsOfDateOffset()"
+                            data-ng-required="true"/>
+                   </span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-4 dsui-right-content">
+  <div class="dsui-highlighted-back clearfix">
+    <div class="col-sm-12 dsui-no-padding">
+      <div class="checkbox"><label> <input data-ng-focus="fnHideAllDatePickers()" type="checkbox"
+                                           class="dsui-event-receipt-date"
+                                           data-ng-model="report.eventReceiptDate"
+                                           data-ng-disabled="report.allDatesFlag || (report.followReceiptDate || report.initialReceiptDate)"/><span
+              data-i18n="private-reports-library.BUNDLE_EVENT_RECEIPT_DATE"></span></label></div>
+      <div class="checkbox"><label> <input type="checkbox"
+                                           data-ng-model="report.initialReceiptDate"
+                                           data-ng-disabled="report.allDatesFlag || report.eventReceiptDate"/><span
+              data-i18n="private-reports-library.BUNDLE_INITIAL_RECEIPT_DATE"></span></label></div>
+      <div class="checkbox"><label> <input type="checkbox"
+                                           data-ng-model="report.followReceiptDate"
+                                           data-ng-disabled="report.allDatesFlag || report.eventReceiptDate"/><span
+              data-i18n="private-reports-library.BUNDLE_FOLLOW_UP_RECEIPT_DATE"></span></label></div>
+      <div class="checkbox"><label> <input type="checkbox"
+                                           data-ng-model="report.iCSRSubmissionDate"
+                                           data-ng-disabled="report.allDatesFlag || fnIsSelectionEditable(0)"/><span
+              data-i18n="private-reports-library.BUNDLE_ADD_PRODUCT_SUBMISSION_DATE_KEY"></span></label></div>
+      <div class="checkbox"><label> <input type="checkbox" data-ng-model="report.otherReceiptType" data-ng-change="fnCheckOtherDate()" data-ng-disabled="report.allDatesFlag"/>
+        <span data-i18n="private-reports-library.BUNDLE_OTHER"></span></label></div>
+
+      <div data-ng-if="report.otherReceiptType">
+        <div class="radioButton">
+          <label><input type="radio" data-ng-value="0" data-ng-model="report.otherReceiptValue" data-ng-disabled="report.allDatesFlag"><span
+                  class="radioButton" data-i18n="private-reports-library.BUNDLE_ROUTED_DATE"></span></label>
+        </div>
+        <div class="radioButton">
+          <label><input type="radio" data-ng-value="1" data-ng-model="report.otherReceiptValue" data-ng-disabled="report.allDatesFlag"><span
+                  class="radioButton"
+                  data-i18n="private-reports-library.BUNDLE_CASE_COMPLETION_DATE"></span></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12">
+  <div>
+    <hr class="form-group dsui-overflow-margins-border">
+  </div>
+  <div class="form-group">
+    <div class="radioButton"><label> <input type="checkbox" value="Suppress Non-Serious Listed MedWatch Reports"
+                                            name="otherOptions"
+                                            data-ng-model="report.nonSeriousListMedWatchReports"/><span
+            class="radioButton"
+            data-i18n="private-reports-library.BUNDLE_SUPPRESS_NON_SERIOUS_LISTED"></span></label></div>
+    <div class="radioButton"><label> <input type="checkbox" value="Include Cases Not Previously Reported"
+                                            name="otherOptions"
+                                            data-ng-model="report.includeCasesNotPreviouslyReported"/><span
+            class="radioButton"
+            data-i18n="private-reports-library.BUNDLE_INCLUDE_CASES_NOT_PREVIOUS_REPORTED"></span></label></div>
+  </div>
+</div>

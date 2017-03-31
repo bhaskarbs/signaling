@@ -1,0 +1,64 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "deloitte.innovation.ls.safety.services.caselist.CaselistService.CaseListDetailsType",
+          "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/caselist/CaselistService.xsodata/CaseListDetails('17809618073777981')"
+        },
+        "ID": "17809618073777981",
+        "CASE_NBR": "20100101281",
+        "PATIENT_DOB": "\/Date(530582400000)\/",
+        "COUNTRY_OF_INCIDENCE": "CHINA",
+        "INIT_RECV_DT_KEY": 20100105,
+        "D_CASE_SERIOUSNESS_DESC": "No",
+        "CASE_ASSESS_OUTCOME_DESC": "Unknown",
+        "D_CASE_SOURCE_TYPE": "Spontaneous",
+        "INITIAL_RECEIVED_DATE": "\/Date(1262649600000)\/",
+        "STUDY_NUMBER": "",
+        "ANNOTATION": null,
+        "CASE_KEY": 164225,
+        "PATIENT_ID_CALC": "",
+        "PATIENT_INITIAL": null,
+        "D_CASE_CAUSALITY_DESC": "Related",
+        "PATIENT_AGE_DESC": "8Months",
+        "CASE_SERIOUS": "No",
+        "PATIENT_GENDER_DESC": "Male",
+        "PATIENT_DATE_OF_BIRTH": "25-Oct-1986",
+        "CaseEventSummary": {
+          "__deferred": {
+            "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/caselist/CaselistService.xsodata/CaseListDetails('17809618073777981')/CaseEventSummary"
+          }
+        },
+        "CaseSuspectProductSummary": {
+          "__deferred": {
+            "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/caselist/CaselistService.xsodata/CaseListDetails('17809618073777981')/CaseSuspectProductSummary"
+          }
+        },
+        "CaseSubmissionHistorySummary": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "deloitte.innovation.ls.safety.services.caselist.CaselistService.CaseSubmissionHistorySummaryType",
+                "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/caselist/CaselistService.xsodata/CaseSubmissionHistorySummary(164225)"
+              },
+              "CASE_KEY": 164225,
+              "REPORTING_DESTINATION": "",
+              "EXPEDITED_SUBMIT": null
+            }
+          ]
+        },
+        "CasePeriodics": {
+          "__deferred": {
+            "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/caselist/CaselistService.xsodata/CaseListDetails('17809618073777981')/CasePeriodics"
+          }
+        },
+        "CaseNarratives": {
+          "__deferred": {
+            "uri": "http://safety-02.dev.deloitteinnovation.space/deloitte/innovation/ls/safety/services/caselist/CaselistService.xsodata/CaseListDetails('17809618073777981')/CaseNarratives"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,279 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-case-annotation-text {
+      margin-top: 10px;
+    }
+    .dsui-padding-button {
+      margin-bottom: 20px;
+    }
+    .dsui-icon-style {
+      color: $saint-blue-color;
+    }
+    .dsui-case-save-button {
+      margin-top: 15px;
+      padding: 4px 20px;
+      width: initial;
+      float: right;
+      @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+    }
+    .dsui-caseLists-reports-div {
+      @include paddingleft-paddingright(20px !important, 20px !important);
+      .dsui-caseLists-table-header {
+        margin-bottom: 15px;
+      }
+      .dsui-checkbox-width {
+        width: 3% !important;
+      }
+      .dsui-caseId-width {
+        width: 9% !important;
+        text-align: left;
+      }
+      .dsui-followup-width{
+        width: 14% !important;
+      }
+      .dsui-product-width {
+        width: 15% !important;
+      }
+      .dsui-version-workflow-width {
+        width: 8% !important;
+      }
+      .dsui-version{
+        margin-left: 30px;
+      }
+      .dsui-report-type-width {
+        width: 14% !important;
+      }
+      .table {
+        margin-bottom: 0px !important;
+        border: 1px solid $saint-cool-gray-color;
+        text-align: left !important;
+        font-size: 14px;
+        font-style: $font-roboto-medium;
+      }
+      .dsui-list-table-items {
+        height: 450px !important;
+        overflow-y: auto;
+      }
+      .dsui-table-data-items {
+        td {
+          width: 11%;
+        }
+      }
+      .dsui-caseLists-table-headers {
+        td {
+          width: 11%;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          vertical-align: top;
+          text-align: left !important;
+          @include Roboto-Medium(14px,$saint-blue-color)
+        }
+      }
+      .dsui-workflow {
+        color: $saint-green-color;
+      }
+      .dsui-arrow {
+        color: $saint-light-gray-color;
+        cursor: pointer;
+        margin-left: 40px;
+      }
+      .dsui-table-hover:hover {
+        background-color: $saint-tile-hover;
+      }
+      .inner-addon {
+        position: relative;
+      }
+      .inner-addon .glyphicon {
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+      }
+      .left-addon .glyphicon {
+        left: 0px;
+      }
+      .left-addon input {
+        padding-left: 30px;
+        width: 200px !important;
+      }
+    }
+    .dsui-caselist-toggle {
+      text-align: left;
+    }
+    .dsui-case-button {
+      width: 139px;
+      height: 36px;
+      background-color: $saint-case-list-fill-color;
+    }
+    .dsui-checkbox {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-caseLists-reports-div {
+        .dsui-list-table-items {
+          height: 300px !important;
+          overflow-y: auto;
+        }
+        .dsui-caseLists-table-header{
+          margin-bottom: 15px !important;
+        }
+        .table {
+          margin-bottom: 0px !important;
+          thead {
+            td {
+              vertical-align: top;
+            }
+          }
+          tbody {
+            td {
+              vertical-align: top;
+            }
+          }
+          .dsui-caseLists-table-headers {
+            td {
+              color: $saint-blue-color;
+              @include fontsize-fontweight(1em, bold);
+              padding-top: 1em;
+              padding-bottom: 1em;
+              vertical-align: top;
+            }
+          }
+          .dsui-workflow {
+            margin-left: 20px !important;
+            color: $saint-green-color;
+          }
+          .dsui-arrow {
+            color: $saint-light-gray-color;
+            cursor: pointer;
+          }
+          .dsui-table-hover:hover {
+            background-color: $saint-tile-hover;
+          }
+        }
+        .inner-addon {
+          position: relative;
+        }
+        .inner-addon .glyphicon {
+          position: absolute;
+          padding: 10px;
+          pointer-events: none;
+        }
+        .left-addon .glyphicon {
+          left: 0px;
+        }
+        .left-addon input {
+          padding-left: 30px;
+        }
+        .dsui-case-search {
+          height: 36px !important;
+        }
+      }
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-caseLists-reports-div {
+        .dsui-list-table-items {
+          height: 300px !important;
+          overflow-y: auto;
+        }
+        .dsui-caseLists-table-header{
+          margin-bottom: 15px !important;
+        }
+        .table {
+          margin-bottom: 0px !important;
+          thead {
+            td {
+              vertical-align: top;
+            }
+          }
+          tbody {
+            td {
+              vertical-align: top;
+            }
+          }
+          .dsui-caseLists-table-headers {
+            td {
+              @include fontsize-fontweight(1em, bold);
+              color: $saint-blue-color;
+              padding-top: 1em;
+              padding-bottom: 1em;
+              vertical-align: top;
+            }
+          }
+          .dsui-workflow {
+            margin-left: 20px !important;
+            color: $saint-green-color;
+          }
+          .dsui-arrow {
+            color: $saint-light-gray-color;
+            cursor: pointer;
+          }
+          .dsui-table-hover:hover {
+            background-color: $saint-tile-hover;
+          }
+        }
+        .inner-addon {
+          position: relative;
+        }
+        .inner-addon .glyphicon {
+          position: absolute;
+          padding: 10px;
+          pointer-events: none;
+        }
+        .left-addon .glyphicon {
+          left: 0px;
+        }
+        .left-addon input {
+          padding-left: 30px;
+        }
+      }
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

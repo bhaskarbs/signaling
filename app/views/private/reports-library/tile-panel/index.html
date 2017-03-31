@@ -1,0 +1,30 @@
+<div data-ng-controller="MainReportController" class="dsui-reportPanelLayout">
+    <div class="dsui-reportDisplayDetail">
+        <div class="dsui-reportNumber">
+          <span data-ng-bind="startPageShown"></span>-<span data-ng-bind="endPageShown"></span>&nbsp;of&nbsp;<span data-ng-bind="totalReports"></span>
+        </div>
+        <div class="dsui-sortStatus"><span class="dsui-sortStatusText" data-i18n="common.BUNDLE_SORTED_BY"></span>:&nbsp;<span
+                class="dsui-sortStatusResult" data-ng-bind="reportFactoryData.reportSort.sortedByName"></span></div>
+    </div>
+
+    <!-- For Tiles 
+    <div data-ng-class="fnGetPaginatorClass()"> -->
+    <div viewport-auto-height>
+    <div data-ng-class="fnGetPaginatorClass()">
+        <div data-ng-include="VIEWS.REPORTS_LIBRARY_TILE_VIEW"></div>
+    </div>
+
+    <div data-ng-show="totalReports > reportsPerPage">
+    <hr class="dsui-tilePaginator-divider">
+        <!--For Paginator -->
+        <div class="dsui-paginator-container text-center">
+            <div class="dsui-paginatorControl" id="paginatorControl">
+                <dir-pagination-controls pagination-id="reportTiles" on-page-change="fnPageChanged(newPageNumber)"
+                                         max-size="6" direction-links="true"
+                                         boundary-links="true"
+                                         ></dir-pagination-controls>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

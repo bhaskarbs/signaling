@@ -1,0 +1,27 @@
+<div class="col-sm-12 dsui-no-padding">
+  <div class="col-sm-12 clearfix dsui-breadcrumb">
+    <div class=" col-lg-6 col-sm-8 dsui-bread-crumbs dsui-no-left-padding">
+      <span data-ng-click="fnWrapperNavigate(CONSTANTS.HOME)" data-i18n="common.BUNDLE_DASHBOARD_NAVIGATION" class="dsui-pointer-cursor"></span>&nbsp;&nbsp;
+      <!-- FIXME: Apply below changes when all pages are updated -->
+      <!--<span data-ng-click="fnWrapperNavigate(CONSTANTS.HOME)" data-i18n="private-home.BUNDLE_WORKSPACES_TITLE" class="dsui-pointer-cursor"></span>&nbsp;&nbsp;-->
+      <span>
+        <span class="fa fa-angle-right dsui-angle-right-icon"></span>&nbsp;&nbsp;
+        <span data-ng-if="page== CONSTANTS.PAGE_NAVIGATION_REPORT" class="dsui-pointer-cursor" data-i18n="private-reports-library.BUNDLE_REPORTS_LIBRARY_HEADER_KEY" data-ng-click="fnNavigateFromCases(CONSTANTS.STATE.REPORT_LIBRARY_LIST)"></span>
+        <span data-ng-if="page== CONSTANTS.PAGE_NAVIGATION_CASE_LIST_LIBRARY" class="dsui-pointer-cursor" data-i18n="private-case-list-library.BUNDLE_KEY_CASE_LIST_LIBRARY" data-ng-click="fnNavigateFromCases(CONSTANTS.STATE.CASE_LIST_LIBRARY)"></span>
+        <span data-ng-if="page== CONSTANTS.PAGE_NAVIGATION_CREATE_CASE_LIST" class="dsui-pointer-cursor" data-i18n="private-case-list-library.BUNDLE_KEY_CREATE_CASE_LIST" data-ng-click="fnNavigateFromCases(CONSTANTS.STATE.CASE_LIST_LIBRARY)"></span>
+      </span>
+      <span>
+        &nbsp;&nbsp;<span class="fa fa-angle-right dsui-angle-right-icon" ></span>&nbsp;&nbsp;
+ 	 	 	 	<span data-ng-if="currentTab== CONSTANTS.STATE.CASE_LIST_VISUALS_STATE" data-i18n="private-case-list-library.BUNDLE_TITLE_VISUAL_STORY"></span>
+ 	 	 	 	<span data-ng-if="currentTab== CONSTANTS.STATE.CASE_LIST_QUERY_STATE" data-i18n="private-case-list-library.BUNDLE_TITLE_QUERY_BUILDER"></span>
+ 	 	 	 	<span data-ng-if="currentTab== CONSTANTS.STATE.CASE_LIST_TABLE_STATE" data-i18n="private-case-list-library.BUNDLE_REGULATORY_CASELIST_HEADER_KEY"></span>
+      </span>
+    </div>
+    <div class=" col-lg-6 col-sm-4 dsui-no-padding">
+      <button type="button" data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_MANAGE_DATA_VIEWS)" class="btn btn-success dsui-config-data-views" data-ng-click="fnToggleDataView()">
+        <i class="fa fa-plus"></i>&nbsp;<span data-i18n="private-case-list-library.BUNDLE_CONFIGURE_DATA_VIEWS"></span>
+      </button>
+    </div>
+  </div>
+
+</div>

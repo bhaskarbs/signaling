@@ -1,0 +1,337 @@
+/* Query Display Details*/
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-tile-panel {
+      height: 100%;
+
+      .dsui-queryPanelLayout {
+        height: 100%;
+
+        .dsui-queryDisplayDetail {
+          border: 0px solid $saint-black-color;
+          margin-top: 19px;
+          margin-bottom: 19px;
+
+          .dsui-query-number {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Medium(1em, $saint-unfavourite-color);
+            width: 50%;
+            float: left;
+          }
+          .dsui-sort-status {
+            text-align: right;
+            border: 0px solid $saint-black-color;
+
+            .dsui-sort-status-text {
+              @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+            }
+            .dsui-sort-status-result {
+              @include Roboto-Medium(0.875em, $saint-unfavourite-color);
+            }
+          }
+        }
+      }
+      /* For Tiles*/
+
+      .dsui-query-tile-container-without-paginator {
+
+        height: 80%;
+        height: -webkit-calc(100% - 20px - 27px - 20px);
+        height: -moz-calc(100% - 20px - 27px - 20px);
+        height: calc(100% - 20px - 27px - 20px);
+        overflow-y: auto;
+
+
+        .dsui-query-tile-clicked {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-query-tile {
+          border: 1px solid $saint-favourite-border-color;
+          margin-bottom: 10px;
+          border-radius: 0px;
+
+          .dsui-query-name-close {
+            border: 0px solid $saint-black-color;
+            margin-right: 12px;
+            margin-left: 15px;
+            margin-top: 12px;
+            display: -webkit-flex;
+            display: flex;
+            .dsui-shared-status {
+
+              border: 1px solid $saint-blue-color;
+              border-radius: 5px;
+              width: 46px;
+              height: 16px;
+              font-family: Roboto;
+              font-size: 12px;
+              color: $saint-blue-color;
+
+              .dsui-shared-status-text {
+                padding-left: 3px;
+                padding-right: 3px;
+              }
+            }
+            .dsui-query-name {
+              border: 0px solid $saint-black-color;
+
+              @include Roboto-Bold(1em, $saint-unfavourite-color);
+              width: 80%;
+              width: -webkit-calc(100% - 15px);
+              width: -moz-calc(100% - 15px);
+              width: calc(100% - 15px);
+              display: inline-block;
+              word-wrap: break-word;
+              overflow: hidden;
+            }
+            .dsui-cross {
+              border: 0px solid $saint-black-color;
+              float: right;
+              display: none;
+              margin-bottom: auto;
+              //margin-left: auto;
+              margin-left: 10px;
+              color: $saint-caption-color;
+            }
+          }
+          .dsui-date-range {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+            margin-left: 15px;
+            margin-right: 12px;
+          }
+          .dsui-desc-status {
+            border: 0px solid $saint-black-color;
+            margin-left: 15px;
+            margin-right: 12px;
+            margin-top: 6px;
+            display: -webkit-flex;
+            display: flex;
+
+            .dsui-desc {
+              border: 0px solid $saint-black-color;
+              width: 100%;
+              display: inline-block;
+              word-wrap: break-word;
+              @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+              overflow: hidden;
+            }
+
+          }
+
+          .dsui-date-due-date-created {
+            border: 0px solid $saint-black-color;
+            margin-top: 21px;
+            margin-bottom: 12px;
+            margin-left: 15px;
+            margin-right: 12px;
+
+            .dsui-date-due {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(0.75em, $saint-title-gray-color);
+              width: 50%;
+              float: left;
+
+            }
+            .dsui-date-created {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(0.75em, $saint-title-gray-color);
+              text-align: right;
+            }
+          }
+        }
+        .dsui-query-tile:hover {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-query-tile:hover .dsui-cross {
+          display: block;
+          cursor: pointer;
+        }
+      }
+
+      .dsui-query-tile-container-with-paginator {
+
+        height: 80%;
+        height: -webkit-calc(100% - 20px - 27px - 20px - 30px - 32px - 30px);
+        height: -moz-calc(100% - 20px - 27px - 20px - 30px - 32px - 30px);
+        height: calc(100% - 20px - 27px - 20px - 30px - 32px - 30px);
+        overflow-y: auto;
+
+        .dsui-query-tile-clicked {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-query-tile {
+          border: 1px solid $saint-favourite-border-color;
+          margin-bottom: 10px;
+          border-radius: 0px;
+
+          .dsui-query-name-close {
+            border: 0px solid $saint-black-color;
+            margin-right: 12px;
+            margin-left: 15px;
+            margin-top: 12px;
+            display: -webkit-flex;
+            display: flex;
+            .dsui-shared-status {
+
+              border: 1px solid $saint-blue-color;
+              border-radius: 5px;
+              width: 46px;
+              height: 16px;
+              font-family: Roboto;
+              font-size: 12px;
+              color: $saint-blue-color;
+
+              .dsui-shared-status-text {
+                padding-left: 3px;
+                padding-right: 3px;
+              }
+            }
+
+            .dsui-query-name {
+              border: 0px solid $saint-black-color;
+
+              @include Roboto-Bold(1em, $saint-unfavourite-color);
+              width: 80%;
+              width: -webkit-calc(100% - 15px);
+              width: -moz-calc(100% - 15px);
+              width: calc(100% - 15px);
+              display: inline-block;
+              word-wrap: break-word;
+              overflow: hidden;
+            }
+            .dsui-cross {
+              border: 0px solid $saint-black-color;
+              float: right;
+              display: none;
+              margin-bottom: auto;
+              //margin-left: auto;
+              margin-left: 10px;
+              color: $saint-caption-color;
+            }
+          }
+          .dsui-date-range {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+            margin-left: 15px;
+            margin-right: 12px;
+          }
+          .dsui-desc-status {
+            border: 0px solid $saint-black-color;
+            margin-left: 15px;
+            margin-right: 12px;
+            margin-top: 6px;
+            display: -webkit-flex;
+            display: flex;
+
+            .dsui-desc {
+              border: 0px solid $saint-black-color;
+              width: 100%;
+              display: inline-block;
+              word-wrap: break-word;
+              @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+              overflow: hidden;
+            }
+
+          }
+
+          .dsui-date-due-date-created {
+            border: 0px solid $saint-black-color;
+            margin-top: 21px;
+            margin-bottom: 12px;
+            margin-left: 15px;
+            margin-right: 12px;
+
+            .dsui-date-due {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(0.75em, $saint-title-gray-color);
+              width: 50%;
+              float: left;
+
+            }
+            .dsui-date-created {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(0.75em, $saint-title-gray-color);
+              text-align: right;
+            }
+          }
+        }
+        .dsui-query-tile:hover {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-query-tile:hover .dsui-cross {
+          display: block;
+          cursor: pointer;
+        }
+      }
+
+      .dsui-tile-paginator-divider {
+        border: solid 1px $saint-favourite-border-color;
+        margin-left: -13px; //Wrapped under div, hence force left required
+        margin-right: -13px;
+        margin-top: 10px;
+      }
+      /* Paginator */
+
+      .dsui-paginator-container {
+        border: 0px solid $saint-caption-color;
+        .dsui-paginator-control {
+          border: 0px solid $saint-black-color;
+        }
+      }
+
+      .dsui-footer {
+      }
+    }
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

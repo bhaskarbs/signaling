@@ -1,0 +1,52 @@
+<!--<div ng-repeat="report in reportData">-->
+<div dir-paginate="report in myReportData | itemsPerPage: reportsPerPage" total-items="totalReports"
+     current-page="pagination.current" pagination-id="reportTiles">
+  <div class="dsui-reportTile"  data-ng-click="fnTilesSelected(report)"
+       data-ng-class="{'dsui-reportTileClicked':report.isSelected,'dsui-reportPackageTile':report.isReportPackage,'dsui-reportPackageClickedTile':(report.isSelected&&report.isReportPackage)}">
+    <div class="dsui-reportNameClose" data-ng-click="$event.stopPropagation()">
+      <div class="dsui-reportName" data-ng-bind="report.reportCustomName">
+      </div>
+      <div data-ng-if="report.isReportPackage"><i class="icon-IcoMoon-22"></i></div>
+      <div authorize="{{PRIVILEGES.REPORT_DELETE_OCCURANCE}}" class="dsui-cross fa fa-times-circle" data-ng-click="callReportDelete(report)"></div>
+
+      <div data-ng-include="VIEWS.REPORT_LIBRARY_REPORT_DELETE"></div>
+    </div>
+
+
+    <div class="dsui-dateRange">
+      <div data-ng-if="report.allDatesFlag === 1">
+        <span data-i18n="private-reports-library.BUNDLE_ALL_DATES"></span>
+      </div>
+      <div data-ng-if="report.allDatesFlag === 0">
+        <span data-ng-bind="fnGetDate(report.reportStartDate)"></span>&nbsp&nbsp-&nbsp&nbsp<span data-ng-bind="fnGetDate(report.reportEndDate)"></span>
+      </div>
+    </div>
+
+    <div class="dsui-descStatus">
+      <div class="dsui-desc" data-ng-bind="fnGetReportDescription(report.reportDesc)">
+
+      </div>
+      <div class="dsui-status fa fa-circle dsui-{{fnGetReportStatus(report.reportStatus)}}">
+
+      </div>
+    </div>
+
+    <div class="dsui-dateDueDateCreated">
+      <div data-ng-if="fnGetReportStatus(report.reportStatus) === CONSTANTS.COMPLETED.toLowerCase()">
+        <div class="dsui-dateDue"><span data-i18n="private-reports-library.BUNDLE_SUBMITTED_DATE"></span>:&nbsp<span
+          data-ng-bind="fnGetDate(report.reportSubmittedDate)"></span>
+        </div>
+      </div>
+      <div data-ng-if="fnGetReportStatus(report.reportStatus) !== CONSTANTS.COMPLETED.toLowerCase()">
+        <div class="dsui-dateDue"><span data-ng-bind="report.reportDueDays" data-ng-class="report.reportDueDays<0 && 'dsui-red-color'"></span>&nbsp<span
+          data-i18n="private-reports-library.BUNDLE_DAYS_UNTILL_DUE_DATE"></span>
+        </div>
+      </div>
+
+      <div class="dsui-dateCreated"><span data-i18n="private-reports-library.BUNDLE_CREATED"></span>:&nbsp<span
+        data-ng-bind="fnGetDate(report.reportCreationDate)"></span>
+      </div>
+    </div>
+  </div>
+</div>
+

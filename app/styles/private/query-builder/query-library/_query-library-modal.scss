@@ -1,0 +1,284 @@
+/* Query Display Details*/
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-tile-panel-modal {
+
+      .dsui-queryPanelLayout {
+        height: 100%;
+
+        .dsui-queryDisplayDetail {
+          margin-top: 19px;
+          margin-bottom: 19px;
+
+          .dsui-query-number {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Medium(1em, $saint-unfavourite-color);
+            width: 50%;
+            float: left;
+          }
+          .dsui-sort-status {
+            text-align: right;
+            border: 0px solid $saint-black-color;
+
+            .dsui-sort-status-text {
+              @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+            }
+            .dsui-sort-status-result {
+              @include Roboto-Medium(0.875em, $saint-unfavourite-color);
+            }
+          }
+        }
+      }
+
+      /* For Tiles*/
+
+
+      .dsui-query-tile-modal-overflow{
+        height:100%;
+      }
+
+      .dsui-query-tile-modal {
+        border: 1px solid $saint-favourite-border-color;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        border-radius: 0px;
+        height: 140px;
+        position: relative;
+
+        .dsui-query-name-close {
+          border: 0px solid $saint-black-color;
+          margin-right: 12px;
+          margin-left: 15px;
+          margin-top: 12px;
+          display: -webkit-flex;
+          display: flex;
+          .dsui-shared-status {
+
+            border: 1px solid $saint-blue-color;
+            border-radius: 5px;
+            width: 46px;
+            height: 16px;
+            font-family: Roboto;
+            font-size: 12px;
+            color: $saint-blue-color;
+
+            .dsui-shared-status-text {
+              padding-left: 3px;
+              padding-right: 3px;
+            }
+          }
+          .dsui-query-name {
+            border: 0px solid $saint-black-color;
+
+            @include Roboto-Bold(18px, $saint-unfavourite-color);
+            width: 80%;
+            width: -webkit-calc(100% - 15px);
+            width: -moz-calc(100% - 15px);
+            width: calc(100% - 15px);
+            display: inline-block;
+            word-wrap: break-word;
+            overflow: hidden;
+          }
+          .dsui-cross {
+            border: 0px solid $saint-black-color;
+            float: right;
+            display: none;
+            margin-bottom: auto;
+            //margin-left: auto;
+            margin-left: 10px;
+            color: $saint-caption-color;
+          }
+        }
+        .dsui-date-range {
+          border: 0px solid $saint-black-color;
+          @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+          margin-left: 15px;
+          margin-right: 12px;
+        }
+        .dsui-desc-status {
+          border: 0px solid $saint-black-color;
+          margin-left: 15px;
+          margin-right: 12px;
+          margin-top: 6px;
+          display: -webkit-flex;
+          display: flex;
+
+          .dsui-desc {
+            border: 0px solid $saint-black-color;
+            width: 100%;
+            display: inline-block;
+            word-wrap: break-word;
+            @include Roboto-Regular(0.875em, $saint-title-gray-color);
+            overflow: hidden;
+          }
+
+        }
+
+        .dsui-date-due-date-created {
+          border: 0px solid $saint-black-color;
+          top:auto;
+          bottom:12px;
+          margin-left: 15px;
+          margin-right: 12px;
+          position: absolute;
+
+          .dsui-date-due {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Regular(14px, $saint-unfavourite-color);
+            width: 50%;
+            float: left;
+
+          }
+          .dsui-date-created {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Regular(0.75em, $saint-title-gray-color);
+            text-align: right;
+          }
+        }
+      }
+      .dsui-query-tile-modal.unselected_tile:hover {
+        background-color: $saint-tile-hover;
+      }
+      .dsui-query-tile-modal.selected_tile:hover {
+          background-color: $saint-querylibrary-modal-selected;
+        }
+      .dsui-query-tile-modal.selected_tile{
+        @extend .dsui-query-tile-modal.selected_tile:hover;
+      }
+
+      .dsui-query-tile-modal:hover .dsui-cross {
+        display: block;
+        cursor: pointer;
+      }
+
+      .dsui-footer {
+      }
+    }
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+.dsui-query-lib-modal-dialog {
+  padding-right: 0px;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  height: 100%;
+  width: 400px !important;
+  right: 0px;
+  top: 0px;
+}
+
+.dsui-query-lib-modal-body {
+  padding-right: 12px !important;
+  padding-left: 12px;
+  padding-bottom: 0px;
+  padding-top: 12px;
+  overflow-y:auto;
+  height: calc(100% - 78px);
+}
+
+.dsui-query-lib-modal-content {
+  height:100%;
+  border-radius: 0px;
+}
+
+.dsui-query-lib-modal-header{
+  height: 36px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  .form-control{
+    height: 36px;
+    border-radius: 0px;
+    border-left-width: 0px;
+  }
+  .input-group-addon {
+    border-radius: 0px !important;
+    background-color:$saint-white-color!important;
+    .dsui-search-modal-icon {
+      font-size: 16px;
+      color:#333333;
+    }
+    .glyphicon{
+      color: #007CAB;
+    }
+  }
+}
+
+.dsui-query-lib-modal-footer {
+  padding-left: 0px;
+  padding-right: 0px;;
+  padding-bottom: 0px;
+  padding-top: 6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  height: 36px;
+  border-top:none;
+}
+
+.dsui-query-lib-modal-footer .dsui-btn + .dsui-btn{
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 36px;
+}
+
+.dsui-btn{
+  border-radius: 0px;
+  height: 36px;
+}
+
+
+

@@ -1,0 +1,65 @@
+<div class="modal fade dsui-track-caselist" id="dsui-track-list" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"
+     data-ng-controller="TrackCasesController">
+    <div class="col-md-8 modal-main">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="col-md-12 dsui-full-height">
+                    <div class="modal-header">
+                        <span class="icon-close close" data-ng-click="fnOnCancel()"></span>
+                        <h4 class="modal-title" data-i18n="{{fnGetModalTitle()}}"></h4>
+                    </div>
+
+                   <hr class="dsui-border-line">
+                    <div class="modal-body">
+                        <!-- Added Two tables: To handle fixed header and table alignment -->
+                        <div class="dsui-no-padding">
+                            <div class="dsui-reportNumber">
+                                <span data-ng-bind="totalCaseList"></span><span
+                                    data-i18n="private-case-list-library.BUNDLE_CASES"></span>
+                            </div>
+                            <table class="dsui-table-header">
+                                <thead class="dsui-thead-class">
+                                <tr class="dsui-caseLists-table-headers">
+                                    <td data-ng-repeat="column in columnMetadata" class="dsui-table-data">
+                                        <div class="dsui-column-head" data-i18n="{{column.name}}"></div>
+                                    </td>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                        <div class="dsui-list-table-items dsui-no-padding" data-when-scrolled="fnLoadCaseList()">
+                            <table class="dsui-table-detail">
+                                <tbody>
+                                <tr class="dsui-table-row" data-ng-repeat="row in caseListData">
+                                    <td>
+                                        <div class="dsui-column-head" data-ng-bind="fnGetColumnData(row,1)"></div>
+                                    </td>
+                                    <td>
+                                        <div class="dsui-column-head" data-ng-bind="fnGetColumnData(row,2)"></div>
+                                    </td>
+                                    <td>
+                                        <div class="dsui-column-head" data-ng-bind="fnGetColumnData(row,3)"></div>
+                                    </td>
+                                  <td data-ng-if="trackType === CONSTANTS.CASE_LIST_ANNOTATED">
+                                        <a>
+                                          <div data-ng-click="fnGetCaseDetails(row)" class="dsui-column-head"
+                                               data-i18n="{{fnGetColumnData(row,4)}}"></div>
+                                        </a>
+                                    </td>
+                                  <td data-ng-if="trackType !== CONSTANTS.CASE_LIST_ANNOTATED">
+                                        <div class="dsui-column-head" data-ng-bind="fnGetColumnData(row,4)"></div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+.dsui{
+  .dsui-header{
+  }
+  .dsui-content{
+  }
+  .dsui-footer{
+    background-color: $saint-faint-blue;
+    color: $saint-faint-blue-letter;
+    padding: 1em 20px;
+    font-size: 0.75em;
+      .dsui-footer-text{
+        list-style: none;
+        display: inline;
+        li{
+
+          display: inline;
+          margin: 0 3.125em 0 0;
+        }
+      }
+    .dsui-footer-icon{
+      padding-right: 0.5em;
+    }
+    .dsui-desktop-padding{
+      padding-right: 0;
+    }
+  }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px){
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+	"d": {
+		"results": [{
+			"__metadata": {
+				"type": "Deloitte.Innovation.saint.services.saintcore.UserDashboardPreferenceType",
+				"uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserDashboardPreference(77)"
+			},
+			"USER_DASHBOARD_PREF_KEY": 77,
+			"NAME": "Cases by Report Type_Gender",
+			"UUID": "566133EE5780537AE2004E8F8ED8BC5B",
+			"FK_USERID": 2955029,
+			"SELECT_ORDER": 2,
+			"Audit.CreatedBy": "SANALYST1",
+			"Audit.CreatedDt": "\/Date(1450414062000)\/",
+			"Audit.UpdatedBy": "SANALYST1",
+			"Audit.UpdatedDt": "\/Date(1450414098000)\/"
+		}, {
+			"__metadata": {
+				"type": "Deloitte.Innovation.saint.services.saintcore.UserDashboardPreferenceType",
+				"uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserDashboardPreference(81)"
+			},
+			"USER_DASHBOARD_PREF_KEY": 81,
+			"NAME": "Top 15 Cases and Events by SOC",
+			"UUID": "566196FF5780537AE2004E8F8ED8BC5B",
+			"FK_USERID": 2955029,
+			"SELECT_ORDER": 1,
+			"Audit.CreatedBy": "SANALYST1",
+			"Audit.CreatedDt": "\/Date(1450414151000)\/",
+			"Audit.UpdatedBy": "SANALYST1",
+			"Audit.UpdatedDt": "\/Date(1450434397000)\/"
+		}, {
+			"__metadata": {
+				"type": "Deloitte.Innovation.saint.services.saintcore.UserDashboardPreferenceType",
+				"uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserDashboardPreference(83)"
+			},
+			"USER_DASHBOARD_PREF_KEY": 83,
+			"NAME": "Cases by Serious-Report Type",
+			"UUID": "566196FE5780537AE2004E8F8ED8BC5B",
+			"FK_USERID": 2955029,
+			"SELECT_ORDER": 3,
+			"Audit.CreatedBy": "SANALYST1",
+			"Audit.CreatedDt": "\/Date(1450414305000)\/",
+			"Audit.UpdatedBy": "SANALYST1",
+			"Audit.UpdatedDt": "\/Date(1450414387000)\/"
+		}, {
+			"__metadata": {
+				"type": "Deloitte.Innovation.saint.services.saintcore.UserDashboardPreferenceType",
+				"uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserDashboardPreference(84)"
+			},
+			"USER_DASHBOARD_PREF_KEY": 84,
+			"NAME": "Case_Volume_by_Region",
+			"UUID": "567139CF0EB2537AE2004E8F8ED8BC5B",
+			"FK_USERID": 2955029,
+			"SELECT_ORDER": 2,
+			"Audit.CreatedBy": "SANALYST1",
+			"Audit.CreatedDt": "\/Date(1450414416000)\/",
+			"Audit.UpdatedBy": "SANALYST1",
+			"Audit.UpdatedDt": "\/Date(1450434387000)\/"
+		}, {
+			"__metadata": {
+				"type": "Deloitte.Innovation.saint.services.saintcore.UserDashboardPreferenceType",
+				"uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserDashboardPreference(85)"
+			},
+			"USER_DASHBOARD_PREF_KEY": 85,
+			"NAME": "NewCaseVolumebySite",
+			"UUID": "56017F0C5FE79AECE200115DEB484A7E",
+			"FK_USERID": 2955029,
+			"SELECT_ORDER": 4,
+			"Audit.CreatedBy": "SANALYST1",
+			"Audit.CreatedDt": "\/Date(1450414423000)\/",
+			"Audit.UpdatedBy": "SANALYST1",
+			"Audit.UpdatedDt": "\/Date(1450434387000)\/"
+		}, {
+			"__metadata": {
+				"type": "Deloitte.Innovation.saint.services.saintcore.UserDashboardPreferenceType",
+				"uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/UserDashboardPreference(86)"
+			},
+			"USER_DASHBOARD_PREF_KEY": 86,
+			"NAME": "AdhocAnalysisViewTest",
+			"UUID": "56617EDFE8DE537AE2004E8F8ED8BC5B",
+			"FK_USERID": 2955029,
+			"SELECT_ORDER": 3,
+			"Audit.CreatedBy": "SANALYST1",
+			"Audit.CreatedDt": "\/Date(1450434370000)\/",
+			"Audit.UpdatedBy": "SANALYST1",
+			"Audit.UpdatedDt": "\/Date(1450434397000)\/"
+		}]
+	}
+}

@@ -1,0 +1,86 @@
+<div class="gantt clear-fix">
+
+  <div class="gantt-labels" data-ng-style="(labelsWidth > 0 && {'width': labelsWidth+'px'} || {})"
+       gantt-label-resizable="labelsWidth" resize-min="50">
+    <div class="gantt-labels-head">
+      <div class="gantt-labels-head-row" data-ng-style="::{'margin-top': ((gantt.getActiveHeadersCount()-3)*2)+'em'}">
+        <b><span data-i18n="private-reports-library.BUNDLE_REPORTS_LIBRARY_HEADER_KEY"></span></b></div>
+    </div>
+    <div class="gantt-labels-body" data-ng-style="(maxHeight > 0 && {'max-height': maxHeight+'px'} || {})">
+     <div gantt-vertical-scroll-receiver data-ng-style="::{'position': 'relative'}">
+        <div id="ganttLeftRow{{$index}}" class="gantt-labels-row gantt-row-height gantt-labels-left-row-height"
+             data-ng-class-odd="'gantt-background-row'" data-ng-class-even=""
+             data-ng-repeat="row in gantt.rows ">
+          <span>{{::row.name }}</span><br> <span>{{:: row.description }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gantt-head">
+    <div gantt-horizontal-scroll-receiver data-ng-style="{'position': 'relative', 'width': gantt.width+'em'}">
+        <div class="gantt-head-row" data-ng-if="gantt.headers.month !== undefined">
+                  <span data-ng-style="{'width': c.width+'em', 'left': c.left+'em','height':'40'+'px', 'text-align':'center'}"
+                        data-ng-repeat="c in gantt.headers.month | ganttColumnLimit:scroll_start:scroll_width">
+                    {{ ((c.date.getMonth() >= 0 && c.date.getMonth() <= 11)
+                            && (c.date | date: 'MMM'))}}</span>
+        </div>
+    </div>
+  </div>
+
+  <div id="ganttScroll" class="gantt-scrollable" gantt-scroll-sender gantt-limit-updater
+       data-ng-style="(maxHeight > 0 && {'max-height': maxHeight+'px', 'overflow-y': 'scroll'} || {'overflow-y': 'hidden'})"
+       data-ng-style="{'overflow-x': (gantt.rows.length == 0 && 'hidden' || 'scroll')}" custom-when-scrolled-gantt>
+    <div class="gantt-body" data-ng-style="{'width': gantt.width+'em'}">
+      <!--render row for plotting bar for each report-->
+      <div class="gantt-body-background">
+        <div id="ganttBackgroundRow{{$index}}" class="gantt-row-height gantt-background-row-bottom"
+             data-ng-repeat="row in gantt.rows track by $index">
+        </div>
+      </div>
+
+      <!--render column for each month-->
+      <div class="gantt-body-foreground">
+        <div data-ng-class="(viewScale === 'month' || (fnCurrentMonth(c) && 'gantt-foreground-col-weekend' || 'gantt-foreground-col'))"
+             data-ng-style="{'width': c.width+'em', 'left': c.left+'em'}"
+             data-ng-repeat="c in gantt.headers.month">
+        </div>
+      </div>
+
+      <div class="gantt-body-content">
+        <!-- plotting bars on the chart -->
+        <div class="gantt-row gantt-row-height" id="ganttRightRow{{$index}}"
+             data-ng-click="raiseDOMRowClickedEvent($event, row)"
+             data-ng-repeat="row in gantt.rows track by row.id" on-finish-render="gantRowsLoaded">
+
+          <!-- subdivide row for clarity-->
+          <div class="dsui-row-border-bottom-line"></div>
+
+          <!--plot and position periodic reports-->
+          <div class="dsui-row-year"
+            data-ng-class="{'gantt-task': !task.isMilestonePresent, 'dsui-stripes-year': !task.data.isPeriodic,'dsui-border-dashed-year':!task.data.isPeriodic}"
+            data-ng-style="{'left':((task.data.isPeriodic && task.left || task.left))+'em',
+                            'width': task.width+((task.from>fromDate && task.to<toDate)?(task.from.getTime()===task.to.getTime())?0.5:0.2:(task.to<toDate)?1.0:(task.from>fromDate)?0.3:0.7)+'em',
+                            'background-color': task.color,'height':15 + 'px'}"
+            data-ng-click="raiseDOMTaskClickedEvent($event, task)"
+            data-ng-repeat="task in row.tasks | ganttTaskLimit:scroll_start:scroll_width track by task.id"
+            data-ng-if='fnIdentifyTask(task.id,"t")'>
+          </div>
+
+          <!--diamond marking report run date of non periodic reports-->
+          <div data-ng-class="{'gantt-task': !task.isMilestone}"
+               data-ng-style="{'left':((task.data.isPeriodic && task.left || task.left))+'em',
+                            'width': task.width+'em','top':25 + 'px'}"
+               data-ng-click="raiseDOMTaskClickedEvent($event, task)"
+               data-ng-repeat="task in row.tasks | ganttTaskLimit:scroll_start:scroll_width track by task.id"
+               data-ng-if='fnIdentifyTask(task.id,"t")'>
+            <div data-ng-if="!task.data.isPeriodic" class="gantt-task-content">
+              <i class="fa fa-stop dsui-rotate-diamond" data-ng-if="task.data.submissionRunDate" data-ng-style="{'color':task.color,'position':'relative', 'left':task.width/2+'em'}"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

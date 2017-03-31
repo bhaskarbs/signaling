@@ -1,0 +1,18 @@
+{
+  "selectAll": 0,
+  "queryKey": 1,
+  "data": [
+    {
+      "name": "Group 1",
+      "type": 1,
+      "groupId": 1,
+      "userId": -1
+    },
+    {
+      "name": "SANALYST1",
+      "type": 0,
+      "groupId": 1,
+      "userId": 371643
+    }
+  ]
+}

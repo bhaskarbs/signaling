@@ -1,0 +1,1965 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-case-lists {
+      .dsui-second-navbar {
+        padding: 0.5em 2.5em;
+        color: $saint-dark-gray-color;
+        .btn-group {
+          margin-top: 8px !important;
+          .dsui-white-color {
+            color: $saint-white-color;
+          }
+          .dsui-blue-color {
+            color: $saint-blue-color;
+          }
+        }
+      }
+      .dsui-colapsible-section {
+        height: 100px;
+        background-color: $saint-collapsible-blue-color;
+        float: left;
+        .dsui-collapsed-conetnt {
+          width: 30px;
+          .dsui-collpase-icon {
+            color: $saint-light-gray-color;
+            cursor: pointer;
+          }
+          .dsui-text-rotator {
+            color: $saint-light-gray-color;
+            -moz-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg); /* IE 9 */
+          }
+        }
+      }
+      .dsui-case-list-libruary {
+        padding: 0;
+        .dsui-caselists-collapse-div {
+          border-right: 2px solid $saint-cool-gray-color;
+          padding: 0.5em 0 0 0;
+          .dsui-filter-div {
+            border-bottom: 1px solid $saint-case-list-border;
+            .dsui-text-section {
+              .dsui-filter-icon {
+                cursor: pointer;
+                background-image: url('../images/private/filter-icon-sprite.png');
+                background-repeat: no-repeat;
+                background-position: 4px 4px;
+                height: 25px;
+                width: 27px;
+                border-radius: 4px;
+                border: 1px solid $saint-filter-light-gray;
+              }
+              .dsui-filter-icon-active {
+                cursor: pointer;
+                background-image: url('../images/private/filter-icon-sprite.png');
+                background-repeat: no-repeat;
+                background-position: -15px 5px;;
+                height: 25px;
+                width: 27px;
+                border-radius: 4px;
+                border: 1px solid $saint-filter-light-gray;
+                background-color: $saint-caption-color;
+              }
+              .dsui-case-list-text {
+                font-size: 0.95em;
+              }
+            }
+            .dsui-favourite-section {
+              .dsui-favourite-icon {
+                color: $saint-blue-color;
+                cursor: pointer;
+              }
+              .dsui-un-favourite-icon {
+                color: $saint-unfavourite-color;
+                cursor: pointer;
+              }
+              .dsui-collapse-icon {
+                @include color-fontsize($saint-light-gray-color, 1.2em);
+                cursor: pointer;
+                border-left: 1px solid $saint-light-gray-color;
+                padding: 2px 5px 2px 8px;
+              }
+              .dsui-favourite-star {
+                padding: 5px;
+                color: $saint-blue-color;
+              }
+            }
+          }
+          .dsui-list-items {
+            height: 1210px;
+            overflow-y: auto;
+            .dsui-blue-border {
+              background-color: $saint-active-background-color;
+            }
+            .dsui-case-list-div {
+              height: 120px;
+              border-left: 5px solid $saint-blue-color;
+              border-bottom: 2px solid $saint-cool-gray-color;
+              padding: 1.5em 1em;
+              .dsui-drug-details {
+                .dsui-drug-header {
+                  @include color-fontsize($saint-dark-gray-color, 1em);
+                  margin-bottom: 0;
+                }
+                .dsui-destination-name {
+                  color: $saint-dark-gray-color;
+                  font-size: 0.8em;
+                }
+                .dsui-submission-days {
+                  @include color-fontsize($saint-blue-color, 1.5em);
+                }
+              }
+              .dsui-share-star-links {
+                .dsui-icons-section {
+                  .dsui-favourite-icon {
+                    color: $saint-blue-color;
+                    cursor: pointer;
+                  }
+                  .dsui-un-favourite-icon {
+                    color: $saint-unfavourite-color;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+          .dsui-filter-section {
+            position: absolute;
+            width: 70%;
+            top: 34px;
+            background: $saint-white-color;
+            z-index: 999;
+            border: 1px solid $saint-switch-gray-color;
+            overflow-y: auto;
+            height: 600px;
+            .dsui-selection-items-list {
+              font-size: 0.75em;
+              overflow-y: auto;
+            }
+            .dsui-your-search {
+              font-weight: bold;
+            }
+            .dsui-selection {
+              .dsui-selection-bottom-border {
+
+              }
+              .dsui-report-name-selection {
+                .dsui-report-name {
+                  @include fontsize-fontweight(0.75em, bold);
+                  margin: 1em 0;
+                }
+                .input-group {
+                  width: 100%;
+                  ::-webkit-input-placeholder {
+                    font-size: 0.9em;
+                  }
+                  ::-moz-placeholder {
+                    font-size: 0.9em;
+                  }
+                  /* firefox 19+ */
+                  :-ms-input-placeholder {
+                    font-size: 0.9em;
+                  }
+                  /* ie */
+                  input:-moz-placeholder {
+                    font-size: 0.9em;
+                  }
+                  .dsui-search-filter {
+                    height: 25px;
+                    border-radius: 0px;
+                    border-color: $saint-cool-gray-color;
+                    border-style: solid;
+                    border-width: 1px 0px 1px 1px;
+                    padding: 6px !important;
+                  }
+                  .input-group-addon {
+                    padding: 4px 6px !important;
+                    background-color: $saint-white-color;
+                    border-radius: 0px;
+                    border-color: $saint-cool-gray-color;
+                    border-style: solid;
+                    border-width: 1px 1px 1px 0px;
+                  }
+                }
+                .dsui-checkbox-section {
+                  .dsui-filter-section-checks {
+                    font-size: 0.75em;
+                  }
+                }
+              }
+              .dsui-report-status-selection {
+                font-size: 0.75em;
+                .dsui-status {
+                  @include fontsize-fontweight(1em, bold);
+                  margin: 1em 0;
+                }
+              }
+              .dsui-report-type-selection {
+                font-size: 0.75em;
+                .dsui-report-type {
+                  font-size: 1em;
+                  font-weight: bold;
+                  margin: 1em 0;
+                }
+              }
+            }
+            .dsui-clear-filter-section {
+              padding: 1em;
+              .dsui-clear-filter-btn {
+                @include color-fontsize-backgroundcolor($saint-white-color, 0.6em,$saint-light-gray-color);
+                border-radius: 0px;
+                padding: 2px 8px !important;
+              }
+            }
+          }
+        }
+        .dsui-caseLists-reports-div {
+          .dsui-buttons-row {
+            padding: 1.250em 0em 1.250em 0em !important;
+            border-bottom: 2px solid $saint-cool-gray-color;
+            .dsui-button-padding {
+              padding: 3px;
+            }
+            .dsui-left-section {
+              .dsui-add-data-view {
+                @include color-backgroundcolor( $saint-white-color,  $saint-blue-color);
+              }
+            }
+            .dsui-right-section {
+              .btn-generate-report {
+                @include color-backgroundcolor( $saint-white-color,  $saint-blue-color);
+                border-radius: 5px;
+              }
+              .dropdown-index {
+                z-index: 1
+              }
+              .dsui-multi-select-checkbox-list {
+                .report-button {
+                  z-index: 1;
+                }
+                .dsui-selection-list {
+                  font-size: 0.9em;
+                  z-index: 1;
+                  .dsui-checkbox-selection {
+                    padding: 3px 10px;
+                  }
+                }
+                label {
+                  font-weight: normal;
+                }
+              }
+            }
+            .dsui-selected-button {
+              background-color: $saint-cool-gray-color;
+            }
+            .dsui-un-selected-button {
+              background-color: $saint-white-color;
+            }
+            .icons-space {
+              margin-right: 10px;
+            }
+            .export-button {
+              width: 80px !important;
+              z-index: 1;
+            }
+          }
+          .dsui-count-div {
+            padding-left:15px;
+            .dsui-casename {
+              font-size: 1.125em;
+              display: block;
+            }
+            .dsui-cases {
+              display: block;
+              font-size: 1.250em;
+              .dsui-source-count {
+                color: $saint-blue-color;
+              }
+            }
+            .dsui-actionfont {
+              @include color-fontsize($saint-gray-color, 15px);
+            }
+            .dsui-all-count {
+              border-radius: 50%;
+              border: 1px solid;
+              font-size: 0.8em;
+              padding-left: 4px;
+              padding-right: 4px;
+            }
+            .dsui-listed {
+              border-color: $saint-blue-color;
+              color: $saint-blue-color;
+            }
+            .dsui-added {
+              border-color: $saint-green-color;
+              @include color-background($saint-white-color, $saint-green-color);
+            }
+            .dsui-removed {
+              @include color-background($saint-white-color, $saint-gray-color);
+              border-color: $saint-gray-color;
+            }
+            .dsui-annotated {
+              @include color-background($saint-white-color, $saint-blue-color);
+              border-color: $saint-blue-color;
+            }
+          }
+          .dsui-display-inline {
+            display: inline-block;
+          }
+          /*swathi filters code*/
+          .dsui-source-filters {
+            padding: 0em 0em 1.250em 0em !important;
+            font-family: $font-roboto-regular;
+            width: 100%;
+            .dsui-source {
+              color: $saint-black-color;
+              @include fontsize-fontweight(13px, bold);
+            }
+            .dsui-source-display {
+              margin-left: 5px;
+            }
+            .dsui-source-list {
+              @include color-fontsize($saint-blue-color, 0.814em);
+            }
+            .dsui-source-parent {
+              height: 32px;
+              border: 1px solid $saint-blue-color;
+              margin: 14px 17px 0px 2px;
+              border-radius: 5px;
+              display: inline-block;
+              .fa.fa-sort-desc {
+                color: $saint-blue-color;
+                float: right;
+                cursor: pointer;
+                margin-right: 5px;
+              }
+            }
+            .dsui-source-head {
+              @include color-fontsize-fontweight($saint-blue-color, 12px,bold);
+              padding: 7px 0px 7px 7px !important;
+            }
+            .dsui-source-head-colon {
+              @include color-fontsize-fontweight($saint-blue-color, 12px,bold);
+              padding: 0px !important;
+            }
+            .dsui-source-content {
+              @include color-fontsize($saint-title-gray-color, 12px);
+              padding-right: 7px !important;
+            }
+            .dsui-source-filter-parent {
+              @include color-fontsize-backgroundcolor($saint-white-color ,12px, $saint-blue-color);
+              height: 32px;
+              margin: 14px 17px 0px 2px;
+              border-radius: 5px;
+              display: inline-block;
+              .dsui-source-filter {
+                padding-top: 7px;
+              }
+              .dsui-source-filter-head {
+                margin-left: 5px;
+                font-weight: bold;
+                word-wrap: break-word;
+              }
+              .dsui-source-filter-content {
+                color: $saint-white-color !important;
+                word-wrap: break-word;
+                padding-right: 7px !important;
+              }
+              .dsui-remove-filter {
+                border-left: 1px solid $saint-white-color;
+                padding: 7px 5px;
+              }
+              .fa.fa-times {
+                cursor: pointer;
+                @include fontsize-fontweight(12px, bold);
+              }
+            }
+          }
+          .dsui-advanced-query-div {
+            padding-bottom: 2em;
+            .dsui-refresh-div {
+              font-size: 24px;
+              .dsui-refresh-icon {
+                color: $saint-cases-in-active;
+                padding: 15px;
+              }
+              .dsui-info-icon {
+                padding: 15px;
+                color: $saint-title-gray-color;
+              }
+            }
+            .dsui-advanced-query-button {
+              padding-bottom: 1em;
+              margin-left: 5px;
+              button {
+                background-color: $saint-white-color !important;
+                border: 1px solid $saint-cool-gray-color !important;
+                border-radius: 6px !important;
+              }
+              .dsui-recipe-drop-down-div {
+                text-align: right;
+                .dsui-search-box {
+                  margin: 10px 15px;
+                  input, button {
+                    border: none !important;
+                    border-bottom: 1px solid $saint-favourite-border-color;
+                  }
+                }
+                .dsui-add-recipe-li {
+                  text-align: right;
+                  .dsui-add-new-recipe {
+                    margin: 20px 10px;
+                    @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+                  }
+                }
+                ul {
+                  text-align: left;
+                }
+              }
+            }
+            .dsui-query-div {
+              text-align: left;
+              padding-bottom: 2em;
+              font-size: 24px;
+              padding-left: 5em;
+              .dsui-query-text {
+                color: $saint-light-gray-color
+              }
+              .dsui-check-mark {
+                color: $saint-green-color;
+              }
+              .dsui-dimention-span {
+                .dsui-condition-span {
+                  border: 1px dashed $saint-favourite-border-color;
+                  padding: 2px 2px 2px 6px;
+                }
+                .dsui-dimentions-div {
+                  .dsui-dimention-part1 {
+                    .select2-container {
+                      min-width: 185px !important;
+                      width: inherit !important;
+                      text-align: center;
+                      a {
+                        border: none;
+                        border-radius: 0px;
+                        color: $saint-blue-color;
+                        background-image: none !important;
+                        height: 30px;
+                        border-bottom: 1px solid $saint-blue-color;
+                        div {
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                  .dsui-dimention-is {
+                    border: 1px dashed $saint-favourite-border-color;
+                    padding: 2px;
+                  }
+                  .dsui-dimention-part2 {
+                    .select2-container {
+                      min-width: 150px !important;
+                      width: inherit !important;
+                      a {
+                        border: none;
+                        border-radius: 0px;
+                        color: $saint-blue-color;
+                        background-image: none !important;
+                        height: 30px;
+                        border-bottom: 1px solid $saint-blue-color;
+                        div {
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+                .dsui-plus {
+                  .fa-minus-circle {
+                    color: $saint-cases-in-active;
+                    padding-right: .5em;
+                  }
+                  .fa-plus-circle {
+                    color: $saint-blue-color;
+                  }
+                }
+              }
+            }
+          }
+          .popover {
+            display: none;
+            border: 1px solid $saint-very-light-gray !important;
+            width: 300px;
+            border-radius: 0px;
+            .arrow {
+              left: 86% !important;
+              border-color: $saint-very-light-gray transparent !important;
+            }
+            .dsui-products-popup-content {
+              overflow-y: auto;
+              height: 200px;
+            }
+            .dsui-popup-header {
+              @include color-fontsize($saint-title-gray-color, 14px);
+              border-bottom: 1px solid $saint-very-light-gray;
+              padding: 7px;
+            }
+            ul {
+              padding-left: 0;
+            }
+            li {
+              list-style: none;
+              padding: 7px;
+              @include color-fontsize($saint-title-gray-color, 12px);
+            }
+          }
+          .dsui-analytical-filters {
+            padding: 0em 0em 1.250em 0em !important;
+            font-family: $font-roboto-regular;
+            width: 100%;
+            .dsui-analytical-name {
+              color: $saint-black-color;
+              @include fontsize-fontweight(13px, bold);
+              width: 100%;
+            }
+            .dsui-analytical-filters-display {
+              background-color: $saint-panel-cool-gray-color;
+              margin: 6px 0px 0px 5px;
+              display: inline-block;
+              width: 100%;
+              .dsui-analytical-filter-parent {
+                height: 32px;
+                @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+                margin: 13px 0px 0px 12px;
+                border-radius: 5px;
+                font-size: 12px !important;
+                display: inline-block;
+                div {
+                  padding: 7px 0px;
+                }
+                .dsui-analytical-filter-head {
+                  padding: 7px 0px 7px 7px !important;
+                  font-weight: bold;
+                }
+                .dsui-analytical-filter-content {
+                  color: $saint-white-color !important;
+                  padding-right: 7px !important;
+                }
+                .dsui-remove-filter {
+                  border-left: 1px solid $saint-white-color;
+                }
+                .fa.fa-sort-desc {
+                  cursor: pointer;
+                  padding: 0px 5px;
+                }
+              }
+              .dsui-analytical-section {
+                padding: 0px 0px;
+                width: 89%;
+              }
+              .dsui-filter-seperator {
+                border-right: 1px solid $saint-favourite-border-color;
+                margin-top: 0.5%;
+                margin-bottom: 0.6%;
+              }
+              .dsui-filters-section {
+                padding: 0px;
+                width: 10%;
+                margin-top: 5px;
+                span {
+                  width: 50%;
+                  word-wrap: break-word;
+                }
+                .btn.btn-default {
+                  margin: 7px;
+                  border-radius: 5px;
+                  font-size: 12px;
+                  width: 70%;
+                  white-space: normal;
+                }
+              }
+            }
+            .dsui-analyatical-popup {
+              display: none;
+              width: 15% !important;
+              border-radius: 3px;
+            }
+            .dsui-top-level li {
+              border-bottom: 1px solid $saint-very-light-gray;
+              list-style: none;
+              padding: 10px;
+            }
+            .dsui-top-level {
+              background-color: white;
+              padding-left: 0;
+              margin-bottom: -1px;
+            }
+            .dsui-top-level a {
+              font-size: 0.8em;
+            }
+            .dsui-top-level a:hover {
+              text-decoration: none;
+            }
+            .fa.fa-plus {
+              float: left;
+              margin-top: 3px;
+              margin-left: 3px;
+            }
+            i.fa.fa-times {
+              float: left;
+              margin-top: 3px;
+              margin-left: 3px;
+            }
+            .dsui-top-level span {
+              padding: 5px;
+              @include color-fontsize($saint-title-gray-color, 14px);
+            }
+            .dsui-analytical-content {
+              font-size: 0.68em;
+            }
+            .dsui-analytical-button {
+              background-color: $saint-white-color;
+              border-radius: 6px;
+              font-size: 13px;
+              border: 1px solid $saint-cool-gray-color;
+            }
+
+          }
+
+          /*PDF Data Styling*/
+
+          .dsui-caselist-pdf-data {
+            visibility: hidden;
+            height: 0px;
+          }
+        }
+      }
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-case-lists {
+        .dsui-second-navbar {
+          padding: 0.5em 2.5em;
+          color: $saint-dark-gray-color;
+          .btn-group {
+            margin-top: 8px !important;
+            .dsui-white-color {
+              color: $saint-white-color;
+            }
+            .dsui-blue-color {
+              color: $saint-blue-color;
+            }
+          }
+        }
+        .dsui-colapsible-section {
+          height: 100px;
+          background-color: $saint-collapsible-blue-color;
+          float: left;
+          .dsui-collapsed-conetnt {
+            width: 30px;
+            .dsui-collpase-icon {
+              color: $saint-light-gray-color;
+              cursor: pointer;
+            }
+            .dsui-text-rotator {
+              color: $saint-light-gray-color;
+              -moz-transform: rotate(90deg);
+              -webkit-transform: rotate(90deg);
+              -o-transform: rotate(90deg);
+              -ms-transform: rotate(90deg); /* IE 9 */
+            }
+          }
+        }
+        .dsui-case-list-libruary {
+          padding: 0;
+          .dsui-caselists-collapse-div {
+            border-right: 2px solid $saint-cool-gray-color;
+            padding: 0.5em 0 0 0;
+            .dsui-filter-div {
+              border-bottom: 1px solid $saint-case-list-border;
+              .dsui-text-section {
+                .dsui-filter-icon {
+                  cursor: pointer;
+                  background-image: url('../images/private/filter-icon-sprite.png');
+                  background-repeat: no-repeat;
+                  background-position: 4px 4px;
+                  height: 25px;
+                  width: 27px;
+                  border-radius: 4px;
+                  border: 1px solid $saint-filter-light-gray;
+                }
+                .dsui-filter-icon-active {
+                  cursor: pointer;
+                  background-image: url('../images/private/filter-icon-sprite.png');
+                  background-repeat: no-repeat;
+                  background-position: -15px 5px;;
+                  height: 25px;
+                  width: 27px;
+                  border-radius: 4px;
+                  border: 1px solid $saint-filter-light-gray;
+                  background-color: $saint-caption-color;
+                }
+                .dsui-case-list-text {
+                  font-size: 0.95em;
+                }
+              }
+              .dsui-favourite-section {
+                .dsui-favourite-icon {
+                  color: $saint-blue-color;
+                  cursor: pointer;
+                }
+                .dsui-un-favourite-icon {
+                  color: $saint-unfavourite-color;
+                  cursor: pointer;
+                }
+                .dsui-collapse-icon {
+                  cursor: pointer;
+                  @include color-fontsize($saint-light-gray-color, 1.2em);
+                  border-left: 1px solid $saint-light-gray-color;
+                  padding: 2px 5px 2px 8px;
+                }
+                .dsui-favourite-star {
+                  padding: 5px;
+                  color: $saint-blue-color;
+                }
+              }
+            }
+            .dsui-list-items {
+              height: 1210px;
+              overflow-y: auto;
+              .dsui-blue-border {
+                background-color: $saint-active-background-color;
+              }
+              .dsui-case-list-div {
+                height: 120px;
+                border-left: 5px solid $saint-blue-color;
+                border-bottom: 2px solid $saint-cool-gray-color;
+                padding: 1.5em 1em;
+                .dsui-drug-details {
+                  .dsui-drug-header {
+                    @include color-fontsize($saint-dark-gray-color, 1em);
+                    margin-bottom: 0 ;
+                  }
+                  .dsui-destination-name {
+                    @include color-fontsize($saint-dark-gray-color, 0.8em);
+                  }
+                  .dsui-submission-days {
+                    @include color-fontsize($saint-blue-color, 1.5em);
+                  }
+                }
+                .dsui-share-star-links {
+                  .dsui-icons-section {
+                    .dsui-favourite-icon {
+                      color: $saint-blue-color;
+                      cursor: pointer;
+                    }
+                    .dsui-un-favourite-icon {
+                      color: $saint-unfavourite-color;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+            }
+            .dsui-filter-section {
+              position: absolute;
+              width: 70%;
+              top: 34px;
+              background: $saint-white-color;
+              z-index: 999;
+              border: 1px solid $saint-switch-gray-color;
+              overflow-y: auto;
+              height: 600px;
+              .dsui-selection-items-list {
+                font-size: 0.75em;
+                overflow-y: auto;
+              }
+              .dsui-your-search {
+                font-weight: bold;
+              }
+              .dsui-selection {
+                .dsui-selection-bottom-border {
+
+                }
+                .dsui-report-name-selection {
+                  .dsui-report-name {
+                    @include fontsize-fontweight(0.75em, bold);
+                    margin: 1em 0;
+                  }
+                  .input-group {
+                    width: 100%;
+                    ::-webkit-input-placeholder {
+                      font-size: 0.9em;
+                    }
+                    ::-moz-placeholder {
+                      font-size: 0.9em;
+                    }
+                    /* firefox 19+ */
+                    :-ms-input-placeholder {
+                      font-size: 0.9em;
+                    }
+                    /* ie */
+                    input:-moz-placeholder {
+                      font-size: 0.9em;
+                    }
+                    .dsui-search-filter {
+                      height: 25px;
+                      border-radius: 0px;
+                      border-color: $saint-cool-gray-color;
+                      border-style: solid;
+                      border-width: 1px 0px 1px 1px;
+                      padding: 6px !important;
+                    }
+                    .input-group-addon {
+                      padding: 4px 6px !important;
+                      background-color: $saint-white-color;
+                      border-radius: 0px;
+                      border-color: $saint-cool-gray-color;
+                      border-style: solid;
+                      border-width: 1px 1px 1px 0px;
+                    }
+                  }
+                  .dsui-checkbox-section {
+                    .dsui-filter-section-checks {
+                      font-size: 0.75em;
+                    }
+                  }
+                }
+                .dsui-report-status-selection {
+                  font-size: 0.75em;
+                  .dsui-status {
+                    @include fontsize-fontweight(1em, bold);
+                    margin: 1em 0;
+                  }
+                }
+                .dsui-report-type-selection {
+                  font-size: 0.75em;
+                  .dsui-report-type {
+                    @include fontsize-fontweight(1em, bold);
+                    margin: 1em 0;
+                  }
+                }
+              }
+              .dsui-clear-filter-section {
+                padding: 1em;
+                .dsui-clear-filter-btn {
+                  @include color-backgroundcolor($saint-white-color, $saint-light-gray-color);
+                  font-size: 0.6em;
+                  border-radius: 0px;
+                  padding: 2px 8px !important;
+                }
+              }
+            }
+          }
+          .dsui-caseLists-reports-div {
+            .dsui-buttons-row {
+              padding: 1.250em 0em 1.250em 0em !important;
+              border-bottom: 2px solid $saint-cool-gray-color;
+              .dsui-button-padding {
+                padding: 3px;
+              }
+              .dsui-left-section {
+                .dsui-add-data-view {
+                  @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+              }
+              }
+              .dsui-right-section {
+                .btn-generate-report {
+                  @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+                  border-radius: 5px;
+                }
+                .dropdown-index {
+                  z-index: 1
+                }
+                .dsui-multi-select-checkbox-list {
+                  .report-button {
+                    z-index: 1;
+                  }
+                  .dsui-selection-list {
+                    font-size: 0.9em;
+                    z-index: 1;
+                    .dsui-checkbox-selection {
+                      padding: 3px 10px;
+                    }
+                  }
+                  label {
+                    font-weight: normal;
+                  }
+                }
+              }
+              .dsui-selected-button {
+                background-color: $saint-cool-gray-color;
+              }
+              .dsui-un-selected-button {
+                background-color: $saint-white-color;
+              }
+              .icons-space {
+                margin-right: 10px;
+              }
+              .export-button {
+                width: 80px !important;
+                z-index: 1;
+              }
+            }
+            .dsui-count-div {
+              padding: 1em 1em 0.5em 0em !important;
+              .dsui-casename {
+                font-size: 1.125em;
+                display: block;
+              }
+              .dsui-cases {
+                display: block;
+                font-size: 1.250em;
+                .dsui-source-count {
+                  color: $saint-blue-color;
+                }
+              }
+              .dsui-actionfont {
+                @include color-fontsize($saint-gray-color, 15px);
+              }
+              .dsui-all-count {
+                border: 1px solid;
+                font-size: 0.8em;
+                @include paddingleft-paddingright(4px,4px);
+              }
+              .dsui-listed {
+                border-color: $saint-blue-color;
+                color: $saint-blue-color;
+              }
+              .dsui-added {
+                border-color: $saint-green-color;
+                @include color-background($saint-white-color, $saint-green-color);
+              }
+              .dsui-removed {
+                border-color: $saint-gray-color;
+                @include color-background($saint-white-color, $saint-gray-color);
+              }
+              .dsui-annotated {
+                border-color: $saint-blue-color;
+                @include color-background($saint-white-color, $saint-blue-color);
+              }
+            }
+            .dsui-display-inline {
+              display: inline-block;
+            }
+            /*swathi filters code*/
+            .dsui-source-filters {
+              padding: 0em 0em 1.250em 0em !important;
+              font-family: $font-roboto-regular;
+              width: 100%;
+              .dsui-source {
+                color: $saint-black-color;
+                @include fontsize-fontweight(13px, bold);
+              }
+              .dsui-source-display {
+                margin-left: 5px;
+              }
+              .dsui-source-list {
+                @include color-fontsize($saint-blue-color, 0.814em);
+              }
+              .dsui-source-parent {
+                height: 32px;
+                border: 1px solid $saint-blue-color;
+                margin: 14px 17px 0px 2px;
+                border-radius: 5px;
+                display: inline-block;
+                .fa.fa-sort-desc {
+                  color: $saint-blue-color;
+                  float: right;
+                  cursor: pointer;
+                  margin-right: 5px;
+                }
+              }
+              .dsui-source-head {
+                @include color-fontsize($saint-blue-color, 12px);
+                padding: 7px 0px 7px 7px !important;
+                font-weight: bold;
+              }
+              .dsui-source-head-colon {
+                @include color-fontsize($saint-blue-color, 12px);
+                padding: 0px !important;
+                font-weight: bold;
+              }
+              .dsui-source-content {
+                @include color-fontsize($saint-title-gray-color, 12px);
+                padding-right: 7px !important;
+              }
+              .dsui-source-filter-parent {
+                height: 32px;
+                @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+                margin: 14px 17px 0px 2px;
+                border-radius: 5px;
+                font-size: 12px !important;
+                display: inline-block;
+                .dsui-source-filter {
+                  padding-top: 7px;
+                }
+                .dsui-source-filter-head {
+                  margin-left: 5px;
+                  font-weight: bold;
+                  word-wrap: break-word;
+                }
+                .dsui-source-filter-content {
+                  color: $saint-white-color !important;
+                  word-wrap: break-word;
+                  padding-right: 7px !important;
+                }
+                .dsui-remove-filter {
+                  border-left: 1px solid $saint-white-color;
+                  padding: 7px 5px;
+                }
+                .fa.fa-times {
+                  cursor: pointer;
+                  @include fontsize-fontweight(12px, bold);
+                }
+              }
+            }
+            .dsui-advanced-query-div {
+              padding-bottom: 2em;
+              .dsui-refresh-div {
+                font-size: 24px;
+                .dsui-refresh-icon {
+                  color: $saint-cases-in-active;
+                  padding: 15px;
+                }
+                .dsui-info-icon {
+                  padding: 15px;
+                  color: $saint-title-gray-color;
+                }
+              }
+              .dsui-advanced-query-button {
+                padding-bottom: 1em;
+                margin-left: 5px;
+                button {
+                  background-color: $saint-white-color !important;
+                  border: 1px solid $saint-cool-gray-color !important;
+                  border-radius: 6px !important;
+                }
+                .dsui-recipe-drop-down-div {
+                  text-align: right;
+                  .dsui-search-box {
+                    margin: 10px 15px;
+                    input, button {
+                      border: none !important;
+                      border-bottom: 1px solid $saint-favourite-border-color;
+                    }
+                  }
+                  .dsui-add-recipe-li {
+                    text-align: right;
+                    .dsui-add-new-recipe {
+                      margin: 20px 10px;
+                      @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+                    }
+                  }
+                  ul {
+                    text-align: left;
+                  }
+                }
+              }
+              .dsui-query-div {
+                text-align: left;
+                padding-bottom: 2em;
+                font-size: 24px;
+                padding-left: 5em;
+                .dsui-query-text {
+                  color: $saint-light-gray-color
+                }
+                .dsui-check-mark {
+                  color: $saint-green-color;
+                }
+                .dsui-dimention-span {
+                  .dsui-condition-span {
+                    border: 1px dashed $saint-favourite-border-color;
+                    padding: 2px 2px 2px 6px;
+                  }
+                  .dsui-dimentions-div {
+                    .dsui-dimention-part1 {
+                      .select2-container {
+                        min-width: 185px !important;
+                        width: inherit !important;
+                        text-align: center;
+                        a {
+                          border: none;
+                          border-radius: 0px;
+                          color: $saint-blue-color;
+                          background-image: none !important;
+                          height: 30px;
+                          border-bottom: 1px solid $saint-blue-color;
+                          div {
+                            display: none;
+                          }
+                        }
+                      }
+                    }
+                    .dsui-dimention-is {
+                      border: 1px dashed $saint-favourite-border-color;
+                      padding: 2px;
+                    }
+                    .dsui-dimention-part2 {
+                      .select2-container {
+                        min-width: 150px !important;
+                        width: inherit !important;
+                        a {
+                          border: none;
+                          border-radius: 0px;
+                          color: $saint-blue-color;
+                          background-image: none !important;
+                          height: 30px;
+                          border-bottom: 1px solid $saint-blue-color;
+                          div {
+                            display: none;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .dsui-plus {
+                    .fa-minus-circle {
+                      color: $saint-cases-in-active;
+                      padding-right: .5em;
+                    }
+                    .fa-plus-circle {
+                      color: $saint-blue-color;
+                    }
+                  }
+                }
+              }
+            }
+            .popover {
+              display: none;
+              border: 1px solid $saint-very-light-gray !important;
+              width: 300px;
+              border-radius: 0px;
+              .arrow {
+                left: 86% !important;
+                border-color: $saint-very-light-gray transparent !important;
+              }
+              .dsui-products-popup-content {
+                overflow-y: auto;
+                height: 200px;
+              }
+              .dsui-popup-header {
+                @include color-fontsize($saint-title-gray-color, 14px);
+                border-bottom: 1px solid $saint-very-light-gray;
+                padding: 7px;
+              }
+              ul {
+                padding-left: 0;
+              }
+              li {
+                list-style: none;
+                padding: 7px;
+                @include color-fontsize($saint-title-gray-color, 14px);
+              }
+            }
+            .dsui-analytical-filters {
+              padding: 0em 0em 1.250em 0em !important;
+              font-family: $font-roboto-regular;
+              width: 100%;
+              .dsui-analytical-name {
+                @include color-fontsize($saint-black-color, 13px);
+                font-weight: bold;
+                width: 100%;
+              }
+              .dsui-analytical-filters-display {
+                background-color: $saint-panel-cool-gray-color;
+                margin: 6px 0px 0px 5px;
+                display: inline-block;
+                width: 100%;
+                .dsui-analytical-filter-parent {
+                  height: 32px;;
+                  margin: 13px 0px 0px 12px;
+                  border-radius: 5px;
+                  @include color-fontsize-backgroundcolor($saint-white-color,12px,$saint-blue-color);
+                  display: inline-block;
+                  div {
+                    padding: 7px 0px;
+                  }
+                  .dsui-analytical-filter-head {
+                    padding: 7px 0px 7px 7px !important;
+                    font-weight: bold;
+                  }
+                  .dsui-analytical-filter-content {
+                    color: $saint-white-color !important;
+                    padding-right: 7px !important;
+                  }
+                  .dsui-remove-filter {
+                    border-left: 1px solid $saint-white-color;
+                  }
+                  .fa.fa-sort-desc {
+                    cursor: pointer;
+                    padding: 0px 5px;
+                  }
+                }
+                .dsui-analytical-section {
+                  padding: 0px 0px;
+                  width: 89%;
+                }
+                .dsui-filter-seperator {
+                  border-right: 1px solid $saint-favourite-border-color;
+                  margin-top: 0.5%;
+                  margin-bottom: 0.6%;
+                }
+                .dsui-filters-section {
+                  padding: 0px;
+                  width: 10%;
+                  margin-top: 5px;
+                  span {
+                    width: 50%;
+                    word-wrap: break-word;
+                  }
+                  .btn.btn-default {
+                    margin: 7px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    width: 70%;
+                    white-space: normal;
+                  }
+                }
+              }
+              .dsui-analyatical-popup {
+                display: none;
+                width: 15% !important;
+                border-radius: 3px;
+              }
+              .dsui-top-level li {
+                border-bottom: 1px solid $saint-very-light-gray;
+                list-style: none;
+                padding: 10px;
+              }
+              .dsui-top-level {
+                background-color: white;
+                padding-left: 0;
+                margin-bottom: -1px;
+              }
+              .dsui-top-level a {
+                font-size: 0.8em;
+              }
+              .dsui-top-level a:hover {
+                text-decoration: none;
+              }
+              .fa.fa-plus {
+                float: left;
+                margin-top: 3px;
+                margin-left: 3px;
+              }
+              i.fa.fa-times {
+                float: left;
+                margin-top: 3px;
+                margin-left: 3px;
+              }
+              .dsui-top-level span {
+                padding: 5px;
+                @include color-fontsize($saint-title-gray-color, 14px);
+              }
+              .dsui-analytical-content {
+                font-size: 0.68em;
+              }
+              .dsui-analytical-button {
+                background-color: $saint-white-color;
+                border-radius: 6px;
+                font-size: 13px;
+                border: 1px solid $saint-cool-gray-color;
+              }
+
+            }
+
+            /*PDF Data Styling*/
+
+            .dsui-caselist-pdf-data {
+              visibility: hidden;
+              height: 0px;
+            }
+          }
+        }
+      }
+    }
+
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-case-lists {
+        .dsui-second-navbar {
+          padding: 0.5em 2.5em;
+          color: $saint-dark-gray-color;
+          .btn-group {
+            margin-top: 8px !important;
+            .dsui-white-color {
+              color: $saint-white-color;
+            }
+            .dsui-blue-color {
+              color: $saint-blue-color;
+            }
+          }
+        }
+        .dsui-colapsible-section {
+          height: 100px;
+          background-color: $saint-collapsible-blue-color;
+          float: left;
+          .dsui-collapsed-conetnt {
+            width: 30px;
+            .dsui-collpase-icon {
+              color: $saint-light-gray-color;
+              cursor: pointer;
+            }
+            .dsui-text-rotator {
+              color: $saint-light-gray-color;
+              -moz-transform: rotate(90deg);
+              -webkit-transform: rotate(90deg);
+              -o-transform: rotate(90deg);
+              -ms-transform: rotate(90deg); /* IE 9 */
+            }
+          }
+        }
+        .dsui-case-list-libruary {
+          padding: 0;
+          .dsui-caselists-collapse-div {
+            border-right: 2px solid $saint-cool-gray-color;
+            padding: 0.5em 0 0 0;
+            .dsui-filter-div {
+              border-bottom: 1px solid $saint-case-list-border;
+              .dsui-text-section {
+                .dsui-filter-icon {
+                  cursor: pointer;
+                  background-image: url('../images/private/filter-icon-sprite.png');
+                  background-repeat: no-repeat;
+                  background-position: 4px 4px;
+                  height: 25px;
+                  width: 27px;
+                  border-radius: 4px;
+                  border: 1px solid $saint-filter-light-gray;
+                }
+                .dsui-filter-icon-active {
+                  cursor: pointer;
+                  background-image: url('../images/private/filter-icon-sprite.png');
+                  background-repeat: no-repeat;
+                  background-position: -15px 5px;;
+                  height: 25px;
+                  width: 27px;
+                  border-radius: 4px;
+                  border: 1px solid $saint-filter-light-gray;
+                  background-color: $saint-caption-color;
+                }
+                .dsui-case-list-text {
+                  font-size: 0.95em;
+                }
+              }
+              .dsui-favourite-section {
+                .dsui-favourite-icon {
+                  color: $saint-blue-color;
+                  cursor: pointer;
+                }
+                .dsui-un-favourite-icon {
+                  color: $saint-unfavourite-color;
+                  cursor: pointer;
+                }
+                .dsui-collapse-icon {
+                  cursor: pointer;
+                  @include color-fontsize($saint-light-gray-color, 1.2em);
+                  border-left: 1px solid $saint-light-gray-color;
+                  padding: 2px 5px 2px 8px;
+                }
+                .dsui-favourite-star {
+                  padding: 5px;
+                  color: $saint-blue-color;
+                }
+              }
+            }
+            .dsui-list-items {
+              height: 1210px;
+              overflow-y: auto;
+              .dsui-blue-border {
+                background-color: $saint-active-background-color;
+              }
+              .dsui-case-list-div {
+                height: 120px;
+                border-left: 5px solid $saint-blue-color;
+                border-bottom: 2px solid $saint-cool-gray-color;
+                padding: 1.5em 1em;
+                .dsui-drug-details {
+                  .dsui-drug-header {
+                    @include color-fontsize($saint-dark-gray-color, 1em);
+                    margin-bottom: 0 ;
+                  }
+                  .dsui-destination-name {
+                    @include color-fontsize($saint-dark-gray-color, 0.8em);
+                  }
+                  .dsui-submission-days {
+                    @include color-fontsize($saint-blue-color, 1.5em);
+                  }
+                }
+                .dsui-share-star-links {
+                  .dsui-icons-section {
+                    .dsui-favourite-icon {
+                      color: $saint-blue-color;
+                      cursor: pointer;
+                    }
+                    .dsui-un-favourite-icon {
+                      color: $saint-unfavourite-color;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+            }
+            .dsui-filter-section {
+              position: absolute;
+              width: 70%;
+              top: 34px;
+              background: $saint-white-color;
+              z-index: 999;
+              border: 1px solid $saint-switch-gray-color;
+              overflow-y: auto;
+              height: 600px;
+              .dsui-selection-items-list {
+                font-size: 0.75em;
+                overflow-y: auto;
+              }
+              .dsui-your-search {
+                font-weight: bold;
+              }
+              .dsui-selection {
+                .dsui-selection-bottom-border {
+
+                }
+                .dsui-report-name-selection {
+                  .dsui-report-name {
+                    @include fontsize-fontweight(0.75em, bold);
+                    margin: 1em 0;
+                  }
+                  .input-group {
+                    width: 100%;
+                    ::-webkit-input-placeholder {
+                      font-size: 0.9em;
+                    }
+                    ::-moz-placeholder {
+                      font-size: 0.9em;
+                    }
+                    /* firefox 19+ */
+                    :-ms-input-placeholder {
+                      font-size: 0.9em;
+                    }
+                    /* ie */
+                    input:-moz-placeholder {
+                      font-size: 0.9em;
+                    }
+                    .dsui-search-filter {
+                      height: 25px;
+                      border-radius: 0px;
+                      border-color: $saint-cool-gray-color;
+                      border-style: solid;
+                      border-width: 1px 0px 1px 1px;
+                      padding: 6px !important;
+                    }
+                    .input-group-addon {
+                      padding: 4px 6px !important;
+                      background-color: $saint-white-color;
+                      border-radius: 0px;
+                      border-color: $saint-cool-gray-color;
+                      border-style: solid;
+                      border-width: 1px 1px 1px 0px;
+                    }
+                  }
+                  .dsui-checkbox-section {
+                    .dsui-filter-section-checks {
+                      font-size: 0.75em;
+                    }
+                  }
+                }
+                .dsui-report-status-selection {
+                  font-size: 0.75em;
+                  .dsui-status {
+                    @include fontsize-fontweight(1em, bold);
+                    margin: 1em 0;
+                  }
+                }
+                .dsui-report-type-selection {
+                  font-size: 0.75em;
+                  .dsui-report-type {
+                    @include fontsize-fontweight(1em, bold);
+                    margin: 1em 0;
+                  }
+                }
+              }
+              .dsui-clear-filter-section {
+                padding: 1em;
+                .dsui-clear-filter-btn {
+                  border-radius: 0px;
+                  padding: 2px 8px !important;
+                  @include color-fontsize-backgroundcolor($saint-white-color, 0.6em,$saint-light-gray-color);
+                }
+              }
+            }
+          }
+          .dsui-caseLists-reports-div {
+            .dsui-buttons-row {
+              padding: 1.250em 0em 1.250em 0em !important;
+              border-bottom: 2px solid $saint-cool-gray-color;
+              .dsui-button-padding {
+                padding: 3px;
+              }
+              .dsui-left-section {
+                .dsui-add-data-view {
+                  @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+                }
+              }
+              .dsui-right-section {
+                .btn-generate-report {
+                  @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+                  border-radius: 5px;
+                }
+                .dropdown-index {
+                  z-index: 1
+                }
+                .dsui-multi-select-checkbox-list {
+                  .report-button {
+                    z-index: 1;
+                  }
+                  .dsui-selection-list {
+                    font-size: 0.9em;
+                    z-index: 1;
+                    .dsui-checkbox-selection {
+                      padding: 3px 10px;
+                    }
+                  }
+                  label {
+                    font-weight: normal;
+                  }
+                }
+              }
+              .dsui-selected-button {
+                background-color: $saint-cool-gray-color;
+              }
+              .dsui-un-selected-button {
+                background-color: $saint-white-color;
+              }
+              .icons-space {
+                margin-right: 10px;
+              }
+              .export-button {
+                width: 80px !important;
+                z-index: 1;
+              }
+            }
+            .dsui-count-div {
+              padding: 1em 1em 0.5em 0em !important;
+              .dsui-casename {
+                font-size: 1.125em;
+                display: block;
+              }
+              .dsui-cases {
+                display: block;
+                font-size: 1.250em;
+                .dsui-source-count {
+                  color: $saint-blue-color;
+                }
+              }
+              .dsui-actionfont {
+                @include color-fontsize($saint-gray-color, 15px);
+              }
+              .dsui-all-count {
+                border-radius: 50%;
+                border: 1px solid;
+                font-size: 0.8em;
+                @include paddingleft-paddingright(4px, 4px);
+              }
+              .dsui-listed {
+                border-color: $saint-blue-color;
+                color: $saint-blue-color;
+              }
+              .dsui-added {
+                border-color: $saint-green-color;
+                background: $saint-green-color;
+                color: $saint-white-color;
+                @include color-background($saint-white-color, $saint-green-color);
+              }
+              .dsui-removed {
+                border-color: $saint-gray-color;
+                @include color-background($saint-white-color, $saint-gray-color);
+              }
+              .dsui-annotated {
+                border-color: $saint-blue-color;
+                @include color-background($saint-white-color, $saint-blue-color);
+              }
+            }
+            .dsui-display-inline {
+              display: inline-block;
+            }
+            /*swathi filters code*/
+            .dsui-source-filters {
+              padding: 0em 0em 1.250em 0em !important;
+              font-family: $font-roboto-regular;
+              width: 100%;
+              .dsui-source {
+                @include color-fontsize($saint-black-color, 13px);
+                font-weight: bold;
+              }
+              .dsui-source-display {
+                margin-left: 5px;
+              }
+              .dsui-source-list {
+                @include color-fontsize($saint-blue-color, 0.814em);
+              }
+              .dsui-source-parent {
+                height: 32px;
+                border: 1px solid $saint-blue-color;
+                margin: 14px 17px 0px 2px;
+                border-radius: 5px;
+                display: inline-block;
+                .fa.fa-sort-desc {
+                  color: $saint-blue-color;
+                  float: right;
+                  cursor: pointer;
+                  margin-right: 5px;
+                }
+              }
+              .dsui-source-head {
+                @include color-fontsize-fontweight($saint-blue-color,12px, bold);
+                font-size: 12px;
+                color: $saint-blue-color;
+                padding: 7px 0px 7px 7px !important;
+                font-weight: bold;
+              }
+              .dsui-source-head-colon {
+                @include color-fontsize-fontweight($saint-blue-color,12px, bold);
+                padding: 0px !important;
+              }
+              .dsui-source-content {
+                @include color-fontsize($saint-title-gray-color, 12px);
+                padding-right: 7px !important;
+              }
+              .dsui-source-filter-parent {
+                height: 32px;
+                @include color-fontsize-backgroundcolor($saint-white-color, 12px ,$saint-blue-color);
+                margin: 14px 17px 0px 2px;
+                border-radius: 5px;
+                display: inline-block;
+                .dsui-source-filter {
+                  padding-top: 7px;
+                }
+                .dsui-source-filter-head {
+                  margin-left: 5px;
+                  font-weight: bold;
+                  word-wrap: break-word;
+                }
+                .dsui-source-filter-content {
+                  color: $saint-white-color !important;
+                  word-wrap: break-word;
+                  padding-right: 7px !important;
+                }
+                .dsui-remove-filter {
+                  border-left: 1px solid $saint-white-color;
+                  padding: 7px 5px;
+                }
+                .fa.fa-times {
+                  cursor: pointer;
+                  @include fontsize-fontweight(12px, bold);
+                }
+              }
+            }
+            .dsui-advanced-query-div {
+              padding-bottom: 2em;
+              .dsui-refresh-div {
+                font-size: 24px;
+                .dsui-refresh-icon {
+                  color: $saint-cases-in-active;
+                  padding: 15px;
+                }
+                .dsui-info-icon {
+                  padding: 15px;
+                  color: $saint-title-gray-color;
+                }
+              }
+              .dsui-advanced-query-button {
+                padding-bottom: 1em;
+                margin-left: 5px;
+                button {
+                  background-color: $saint-white-color !important;
+                  border: 1px solid $saint-cool-gray-color !important;
+                  border-radius: 6px !important;
+                }
+                .dsui-recipe-drop-down-div {
+                  text-align: right;
+                  .dsui-search-box {
+                    margin: 10px 15px;
+                    input, button {
+                      border: none !important;
+                      border-bottom: 1px solid $saint-favourite-border-color;
+                    }
+                  }
+                  .dsui-add-recipe-li {
+                    text-align: right;
+                    .dsui-add-new-recipe {
+                      margin: 20px 10px;
+                      @include color-backgroundcolor($saint-white-color, $saint-blue-color);
+                    }
+                  }
+                  ul {
+                    text-align: left;
+                  }
+                }
+              }
+              .dsui-query-div {
+                text-align: left;
+                padding-bottom: 2em;
+                font-size: 24px;
+                padding-left: 5em;
+                .dsui-query-text {
+                  color: $saint-light-gray-color
+                }
+                .dsui-check-mark {
+                  color: $saint-green-color;
+                }
+                .dsui-dimention-span {
+                  .dsui-condition-span {
+                    border: 1px dashed $saint-favourite-border-color;
+                    padding: 2px 2px 2px 6px;
+                  }
+                  .dsui-dimentions-div {
+                    .dsui-dimention-part1 {
+                      .select2-container {
+                        min-width: 185px !important;
+                        width: inherit !important;
+                        text-align: center;
+                        a {
+                          border: none;
+                          border-radius: 0px;
+                          color: $saint-blue-color;
+                          background-image: none !important;
+                          height: 30px;
+                          border-bottom: 1px solid $saint-blue-color;
+                          div {
+                            display: none;
+                          }
+                        }
+                      }
+                    }
+                    .dsui-dimention-is {
+                      border: 1px dashed $saint-favourite-border-color;
+                      padding: 2px;
+                    }
+                    .dsui-dimention-part2 {
+                      .select2-container {
+                        min-width: 150px !important;
+                        width: inherit !important;
+                        a {
+                          border: none;
+                          border-radius: 0px;
+                          color: $saint-blue-color;
+                          background-image: none !important;
+                          height: 30px;
+                          border-bottom: 1px solid $saint-blue-color;
+                          div {
+                            display: none;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .dsui-plus {
+                    .fa-minus-circle {
+                      color: $saint-cases-in-active;
+                      padding-right: .5em;
+                    }
+                    .fa-plus-circle {
+                      color: $saint-blue-color;
+                    }
+                  }
+                }
+              }
+            }
+            .popover {
+              display: none;
+              border: 1px solid $saint-very-light-gray !important;
+              width: 300px;
+              border-radius: 0px;
+              .arrow {
+                left: 86% !important;
+                border-color: $saint-very-light-gray transparent !important;
+              }
+              .dsui-products-popup-content {
+                overflow-y: auto;
+                height: 200px;
+              }
+              .dsui-popup-header {
+                @include color-fontsize($saint-title-gray-color, 14px);
+                border-bottom: 1px solid $saint-very-light-gray;
+                padding: 7px;
+              }
+              ul {
+                padding-left: 0;
+              }
+              li {
+                list-style: none;
+                padding: 7px;
+                @include color-fontsize($saint-title-gray-color, 12px);
+              }
+            }
+            .dsui-analytical-filters {
+              padding: 0em 0em 1.250em 0em !important;
+              font-family: $font-roboto-regular;
+              width: 100%;
+              .dsui-analytical-name {
+                @include color-fontsize-fontweight($saint-black-color,13px, bold);
+                width: 100%;
+              }
+              .dsui-analytical-filters-display {
+                background-color: $saint-panel-cool-gray-color;
+                margin: 6px 0px 0px 5px;
+                display: inline-block;
+                width: 100%;
+                .dsui-analytical-filter-parent {
+                  height: 32px;
+                  margin: 13px 0px 0px 12px;
+                  border-radius: 5px;
+                  display: inline-block;
+                  @include color-fontsize-backgroundcolor($saint-white-color, 12px,$saint-blue-color);
+                  div {
+                    padding: 7px 0px;
+                  }
+                  .dsui-analytical-filter-head {
+                    padding: 7px 0px 7px 7px !important;
+                    font-weight: bold;
+                  }
+                  .dsui-analytical-filter-content {
+                    color: $saint-white-color !important;
+                    padding-right: 7px !important;
+                  }
+                  .dsui-remove-filter {
+                    border-left: 1px solid $saint-white-color;
+                  }
+                  .fa.fa-sort-desc {
+                    cursor: pointer;
+                    padding: 0px 5px;
+                  }
+                }
+                .dsui-analytical-section {
+                  padding: 0px 0px;
+                  width: 89%;
+                }
+                .dsui-filter-seperator {
+                  border-right: 1px solid $saint-favourite-border-color;
+                  margin-top: 0.5%;
+                  margin-bottom: 0.6%;
+                }
+                .dsui-filters-section {
+                  padding: 0px;
+                  width: 10%;
+                  margin-top: 5px;
+                  span {
+                    width: 50%;
+                    word-wrap: break-word;
+                  }
+                  .btn.btn-default {
+                    margin: 7px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    width: 70%;
+                    white-space: normal;
+                  }
+                }
+              }
+              .dsui-analyatical-popup {
+                display: none;
+                width: 15% !important;
+                border-radius: 3px;
+              }
+              .dsui-top-level li {
+                border-bottom: 1px solid $saint-very-light-gray;
+                list-style: none;
+                padding: 10px;
+              }
+              .dsui-top-level {
+                background-color: white;
+                padding-left: 0;
+                margin-bottom: -1px;
+              }
+              .dsui-top-level a {
+                font-size: 0.8em;
+              }
+              .dsui-top-level a:hover {
+                text-decoration: none;
+              }
+              .fa.fa-plus {
+                float: left;
+                margin-top: 3px;
+                margin-left: 3px;
+              }
+              i.fa.fa-times {
+                float: left;
+                margin-top: 3px;
+                margin-left: 3px;
+              }
+              .dsui-top-level span {
+                padding: 5px;
+                @include color-fontsize($saint-title-gray-color, 14px);
+              }
+              .dsui-analytical-content {
+                font-size: 0.68em;
+              }
+              .dsui-analytical-button {
+                background-color: $saint-white-color;
+                border-radius: 6px;
+                font-size: 13px;
+                border: 1px solid $saint-cool-gray-color;
+              }
+
+            }
+            /*PDF Data Styling*/
+            .dsui-caselist-pdf-data {
+              visibility: hidden;
+              height: 0px;
+            }
+          }
+        }
+      }
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

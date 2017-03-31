@@ -1,0 +1,911 @@
+{
+	"groupObject": {
+		"isCollapsed": false,
+		"source": "source",
+		"groupOperator": {
+			"key": 1,
+			"name": "AND"
+		},
+		"rules": [{
+			"operator": {
+				"dataType": "TEXT",
+				"dataTypeDisplayName": "",
+				"sQLValue": "in(COLUMN_NAME,#value)",
+				"sQLDisplayName": "",
+				"name": "includes"
+			},
+			"operators": [],
+			"dimension": {
+				"columnName": "CPE_PRODUCT_TRADE_NAME",
+				"displayName": "Product",
+				"dataType": "TEXT",
+				"isLOV": true,
+				"group": "Product",
+				"name": "Product"
+			},
+			"selectedValues": [{
+				"id": 19360,
+				"name": "PRODUCT - 157  Meltaways",
+				"code": 157
+			}, {
+				"id": 19360,
+				"name": "PRODUCT - 157  Meltaways",
+				"code": 157
+			}, {
+				"id": 19601,
+				"name": "CUREALL  INJECTION",
+				"code": 157
+			}, {
+				"id": 19601,
+				"name": "CUREALL  INJECTION",
+				"code": 157
+			}, {
+				"id": 20171,
+				"name": "CUREALL  TABLET",
+				"code": 157
+			}, {
+				"id": 20171,
+				"name": "CUREALL  TABLET",
+				"code": 157
+			}, {
+				"id": 21290,
+				"name": "PRODUCT - 157  Suppository",
+				"code": 157
+			}, {
+				"id": 21290,
+				"name": "PRODUCT - 157  Suppository",
+				"code": 157
+			}],
+			"value": ""
+		}, {
+			"operator": {
+				"dataType": "TEXT",
+				"dataTypeDisplayName": "",
+				"sQLValue": "in(COLUMN_NAME,#value)",
+				"sQLDisplayName": "",
+				"name": "includes"
+			},
+			"operators": [],
+			"dimension": {
+				"columnName": "FAMILY_DESC",
+				"displayName": "Ingredient",
+				"dataType": "TEXT",
+				"isLOV": true,
+				"group": "General",
+				"name": "Ingredient"
+			},
+			"selectedValues": [{
+				"id": 157,
+				"name": "PRODUCT - 157"
+			}],
+			"value": ""
+		}, {
+			"group": {
+				"isCollapsed": false,
+				"source": "source",
+				"groupOperator": {
+					"key": 0,
+					"name": "OR"
+				},
+				"rules": [{
+					"operator": {
+						"dataType": "DATE",
+						"dataTypeDisplayName": "",
+						"sQLValue": "!=",
+						"sQLDisplayName": "",
+						"name": "between"
+					},
+					"operators": [],
+					"dimension": {
+						"columnName": "EVENT_RECEIPT_DT_KEY",
+						"displayName": "Event Receipt Date",
+						"dataType": "DATE",
+						"isLOV": false,
+						"group": "General",
+						"name": "Event Receipt Date"
+					},
+					"selectedValues": [],
+					"value": ["1900-01-02T00:30:00.000Z", "2999-01-02T00:30:00.000Z"]
+				}, {
+					"operator": {
+						"dataType": "DATE",
+						"dataTypeDisplayName": "",
+						"sQLValue": "!=",
+						"sQLDisplayName": "",
+						"name": "between"
+					},
+					"operators": [],
+					"dimension": {
+						"columnName": "SUBMIT_DT_KEY",
+						"displayName": "ICSR Submission Date",
+						"dataType": "DATE",
+						"isLOV": false,
+						"group": "General",
+						"name": "ICSR Submission Date"
+					},
+					"selectedValues": [],
+					"value": ["1900-01-02T00:30:00.000Z", "2999-01-02T00:30:00.000Z"]
+				}]
+			}
+		}, {
+			"group": {
+				"isCollapsed": false,
+				"source": "",
+				"groupOperator": {
+					"key": 1,
+					"name": "AND"
+				},
+				"rules": [{
+					"operator": {
+						"dataType": "DATE",
+						"dataTypeDisplayName": "",
+						"sQLValue": "=",
+						"sQLDisplayName": "equals",
+						"name": "equals"
+					},
+					"operators": [],
+					"dimension": {
+						"columnName": "DUE_DATE",
+						"displayName": "Due Date",
+						"dataType": "DATE",
+						"isLOV": false,
+						"group": "General",
+						"name": "Due Date"
+					},
+					"selectedValues": [],
+					"value": 1464048000000,
+					"valueOperators": "2016-05-23T18:30:00.000Z"
+				}]
+			}
+		}]
+	},
+	"operators": [{
+		"dataType": "DATE",
+		"dataTypeDisplayName": "",
+		"sQLValue": "!=",
+		"sQLDisplayName": "does not equal",
+		"name": "does not equal"
+	}, {
+		"dataType": "DATE",
+		"dataTypeDisplayName": "",
+		"sQLValue": "<=",
+		"sQLDisplayName": "less than or equals",
+		"name": "less than or equals"
+	}, {
+		"dataType": "DATE",
+		"dataTypeDisplayName": "",
+		"sQLValue": "=",
+		"sQLDisplayName": "equals",
+		"name": "equals"
+	}, {
+		"dataType": "DATE",
+		"dataTypeDisplayName": "",
+		"sQLValue": ">=",
+		"sQLDisplayName": "greater than or equals",
+		"name": "greater than or equals"
+	}, {
+		"dataType": "DATE",
+		"dataTypeDisplayName": "",
+		"sQLValue": "COLUMN_NAME in(#value)",
+		"sQLDisplayName": "includes",
+		"name": "includes"
+	}, {
+		"dataType": "DATE",
+		"dataTypeDisplayName": "",
+		"sQLValue": "COLUMN_NAME>=#value and COLUMN_NAME<=#value",
+		"sQLDisplayName": "between",
+		"name": "between"
+	}, {
+		"dataType": "NUMERIC",
+		"dataTypeDisplayName": "",
+		"sQLValue": "!=",
+		"sQLDisplayName": "does not equal",
+		"name": "does not equal"
+	}, {
+		"dataType": "NUMERIC",
+		"dataTypeDisplayName": "",
+		"sQLValue": "<=",
+		"sQLDisplayName": "less than or equals",
+		"name": "less than or equals"
+	}, {
+		"dataType": "NUMERIC",
+		"dataTypeDisplayName": "",
+		"sQLValue": "=",
+		"sQLDisplayName": "equals",
+		"name": "equals"
+	}, {
+		"dataType": "NUMERIC",
+		"dataTypeDisplayName": "",
+		"sQLValue": ">=",
+		"sQLDisplayName": "greater than or equals",
+		"name": "greater than or equals"
+	}, {
+		"dataType": "NUMERIC",
+		"dataTypeDisplayName": "",
+		"sQLValue": "COLUMN_NAME in(#value)",
+		"sQLDisplayName": "includes",
+		"name": "includes"
+	}, {
+		"dataType": "NUMERIC",
+		"dataTypeDisplayName": "",
+		"sQLValue": "COLUMN_NAME>=#value and COLUMN_NAME<=#value",
+		"sQLDisplayName": "between",
+		"name": "between"
+	}, {
+		"dataType": "TEXT",
+		"dataTypeDisplayName": "",
+		"sQLValue": "!=",
+		"sQLDisplayName": "does not equal",
+		"name": "does not equal"
+	}, {
+		"dataType": "TEXT",
+		"dataTypeDisplayName": "",
+		"sQLValue": "=",
+		"sQLDisplayName": "equals",
+		"name": "equals"
+	}, {
+		"dataType": "TEXT",
+		"dataTypeDisplayName": "",
+		"sQLValue": "COLUMN_NAME in(#value)",
+		"sQLDisplayName": "includes",
+		"name": "includes"
+	}, {
+		"dataType": "TEXT",
+		"dataTypeDisplayName": "",
+		"sQLValue": "CONTAINS(COLUMN_NAME,#value)",
+		"sQLDisplayName": "contains",
+		"name": "contains"
+	}, {
+		"dataType": "TEXT",
+		"dataTypeDisplayName": "",
+		"sQLValue": "not CONTAINS(COLUMN_NAME,#value)",
+		"sQLDisplayName": "does not contain",
+		"name": "does not contain"
+	}],
+	"dimensions": [{
+		"columnName": "ADMIN_ROUTE_DESC",
+		"displayName": "Admin Route Description",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Admin Route Description"
+	}, {
+		"columnName": "PATIENT_AGE_UNIT_DESC",
+		"displayName": "Age Unit",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Age Unit"
+	}, {
+		"columnName": "AUTOPSY_DEATH_CAUSE_CODED",
+		"displayName": "Autopsy Death Cause Coded",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Autopsy Death Cause Coded"
+	}, {
+		"columnName": "AUTOPSY_PT_DESC",
+		"displayName": "Autopsy Patient Description",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Autopsy Patient Description"
+	}, {
+		"columnName": "CIF_COUNTRY_NAME",
+		"displayName": "CIF Country Name",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "CIF Country Name"
+	}, {
+		"columnName": "D_CASE_CAUSALITY_DESC",
+		"displayName": "Case Causality Description",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Causality Description"
+	}, {
+		"columnName": "CLASSIFICATION_DESC",
+		"displayName": "Case Classification",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Classification"
+	}, {
+		"columnName": "CASE_ID",
+		"displayName": "Case ID",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case ID"
+	}, {
+		"columnName": "CASE_KEY",
+		"displayName": "Case Key",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Key"
+	}, {
+		"columnName": "CASE_NBR",
+		"displayName": "Case Number",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Number"
+	}, {
+		"columnName": "CASE_ORIGINATOR_USER_KEY",
+		"displayName": "Case Originator User Key",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Originator User Key"
+	}, {
+		"columnName": "CASE_ASSESS_OUTCOME_DESC",
+		"displayName": "Case Outcome",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Outcome"
+	}, {
+		"columnName": "D_CASE_OUTCOME_HIERARCHY_DESC",
+		"displayName": "Case Outcome Hierarchy Description",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Outcome Hierarchy Description"
+	}, {
+		"columnName": "CASE_OWNER_USER_KEY",
+		"displayName": "Case Owner User Key",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Owner User Key"
+	}, {
+		"columnName": "D_CASE_SOURCE_TYPE",
+		"displayName": "Case Report Type",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Report Type"
+	}, {
+		"columnName": "D_CASE_SERIOUSNESS_DESC",
+		"displayName": "Case Serious",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "Event",
+		"name": "Case Serious"
+	}, {
+		"columnName": "LOCKED_DESC",
+		"displayName": "Case Status",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Case Status"
+	}, {
+		"columnName": "WORKFLOW_STATUS_DESC",
+		"displayName": "Current State",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Current State"
+	}, {
+		"columnName": "DAILY_DOSAGE",
+		"displayName": "Daily Dosage",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Daily Dosage"
+	}, {
+		"columnName": "DAILY_DOSAGE_UNIT_DESC",
+		"displayName": "Daily Dosage Unit Description",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Daily Dosage Unit Description"
+	}, {
+		"columnName": "PATIENT_DOB",
+		"displayName": "Date of Birth",
+		"dataType": "DATE",
+		"isLOV": false,
+		"group": "General",
+		"name": "Date of Birth"
+	}, {
+		"columnName": "DEATH_DATE",
+		"displayName": "Death Date",
+		"dataType": "DATE",
+		"isLOV": false,
+		"group": "General",
+		"name": "Death Date"
+	}, {
+		"columnName": "DEATH_INDIC",
+		"displayName": "Death Indicator",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Death Indicator"
+	}, {
+		"columnName": "PROD_DECHALLENGE_DESC",
+		"displayName": "Dechallenge",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Dechallenge"
+	}, {
+		"columnName": "DUE_DATE",
+		"displayName": "Due Date",
+		"dataType": "DATE",
+		"isLOV": false,
+		"group": "General",
+		"name": "Due Date"
+	}, {
+		"columnName": "EFFECTIVE_DT_KEY",
+		"displayName": "Effective Date Key",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Effective Date Key"
+	}, {
+		"columnName": "REPORTED_CAUSALITY_DESC",
+		"displayName": "Event Causality",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Event Causality"
+	}, {
+		"columnName": "EVENT_KEY",
+		"displayName": "Event Key",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Event Key"
+	}, {
+		"columnName": "LABELLED_DESC",
+		"displayName": "Event Listedness",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "Event",
+		"name": "Event Listedness"
+	}, {
+		"columnName": "ONSET_DT_KEY",
+		"displayName": "Event Onset Date / Time",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Event Onset Date / Time"
+	}, {
+		"columnName": "EVENT_OUTCOME_DESC",
+		"displayName": "Event Outcome",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Event Outcome"
+	}, {
+		"columnName": "EVENT_RECEIPT_DT_KEY",
+		"displayName": "Event Receipt Date",
+		"dataType": "DATE",
+		"isLOV": false,
+		"group": "General",
+		"name": "Event Receipt Date"
+	}, {
+		"columnName": "EVENT_DESC_AS_REPORTED",
+		"displayName": "Event Report Type",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Event Report Type"
+	}, {
+		"columnName": "SOC_DESC",
+		"displayName": "Event SOC",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Event SOC"
+	}, {
+		"columnName": "EVENT_REPORTED_SERIOUS_INDIC",
+		"displayName": "Event Seriousness",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Event Seriousness"
+	}, {
+		"columnName": "EVENT_SORT_ID",
+		"displayName": "Event Sort ID",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Event Sort ID"
+	}, {
+		"columnName": "EXPIRE_DT_KEY",
+		"displayName": "Expiration Date",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Expiration Date"
+	}, {
+		"columnName": "FOLLOWUP_RECV_DT_KEY",
+		"displayName": "Follow-up Receipt Date",
+		"dataType": "DATE",
+		"isLOV": false,
+		"group": "General",
+		"name": "Follow-up Receipt Date"
+	}, {
+		"columnName": "FOLLOWUP_SIGNIFICANT_INDIC",
+		"displayName": "Follow-up Significant",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Follow-up Significant"
+	}, {
+		"columnName": "PATIENT_GENDER_DESC",
+		"displayName": "Gender (Patient)",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "Patient",
+		"name": "Gender (Patient)"
+	}, {
+		"columnName": "GENERIC_NAME",
+		"displayName": "Generic Name",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Generic Name"
+	}, {
+		"columnName": "PATIENT_HEIGHT",
+		"displayName": "Height",
+		"dataType": "NUMERIC",
+		"isLOV": false,
+		"group": "General",
+		"name": "Height"
+	}, {
+		"columnName": "HLGT_DESC",
+		"displayName": "High Level Group Term (HLGT)",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "High Level Group Term (HLGT)"
+	}, {
+		"columnName": "HLT_DESC",
+		"displayName": "High Level Term (HLT)",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "High Level Term (HLT)"
+	}, {
+		"columnName": "SUBMIT_DT_KEY",
+		"displayName": "ICSR Submission Date",
+		"dataType": "DATE",
+		"isLOV": false,
+		"group": "General",
+		"name": "ICSR Submission Date"
+	}, {
+		"columnName": "INDICATION_KEY",
+		"displayName": "Indication Key",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Indication Key"
+	}, {
+		"columnName": "FAMILY_DESC",
+		"displayName": "Ingredient",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Ingredient"
+	}, {
+		"columnName": "FAMILY_CODE",
+		"displayName": "Ingredient Code",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Ingredient Code"
+	}, {
+		"columnName": "INITIAL_CASE_CREATE_DATETIME",
+		"displayName": "Initial Case Create Datetime",
+		"dataType": "DATE",
+		"isLOV": false,
+		"group": "General",
+		"name": "Initial Case Create Datetime"
+	}, {
+		"columnName": "INIT_RECV_DT_KEY",
+		"displayName": "Initial Receipt Date",
+		"dataType": "DATE",
+		"isLOV": false,
+		"group": "General",
+		"name": "Initial Receipt Date"
+	}, {
+		"columnName": "INTERNATIONAL_SOC_ORDER",
+		"displayName": "International SOC Order",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "International SOC Order"
+	}, {
+		"columnName": "D_INVALID_CASE_INDIC",
+		"displayName": "Invalid Case Indicator",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Invalid Case Indicator"
+	}, {
+		"columnName": "LIC_NUMBER",
+		"displayName": "License",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "License"
+	}, {
+		"columnName": "LICENSE_KEY",
+		"displayName": "License Key",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "License Key"
+	}, {
+		"columnName": "LICENSE_NBR",
+		"displayName": "License Number",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "Product",
+		"name": "License Number"
+	}, {
+		"columnName": "LOCKED_DATE",
+		"displayName": "Lock Date",
+		"dataType": "DATE",
+		"isLOV": false,
+		"group": "General",
+		"name": "Lock Date"
+	}, {
+		"columnName": "LLT_DESC",
+		"displayName": "Lower Level Term (LLT)",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Lower Level Term (LLT)"
+	}, {
+		"columnName": "MEDDRA_VERSION_NUMBER",
+		"displayName": "MedDRA Version",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "MedDRA Version"
+	}, {
+		"columnName": "RELEVANT_HISTORY_TYPE",
+		"displayName": "Medical History Type",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Medical History Type"
+	}, {
+		"columnName": "CALC_PATIENT_AGE",
+		"displayName": "Patient Age",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "Patient",
+		"name": "Patient Age"
+	}, {
+		"columnName": "PATIENT_ID",
+		"displayName": "Patient ID",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Patient ID"
+	}, {
+		"columnName": "PREGN_PATIENT_INDIC",
+		"displayName": "Patient Indicator (Pregnancy)",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Patient Indicator (Pregnancy)"
+	}, {
+		"columnName": "PATIENT_INITIAL",
+		"displayName": "Patient Initials",
+		"dataType": "TEXT",
+		"isLOV": false,
+		"group": "General",
+		"name": "Patient Initials"
+	}, {
+		"columnName": "PATIENT_HEIGHT_UNIT_DESC",
+		"displayName": "Patient Unit",
+		"dataType": "TEXT",
+		"isLOV": false,
+		"group": "General",
+		"name": "Patient Unit"
+	}, {
+		"columnName": "PT_DESC",
+		"displayName": "Preferred Term (PT)",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "Event",
+		"name": "Preferred Term (PT)"
+	}, {
+		"columnName": "PREGN_EXPOSED_TRIMESTER",
+		"displayName": "Pregnancy Exposed Trimester",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Pregnancy Exposed Trimester"
+	}, {
+		"columnName": "PRIME_SUSPECT_EVENT_INDIC",
+		"displayName": "Prime Suspect Event Indicator",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Prime Suspect Event Indicator"
+	}, {
+		"columnName": "PRIME_SUSPECT_PROD_INDIC",
+		"displayName": "Prime Suspect Product Indicator",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Prime Suspect Product Indicator"
+	}, {
+		"columnName": "CPE_PRODUCT_TRADE_NAME",
+		"displayName": "Product",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "Product",
+		"name": "Product"
+	}, {
+		"columnName": "FORMULATION_DESC",
+		"displayName": "Product Formulation",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "Product",
+		"name": "Product Formulation"
+	}, {
+		"columnName": "PRODUCT_KEY",
+		"displayName": "Product Key",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Product Key"
+	}, {
+		"columnName": "PROD_RECHALLENGE_DESC",
+		"displayName": "Rechallenge",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Rechallenge"
+	}, {
+		"columnName": "STUDY_DRUG_INDIC",
+		"displayName": "Related to Study Conduct",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Related to Study Conduct"
+	}, {
+		"columnName": "STUDY_RELATED_INDIC",
+		"displayName": "Related to Study Conduct",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Related to Study Conduct"
+	}, {
+		"columnName": "REPORT_FORM_DESC",
+		"displayName": "Report Form Description",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Report Form Description"
+	}, {
+		"columnName": "REPORT_FORM_TYPE_DESC",
+		"displayName": "Report Form Type Description",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Report Form Type Description"
+	}, {
+		"columnName": "REPORT_TIMEFRAME",
+		"displayName": "Report Timeframe",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Report Timeframe"
+	}, {
+		"columnName": "REPORT_TYPE_DESC",
+		"displayName": "Report Type",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Report Type"
+	}, {
+		"columnName": "REPORT_AGENCY_DESC",
+		"displayName": "Reporting Destination",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Reporting Destination"
+	}, {
+		"columnName": "FOLLOWUP_SAFETY_RECV_DT_KEY",
+		"displayName": "Safety Receipt Date (Follow-up)",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Safety Receipt Date (Follow-up)"
+	}, {
+		"columnName": "SAFETY_RECV_DT_KEY",
+		"displayName": "Safety Receipt Date (Initial)",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Safety Receipt Date (Initial)"
+	}, {
+		"columnName": "SEQ_RELEVANT_HISTORY",
+		"displayName": "Sequence Relevant History",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Sequence Relevant History"
+	}, {
+		"columnName": "SITE_DESC",
+		"displayName": "Site Name",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Site Name"
+	}, {
+		"columnName": "SORT_ID_EVENT",
+		"displayName": "Sort ID Event",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Sort ID Event"
+	}, {
+		"columnName": "THERAPY_KEY",
+		"displayName": "Therapy Key",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Therapy Key"
+	}, {
+		"columnName": "CPE_TRADE_NAME",
+		"displayName": "Trade Name",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Trade Name"
+	}, {
+		"columnName": "CPE_License_TRADE_NAME",
+		"displayName": "Trade Name (License)",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Trade Name (License)"
+	}, {
+		"columnName": "VERSION_NBR",
+		"displayName": "Version Number",
+		"dataType": "NUMERIC",
+		"isLOV": true,
+		"group": "General",
+		"name": "Version Number"
+	}, {
+		"columnName": "PATIENT_WEIGHT",
+		"displayName": "Weight",
+		"dataType": "NUMERIC",
+		"isLOV": false,
+		"group": "General",
+		"name": "Weight"
+	}, {
+		"columnName": "FROM_WORKFLOW_DESC",
+		"displayName": "Workflow Route From",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Workflow Route From"
+	}, {
+		"columnName": "TO_WORKFLOW_DESC",
+		"displayName": "Workflow Route To",
+		"dataType": "TEXT",
+		"isLOV": true,
+		"group": "General",
+		"name": "Workflow Route To"
+	}, {
+		"columnName": "PATIENT_WEIGHT_UNIT_DESC",
+		"displayName": "weight Unit",
+		"dataType": "TEXT",
+		"isLOV": false,
+		"group": "General",
+		"name": "weight Unit"
+	}]
+
+}

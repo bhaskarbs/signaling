@@ -1,0 +1,113 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-user-group-dropdown {
+
+      .dsui-user-group-selected-box {
+        max-height: 145px !important;
+        overflow-y: auto;
+      }
+      .dsui-add-more-user-placeholder {
+        width: 10em !important;
+        font-family: $font-roboto;
+        font-size: 12px;
+        color: $saint-title-gray-color;
+      }
+      .dsui-enter-user-group-name-placeholder {
+        width: 20em !important;
+        font-family: $font-roboto;
+        font-size: 12px;
+        color: $saint-title-gray-color;
+      }
+
+      .dsui-user-group-selected-list {
+        padding-left: 5px !important;
+        border-color: $saint-user-tag-border;
+      }
+
+      .dsui-user-group-selected-list-text {
+        display: inline !important;
+        font-family: $font-roboto;
+        font-size: 12px;
+        color: $saint-unfavourite-color;
+      }
+
+      .dsui-user-group-selected-list-close {
+        left: auto !important;
+        color: $saint-close-panel;
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      .dsui-user-group-selected-list-group-icon {
+        font-size: 12px !important;
+        color: $saint-close-panel;
+      }
+
+      .dsui-user-selection-header {
+        .dsui-users {
+          font-size: 0.875em;
+        }
+        .dsui-clear-all {
+          float: right;
+          cursor: pointer;
+        }
+      }
+      .dsui-select2-single {
+        height: auto;
+      }
+
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

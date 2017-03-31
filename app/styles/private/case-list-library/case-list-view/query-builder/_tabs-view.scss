@@ -1,0 +1,156 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-add-tab {
+      font-size: 15px;
+      margin-bottom: 3px;
+      border-bottom: none;
+      width: 36px;
+      height: 36px;
+      padding: 6px 0px 0 11px;
+    }
+    .dsui-tab-heading {
+      padding: 10px;
+      background-color: $saint-case-list-fill-color;
+      border: 1px solid $saint-refresh-query-border-color;
+      border-top: none;
+      border-bottom: none;
+    }
+    .dsui-expression-eval {
+      padding: 20px;
+      border: 1px solid $saint-cool-gray-color;
+      margin-bottom: 10px;
+      max-height: 150px;
+      overflow-y: auto;
+      height: auto;
+    }
+    .dsui-set-tabs{
+      margin: 0px -1px -1px 0px;
+      border: 1px solid $saint-refresh-query-border-color;
+      height: 36px;
+    }
+    .dsui-set-tabs.active{
+      border-bottom: none;
+      border-bottom-right-radius: 0px;
+    }
+    .dsui-tab{
+      margin-right: 0px;
+      padding-top: 6px;
+      width: 255px;
+      height: 36px;
+    }
+    .dsui-tab-title{
+      width: 225px;
+      border: none;
+      border-top: 1px solid $saint-color-blue;
+      border-radius: 1px;
+      background-color: $saint-case-list-fill-color;
+      color: $saint-color-blue;
+      font-family: $font-roboto-medium !important;
+      font-size: 14px !important;
+    }
+    .dsui-tab-title-display{
+      text-align: center;
+      width: 225px;
+      border: none;
+      display: block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      color: $saint-color-blue;
+      font-family: $font-roboto-medium;
+      font-size: 14px;
+    }
+    .dsui-tab > input{
+      background-color: $saint-white-color;
+      border:none;
+    }
+    .nav-tabs > li.active > a, .nav-tabs > li.active {
+      background-color: $saint-case-list-fill-color;
+      color:$saint-color-blue;
+    }
+    .dsui-active-tab.active{
+      border-top: 3px solid $saint-color-blue;
+      border-radius: 0px;
+      background-color: $saint-case-list-fill-color;
+      .dsui-tab{
+        padding-top: 5px;
+        border: none;
+        height: 33px;
+      }
+    }
+    li.active > .dsui-tab > input{
+      background-color: $saint-case-list-fill-color;
+    }
+    .nav-tabs > li.active > a:hover {
+      background-color: $saint-case-list-fill-color;
+      color: $saint-black-color;
+    }
+    .dsui-tab > input:hover{
+      background-color: $saint-case-list-fill-color;
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/*Ipad Landscape*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

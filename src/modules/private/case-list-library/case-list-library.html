@@ -1,0 +1,25 @@
+<div class="dsui-case-list-library">
+  <div data-ng-include="VIEWS.CASE_LIST_LIBRARY_SECONDARY_NAVIGATION"></div>
+  <div class="col-xs-12 dsui-no-padding dsui-filter-breadcrumb-container">
+    <filter-breadcrumb controller-name="CaseListBreadcrumb"></filter-breadcrumb>
+  </div>
+  <div class="col-sm-12 dsui-no-padding dsui-main-panel">
+    <div data-ng-class="showFilterPanel ? 'col-xs-3' : 'hidden'" class="dsui-vertical-panel dsui-no-padding dsui-nopadding-left dsui-nopadding-right"
+         id="filterPanel">
+      <div data-ng-include="VIEWS.CASE_LIST_LIBRARY_FILTER_SORT_PANEL_VIEW"></div>
+    </div>
+    <div data-ng-class="(showFilterPanel)?'col-xs-9':'col-xs-12'"
+         id="tilePanel" class="dsui-vertical-panel">
+      <div class="dsui-filter-verticalbar" data-ng-show="!showFilterPanel" data-ng-click="fnToggleFilterPanel()">
+        <div>
+          <div class="text-center dsui-collpase-icon">
+            <span class="icon-angle-double-right"></span>
+          </div>
+          <div class="dsui-text-rotator"><span data-i18n="common.BUNDLE_FILTER_AND_SORT"></span></div>
+        </div>
+      </div>
+      <div data-ng-include="VIEWS.CASE_LIST_LIBRARY_TILE_PANEL_VIEW" class="dsui-tile-panel"></div>
+    </div>
+  </div>
+</div>
+

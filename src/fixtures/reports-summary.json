@@ -1,0 +1,207 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.ReportDetailsType",
+          "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/ReportDetails('145780431439701031')"
+        },
+        "ID": "145780431439701031",
+        "STATUS_NAME": "Final",
+        "RPT_TYPE_NAME": "CIOMS II Case Listing",
+        "DESCRIPTION": "testingvalidations",
+        "RPT_KEY": 79,
+        "RPT_NAME": "CIOMS II Case Listing_PRODUCT - 158_1-Jan-2001-31-Mar-2016_testingvalidations",
+        "RPT_RUN_DATE": null,
+        "IS_BLINDED": 0,
+        "FK_RPT_TYPE_KEY": 5,
+        "Audit_UpdatedDt": "/Date(1457428422000)/",
+        "SUBMITTED_DATE": null,
+        "BCL_KEY": 83,
+        "BCL_NAME": "PRODUCT - 158_1-Jan-2001-31-Mar-2016_testingvalidations",
+        "RPT_START_DATE": "/Date(978307200000)/",
+        "RPT_END_DATE": "/Date(1459382400000)/",
+        "AS_OF_DATE": "/Date(1398816000000)/",
+        "NS_MEDWATCH_RPTS_FLAG": 0,
+        "CASES_NT_PRE_RPTD_FLAG": 0,
+        "EVENT_RCPT_DT_FLAG": 0,
+        "INITIAL_RCPT_DT_FLAG": 1,
+        "FOLLOWUP_RCPT_DT_FLAG": 0,
+        "ICSR_SUBMISSION_DT_FLAG": 0,
+        "OTHER_DT_FLAG": 0,
+        "SIGNAL_COMP_START_DATE": null,
+        "SIGNAL_COMP_END_DATE": null,
+        "SIGNAL_CUML_START_DATE": null,
+        "SIGNAL_CUML_END_DATE": null,
+        "SIGNAL_THRESHOLD": null,
+        "SIGNAL_DENOM_CASE_FLAG": 0,
+        "SIGNAL_DENOM_OTHER_FLAG": 1,
+        "SIGNAL_DENOMINATOR": null,
+        "FK_COMP_PERIOD_KEY": null,
+        "PRODUCT_LICENSE_OPTION": 0,
+        "RUN_TIME": "/Date(3600000)/",
+        "RUN_DATE": "/Date(1454457600000)/",
+        "CASE_COMPLETION_DT_FLAG": 0,
+        "ROUTED_DT_FLAG": 0,
+        "SUBMISSION_DUE_DATE": null,
+        "REPORT_DISPLAY_NAME": "CIOMS II Case Listing_PRODUCT - 158",
+        "ALL_DATES_FLAG": 0,
+        "ReportUsers": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.UsersType",
+                "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/Users(3)"
+              },
+              "USER_KEY": 3,
+              "USER_NAME": "KSMITH_SAINT3"
+            },
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.UsersType",
+                "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/Users(11)"
+              },
+              "USER_KEY": 11,
+              "USER_NAME": "SANALYST1"
+            }
+          ]
+        },
+        "ReportUsersGroups": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.UserGroupsType",
+                "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/UserGroups(1)"
+              },
+              "USER_GRP_KEY": 1,
+              "USER_GRP_NAME": "Group 1",
+              "DESCRIPTION": null,
+              "UsersUsergroups": {
+                "__deferred": {
+                  "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/UserGroups(1)/UsersUsergroups"
+                }
+              }
+            }
+          ]
+        },
+        "ReportMilestones": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.MilestonesType",
+                "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/Milestones(78)"
+              },
+              "MILESTONE_KEY": 78,
+              "MILESTONE_NAME": "Test Milestone",
+              "MILESTONE_DAYS": 0,
+              "MILESTONE_DATE": "/Date(1461369600000)/",
+              "MILESTONE_STATUS": 1,
+              "FK_RPT_KEY": 79,
+              "Audit.CreatedBy": "SANALYST1",
+              "Audit.CreatedDt": "/Date(1457342854000)/",
+              "Audit.UpdatedBy": "SVIMALARAGHUNATHA",
+              "Audit.UpdatedDt": "/Date(1457589675000)/",
+              "MS_COMPLETION_DATE": null
+            }
+          ]
+        },
+        "MilestonesUsers": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.MsUsersType",
+                "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/MsUsers(122)"
+              },
+              "MS_USER_KEY": 122,
+              "FK_MILESTONE_KEY": 78,
+              "FK_USER_KEY": 11
+            }
+          ]
+        },
+        "MilestonesUserGroups": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.MsUserGroupsType",
+                "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/MsUserGroups(108)"
+              },
+              "MS_USER_GRP_KEY": 108,
+              "FK_MILESTONE_KEY": 78,
+              "FK_USER_GRP_KEY": 1
+            }
+          ]
+        },
+        "ReportIngredients": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.IngredientsType",
+                "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/Ingredients('158')"
+              },
+              "FK_BCL_KEY": 83,
+              "INGREDIENT_DESC": "PRODUCT - 158",
+              "INGREDIENT_CODE": "158",
+              "ReportIngredientProducts": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.ProductsType",
+                      "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/Products('158')"
+                    },
+                    "PRODUCT_KEY": 18370,
+                    "TRADE_NAME": "PRODUCT - 158",
+                    "FAMILY_CODE": "158",
+                    "FAMILY_DESC": "PRODUCT - 158"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.ProductsType",
+                      "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/Products('158')"
+                    },
+                    "PRODUCT_KEY": 18948,
+                    "TRADE_NAME": "PRODUCT - 158",
+                    "FAMILY_CODE": "158",
+                    "FAMILY_DESC": "PRODUCT - 158"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.ProductsType",
+                      "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/Products('158')"
+                    },
+                    "PRODUCT_KEY": 19759,
+                    "TRADE_NAME": "PRODUCT - 158",
+                    "FAMILY_CODE": "158",
+                    "FAMILY_DESC": "PRODUCT - 158"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.ProductsType",
+                      "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/Products('158')"
+                    },
+                    "PRODUCT_KEY": 19917,
+                    "TRADE_NAME": "PRODUCT - 158",
+                    "FAMILY_CODE": "158",
+                    "FAMILY_DESC": "PRODUCT - 158"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.reports.ReportDetailsPanel.ProductsType",
+                      "uri": "http://dciqschana01.qa.dci.local:8000/Deloitte/Innovation/saint/safety/services/reports/ReportDetailsPanel.xsodata/Products('158')"
+                    },
+                    "PRODUCT_KEY": 20834,
+                    "TRADE_NAME": "PRODUCT - 158",
+                    "FAMILY_CODE": "158",
+                    "FAMILY_DESC": "PRODUCT - 158"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "IngredientsLicense": {
+          "results": []
+        }
+      }
+    ]
+  }
+}

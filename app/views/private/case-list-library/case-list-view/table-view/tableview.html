@@ -1,0 +1,110 @@
+<!-- Case List Table-->
+<div data-ng-controller="IncludeExcludeController">
+  <div data-ng-include="VIEWS.EXCLUDE_VIEW"></div>
+  <div data-ng-include="VIEWS.INCLUDE_VIEW"></div>
+</div>
+<div class="col-sm-12 dsui-caseLists-reports-div dsui-no-padding" data-ng-controller="TableController">
+  <div class="col-sm-12 dsui-caseLists-table-header dsui-no-padding">
+    <div class="col-sm-4 dsui-no-padding">
+      <div class="inner-addon left-addon dsui-case-search">
+        <i class="glyphicon glyphicon-search dsui-icon-style"></i>
+        <input type="text" class="form-control" data-ng-model="caseNumberText"
+               placeholder="Search Case Numbers" data-ng-change="fnSearch()"/>
+      </div>
+    </div>
+    <div class="col-sm-8 text-right dsui-no-padding">
+      <button type="button" class="btn btn-default dsui-case-button"
+              data-ng-click="fnIncludeExcludeCasesBtn(CONSTANTS.EXCLUDE)" data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_INCLUDE_EXCLUDE_CASE)">
+        <i class="fa fa-minus-circle"></i>&nbsp;<span data-i18n="private-case-list-library.BUNDLE_EXCLUDE_CASES"></span>
+      </button>
+      <button type="button" class="btn btn-default dsui-case-button" data-ng-click="fnIncludeExcludeCasesBtn(CONSTANTS.INCLUDE)" data-ng-disabled="decorator.disabled(PRIVILEGES.CASE_LIST_INCLUDE_EXCLUDE_CASE)">
+        <i class="fa fa-plus-circle"></i>&nbsp;<span data-i18n="private-case-list-library.BUNDLE_INCLUDE_CASES"></span>
+      </button>
+    </div>
+  </div>
+  <!-- Added Two tables: To handle fixed header and table alignment -->
+  <div class="col-sm-12 dsui-caseLists-table-headers dsui-no-padding">
+    <table class="table">
+      <thead>
+      <tr>
+        <td class="dsui-checkbox-width"><input class="dsui-checkbox" type="checkbox"></td>
+        <td class="dsui-caseId-width">
+          <div data-i18n="private-case-list-library.BUNDLE_CASE_ID"></div>
+        </td>
+        <td data-ng-show="datesCheck && datesCheck.eventRcptDate === CONSTANTS.ONE_KEY">
+          <div data-i18n="private-case-list-library.BUNDLE_EVENT_RECEIPT_DATE"></div>
+        </td>
+        <td data-ng-show="datesCheck && datesCheck.initialRcptDate === CONSTANTS.ONE_KEY">
+          <div data-i18n="private-case-list-library.BUNDLE_INITIAL_RECEIPT_DATE"></div>
+        </td>
+        <td class="dsui-followup-width" data-ng-show="datesCheck && datesCheck.followUpRcptDate === CONSTANTS.ONE_KEY">
+          <div data-i18n="private-case-list-library.BUNDLE_FOLLOW_UP_RECEIPT_DATE"></div>
+        </td>
+        <td class="dsui-report-type-width">
+          <div data-i18n="private-case-list-library.BUNDLE_REPORT_TYPE"></div>
+        </td>
+        <td>
+          <div data-i18n="private-case-list-library.BUNDLE_COUNTRY"></div>
+        </td>
+        <td class="dsui-product-width">
+          <div data-i18n="private-case-list-library.BUNDLE_PRODUCT"></div>
+        </td>
+        <td class="dsui-version-workflow-width">
+          <div data-i18n="private-case-list-library.BUNDLE_VERSION"></div>
+        </td>
+        <td class="dsui-version-workflow-width">
+          <div data-i18n="private-case-list-library.BUNDLE_IN_WORKFLOW"></div>
+        </td>
+        <td>
+        </td>
+      </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="col-sm-12 dsui-list-table-items dsui-no-padding" data-when-scrolled="enableLazyLoading ? fnLoadMoreCases(true) : false">
+    <table class="table">
+      <tbody>
+      <div data-ng-if="isData === true" data-widget-loader status="true"></div>
+      <tr>
+        <td colspan="11" data-ng-show="(isData === false) && !displayedCollection.length">
+          <div data-i18n="private-case-list-library.BUNDLE_NO_CASES"></div>
+        </td>
+      </tr>
+      <tr class="dsui-table-hover dsui-table-data-items" data-ng-repeat="row in displayedCollection">
+        <td class="dsui-checkbox-width" data-ng-click="fnSelectedCaseList(row)">
+          <input class="dsui-checkbox" type="checkbox" id="checkbox{{row.checkbox}}" data-ng-model="row.checkbox">
+        </td>
+        <td class="dsui-caseId-width">
+          <div data-ng-bind="row.caseId"></div>
+        </td>
+        <td data-ng-show="datesCheck && datesCheck.eventRcptDate === CONSTANTS.ONE_KEY">
+          <div data-ng-bind="fnGetDateString(row.eventReceiptDate)"></div>
+        </td>
+        <td data-ng-show="datesCheck && datesCheck.initialRcptDate === CONSTANTS.ONE_KEY">
+          <div data-ng-bind="fnGetDateString(row.initialReceiptDate)"></div>
+        </td>
+        <td class="dsui-followup-width" data-ng-show="datesCheck && datesCheck.followUpRcptDate === CONSTANTS.ONE_KEY">
+          <div data-ng-bind="fnGetDateString(row.followupReceiptDate)"></div>
+        </td>
+        <td class="dsui-report-type-width">
+          <div data-ng-bind="row.reportType"></div>
+        </td>
+        <td>
+          <div data-ng-bind="row.country"></div>
+        </td>
+        <td class="dsui-product-width">
+          <div data-ng-bind="row.product"></div>
+        </td>
+        <td class="dsui-version-workflow-width">
+          <div class="dsui-version " data-ng-bind="row.version"></div>
+        </td>
+        <td class="dsui-version-workflow-width">
+          <div class="dsui-version"  data-ng-class="{'fa fa-check dsui-workflow': row.workflow}"></div>
+        </td>
+        <td data-ng-click="fnGetCaseDetails(row)"><span
+          class="fa fa-angle-right fa-1x dsui-arrow"></span></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

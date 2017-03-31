@@ -1,0 +1,37 @@
+<div class="modal fade dsui-modal" id="dsui-saveAsCaseListModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header dsui-modal-header">
+        <button type="button" class="close dsui-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 data-ng-if="!caseListData.cloneCaseList" class="modal-title dsui-modal-title" id="myModalLabel" data-i18n="private-case-list-library.BUNDLE_SAVE_CASE_LIST"></h4>
+        <h4 data-ng-if="caseListData.cloneCaseList" class="modal-title dsui-modal-title" id="myModalLabel" data-i18n="private-case-list-library.BUNDLE_SAVE_CASE_LIST_AS"></h4>
+      </div>
+      <div class="modal-body dsui-modal-body">
+        <div class="form-group">
+          <span class="dsui-saveCaseList-casesCount" data-ng-bind="saveCaseList.casesCount"></span>
+          <span class="dsui-saveCaseList-casesCount" data-i18n="private-case-list-library.BUNDLE_CASES"></span>
+        </div>
+        <div class="form-group">
+          <label for="caseListName"><span class="dsui-caseListName"
+                                          data-i18n="private-case-list-library.BUNDLE_NEW_CASE_LIST_CASE_LIST_NAME"></span></label>
+          <input type="text" class="form-control dsui-form-control-caseListName" id="caseListName"
+                 data-ng-change="fnOnCaseListNameChange()"
+                 data-ng-model="saveCaseList.caseListModalName" data-ng-disabled="caseListData.cloneCaseList"
+                 data-ng-bind="saveCaseList.caseListModalName">
+        </div>
+        <div class="form-group">
+          <label for="caseListDescription"><span class="dsui-caseListDescription" data-i18n="private-case-list-library.BUNDLE_NEW_CASE_LIST_DESCRIPTION"></span>
+            <span class="dsui-caseListDescriptionCharacters" data-i18n="private-case-list-library.BUNDLE_NEW_CASE_LIST_DESCRIPTION_CHARACTERS"></span>
+          </label>
+          <textarea rows="4" class="form-control dsui-form-control-caseListDescription" maxlength="1000" id="caseListDescription"
+                    data-ng-model="saveCaseList.caseListModalDescription" data-ng-bind="saveCaseList.caseListModalDescription" data-ng-change="fnOnModalChange()"style="resize:none">
+          </textarea>
+        </div>
+      </div>
+      <div class="modal-footer dsui-modal-footer">
+        <button type="button" class="btn btn-primary dsui-btn-primary" data-ng-click="fnSaveUpdateCaseList()" data-i18n="private-case-list-library.BUNDLE_SAVE"></button>
+        <button type="button" class="btn btn-default dsui-btn-default" data-dismiss="modal" data-i18n="private-case-list-library.BUNDLE_NEW_CASE_LIST_CANCEL"></button>
+      </div>
+    </div>
+  </div>
+</div>

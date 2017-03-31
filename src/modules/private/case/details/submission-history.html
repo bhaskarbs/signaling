@@ -1,0 +1,70 @@
+<div class="col-sm-6 dsui-events-padding">
+  <div class="col-sm-12 dsui-no-padding dsui-case-details-panel">
+    <div class="dsui-case-products dsui-case-summary-layout">
+          <span class="col-sm-12 dsui-case-summary-label"
+                data-i18n="private-case-list-library.BUNDLE_CASE_SUBMISSION_HISTORY"></span>
+      <div class="col-sm-12 dsui-submission-history">
+        <div class="dsui-periodic-section">
+          <div class="dsui-periodic" data-i18n="private-case-list-library.BUNDLE_CASE_PERIODIC"></div>
+          <div class="col-sm-9 dsui-report-name">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_REPORT_NAME"></span>
+          </div>
+          <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_SUBMISSION_DATE"></span>
+          </div>
+          <div data-ng-repeat="periodic in submissionHistoryPeriodic">
+            <div class="col-sm-9 dsui-report-name">
+              <span data-ng-bind="periodic.reportName"></span>
+            </div>
+            <div class="col-sm-3">
+              <span data-ng-bind="periodic.submissionDate"></span>
+            </div>
+          </div>
+        </div>
+        <div class="dsui-separator"></div>
+        <div class="dsui-icsr-section">
+          <div class="dsui-periodic" data-i18n="private-case-list-library.BUNDLE_CASE_ICSR"></div>
+          <div class="col-sm-3 dsui-report-name">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_LABEL_DESTINATION"></span>
+          </div>
+          <div class="col-sm-2">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_LABEL_REPORT_FORM"></span>
+          </div>
+          <div class="col-sm-2">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_LABEL_TIME_FRAME"></span>
+          </div>
+          <div class="col-sm-2">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_LABEL_INTIAL_FU"></span>
+          </div>
+          <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_SUBMISSION_DATE"></span>
+          </div>
+          <div data-ng-repeat="icsrData in icsrSubmissionsData">
+            <div class="col-sm-3 dsui-report-name">
+              <span data-ng-bind="icsrData.destination"></span>
+            </div>
+            <div class="col-sm-2">
+              <span data-ng-bind="icsrData.reportForm"></span>
+            </div>
+            <div class="col-sm-2">
+              <span data-ng-bind="icsrData.timeframe"></span>
+            </div>
+            <div class="col-sm-2">
+              <span data-ng-bind="icsrData.initialFU"></span>
+            </div>
+            <div class="col-sm-3">
+              <span data-ng-bind="icsrData.submissionDate"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

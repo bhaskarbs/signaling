@@ -1,0 +1,25 @@
+#contentwrapper #explorerwrapper .explorerContainer .sapBiVaExplorerMiddle,
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerRight .sapBiVaSidePanelLayout .sapUiTabPanel{
+  top : 0px !important;
+}
+
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerLeft,
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerButtonBar,
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerMiddle .sapBiVaExplorerBottom,
+#topsection,
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerRight .sapBiVaSidePanelLayout > span,
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerRight .sapBiVaSidePanelLayout > button,
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerRight .sapBiVaSidePanelLayout > .sapBiVaSidePanelIndicatorArrow,
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerRight .sapBiVaSidePanelLayout > .sapUiTabStrip > .sapUiTabBar,
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerRight .sapBiVaSidePanelLayout .sapUiTabPanel .sapBiVaBuilderArea > :first-child > :nth-child(1),
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerRight .sapBiVaSidePanelLayout .sapUiTabPanel .sapBiVaBuilderArea > :first-child > :nth-child(2),
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerRight .sapBiVaSidePanelLayout .sapUiTabPanel .sapBiVaBuilderArea > :first-child > :nth-child(3) > :nth-child(1){
+  display: none !important;
+}
+#contentwrapper #explorerwrapper .explorerContainer .sapBiVaExplorerMiddle,
+#contentwrapper #explorerwrapper .sapBiVaExplorer .sapBiVaExplorerRight{
+  border : none;
+}
+#contentwrapper #explorerwrapper .explorerContainer .sapBiVaExplorerMiddle .sapBiVaExplorerCenter .sapBiVaExplorerCenterLeft{
+  border : 1px solid #dad9d9;
+}

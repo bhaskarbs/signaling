@@ -1,0 +1,233 @@
+
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-analysis-library {
+      .dsui-create-new-dashboard {
+        .create-button {
+          @include color-background($saint-white-color, $saint-create-report-button);
+        }
+      }
+      .dsui-library-panel {
+        height: 870px;
+        padding-right: 0;
+        padding-left: 0;
+        .dsui-library-sidebar {
+          padding-left: 0px;
+          padding-right: 0px;
+          border: #ccc solid;
+          border-width: 1px 1px 0 0;
+          height: 100%;
+          overflow: hidden;
+          overflow-y: hidden !important;
+          padding-top: 15px;
+          .dsui-library-sidebar-title {
+            height: 36px !important;;
+            border: #ccc solid;
+            border-width: 0 0 1px 0;
+            height: 100%;
+            overflow: hidden;
+            overflow-y: hidden !important;
+            font-family: $font-roboto-medium;
+            font-size: 16px;
+            color: $saint-unfavourite-color;
+            .dsui-collapse-icon {
+              float: right;
+              font-size: 19px;
+              color: $saint-unfavourite-color;
+              cursor: pointer;
+            }
+          }
+          .dsui-library-category {
+            padding-top: 16px;
+            padding-left: 20px;
+            .dsui-library-category-header {
+              padding-left: 0px;
+              padding-right: 0px;
+              .dsui-library-category-panel {
+                padding-right: 0px;
+                padding-left: 0px;
+                .dsui-category-header {
+                  padding-left: 12px;
+                  border-bottom: 0px;
+                  .dsui-category-header-text {
+                    font-family: $font-roboto-medium;
+                    font-size: 14px;
+                    color: $saint-unfavourite-color;
+                  }
+                  .dsui-panel-title-icons {
+                    cursor: pointer;
+                  }
+                }
+                .dsui-library-category-panel:first-child {
+                  margin-bottom: 0px;
+                }
+                .dsui-library-category-panel-text {
+                  margin-bottom: 0px;
+                }
+              }
+
+              .dsui-search-icon {
+                padding-left: 0px;
+                padding-right: 0px;
+                cursor: pointer;
+                margin-bottom: 0px;
+                border-bottom: 0px;
+                .dsui-search-icon-text {
+                  text-align: center;
+                  font-size: 14px;
+                  color: $saint-unfavourite-color;
+                  padding-top: 13px;
+                }
+              }
+            }
+            .panel {
+              border-radius: 0px;
+            }
+            .collapseStatus {
+              padding: 0px;
+              .dsui-library-list {
+                cursor: pointer;
+                padding: 10px;
+                font-family: $font-roboto-medium;
+                font-size: 14px;
+                color: $saint-unfavourite-color;
+              }
+              .dsui-library-list-selected {
+                background-color: $saint-blue-color;
+                color: $saint-white-color;
+              }
+              .dsui-library-list:hover:not(:focus) {
+                background-color: $saint-onhover-highlight;
+              }
+
+            }
+
+            .dsui-search-dailog {
+              height: 50px;
+              padding-left: 0px;
+              padding-right: 0px;
+              height: 65px;
+              margin-bottom: 0px;
+              .dsui-left-inner-addon {
+                height: 100%;
+                padding-top: 15px;
+              }
+              .dsui-left-inner-addon i {
+                color: #666;
+                position: absolute;
+                padding: 24px 10px;
+                pointer-events: none;
+              }
+              .dsui-left-inner-addon input {
+                padding-left: 30px;
+              }
+            }
+          }
+        }
+        .dsui-libary-chart-window {
+          height: 100%;
+          padding-left: 0px;
+          padding-right: 0px;
+          .dsui-filter-verticalbar {
+            background-color: #ccc;
+            width: 30px;
+            float: left;
+            cursor: pointer;
+            height: 100%;
+            .dsui-collpase-icon {
+              color: #333;
+              margin-top: 10px;
+              font-size: 20px;
+            }
+            .dsui-text-rotator {
+              color: $saint-unfavourite-color;
+              font-family: $font-roboto-regular;
+              white-space: nowrap;
+              color: $saint-unfavourite-color;
+              width: 25px;
+              font-size: 16px;
+              margin-top: 15px;
+              @include saintRotateDeg(90deg);
+            }
+          }
+          .dsui-charts-panel {
+            padding-left: 0px;
+            padding-right: 0px;
+            height: 100%;
+            width: 97%;
+            .dsui-chart-content {
+              height: 90% !important;
+              padding: 0px;
+            }
+            .dsui-last-updated {
+              height: 10%;
+              color: $saint-title-gray-color;
+              font-family: $font-roboto-regular;
+              font-size: 12px;
+              padding-top: 15px;
+            }
+          }
+          .dsui-charts-panel-collapsed {
+            width: 100%;
+          }
+          .dsui-charts-panel-expanded {
+            width: 97%;
+          }
+        }
+      }
+    }
+  }
+  .dsui-footer {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+

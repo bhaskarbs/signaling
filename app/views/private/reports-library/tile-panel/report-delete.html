@@ -1,0 +1,55 @@
+<!-- Modal -->
+<div class="modal fade dsui-my-modal-reassure" data-backdrop="static" data-keyboard="false" id="dsui-my-modal-reassure" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content dsui-delete-modal-content">
+      <div class="modal-header">
+        <span class="dsui-close pull-right close" data-ng-click="reportDeleteCancel()">&times;</span>
+        <h4 class="modal-title" data-i18n="private-reports-library.BUNDLE_DELETE_REPORT"></h4>
+      </div>
+      <div class="modal-body">
+        <div>
+          <span><i class="dsui-exclamation fa fa-exclamation-triangle" aria-hidden="true"></i></span>
+          <span data-i18n="private-reports-library.BUNDLE_DELETE_REPORT_QUESTION"></span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="dsui-modal-btn-ok btn btn-default" data-dismiss="modal" data-ng-click="fnDeleteReport()" data-i18n="private-reports-library.BUNDLE_OK"></button>
+        <button type="button" class="btn btn-default" data-ng-click="reportDeleteCancel()" data-i18n="private-reports-library.BUNDLE_NEW_CASE_LIST_CANCEL"></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="modal fade dsui-report-delete" data-backdrop="static" data-keyboard="false" id="dsui-report-delete" role="dialog">
+  <div class="modal-dialog">
+    <!-- Please don't remove the below modal as this will be a part of the view in MVP; Call data-ng-click="reportDelete()" from the above modal 1.1-->
+    <!-- Modal content-->
+    <div class="modal-content dsui-delete-modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" data-i18n="private-reports-library.BUNDLE_DELETE_REPORT"></h4>
+      </div>
+      <div class="modal-body">
+        <div class="dsui-delete-report-radio-btn">
+          <span class="dsui-radio-btn"><input type="radio" data-ng-model="deleteReportOption.name" data-ng-value="CONSTANTS.DELETE_REPORT_OCCURRENCE_OPTION" data-ng-click="setReportSeries(CONSTANTS.DELETE_REPORT_OCCURRENCE_OPTION)"></span><span class="dsui-radio-name" data-i18n="private-reports-library.BUNDLE_DELETE_REPORT_OCCURRENCE"></span>
+          <span class="dsui-radio-btn"><input type="radio" data-ng-model="deleteReportOption.name" value="CONSTANTS.DELETE_REPORT_SERIES_OPTION" data-ng-click="setReportSeries(CONSTANTS.DELETE_REPORT_SERIES_OPTION)"></span><span class="dsui-radio-name"data-i18n="private-reports-library.BUNDLE_DELETE_REPORT_SERIES"></span>
+        </div>
+        <div>
+          <span><i class="dsui-exclamation fa fa-exclamation-triangle" data-ng-if="deleteReport" aria-hidden="true"></i></span>
+          <span class="dsui-report-series-message" data-ng-if="deleteReport" data-i18n="private-reports-library.BUNDLE_DELETE_REPORT_OCCURENCE_QUESTION"></span>
+        </div>
+        <div>
+          <span><i class="dsui-exclamation fa fa-exclamation-triangle" data-ng-if="deleteReportSeries" aria-hidden="true"></i></span>
+          <span class="dsui-report-series-message" data-ng-if="deleteReportSeries" data-i18n="private-reports-library.BUNDLE_DELETE_REPORT_SERIES_QUESTION"></span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="dsui-modal-btn-ok btn btn-default" data-ng-click="fnDeleteReport()" data-i18n="private-reports-library.BUNDLE_OK"></button>
+        <button type="button" class="btn btn-default" data-ng-click="fnOnCancel()" data-i18n="private-reports-library.BUNDLE_NEW_CASE_LIST_CANCEL"></button>
+      </div>
+    </div>
+
+  </div>
+</div>

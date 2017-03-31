@@ -1,0 +1,28 @@
+<div data-ng-controller="CaseListTilePanelController" class="dsui-caseListPanelLayout">
+  <div class="dsui-caseListDisplayDetail">
+    <div class="dsui-caseListNumber">
+      <span data-ng-bind="startPageShown"></span> - <span data-ng-bind="endPageShown"></span>&nbsp;<span
+      data-i18n="private-case-list-library.BUNDLE_OF"></span>&nbsp;<span
+      data-ng-bind="totalCaseList"></span>&nbsp;<span
+      data-i18n="private-case-list-library.BUNDLE_REGULATORY_CASELISTS_HEADER_KEY"></span>
+    </div>
+    <div class="dsui-sortStatus"><span class="dsui-sortStatusText"
+                                       data-i18n="common.BUNDLE_SORTED_BY"></span>:&nbsp;<span
+      class="dsui-sortStatusResult" data-ng-bind="sortBy"></span></div>
+  </div>
+
+  <div class="dsui-caseListTileContainer"
+       data-ng-class="totalCaseList>caseListPerPage?'dsui-case-list-tile-container-with-paginator-height':'dsui-case-list-tile-container-without-paginator-height'">
+    <div data-ng-include="VIEWS.CASE_LIST_LIBRARY_TILE_VIEW"></div>
+  </div>
+
+  <div class="dsui-paginatorContainer">
+    <div class="dsui-paginatorControl" id="paginatorControl">
+      <dir-pagination-controls pagination-id="caseListTiles" on-page-change="fnpageChanged(newPageNumber)"
+                               max-size="6" direction-links="true"
+                               boundary-links="true"
+                               ng-show="totalCaseList > caseListPerPage"></dir-pagination-controls>
+    </div>
+  </div>
+
+</div>

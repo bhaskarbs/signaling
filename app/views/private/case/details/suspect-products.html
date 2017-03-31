@@ -1,0 +1,51 @@
+<div class="col-sm-12">
+  <div class="col-sm-6 dsui-summary-padding">
+    <!-- Suspect Products -->
+    <div class="col-sm-12 dsui-no-padding dsui-case-details-panel">
+      <div class="dsui-case-products dsui-no-padding dsui-case-summary-layout">
+          <span class="col-sm-12 dsui-case-summary-label"
+                data-i18n="private-case-list-library.BUNDLE_CASE_SUSPECT_PRODUCTS"></span>
+        <div class="col-sm-12 dsui-no-padding dsui-case-summary-col1 dsui-suspect-scroll">
+          <div class="col-sm-12" data-ng-repeat="product in caseSuspectProducts">
+              <span class="col-sm-12 dsui-suspect-sub-label">
+                <span class="dsui-case-summary-layout" data-ng-bind="($index + 1)+'.'"></span>
+                <span class="dsui-case-summary-layout" data-ng-bind="product.productName|empty:CONSTANTS.EMPTY"></span>
+                <span class="dsui-case-summary-layout" data-ng-bind="product.formulation|empty:CONSTANTS.EMPTY"></span>
+              </span>
+              <span class="col-sm-12 dsui-suspect-sub-label">
+                <span class="dsui-case-summary-layout" data-ng-bind="product.ingredient|empty:CONSTANTS.EMPTY"></span>
+              </span>
+            <div class="col-sm-12 dsui-suspect-sub-label">
+              <div class="col-sm-3 dsui-suspect-sub-label">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_ROUTE"></span>
+                <span class="dsui-case-summary-layout" data-ng-bind="product.route|empty:CONSTANTS.EMPTY"></span>
+              </div>
+              <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_DAILY_DOSE"></span>
+                <span class="dsui-case-summary-layout" data-ng-bind="product.dailyDose|empty:CONSTANTS.EMPTY"></span>
+              </div>
+              <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_DATES_OF_TREATMENT"></span>
+                  <span class="dsui-case-summary-layout"
+                        data-ng-bind="product.datesOfTreatment|empty:CONSTANTS.EMPTY"></span>
+              </div>
+              <div class="col-sm-3">
+                  <span class="show dsui-case-details-labels"
+                        data-i18n="private-case-list-library.BUNDLE_CASE_INDICATION"></span>
+                <span class="dsui-case-summary-layout" data-ng-bind="product.indication|empty:CONSTANTS.EMPTY"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- Suspect Products Ends -->
+  <!-- Submission History  -->
+  <div data-ng-include="VIEWS.CASE_LIST_SUBMISSION_HISTORY_VIEW"></div>
+  <!-- Submission History Ends -->
+</div>

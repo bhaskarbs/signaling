@@ -1,0 +1,19 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.services.saintcore.SafetyReportAnalyst_dashboardType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/services/saintcore.xsodata/SafetyReportAnalyst_dashboard(87934480802832591)"
+        },
+        "ID": "87934480802832591",
+        "USER_ID": 182646,
+        "USER_NAME": "KSMITH",
+        "ReportsCompletedwithin30days": 10,
+        "ReportsDueIn30days": 3,
+        "ReportsPendingSubmission": 23,
+        "ReportsOverdue": 13
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+<div class="col-sm-12 dsui-name-count-header">
+  <div class="col-sm-12 dsui-no-padding dsui-name-count-header-row1">
+    <div class="col-sm-6 dsui-no-padding dsui-case-name pull-left">
+      <span data-ng-bind="caseListDisplayName"></span>
+    </div>
+    <div class="col-sm-5 dsui-no-padding dsui-as-of-date pull-right">
+      <div class="col-sm-6 dsui-no-padding pull-right">
+        <span class="col-sm-4 dsui-no-padding pull-left" style="margin:5px 0px 0px -5px;" data-i18n="private-case-list-library.BUNDLE_AS_OF_DATE"></span>
+        <span class="col-sm-8 dsui-no-padding input-group pull-right dsui-as-of-date-input" data-ng-click="fnEnableDatepicker('#dsuiCaseListAsOfDate')">
+          <span class="input-group-addon dsui-calendar-icon">
+            <i class="fa fa-calendar-o"></i>
+          </span>
+          <input placeholder="" data-i18n="{placeholder:'private-case-list-library.BUNDLE_DATEPICKER_FORMAT'}"
+                 data-ui-date="{ dateFormat:CONSTANTS.DATEPICKER_FORMAT , dayNamesMin:CONSTANTS.DATEPICKER_DAY_NAMES , yearRange:CONSTANTS.YEAR_RANGE
+                      , changeYear: true , changeMonth: true}"
+                 type="text" class="form-control dsui-date-picker-form-control" data-ng-model="caseList.asOfDate" id="dsuiCaseListAsOfDate"  name="dsuiCaseListAsOfDate"
+                 data-ng-required="true" data-ng-change="fnOnDateChange()"/>
+        </span>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-sm-12 dsui-no-padding dsui-name-count-header-row2 ">
+    <div class="col-sm-6 dsui-no-padding dsui-cases-count pull-left">
+      <span class="dsui-lastrun-count" data-ng-bind="caseListCount.lastRunCount"></span>
+      <span class="dsui-count-text" data-i18n="private-case-list-library.BUNDLE_LAST_RUN"></span>&nbsp;
+      <span class="dsui-lastSaved-count" data-ng-bind="caseListCount.lastSavedCount" ></span>
+      <span class="dsui-count-text" data-i18n="private-case-list-library.BUNDLE_LAST_SAVED"></span>&nbsp;
+      <i class=" fa fa-undo" data-ng-click="fnResetQuery()"></i>
+    </div>
+    <div class="col-sm-5 dsui-no-padding dsui-track-all-counts pull-right">
+      <div class="dsui-vertical-line dsui-no-padding dsui-all-count ">
+        <span data-ng-click="fnTrackCases(CONSTANTS.CASE_LIST_ADDED)" class="dsui-count" data-ng-bind="caseListCount.addedCount"></span>
+        <span class="dsui-count-text" data-i18n="private-case-list-library.BUNDLE_INCLUDED"></span>
+      </div>
+      <div class="dsui-vertical-line dsui-no-padding dsui-all-count ">
+        <span data-ng-click="fnTrackCases(CONSTANTS.CASE_LIST_REMOVED)" class="dsui-count" data-ng-bind="caseListCount.removedCount"></span>
+        <span class="dsui-count-text"  data-i18n="private-case-list-library.BUNDLE_EXCLUDED"></span>
+      </div>
+      <div class="dsui-no-padding dsui-all-count ">
+        <span data-ng-click="fnTrackCases(CONSTANTS.CASE_LIST_ANNOTATED)" class="dsui-count" data-ng-bind="caseListCount.annotatedCount"></span>
+        <span class="dsui-count-text"  data-i18n="private-case-list-library.BUNDLE_ANNOTATED"></span>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+

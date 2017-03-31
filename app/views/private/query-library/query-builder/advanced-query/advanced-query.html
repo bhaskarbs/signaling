@@ -1,0 +1,18 @@
+<div class="dsui-query-library-outer" data-ng-controller="QueryLibraryBuilderAdvancedQueryController">
+  <div class="dsui-query-builder col-sm-12 dsui-no-padding"
+       data-ng-class="expandQueryBox=== true && 'dsui-expand-query' || ' '"
+       data-ng-mouseover="showExpand = true;" data-ng-mouseleave="showExpand = false;">
+    <div class="dsui-query pull-left">
+      <!--<span class="dsui-default-query" data-ng-bind-html="displayDefaultQuery"></span>-->
+      <!--<strong data-ng-show="finalQuery!== null && finalQuery!== ''" class="dsui-final-query" data-ng-bind="CONSTANTS.AND"></strong>-->
+      <span data-ng-show="finalQuery!== null" class="dsui-final-query" data-ng-bind-html="finalQuery"></span>
+      <span data-ng-show="defaultQuery === null && finalQuery == null" class="dsui-no-content-query" data-i18n="private-case-list-library.BUNDLE_CASE_LIST_QUERY_NO_CONTENT"></span>
+    </div>
+    <div data-ng-show="showExpand" class="dsui-refresh pull-right" data-ng-click="expandQueryBox=!expandQueryBox;">
+      <div class="dsui-refresh-query pull-right">
+        <i class="fa fa-expand"></i>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>

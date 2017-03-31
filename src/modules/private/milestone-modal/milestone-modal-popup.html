@@ -1,0 +1,26 @@
+<div id="milestone-modal" class="dsui-milestone-modal modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header dsui-milestone-modal-header"><span class="dsui-milestone-modal-header-text"
+                                      data-i18n="private-reports-library.BUNDLE_MILESTONE_COMPLETE_MILESTONE"></span>
+        <button type="button" class="dsui-modal-button-cross close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" data-ng-bind=""></h4>
+      </div>
+      <div class="modal-body dsui-milestone-modal-report-info">
+          <span class="dsui-milestone-modal-report-info-text"
+                data-i18n="private-reports-library.BUNDLE_MILESTONE_POPUP_TEXT"></span>
+      </div>
+      <div class="modal-footer">
+        <div class="col-xs-12">
+        <button type="button" class="dsui-milestone-modal-button-complete btn btn-default" data-dismiss="modal"
+                data-i18n="private-reports-library.BUNDLE_MILESTONE_MARK_COMPLETE"
+                data-ng-click="markMilestoneComplete()"></button>
+        <button type="button" data-ng-click="cancelMilestone()"class="dsui-milestone-modal-button-close btn btn-default" data-dismiss="modal"
+                data-i18n="private-reports-library.BUNDLE_NEW_CASE_LIST_CANCEL"></button>
+      </div></div>
+    </div>
+
+  </div>
+</div>

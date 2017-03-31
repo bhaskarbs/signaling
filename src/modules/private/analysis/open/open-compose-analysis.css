@@ -1,0 +1,14 @@
+#topsection #explorerHeaderContainer > .sapUiHLayoutChildWrapper:first-child,
+#contentwrapper #explorerwrapper .explorerContainer .sapBiVaExplorerTopToolbar,
+#topsection #explorerHeaderContainer > .sapUiHLayoutChildWrapper:nth-child(2){
+  visibility: hidden !important;
+}
+#contentwrapper #explorerwrapper .explorerContainer .sapBiVaExplorerMiddle,
+#contentwrapper #explorerwrapper .center-panel .sapLumiraStoryComposerCenterArea.sapUiBorderLayoutCenter{
+  top : 0px !important;
+}
+#contentwrapper #explorerwrapper .center-panel > :first-child > :first-child,
+#contentwrapper #explorerwrapper .center-panel > :first-child > :last-child,
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:not(:nth-child(5)){
+  display: none !important;
+}

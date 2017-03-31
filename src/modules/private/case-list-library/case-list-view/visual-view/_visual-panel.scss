@@ -1,0 +1,137 @@
+.dsui{
+  .dsui-header{
+  }
+  .dsui-content{
+    .bold-text{
+      font-weight: bold;
+    }
+    .dsui-visual-panel-main{
+      .panel-heading{
+        height:40px;
+      }
+      span{
+        font-size: 16px;
+        font-family: $font-roboto;
+        color: $saint-unfavourite-color;
+      }
+      .dsui-visual-panel-sortedby{
+        @include color-fontsize($saint-unfavourite-color, 12px);
+      }
+    }
+    .dsui-visual-panel-body{
+      overflow-y: auto;
+      .popover {
+        background-color: black;
+        color: white;
+        z-index: 9999;
+        position: fixed !important;
+      }
+      .popover.bottom .arrow:after {
+        border-bottom-color: black;
+      }
+      .popover.right .arrow:after {
+        border-right-color: black;
+      }
+      .popover.left .arrow:after {
+        border-left-color: black;
+      }
+      .popover.top .arrow:after {
+        border-top-color: black;
+      }
+      .dsui-world-map{
+        width: 900px;
+        height: 400px;
+        .datamaps-legend{
+          bottom: 36px;
+          width: 10%;
+          margin-top: -20%;
+          left:20%;
+          float: right;
+          line-height: 24px;
+          z-index: 0;
+          position: relative !important;
+          dl{
+            display: block;
+            width: 95%;
+          }
+          dt{
+            border-radius: 3px;
+            margin: 1px 6px 2px 0px;
+            float: right;
+            text-align: left;
+            height: 18px;
+          }
+          /* Rectangle*/
+          dd{
+            border-radius: 0 !important;
+            width: 6px !important;
+            margin: 0px 4px 2px 5px;
+            height: 17px;
+          }
+        }
+      }
+    }
+    .dsui-visual-panel-double-height{
+      height: 470px;
+      overflow-y: auto;
+    }
+    .dsui-visual-panel-world-map{
+      height: 225px;
+      width: 95%;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+    .dsui-visual-panel-normal-height{
+      height: 220px;
+      width: 98%;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+  }
+  .dsui-footer{
+  }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

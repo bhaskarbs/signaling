@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" data-ng-app="saintApp" data-ng-strict-di>
+
+<head>
+    <meta charset="utf-8">
+    <title data-i18n="common.BUNDLE_APPLICATION_TITLE"></title>
+    <meta name="description" data-i18n-attr="{content:'common.BUNDLE_APPLICATION_TITLE'}">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/public.vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/roboto-fontface/css/roboto-fontface.css"/>
+    <link rel="stylesheet" href="bower_components/roboto-slab-fontface/css/roboto-slab-fontface.css"/>
+    <link rel="stylesheet" href="bower_components/open-sans-fontface/open-sans.css"/>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/public.css -->
+    <link rel="stylesheet" href="styles/public.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="container-fluid dsui"  style="opacity: 0">
+        <div data-ui-view="headerNavigation" class="dsui-header"></div>
+        <div class="dsui-content clearfix">
+            <div class="container" data-alerts></div>
+            <div data-ui-view="main"></div>
+        </div>
+        <div data-ui-view="footerNavigation" class="dsui-footer"></div>
+    </div>
+    <div data-loader status="true"></div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script> -->
+    <!-- build:js(.) scripts/public.shim.js -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="bower_components/es5-shim/es5-shim.js"></script>
+    <script type="text/javascript" src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+    <!-- build:js(.) scripts/public.vendor.js -->
+    <!-- bower:js -->
+    <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script type="text/javascript" src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="bower_components/angular-localization/angular-localization.js"></script>
+    <!-- endbower -->
+
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/public.js -->
+    <script type="text/javascript" src="scripts/modules/config.module.js"></script>
+    <script type="text/javascript" src="scripts/modules/icomps.module.js"></script>
+    <script type="text/javascript" src="scripts/modules/public/public.module.js"></script>
+
+    <script type="text/javascript" src="scripts/providers/cookie.provider.js"></script>
+    <script type="text/javascript" src="scripts/providers/language.provider.js"></script>
+    <script type="text/javascript" src="scripts/providers/url.provider.js"></script>
+
+    <script type="text/javascript" src="scripts/directives/autofill-sync.directive.js"></script>
+    <script type="text/javascript" src="scripts/controllers/public/header/landing-header.controller.js"></script>
+    <script type="text/javascript" src="scripts/controllers/public/home/landing.controller.js"></script>
+    <script type="text/javascript" src="scripts/controllers/public/login/login.controller.js"></script>
+    <script type="text/javascript" src="scripts/controllers/public/login/login-error.controller.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

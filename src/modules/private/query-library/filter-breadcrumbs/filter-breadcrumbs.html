@@ -1,0 +1,28 @@
+<div id="breadcrumbs" class="dsui-query-builder-tag-filter" data-ng-show="true">
+  <div class="dsui-static-text" data-ng-if="context!='reportOutput'">
+    <div class="dsui-filterInfo"><span data-i18n="common.BUNDLE_FILTERED_BY"></span></div>
+  </div>
+  <div class="dsui-breadcrumbs">
+    <div class="row dsui-breadcrumbs-align">
+      <div class="dsui-breadcrumbs-maxwidth">
+      <span data-ng-repeat="filterData in breadCrumbs" on-finish-render>
+        <span data-ng-show="filterData.category!='date'" class="dsui-myTags">
+        <span class="dsui-breadcrumbs-text" data-ng-bind="filterData.filter"></span>
+      <div
+        data-ng-click="fnFilterClick(filterData.filter,filterData.filterName,filterData.dbFilterName,filterData.category)"
+        class="dsui-cancelButton fa fa-close"></div>
+      </span>
+      <span data-ng-show="filterData.category=='date'" class="dsui-myTags">
+        <span class="dsui-breadcrumbs-text" data-ng-bind="fnDateFormat(filterData.filter)"></span>
+      <div
+        data-ng-click="fnFilterClick(filterData.filter,filterData.filterName,filterData.dbFilterName,filterData.category)"
+        class="dsui-cancelButton fa fa-close"></div>
+      </span></span>
+        <span class="dsui-clear-filter" data-ng-click="fnClearFilters()" data-ng-if="fnCheckClear()"
+              data-i18n="private-query-library.BUNDLE_CLEAR_ALL_FILTERS"></span>
+      </div>
+    </div>
+  </div>
+  <hr class="dsui-breadcrumb-divider">
+
+</div>

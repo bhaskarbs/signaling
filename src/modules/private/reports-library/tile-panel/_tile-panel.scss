@@ -1,0 +1,498 @@
+/* Report Display Details*/
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-tile-panel {
+      height: 100%;
+
+      .dsui-reportPanelLayout {
+        height: 100%;
+
+        .dsui-reportDisplayDetail {
+          border: 0px solid $saint-black-color;
+          margin-top: 20px;
+          margin-bottom: 20px;
+
+          .dsui-reportNumber {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Medium(1em, $saint-unfavourite-color);
+            width: 50%;
+            float: left;
+          }
+          .dsui-sortStatus {
+            text-align: right;
+            border: 0px solid $saint-black-color;
+
+            .dsui-sortStatusText {
+              @include Roboto-Bold(0.875em, $saint-unfavourite-color);
+            }
+            .dsui-sortStatusResult {
+              @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+              padding-right:10px;
+            }
+          }
+        }
+      }
+      /* For Tiles*/
+
+      .dsui-reportTileContainerWithoutPaginator {
+
+        overflow-y: auto;
+        padding-right: 20px;
+        .dsui-reportTileClicked {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-reportPackageClickedTile{
+          box-shadow: 6px 6px 0px $saint-report-package-hover,12px 12px 0px $saint-report-package-shadow-hover !important;
+          background-color: $saint-tile-hover;
+        }
+        .dsui-reportPackageTile{
+          margin-bottom: 22px !important;
+          box-shadow: 6px 6px 0px $saint-report-package-tile,12px 12px 0px $saint-refresh-query-border-color;
+        }
+        .dsui-reportPackageTile:hover{
+          box-shadow: 6px 6px 0px $saint-report-package-hover,12px 12px 0px $saint-report-package-shadow-hover;
+        }
+
+        .dsui-reportPackageTile:active{
+          box-shadow: 6px 6px 0px $saint-report-package-hover,12px 12px 0px $saint-report-package-shadow-hover;
+        }
+        .dsui-reportTile {
+          border: 1px solid $saint-favourite-border-color;
+          margin-bottom: 10px;
+          border-radius: 5px;
+
+          .dsui-reportNameClose {
+            border: 0px solid $saint-black-color;
+            margin-right: 12px;
+            margin-left: 15px;
+            margin-top: 12px;
+            display: -webkit-flex;
+            display: flex;
+
+            .dsui-reportName {
+              border: 0px solid $saint-black-color;
+
+              @include Roboto-Bold(1em, $saint-unfavourite-color);
+              width: 80%;
+              width: -webkit-calc(100% - 30px - 15px);
+              width: -moz-calc(100% - 30px - 15px);
+              width: calc(100% - 30px - 15px);
+              display: inline-block;
+              word-wrap: break-word;
+              overflow: hidden;
+            }
+            .dsui-cross {
+              border: 0px solid $saint-black-color;
+              float: right;
+              display: none;
+              margin-bottom: auto;
+              margin-left: auto;
+              color: $saint-caption-color;
+            }
+            .dsui-delete-report-radio-btn {
+              width: 400px;
+              margin-left: auto;
+              margin-right: auto;
+              padding-bottom: 20px;
+            }
+
+            .dsui-delete-modal-content {
+              margin-top: 200px;
+              width: 770px;
+            }
+
+            .dsui-close {
+              width: 50px;
+            }
+            .dsui-radio-btn{
+              margin-left: 16px;
+            }
+
+            .dsui-report-series-message {
+              padding-left: 3px;
+            }
+
+            .dsui-radio-name{
+              padding-left: 4px;
+            }
+            .dsui-exclamation {
+              color: $saint-exclamation-color;
+              font-size: 29px;
+            }
+            .dsui-modal-btn-ok {
+              width: 80px;
+              font-size: 14px;
+              background: $saint-blue-color;
+              color: $saint-white-color;
+              font-family: $font-roboto-regular;
+              border-radius: 0px;
+            }
+            .dsui-modal-btn-ok-disabled {
+              width: 80px;
+              font-size: 14px;
+              background: $saint-gray-color;
+              color: $saint-white-color;
+              font-family: $font-roboto-regular;
+              border-radius: 0px;
+            }
+          }
+          .dsui-dateRange {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+            margin-left: 15px;
+            margin-right: 12px;
+          }
+          .dsui-descStatus {
+            border: 0px solid $saint-black-color;
+            margin-left: 15px;
+            margin-right: 12px;
+            margin-top: 6px;
+            display: -webkit-flex;
+            display: flex;
+
+            .dsui-desc {
+              border: 0px solid $saint-black-color;
+              width: 80%;
+              width: -webkit-calc(100% - 30px - 15px);
+              width: -moz-calc(100% - 30px - 15px);
+              width: calc(100% - 30px - 15px);
+              display: inline-block;
+              word-wrap: break-word;
+              @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+              overflow: hidden;
+            }
+            .dsui-status {
+              border: 0px solid $saint-black-color;
+              float: right;
+              margin-top: auto;
+              margin-bottom: auto;
+              margin-left: auto;
+            }
+            .dsui-overdue {
+              color: $saint-report-overdue;
+            }
+            .dsui-open {
+              color: $saint-open-color;
+            }
+            .dsui-in-progress {
+              color: $saint-report-inProgress;
+            }
+            .dsui-completed {
+              color: $saint-green-completed;
+            }
+            .dsui-final {
+              color: $saint-report-inProgress;
+            }
+          }
+
+          .dsui-dateDueDateCreated {
+            border: 0px solid $saint-black-color;
+            margin-top: 21px;
+            margin-bottom: 12px;
+            margin-left: 15px;
+            margin-right: 12px;
+
+            .dsui-dateDue {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(0.75em, $saint-title-gray-color);
+              width: 50%;
+              float: left;
+
+            }
+            .dsui-dateCreated {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(0.75em, $saint-title-gray-color);
+              text-align: right;
+            }
+          }
+        }
+        .dsui-reportTile:after {
+          box-shadow:
+            10px 10px 5px $saint-manage-metrics-text;
+        }
+        .dsui-reportTile:hover {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-reportTile:hover .dsui-cross {
+          display: block;
+          cursor: pointer;
+          background-color: Transparent;
+        }
+      }
+
+
+      .dsui-reportTileContainerWithPaginator {
+        padding-right: 20px;
+        .dsui-reportTileClicked {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-reportPackageTile{
+          margin-bottom: 22px !important;
+          box-shadow: 6px 6px 0px $saint-report-package-tile,12px 12px 0px $saint-refresh-query-border-color;
+        }
+        .dsui-reportPackageTile:hover{
+          box-shadow: 6px 6px 0px $saint-report-package-hover,12px 12px 0px $saint-report-package-shadow-hover;
+        }
+        .dsui-reportPackageClickedTile{
+          box-shadow: 6px 6px 0px $saint-report-package-hover,12px 12px 0px $saint-report-package-shadow-hover;
+          background-color: $saint-tile-hover;
+        }
+
+        .dsui-reportPackageTile:active{
+          box-shadow: 6px 6px 0px $saint-report-package-hover,12px 12px 0px $saint-report-package-shadow-hover;
+        }
+        .dsui-reportTile {
+          position: relative;
+          border: 1px solid $saint-favourite-border-color;
+          margin-bottom: 10px;
+          border-radius: 5px;
+
+          .dsui-reportNameClose {
+            border: 0px solid $saint-black-color;
+            margin-right: 12px;
+            margin-left: 15px;
+            margin-top: 12px;
+            display: -webkit-flex;
+            display: flex;
+
+            .dsui-reportName {
+              border: 0px solid $saint-black-color;
+
+              @include Roboto-Bold(1em, $saint-unfavourite-color);
+              width: 80%;
+              width: -webkit-calc(100% - 30px - 15px);
+              width: -moz-calc(100% - 30px - 15px);
+              width: calc(100% - 30px - 15px);
+              display: inline-block;
+              word-wrap: break-word;
+              overflow: hidden;
+            }
+            .dsui-cross {
+              border: 0px solid $saint-black-color;
+              float: right;
+              display: none;
+              margin-bottom: auto;
+              margin-left: auto;
+              color: $saint-caption-color;
+            }
+            .dsui-delete-report-radio-btn {
+              width: 400px;
+              margin-left: auto;
+              margin-right: auto;
+              padding-bottom: 20px;
+            }
+
+            .dsui-delete-modal-content {
+              margin-top: 200px;
+              width: 770px;
+            }
+
+            .dsui-close {
+              width: 50px;
+            }
+            .dsui-radio-btn{
+              margin-left: 16px;
+            }
+
+            .dsui-report-series-message {
+              padding-left: 3px;
+            }
+
+            .dsui-radio-name{
+              padding-left: 4px;
+            }
+            .dsui-exclamation {
+              color: $saint-exclamation-color;
+              font-size: 29px;
+            }
+            .dsui-modal-btn-ok {
+              width: 80px;
+              font-size: 14px;
+              background: $saint-blue-color;
+              color: $saint-white-color;
+              font-family: $font-roboto-regular;
+              border-radius: 0px;
+            }
+            .dsui-modal-btn-ok-disabled {
+              width: 80px;
+              font-size: 14px;
+              background: $saint-gray-color;
+              color: $saint-white-color;
+              font-family: $font-roboto-regular;
+              border-radius: 0px;
+            }
+          }
+          .dsui-dateRange {
+            border: 0px solid $saint-black-color;
+            @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+            margin-left: 15px;
+            margin-right: 12px;
+          }
+          .dsui-descStatus {
+            border: 0px solid $saint-black-color;
+            margin-left: 15px;
+            margin-right: 12px;
+            margin-top: 6px;
+            display: -webkit-flex;
+            display: flex;
+
+            .dsui-desc {
+              border: 0px solid $saint-black-color;
+              width: 80%;
+              width: -webkit-calc(100% - 30px - 15px);
+              width: -moz-calc(100% - 30px - 15px);
+              width: calc(100% - 30px - 15px);
+              display: inline-block;
+              word-wrap: break-word;
+              @include Roboto-Regular(0.875em, $saint-unfavourite-color);
+              overflow: hidden;
+            }
+            .dsui-status {
+              border: 0px solid $saint-black-color;
+              float: right;
+              margin-top: auto;
+              margin-bottom: auto;
+              margin-left: auto;
+            }
+            .dsui-overdue {
+              color: $saint-report-overdue;
+            }
+            .dsui-open {
+              color: $saint-open-color;
+            }
+            .dsui-in-progress {
+              color: $saint-report-inProgress;
+            }
+            .dsui-completed {
+              color: $saint-green-completed;
+            }
+            .dsui-final {
+              color: $saint-report-inProgress;
+            }
+          }
+
+          .dsui-dateDueDateCreated {
+            border: 0px solid $saint-black-color;
+            margin-top: 21px;
+            margin-bottom: 12px;
+            margin-left: 15px;
+            margin-right: 12px;
+
+            .dsui-dateDue {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(0.75em, $saint-title-gray-color);
+              width: 50%;
+              float: left;
+
+            }
+            .dsui-dateCreated {
+              border: 0px solid $saint-black-color;
+              @include Roboto-Regular(0.75em, $saint-title-gray-color);
+              text-align: right;
+            }
+          }
+        }
+
+
+        .dsui-reportTile:hover {
+          background-color: $saint-tile-hover;
+        }
+        .dsui-reportTile:hover .dsui-cross {
+          display: block;
+          cursor: pointer;
+        }
+      }
+
+      .dsui-tilePaginator-divider {
+        border: solid 1px $saint-favourite-border-color;
+        margin-left: -13px; //Wrapped under div, hence force left required
+        margin-right: -13px; //Wrapped under div, hence force right required
+        margin-bottom: 0px;
+        margin-top: 10px;
+      }
+      /* Paginator */
+
+
+      .dsui-paginator-container {
+        border: 0px solid $saint-caption-color;
+        .dsui-paginatorControl {
+          border: 0px solid $saint-black-color;
+        }
+      }
+
+      .dsui-footer {
+      }
+    }
+    .dsui-saveCaseList-casesCount{
+      font-size: 20px;
+      color:$saint-blue-color;
+    }
+  }
+}
+
+/* Ipad Landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+      .dsui-tile-panel {
+        .dsui-reportPanelLayout {
+          padding-right: 10px;
+        }
+      }
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}

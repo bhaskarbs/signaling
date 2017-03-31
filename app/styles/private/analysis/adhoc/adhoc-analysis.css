@@ -1,0 +1,27 @@
+#topsection #explorerHeaderContainer > .sapUiHLayoutChildWrapper:first-child,
+#contentwrapper #explorerwrapper .explorerContainer .sapBiVaExplorerTopToolbar,
+#topsection #explorerHeaderContainer > .sapUiHLayoutChildWrapper:nth-child(2){
+  visibility: hidden !important;
+}
+#contentwrapper #explorerwrapper .explorerContainer .sapBiVaExplorerMiddle,
+#contentwrapper #explorerwrapper .center-panel .sapLumiraStoryComposerCenterArea.sapUiBorderLayoutCenter{
+  top : 0px !important;
+}
+#contentwrapper #explorerwrapper .center-panel > :first-child > :first-child,
+#contentwrapper #explorerwrapper .center-panel > :first-child > :last-child,
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(3),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(4),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(6),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(7),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(8),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(9),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(12),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(13),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(14),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(15),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(16),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(17),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(18),
+#topsection #explorerHeaderContainer #explorerButtonsLayout > .sapUiHLayoutChildWrapper:nth-child(19){
+  display: none !important;
+}

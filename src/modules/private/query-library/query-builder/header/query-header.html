@@ -1,0 +1,74 @@
+<div class="col-sm-12 clearfix dsui-data-view dsui-secondary-header">
+  <div>
+    <div data-ng-controller="QueryLibraryHeaderController">
+      <div class="dsui-query-name">
+      <span data-ng-bind="queryFactoryData.queryContext.name">
+
+      </span>
+      <span class="dsui-edit-status" data-ng-if="getPageMode() === CONSTANTS.EDIT_MODE">
+        <span class="dsui-edit-status-text" data-i18n="private-query-library.BUNDLE_KEY_EDIT"></span>
+      </span>
+      </div>
+      <div class="dsui-header-button">
+      <span data-ng-click="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY,fnEditButtonClicked,[])" title="{{language.EDIT_TOOLTIP}}">
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)" data-ng-if="getPageMode() === CONSTANTS.READ_MODE" type="button" class="btn btn-secondary dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+          <i class="dsui-visual-icon-font icon-pencil"></i>
+        </button>
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)" data-ng-if="getPageMode() === CONSTANTS.EDIT_MODE" type="button" class="btn btn-secondary dsui-btn-width dsui-btn-height dsui-query-lib-btn dsui-query-lib-btn-selected">
+          <i class="dsui-visual-icon-font icon-pencil dsui-query-lib-btn-selected-icon-pencil"></i>
+        </button>
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)" data-ng-if="getPageMode() === CONSTANTS.SHARED_MODE" type="button"
+                class="btn btn-secondary disabled dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+          <i class="dsui-visual-icon-font icon-pencil"></i>
+        </button>
+      </span>
+      <span title="{{language.SAVE_TOOLTIP}}">
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)" data-ng-if="getPageMode() === CONSTANTS.READ_MODE || getPageMode() === CONSTANTS.EDIT_MODE"
+                data-ng-click="fnSaveQuery(CONSTANTS.SAVE_QUERY)" type="button"
+                class="btn btn-secondary dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+          <i class="dsui-visual-icon-font icon-save"></i>
+        </button>
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)" data-ng-if="getPageMode() === CONSTANTS.SHARED_MODE" type="button"
+                class="btn btn-secondary disabled dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+          <i class="dsui-visual-icon-font icon-save"></i>
+        </button>
+      </span>
+      <span title="{{language.SAVE_AS_TOOLTIP}}">
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)" data-ng-if="getPageMode() === CONSTANTS.EDIT_MODE" type="button" class="btn btn-secondary disabled dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+        <i class="dsui-visual-icon-font icon-IcoMoon-14"></i>
+        </button>
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)" data-ng-if="getPageMode() === CONSTANTS.READ_MODE || getPageMode() === CONSTANTS.SHARED_MODE"
+                data-ng-click="fnSaveQuery(CONSTANTS.SAVE_AS_QUERY)" type="button"
+                class="btn btn-secondary dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+          <i class="dsui-visual-icon-font icon-IcoMoon-14"></i>
+        </button>
+        </span>
+      <span  title="{{language.DELETE_TOOLTIP}}" >
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)" data-ng-if="getPageMode() === CONSTANTS.SHARED_MODE || queryFactoryData.queryContext.key === 0"
+                type="button" class="btn btn-secondary disabled dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+          <i class="dsui-visual-icon-font icon-trash"></i>
+        </button>
+        <button data-ng-click="fnDeleteQuery(queryFactoryData.queryContext.key)" data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_CREATE_MODIFY)"
+                data-ng-if="(getPageMode() === CONSTANTS.READ_MODE || getPageMode() === CONSTANTS.EDIT_MODE) && queryFactoryData.queryContext.key !== 0"
+                type="button" class="btn btn-secondary dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+          <i class="dsui-visual-icon-font icon-trash"></i>
+        </button>
+      </span>
+      <span title="{{language.SHARE_TOOLTIP}}">
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_SHARE)" data-ng-if="getPageMode() === CONSTANTS.SHARED_MODE || queryFactoryData.queryContext.key === 0"
+                type="button"
+                class="btn btn-secondary disabled dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+          <i class="dsui-visual-icon-font icon-share-alt"></i>
+        </button>
+        <button data-ng-disabled="decorator.disabled(PRIVILEGES.QUERY_SHARE)"
+                data-ng-if="(getPageMode() === CONSTANTS.READ_MODE || getPageMode() === CONSTANTS.EDIT_MODE) && queryFactoryData.queryContext.key !== 0"
+                data-ng-click="fnShareQuery()" type="button"
+                class="btn btn-secondary dsui-btn-width dsui-btn-height dsui-query-lib-btn">
+          <i class="dsui-visual-icon-font icon-share-alt"></i>
+        </button>
+      </span>
+
+      </div>
+    </div>
+  </div>
+</div>

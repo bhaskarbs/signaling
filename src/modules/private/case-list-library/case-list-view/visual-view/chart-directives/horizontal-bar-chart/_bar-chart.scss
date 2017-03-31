@@ -1,0 +1,92 @@
+.dsui{
+  .dsui-header{
+  }
+  .dsui-content{
+    .dsui-bar {
+      display: inline-block;
+      @include color-fontsize($saint-unfavourite-color, $font-roboto-regular);
+      height: 208px;
+      width: 90%;
+      svg{
+
+      }
+      .bar {
+        fill: $saint-bar-chart-blue-color;
+      }
+      .disableBar {
+        fill: $saint-favourite-border-color;
+      }
+      .value {
+        @include fontsize-fontweight(14px, 300);
+        fill: $saint-unfavourite-color;
+      }
+      .label {
+        font-family: $font-roboto;
+        @include color-fontsize($saint-title-gray-color, 12px);
+        fill: $saint-title-gray-color;
+        float: right;
+      }
+      .axis {
+        font-size: 12px;
+      }
+      .tick line {
+          stroke-width: 1;
+          stroke: $saint-refresh-query-border-color;
+          opacity: 1;
+          stroke-dasharray: 5,5;
+        }
+      .axis path{
+        fill:none;
+      }
+      .y.axis path{
+        stroke-width: 1px;
+      }
+    }
+  }
+  .dsui-footer{
+  }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui{
+    .dsui-header{
+    }
+    .dsui-content{
+    }
+    .dsui-footer{
+    }
+  }
+}

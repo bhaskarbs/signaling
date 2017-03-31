@@ -1,0 +1,245 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.saintApp.IngredientsType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/Ingredients('100015')"
+        },
+        "INGREDIENT_CODE": "100015",
+        "INGREDIENT_DESC": "U3-1287",
+        "productsList": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.saintApp.ProductsListViewType",
+                "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/ProductsListView('100015')"
+              },
+              "INGREDIENT_CODE": "100015",
+              "PRODUCT_KEY": 13466,
+              "PRODUCT_NAME": "U3-1287",
+              "Licenses": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44331)"
+                    },
+                    "LICENSE_KEY": 44331,
+                    "LIC_NUMBER": "102396"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44334)"
+                    },
+                    "LICENSE_KEY": 44334,
+                    "LIC_NUMBER": "CTA-JPN"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44340)"
+                    },
+                    "LICENSE_KEY": 44340,
+                    "LIC_NUMBER": "CTA-XAA"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44343)"
+                    },
+                    "LICENSE_KEY": 44343,
+                    "LIC_NUMBER": "CTA-EU"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44344)"
+                    },
+                    "LICENSE_KEY": 44344,
+                    "LIC_NUMBER": "CTA-GB"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44345)"
+                    },
+                    "LICENSE_KEY": 44345,
+                    "LIC_NUMBER": "CTA-DE"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "__metadata": {
+          "type": "Deloitte.Innovation.saint.safety.services.saintApp.IngredientsType",
+          "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/Ingredients('100070')"
+        },
+        "INGREDIENT_CODE": "100070",
+        "INGREDIENT_DESC": "COLESEVELAM HYDROCHLORIDE",
+        "productsList": {
+          "results": [
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.saintApp.ProductsListViewType",
+                "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/ProductsListView('100070')"
+              },
+              "INGREDIENT_CODE": "100070",
+              "PRODUCT_KEY": 13467,
+              "PRODUCT_NAME": "COLESEVELAM HYDROCHLORIDE",
+              "Licenses": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44333)"
+                    },
+                    "LICENSE_KEY": 44333,
+                    "LIC_NUMBER": "22-362"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44335)"
+                    },
+                    "LICENSE_KEY": 44335,
+                    "LIC_NUMBER": "EU/1/03/268/001-004"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44336)"
+                    },
+                    "LICENSE_KEY": 44336,
+                    "LIC_NUMBER": "EU/1/03/268/001-004/NO"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44337)"
+                    },
+                    "LICENSE_KEY": 44337,
+                    "LIC_NUMBER": "EU/1/03/268/001-004/IS"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44338)"
+                    },
+                    "LICENSE_KEY": 44338,
+                    "LIC_NUMBER": "1.2543.0021"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44339)"
+                    },
+                    "LICENSE_KEY": 44339,
+                    "LIC_NUMBER": "MKT-XA"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44341)"
+                    },
+                    "LICENSE_KEY": 44341,
+                    "LIC_NUMBER": null
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44346)"
+                    },
+                    "LICENSE_KEY": 44346,
+                    "LIC_NUMBER": "MKT-XA"
+                  }
+                ]
+              }
+            },
+            {
+              "__metadata": {
+                "type": "Deloitte.Innovation.saint.safety.services.saintApp.ProductsListViewType",
+                "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/ProductsListView('100070')"
+              },
+              "INGREDIENT_CODE": "100070",
+              "PRODUCT_KEY": 13468,
+              "PRODUCT_NAME": "COLESEVELAM HYDROCHLORIDE",
+              "Licenses": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44332)"
+                    },
+                    "LICENSE_KEY": 44332,
+                    "LIC_NUMBER": "21-176"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44335)"
+                    },
+                    "LICENSE_KEY": 44335,
+                    "LIC_NUMBER": "EU/1/03/268/001-004"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44336)"
+                    },
+                    "LICENSE_KEY": 44336,
+                    "LIC_NUMBER": "EU/1/03/268/001-004/NO"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44337)"
+                    },
+                    "LICENSE_KEY": 44337,
+                    "LIC_NUMBER": "EU/1/03/268/001-004/IS"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44338)"
+                    },
+                    "LICENSE_KEY": 44338,
+                    "LIC_NUMBER": "1.2543.0021"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44339)"
+                    },
+                    "LICENSE_KEY": 44339,
+                    "LIC_NUMBER": "MKT-XA"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44342)"
+                    },
+                    "LICENSE_KEY": 44342,
+                    "LIC_NUMBER": "MKT-XAA"
+                  },
+                  {
+                    "__metadata": {
+                      "type": "Deloitte.Innovation.saint.safety.services.saintApp.LicenseMasterType",
+                      "uri": "http://hana01.dev.dci.local:8000/Deloitte/Innovation/saint/safety/services/saintApp.xsodata/LicenseMaster(44346)"
+                    },
+                    "LICENSE_KEY": 44346,
+                    "LIC_NUMBER": "MKT-XA"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

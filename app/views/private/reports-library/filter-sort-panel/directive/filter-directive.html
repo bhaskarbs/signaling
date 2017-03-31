@@ -1,0 +1,63 @@
+<div class="dsui-filter-directive" data-ng-repeat="item in categoryData track by $index">
+  <div data-ng-if="(item.filterType==CONSTANTS.FILTER_LIST_KEY_LOV) || (item.filterType==CONSTANTS.FILTER_LIST_KEY_TEXT)">
+    <div class="panel-heading dsui-category-header">
+      <div class="dsui-no-padding dsui-full-height col-xs-9 col-sm-10 col-md-11">
+        <div class="dsui-full-height dsui-category-header-text">
+          <a data-ng-click="item.toggle=!item.toggle;fnClickCategory(item.filterName,item.columnName,$index,item.filterType);item.searchContent=''"
+             data-ng-bind="item.filterName" data-ng-class="item.toggle ? 'dsui-panel-header-expand' : '' "></a>
+        </div>
+      </div>
+      <div class=" dsui-no-padding dsui-full-height col-xs-3 col-sm-2 col-md-1 pull-right ">
+        <div class="dsui-panel-title-icons dsui-full-height">
+          <span class="fa fa-chevron-up"
+                data-ng-show="item.toggle" data-ng-click="item.toggle= ! item.toggle;item.searchContent=''"></span>
+          <span class="fa fa-chevron-down"
+                data-ng-show="!item.toggle"
+                data-ng-click="item.toggle=!item.toggle;fnClickCategory(item.filterName,item.columnName,$index);item.searchContent=''"></span>
+        </div>
+      </div>
+    </div>
+    <div data-ng-show="item.toggle" class="panel-body dsui-filter-body">
+      <div class="col-xs-12 dsui-no-padding" data-ng-if="item.searchActive && item.filterName !== descriptionText && item.filterType!==CONSTANTS.FILTER_LIST_KEY_TEXT">
+        <div class="dsui-left-inner-addon">
+          <i class="glyphicon glyphicon-search"></i>
+          <input type="text" class="form-control" data-ng-model="item.searchContent"/>
+        </div>
+      </div>
+      <div data-ng-repeat="filterArray in item.contents" data-ng-if="item.filterName !== descriptionText && item.filterType!==CONSTANTS.FILTER_LIST_KEY_TEXT"
+           class="col-xs-12 dsui-no-padding">
+           <!--Show select all field only if there is a result in the category, Hide in case of no data and also if UI search results zero data -->
+        <div class="dsui-select-all" data-ng-if="fnShowSelectAll(item.searchResult)">
+          <label>
+            <input type="checkbox" data-ng-checked="fnSelectAllbox(item)"
+                   data-ng-click="fnSelectAll(item,item.selectAll)" ng-model="item.selectAll"
+                   class="dsui-filter-content">
+            <span data-i18n="private-reports-library.BUNDLE_PROJECTS_SELECT_ALL_TEXT"></span>
+          </label>
+        </div>
+        <!--To keep track of UI searched result, assigning it to item.searchResult-->
+        <div data-ng-repeat="filter in (item.searchResult=( filterArray | filter:item.searchContent )) track by $index"
+             class="dsui-filter-content" data-ng-if="filter">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" data-ng-if="fnCheckbox(filter,item.filterName)"
+                     data-ng-click="fnFilterClick(filter,item.filterName,item.columnName,item.filterName,item.filterType)" checked>
+              <input type="checkbox" data-ng-if="!fnCheckbox(filter,item.filterName)"
+                     data-ng-click="fnFilterClick(filter,item.filterName,item.columnName,item.filterName,item.filterType)">
+              <span data-ng-bind="filter"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div data-ng-if="item.filterName === descriptionText || item.filterType==CONSTANTS.FILTER_LIST_KEY_TEXT">
+        <div class="col-xs-12 dsui-no-padding row dsui-search-field">
+          <span class="col-xs-4 dsui-desc-contains" data-i18n="private-reports-library.BUNDLE_DESCRIPTION_PLACEHOLEDER"></span>
+          <div class="col-xs-8">
+            <input type="text" class="form-control dsui-desc-text" data-ng-model="item.descSearch"
+                   data-ng-bind="item.descSearch" data-ng-keyup="$event.keyCode == 13 && fnFindSearchString(item,$index)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

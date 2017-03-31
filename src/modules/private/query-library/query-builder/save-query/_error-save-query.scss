@@ -1,0 +1,105 @@
+.dsui {
+  .dsui-header {
+  }
+  .dsui-content {
+    .dsui-query-builder-save-error-message {
+      .modal-main {
+        margin-left: 17% !important;
+        margin-right: 17% !important;
+        .modal-dialog {
+          width: 100% !important;
+          margin-top: 20% !important;
+
+          .modal-content {
+            margin-top: 15%;
+
+            .modal-body {
+              padding: 22px 26px 22px 26px;
+              .dsui-error-message {
+                display: inline-block;
+                word-wrap: break-word;
+                overflow: hidden;
+                width: calc(100% - 45px);
+                font-family: $font-roboto;
+                font-size: 18px;
+                color: $saint-unfavourite-color;
+                padding-left: 30px;
+              }
+
+              .dsui-icon-3x {
+                font-size: 45px;
+              }
+              .dsui-icon-warning {
+                color: $saint-dark-yellow-border;
+                display: inline-block;
+                float: left;
+              }
+            }
+
+            .modal-footer {
+              margin-top: 0px;
+              padding: 0px 16px 16px 22px !important;
+              border-top: 0px !important;
+              .dsui-ok-button {
+                width: 80px !important;
+                heigh: 32px !important;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .dsui-footer {
+
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 992px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .dsui {
+    .dsui-header {
+    }
+    .dsui-content {
+    }
+    .dsui-footer {
+    }
+  }
+}
