@@ -83,9 +83,6 @@
           .dsui-completed-reports {
             background-color: $saint-create-report-button;
           }
-          .dsui-assigned-action {
-            background-color: #00a3de;
-          }
           .dsui-circle {
             @include Roboto-Medium(2.5em !important,$saint-white-color);
             font-weight: bold;
@@ -127,7 +124,6 @@
   .dsui-footer {
   }
 }
-
 
 /* Large desktop */
 @media (min-width: 1200px) {
