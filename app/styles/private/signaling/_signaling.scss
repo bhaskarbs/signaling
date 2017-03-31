@@ -1,31 +1,36 @@
 .dsui-navigation-text {
-  font-size: 1.125em;
-  font-family: "Roboto-Medium";
-  color: #777;
-  line-height: 3.3em;
-  padding-left: 20px;
+    font-size: 1.125em;
+    font-family: "Roboto-Medium";
+    color: #777;
+    line-height: 3.3em;
+    padding-left: 20px;
 }
+
 .dsui-case-list-library-secondary-navigation {
-  height: 58px;
-  background-color: #EFEFEF;
+    height: 58px;
+    background-color: #EFEFEF;
 }
+
 .mt10 {
-  margin-top: 10px;
+    margin-top: 10px;
 }
+
 .mb10 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .ml10 {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .dsui-signal {
-  min-height: 220px !important;
+    min-height: 220px !important;
 }
+
 .chart {
-  background-color: #eee;
-  height:300px;
-  width:100%;
+    background-color: #eee;
+    height: 300px;
+    width: 100%;
 }
 
 .wssv-mian-content {
@@ -78,5 +83,35 @@
             width: 15%;
             border-radius: 0px 10px 10px 0px;
         }
+    }
+    .wssv-row-box {
+        border: 1px solid #e4e4e4;
+        padding: 20px;
+        margin-top: 15px;
+        .wssv-signal-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        label {
+            width: 25%;
+        }
+    }
+    .wssv-analysis-sec {
+        border: 1px solid #e4e4e4;
+        border-top: none;
+        padding: 20px;
+        .wssv-signal-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        label {
+            font-weight: 100;
+        }
+        .assigned-group {
+            display: block;
+        }
+    }
+    .btns-group {
+        padding: 20px 0;
     }
 }
