@@ -21,8 +21,8 @@
             <div class="wssv-bar-third"></div>
             <div class="wssv-bar-fourth"></div>
         </div>
-        <div class="row form-controle">
-            <h3>Signal Confirmation</h3>
+        <div class="row form-controle wssv-row-box">
+            <div class="wssv-signal-title">Signal Confirmation</div>
             <label class="radio-inline">
                 <input type="radio" name="signalConfirmation">Non-Signal
             </label>
@@ -33,8 +33,8 @@
                 <input type="radio" name="signalConfirmation">Continue to Monitor
             </label>
         </div>
-        <div class="row form-controle">
-            <h3>Signal Prioritization</h3>
+        <div class="row form-controle wssv-row-box">
+            <div class="wssv-signal-title">Signal Prioritization</div>
             <label class="radio-inline">
                 <input type="radio" name="signalPrioritization">High
             </label>
@@ -44,6 +44,32 @@
             <label class="radio-inline">
                 <input type="radio" name="signalPrioritization">Low
             </label>
+        </div>
+        <div class="row wssv-analysis-sec">
+            <div class="wssv-signal-title">Analysis & Assessment</div>
+            <div class="form-group col-md-2">
+                <label for="exampleInputAmount">Days</label>
+                <div class="input-group">
+                    <input type="number" class="form-control">
+                </div>
+            </div>
+            <div class="form-group col-md-4 ">
+                <label for="exampleInputAmount">Medium</label>
+                <div class="input-group ">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" placeholder="DD/MMM/YYYY">
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="exampleInputAmount">Assigned to</label>
+                <div class="input-group assigned-group">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row btns-group">
+            <button type="button" class="btn btn-primary">Launch Adhoc Analysis</button>
+            <button type="button" class="btn btn-default">Need Help ?</button>
         </div>
     </div>
 </div>
