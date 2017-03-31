@@ -70,8 +70,7 @@ angular
                     }
                 }
             })
-
-        .state('signaling', {
+            .state('signaling', {
                 parent: 'main',
                 url: '/signaling',
                 views: {
@@ -96,7 +95,7 @@ angular
                 views: {
                     'signalingView': {
                         templateUrl: 'views/private/signaling/dashboard/index.html',
-                        controller: 'HomeController'
+                        controller: 'DashboardSignalingController'
                     }
                 }
             })
